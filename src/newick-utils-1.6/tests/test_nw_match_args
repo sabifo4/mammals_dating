@@ -1,0 +1,5 @@
+def: 10vrt.nw '(Vulpes,(Tamias,Homo));'
+inv: -v 10vrt.nw '(Vulpes,(Tamias,Homo));'
+multi:forest.nw '(Homo,(Pan,Gorilla));'
+lin: simiiformes.nw '(Gorilla,(Pan,Homo));'
+ein: hominoidea.nw '(Gorilla,(Pan,Homo));'

@@ -1,0 +1,26 @@
+ +-----------------+ Cebus                                                      
+ |                                                                              
+ |                                                         +-----+ Macaca       
+ |                                             +-----------+                    
+ |                             +-Cercopithecinae           +-----+ Papio        
+=|                             |               |                                
+ |                             |               +-----+ Cercopithecus            
+ |                 +-Cercopithecidae                                            
+ |                 |           |   +-----+ Simias                               
+ |                 |           +-Colobinae                                      
+ +-----------------+               +---+ Colobus                                
+                   |                                                            
+                   |           +------------+ Hylobates                         
+                   |           |                                                
+                   +-----------+         +-----------------+ Pongo              
+                               |         |                                      
+                               +-Hominidae        +---------+ Gorilla           
+                                         |        |                             
+                                         +-Homininae    +-----+ Pan             
+                                                  +-Hominini                    
+                                                        +-----+ Homo            
+                                                                                
+ |--------------|--------------|---------------|--------------|---              
+ 0             25             50              75            100                 
+ substitutions/site                                                             
+                                                                                

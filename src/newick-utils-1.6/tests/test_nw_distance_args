@@ -1,0 +1,21 @@
+r1_1:dist.nw B
+r1_2:dist.nw F
+an_1:-ml dist.nw D E F
+an_2:-m lca dist.nw D F
+tan: -m lca -t dist.nw F E D
+pan: -m p dist.nw F D E B
+paa: -m p dist.nw
+i: -s l dist.nw
+rh:-n dist.nw
+rnh: -n dist.nw D F A
+m: -m matrix dist.nw
+mh: -m matrix -n dist.nw
+par_all: -m p -s all dist.nw
+par_all_nam: -m p -s a -n dist.nw
+all_nam_tab: -sa -nt dist.nw
+multi: -tn forest_ind.nw
+mt: -mm -t catarrhini.nw
+nml: -n -ml dist_meth_xpl.nw
+nmt: -n -mm -t catarrhini.nw
+nsf: -n -s f dist_meth_xpl.nw
+nsi: -n -s i dist_meth_xpl.nw

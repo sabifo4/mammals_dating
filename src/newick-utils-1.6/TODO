@@ -1,0 +1,583 @@
+use curses-like charcters for nw_display (ASCII version)
+
+nw_condense: condense clades with bootstrap value greater than some threshold.
+
+write an independent nw_open program that does what we now do with nw_*ed; or
+possibly add this behaviour to nw_condense (though the name would be
+counter-intuitive).
+
+nw_rename: accept more than one map, and apply them in order.
+
+nw_luaed: when only passed a tree file, segfaults instead of outputting a usage
+msg.
+
+general: look at public structures such as struct hash and see if it would be
+ok to make them private -- this means replacing direct access (st->member) by
+accessor function calls (get_member(st)). The tradeoff is: accessors enable
+hiding the detail of the structure, which is a Good Thing; but they add
+overhead WRT direct access. The question is thus: does that overhead
+significantly impact performance?
+
+nw_distance: add new kind of selection: user-specified labels.
+
+general: check that the apps' get_params() functions set the nwsin external via
+set_parser_input_filename() rather than manually.
+
+general: for integer-valued functions that can have more than two status codes
+(i.e., not just SUCCESS and FAILURE), generalize the enum mechanism and
+consider putting the enum declaration close to the function declaration in the
+.h file.
+
+rnode_iterator: add 'status' field to struct rnode_iterator, and use it so hold
+reason for NULL (end or error). Client code should of course check this.
+
+general: for now I don't check the return value of printf(). See if this would
+be useful. In fact it would be better to keep all the printf()s in a few
+defined places. The SVG code has printf()s all over the place, it would
+probably be better to do it like to_newick_i() does: by appending strings to a
+list, then printing the whole list. Only, we'd need to have the whole tree in
+memory, at least until we print it; OTOH we could rather easily print several
+trees in the same doc this way. Make a separate branch, or better yet,  allow
+for the two versions.
+
+tree.c: think of adding a label->node map to the tree structure. The nodes
+could then directly be accessed by functions like get_node_by_label(struct
+rooted_tree *tree, char *label). This function would assume
+unicity of labels; there could be another that does not (and returns a list of
+matching nodes); finally there could be regexp matching. And of
+course, this would all be lazy: the map would be NULL at first, and only
+computed if needed.
+
+general: use (i.e., check) the parser status values defined in parser.h
+
+general: make all functions static unless needed otherwise
+
+general: check that all source files contain the BSD license.
+
+general: identify obsolete f() and replace by newer versions.
+
+nw_sched: would be nice to merge with new_rnode, as this would open up the possibility of a 'next-sib' function.
+
+nw_reroot: if the outgroup-to-be is already the outgroup, the tree should not change (both because there is no need (PoLS), and also because it saves time). Try e.g. rerooting '(((Dog,Cat),Cow),Jay);' on Jay: should be an invariant.
+
+nw_match: try to implement the whole thing using iterators rather than comparing Newick strings.
+
+nw_stats: should say if root is labeled or not.
+
+nw_label: add option for printing out only the root's label (handy when
+extracting a clade's support value)
+
+nw_display: it could be possible to write multiple SVG files, in case of more
+than one input tree, by redirecting STDOUT to multiple files (using
+fork(), dup() like I do in test_to_newick.c). We should make it optional, so
+the default filtering behaviour is not broken. It would have the added benefit
+of parallelism (not that it woudl make a huge difference, as this is typically
+not too slow).
+
+general: try to handle extended newick. (Warning: I'm refering to .nhx
+(http://www.phylosoft.org/NHX), NOT the Extended Newick (eNewick) of
+(http://dmi.uib.es/~gcardona/BioInfo/enewick.html#XNetGen) - which is also an
+interesting idea BTW). Adapting the parser should not be too hard. We already
+have tests for it. Adding fields to struct rnode is trivial.  But the question
+is: how do we handle old-style newick? Do we always use the new structure, even
+if most of the fields will be empty? This would waste memory in most cases (but
+then, how much? is this a big problem?) Or do we pass an option to do so (might
+be best) ? But then the option should be the same for all programs. Since we're
+running out of letters, it might be time to start using long options anyway...
+
+nw_prune: add test for the case when a parentless node is unlinked (happens if
+that node's parent was previously unlined too). But do this only when the inner
+node case is handled too (loot at nw_prune -h).
+
+nw_order: how are internal labels handled when sorting alphabetically? For now
+they are ignored, it seems. Should we add an option to handle them?
+
+all: apps should start using destroy_tree_cb() when possible (see display.c).
+
+all: invalid options should cause an immediate exit, as in reroot.c.
+
+[later] nw_display: try to have the program find out the screen's width when
+outputting to a terminal (I think it must be something like isatty() and
+friends). -- apparently there is NO portable way of finding the line length.
+This has low priority for now.
+
+general: apps should use set_parser_input_filename() instead of setting nwsin
+directly.
+
+[later] general: the main loop should no longer unconditionally quit if
+parse_tree() returns NULL. Instead, it should look at the value of
+'newick_parser_status' (an external var set by the parser), and take
+appropriate action - that is: i) abort with failure if (and only if) out of
+memory; ii) start next iteration in case of syntax error (errors are not always
+recoverable, but some are and the program should at least try to parse the next
+tree); iii) finish normally when input is empty (EOF). See condense.c
+
+[later] newick_parser.y: the yacc code currently prints error messages when it
+encounters a syntax error. This should be done by the calling app: the parser
+should set an external var like it does for 'newick_parser_status'. This var
+could be the line number of the incorrect tree, or it could be the tree itself.
+
+[later] general: check that the destroy_*() functions return an error code (and
+that it is heeded) -- but do we really always care? What if memory can be
+free()d later? For when a destroy_*() function fails, it is typically because
+it is trying to build a list of (ptrs to) structures that must be freed. This
+does not preclude further calls to free() from working. */
+
+[later] general: functions in app code (i.e., NOT library code) can either call
+exit() directly, or return an error value. In some programs I have perhaps been
+a bit too fanatical in that only main() and get_parameters() ever call exit().
+But in fact there is a case for allowing other functions to do so, as long as
+they are never used elsewhere. Check this.
+
+general: functions that return FAILURE or NULL sould free() whatever they have
+allocated before returning. -- or should they? if there is not enough memory
+and the program is going to exit, is it worth the trouble?
+
+nw_tree: add a test for many input trees when using the -r option
+
+[later] general: add parser for NEXUS
+(http://sysbio.oxfordjournals.org/cgi/reprint/46/4/590) and PhyloXML
+(http://www.phyloxml.org/).
+
+nw_gen: review the usefulness of time-limited trees in light of nw_trim: we can
+now use nw_trim to cut a tree at any desired length, yielding a time-limited
+tree. Also, introduce a limit on node number, so we can grow a tree until it
+reaches N leaves, etc.
+
+nw_match: now we have topological matches; consider exact matches (without
+reordering). Also consider monophyly matches (similar to nw_clade -m, but print
+the whole matching tree instead of the subtree).
+
+nw_clade -m should consider single leaves as monophyletic
+
+nw_clade (and computing LCAs in general): deal with non-unique node labels. Use
+regexps wherever it makes sense.
+
+nw_reroot: option -l should accept outgroup nodes and automatically complement
+the selection. In fact, what happens if we pass ingroup labels but not -l?
+Actually it doesn't change anything. Fix this before the release.
+
+tree.c: rename nodes_in_order to nodes_in_postorder
+
+new program: nw_info: prints a summary (number of leaves, number of inner
+nodes, overall depth, whether the tree is a cladogram, etc.
+
+nw_ed: add a function for replacing an inner node with a leaf (TODO: useful?)
+
+all: replace 'parse order' by post-order
+
+nw_topol: add a function for making a tree clocklike (ultrametric)
+
+nw_ed: valgrind nw_ed -no data/catarrhini 'i & b < 10' d
+
+[dropped] nw_ed: nw_ed data/catarrhini 'i & a > 2' s doesn't work properly --
+WRONG, it works allright.
+
+[partly done] nw_display: SVG ortho, align middle of label, rather than bottom,
+to branch.  Try with some SVG property.
+
+nw_prune: remove complement (i.e., keep specified nodes and prune the rest);
+allow selection of a branch by its LCA.
+
+nw_display: craft test tree for numeric verification of lengths and positions
+
+nw_display: use CSS in scale bar
+
+[partly done] nw_display: add scale bar to SVG radial -- in progress, but scale
+is too compressed in radial trees -- try with catarrhini.
+
+nw_display: CSS node groups that aren't clades (flag Invariant) should not be
+called 'clade_xy' in the SVG, but 'group_xy'.
+
+tree: consider adding a label->node map as a member. Since this is not used by
+all applications, it could be lazy, i.e. computed on demand. This means there
+would be a function get_label2node(), which would compute the map if NULL.
+
+nw_display: add examples to help text.
+
+nw_gen: check that help is up-to-date (seems to me that it still describes the
+old function)
+
+[later] Add functionality for reducing stair nodes.
+
+[later] Add functionality for directly counting a bipartition from a set of
+replicates.  This would look like: $ nw_bipart <reps> leaf1 ... leafn where a
+bipartition will be computed from the leaf labels, and its frequency printed
+out as output.
+
+[later] nw_ed should be able to visit the tree in reverse order, and to flag
+nodes for no further processing (if they meet the condition or if their parent
+is flagged), like in the Ruby version.
+
+[done] nw_display: add scale bar to text display
+
+[done] Valgrind nw_clade
+
+[done] Although a tree without labels like '((,),);' is valid Newick, the
+parser rejects it.
+
+[done] nw_ed has problems when deleting a node (try valgrind nw_ed
+data/HRV_bs.nw 'i & b == 13' d). The illegal write happens when destroying a
+list that is apparently not correctly terminated, i.e. l->count == 1 but
+l->head->next is not NULL as it should be. I'm not sure exactly when this
+occurs yet (destroy_llist() is used frequently).
+
+[done] bug in nw_reroot: try nw_reroot -l data/reroot_l_prob.nw
+CL-****2_3DCL-1243049_3D. It should work, or at least print a message.  
+
+[done] Use a struct hash instead of a struct node_map. Eventually remove
+nodemap.[ch] -- Note: kept nodemap.c for its functionality, but now it uses a
+hash.
+
+[done] Add functionality for monophyly in nw_clade. This means that we'll have
+to be able to list the (leaf) descendants of an LCA, and compare this set to
+the list of labels passed as arguments on the command line. For this, I'll
+implement a depth-first traversal of the tree, given a root. This may also be
+used for creating a struct rooted_tree (rather than just a root node): the
+depth-first traversal can be used to generate an ordered nodes list.
+
+[done] Add an option (-p) to nw_bipart so it prints out percentages instead of
+absolute frequencies. 
+
+[done] nw_labels: output labels, in columns or on a line, in parse order.
+Options for omitting leaves or inners.
+
+[done] SVG for nw_display. The concept of color maps for LCA's (cf Ruby
+version) should be integrated from the start. Due to the impossibility of
+predicting SVG text's dimensions, the horizontal space requirements are
+sometimes miscalculated. Add an option to override it.
+
+[done] nw_distance: output distances from root or LCA as a table, or between
+leaves as a matrix.
+
+[done] nw_prune: remove nodes from a tree. 
+
+[done] nw_display: SVG mode is now hybrid in the sense that some node data
+(vertical and horizontal position) are stored in a node_pos structure
+attributed to rnode->data, while others (color, for now) are stored in a
+rnode-indexed hash.  This hybrid state is not desirable. I need to decide if I
+want all-hash or all-node-data. I think that the latter is best (should be
+quicker, doesn't need the additional data structure and assorted memory
+management), but then I'll have to duplicate the code that fills the data. This
+is because currently I use the same functions (alloc_node_pos(),
+set_node_vpos(), and set_node_depth()) as for the text display and for
+nw_distance (these two apps don't require anything more than positions). If I
+want to store all node data for SVG display in a structure, I'll need a new
+structure with SVG-specific members in addition to horizontal and vertical
+positions. This structure cannot be passed to the above functions, so I'll have
+to make SVG-specific clones of them. This is where I miss OO, where I could
+have used an abstract class. Let's let this rest for a while. Ok, finally I
+implemented a solution based on callbacks. There is a pair of functions for
+computing node positions (see node_pos_alloc.h), these functions are passed
+pointers to functions that set and get data for an rnode. This uncouples the
+_computing_ of node positions from the _storage_ of node positions, and allows
+programs to use the same code for computing (no code duplication) while storing
+the info in different ways (no need to use the same structures, etc).
+
+[done] nw_order: sort tree nodes by some criterion. Include at least
+alphabetical sorting of labels. Might include other criteria like tree depth,
+etc, if these are of any use.
+
+[done] list.c: add a void * to_array(struct llist *) function. This can be used
+for sorting the children of a node using qsort(). We should also provide the
+reverse function, array_to_list(). [NOTE: I previously thought that iterating
+over arrays would be faster than over lists, but this turns out not to be the
+case (see src/test_loops)].
+
+[done] add some error messages in newick parser (better than just "syntax
+error"). One case I encountered was two consecutive labels (in fact there was a
+spurious space between them). Something could be done, such as fusing them with
+a '_', or dropping all but the first; at the very least the program should say
+what the problem was and where it was found. -- Note: to detect incorrect
+constructs, I introduced "wrong" cases in the grammar, as suggested in the Lex
+& Yacc book. This causes conflicts in the grammar, but I decided to keep it
+that way, since i) Bison solves the conflicts correctly, and ii) the "correct"
+grammar (the one that only recognizes correct trees) is perfectly
+non-ambiguous.
+
+[done] nw_topology: also remove length of root's parent edge, if it has one
+(like when it is extracted from another tree).
+
+[done] Modify nw_display so that cladograms can be printed with leaves aligned.
+Any tree with no branch length information will be considered a cladogram,
+otherwise it will be considered a phylogram/phenogranm and lengths will be
+honored (any missing lengths, in that case, will be set to 1). Note that an
+ultrametric tree such as made by UPGMA will also have leaves aligned, but this
+will be dictated by branch lengths, not by a decision to align leaves. Aligning
+leaves should be the default behaviour for cladograms.
+
+[done] Add all examples from the Newick definition page
+(http://evolution.genetics.washington.edu/phylip/newicktree.html) to the test
+suite.
+
+[done] nw_display: replace underscores by spaces, as underscores are a way to
+introduce spaces where they are normally not allowed. The transformation is
+only done in nw_display, not in the parser: this way the labels are always
+valid Newick.
+
+[done] nw_bipart: invert order of arguments: 'target' newick tree mus be first.
+
+[done] parser: the '+' character causes a syntax error. This should not be the
+case, as every printable char except ()[]:,; is legal in labels. Also confuses
+lexer, so fix it too while we're at it.
+
+[done] all: add help, available with option -h (program should then quit
+successfully).
+
+[done] BUG: nw_ed crashes on cladograms when trying to splice out nodes. Fixed
+- that was because new edge lengths were not malloc()ed when both lengths were
+  empty.
+
+[done] nw_display: make one SVG group with tree branches, and another with text
+
+[done] nw_display: add functionality for circular trees
+
+[done] nw_display: check the 'null' values (try colormaps). Add a test for
+every option.
+
+[done] nw_clade: add functionality for returning sibling, based on one or more
+labels.
+
+[done] nw_match: prints out trees which "match" another ("pattern") tree, e.g.
+if we keep only the species found in the "pattern" tree, topologies should be
+the same.
+
+[done] check error handling: functions must only call exit() when error is
+unrecoverable, otherwise they should return an error code.
+
+[done] nw_tgen: a program to randomly generate trees - although it's quite
+primitive now, it works.
+
+[done] have nw_display output its options in a comment, especially for SVG.
+
+[done] nw_distance: add options for selecting all leaves and all inner nodes
+(regardless of labels)
+
+[done] nw_clade: add specification of labels by regular expression
+
+[done] add a module 'xml_utils' with a function for escaping '&', '<', etc in
+XML (useful for URLs)
+
+[done] nw_display: add anchors to labels, passed in a separate file named as
+argument to an option
+
+[done] nw_display: use CSS. See "SVG Essentials" pp 45 ff. See
+data/css_tree.svg as an example. What is now the 'color map' should become a
+clade map, in which not only the color but any CSS properties may be specified.
+
+[done] nw_display: make links work with orthogonal form
+
+[done ] nw_display: add a possibility for adding other attributes to the <a>
+tag (we now have href, which is the only required one, make it possible to
+
+[done] nw_clade: output context, e.g. given a LCA, output the containing clade,
+n levels up (n specifiable) specify oters on the same line)
+
+[done] Valgrind everything
+
+[done ] svg_graph.c: separate the code for radial trees from the common SVG
+code; do the same for orthogonal trees. Keep data as private as possible.
+Ideally the client program (i.e., nw_display) should only know about functions
+for setting SVG parameters, and displaying trees. All the rest should be neatly
+hidden.
+
+[done] implement an in-house version of GNU asprintf(), so that we do not need
+to #define _GNU_SOURCE.
+
+[done] nw_display: for SVG, handle trees with multiple instances of the same
+label.  There are many developments in this direction: o a single label may
+match more than one node [done] o one may wish to label those nodes
+independently (i.e., not as a clade) o one could envision using regular
+expressions And the program should still be reasonably quick. To do now:
+distingish clade styles (the only ones existing now) from "group" styles, i.e.
+styles applied individually to all nodes in a group (rather than to their LCA
+and descendents).
+
+[done] nw_display: add an option, perhaps -d or -D, for the CSS style of the
+default clade (clade_0).
+
+[done] nw_display: add ornaments. That's an arbitrary snippet of SVG code that
+will be inserted next to a node's label.
+
+[dropped] test procedure: test program should FAIL if it segfaults
+(obviously...) - In fact I could not reproduce a case when it does not fail, so
+I'll leave this out for now.
+
+[done] nw_ed: nw_ed -n data/catarrhini i d segfaults
+
+[done] nw_ed: ./src/nw_ed data/HRV.bs.nw 'b < 10' d segfaults
+
+[done] nw_ed: make test for action 'l' (print label)
+
+[done] nw_display: scale bar is sometimes off the chart, try e.g. nw_display -s
+../data/simiiformes_wrong_rr.nw
+
+[solved] nw_distance: doesnt' work with doc/dist_sel_xpl.nw (parent edge of
+inner node C has length 5, should have length 4). -- tree had wrong format. 
+
+[fixed] nw_distance: problem with -m l doc/dist_meth_xpl.nw. Selection should
+be just nodes A and B (labeled leaves) but then the LCA should be node d, yet
+it seems to be the root.
+
+[done] new program nw_trim: cuts branches at a certain depth or number of
+ancestors. optionally prints out the trimmed branches.
+
+[done] all: check that all programs support multiple trees in input.
+
+[done] all: review help pages (-h)
+
+[done] general: do a fork of the project, and get rid of the redge structure.
+All data pertaining to a node's parent edge can be stored in the node itself.
+This should simplify things and speed them up a little.
+
+[done] general: put all reusable code (i.e., all .c files except the ones that
+contain the main() fucntion of the programs themselves) into a library, and
+link to it. Use dynamic linking except when distributing binaries, which should
+be statically linked (use ./configure --disable-shared).
+
+[done] general: library functions should not call exit() - this should only be
+found in app code. This is especially true since we're writing Python
+bindings: a Python app may not want to exit() just because our function can't
+complete - rather it would throw an exception.
+
+[done] general: check that the functions return an error code in case of problem
+(which is almost always a malloc() error). Check that this value is heeded by
+the caller.
+
+[done] nw_display: looks like the program hangs if a CSS map has an empty line
+at the end. read_line() (or whichever it is) should be more robust to this.
+Should also accept comments, and ignore lines consisting only of whitespace.
+Finally, syntax errors in the maps should be reported as such. Same thing for
+other maps (URL, ornaments); ditto with nw_rename which also reads a map.
+
+[done] nw_reroot: add option to "de-root" a tree, i.e. to make it suitable as a
+starting tree for PhyML, etc.
+
+[done] nw_order: add function for ordering children by number of descendants,
+like iTOL seems to do.
+
+[done] order_tree.h: add unit tests for all f()
+
+[done] Add new program nw_age, to convert a tree with branch length
+representing (paleontological) ages to a regular Newick tree, with branch
+lengths representing durations.
+
+[done] nw_display: add an option for drawing inner node labels near the parent.
+
+[done] add a function for "guessing" the best between-tick interval for the
+scale bar
+
+[done] add tests for graph_common.c
+
+[done] add scale bars for ASCII graphs
+
+[done] use the new function for tick intervals (scale bar) also for SVG
+(already used for ASCII)
+
+[done] nw_display: add an option for "reversing" the scale, setting 0 at the
+tree's max depth instead of at the root, and going backward. This is useful
+when the branch length are in units of time (hence option -t was chosen).
+
+[done] renamed nw_age to nw_duration, which better describes the program's
+function
+
+[done] to_newick() is recursive, which makes it slow. Write an iterative
+version. (f() is called dump_newick(), writes to stdout instead of into a
+buffer, and is indeed much faster for large trees).
+
+[done] rewrite rnode_iterator without using hashes
+
+[done] Valgrind everything
+
+[done] replace to_newick() with dump_newick() wherever possible - there were
+a few places where this caused side effects, so I put a TODO marker.
+
+[done] moved to Git. Repository in fuji.unige.ch:/home/junier/depot/newick_utils.git
+
+[done] new program: nw_stats, prints info about a tree such as number of nodes, type (cladogram, phylogram, ultrametric, etc).
+
+--- I now put version markers in the TODO. Everything before this was in:
+--- v. 1.3.0 ---
+
+[done] fixed bug 2010-05-24.1 (nw_display text-mode scale bar wrong when tick labels were too long, causing memory error).
+
+[done] nw_display: output better message when colormap labels are not found --
+program now just ignores the color map if it can't be applied.
+
+[done] nw_distance: add tests for new selection options (i and f)
+
+[done] add clause details to test output (see tests/test_summary.sh)
+
+[done] nw_ed now accepts constants
+
+[done] fixed bug 2010-06-02.1 (nw_display hangs with single-node trees (default params) - see test_nw_display_1node)
+
+[done] suggestion 2010-06-03.01 by Sudeep Mehrotra: text ornaments for radial
+trees 
+
+[done] Slashes in labels (such as those of Influenzavirus) cause the parser to
+choke (unless they are quoted). Look into the grammar, if slashes are OK then
+modify the scanner. -- Slashes are indeed Ok; new version now works with DG's
+problem trees of IVB; added partial IVB tree to test cases (with his
+permission).
+
+[done] added a test program for the Newick scanner
+
+[done] add a test program for the Newick parser 
+
+[done] Update tutorial: text ornaments
+
+[done] add tests for the parser, complete the "slashes" scanner test case
+
+[done] Newick scanner chokes on comments: add test.
+
+[done] Doc: add section about the 'arguments' XML comment in the SVG files
+
+[done] fix nw_indent's lexer so that it handles slashes. 
+
+[done] Setup a public Git repository -- experimental on own ws
+
+[done] fix bug in to_newick(): edges of root nodes were not printed (these are rare, admittedly, but nonetheless valid Newick).
+
+[done] test handling of 's in labels beyond lexer: nw_display tests/irish.nw
+
+[done] check nudging of node labels (needed esp. for small trees) -- option -n now nudges all labels in ortho trees, and leaf labels in radial trees.
+
+[done] Public git repository on Gitorious: git://gitorious.org/newick_utilities/newick_utilities.git
+
+[done] Removed bashism in test_nw_prog (bug 2010-06-17.01, found by L. Palmeira)
+In radial trees, there are two variables that govern radial nudging of labels:
+one for leaf labels, and one for inner node labels. Is this really necessary?
+If not, make everything governable by -n.
+
+[done] rotate all ornaments (not just text) in radial trees -- this is better
+than the conditional rotation based on whether the first element is a <text> or
+anything else. But the problem is that left-side texts are anchored at the
+left, while right-side texts are anchored at the right, so giving (say) x=10
+will shift some rootward and the others leafward. One needs, I'm afraid, to
+tweak the <text> elements themselves and change the sign of x='...' attributes
+for one side of the tree.
+
+[done ] nw_sched: define a SMOB for trees. Access the nodes_in_order as a
+Scheme list (what else?), then... car and cdr! 
+
+[done] nw_sched: implement lbl!
+
+[done] nw_sched: check help page, and sync w/ tutorial; add examples incl.
+implementation of other nutils (nw_topology, nw_label, nw_trim?); 
+
+[done] mention test_binaries.sh in manual
+
+tests for nw_sched: test undefinedness of b, d, etc. -- all variables that may
+be undefined.
+
+new rnode: some TODO items list tests to write. Write them. Now.
+
+nw_display: add CSS to labels (in CSS map) 
+
+nw_display: add branch lengths to radial trees.
+
+nw_rename: add example to -h about 3-arg form; also discuss in tutorial.
+
+nw_scheme: sync man, help w/ actual code; add example of numbering inner nodes
+(EK question).
