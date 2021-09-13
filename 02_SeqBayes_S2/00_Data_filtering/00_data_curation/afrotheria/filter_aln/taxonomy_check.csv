@@ -1,0 +1,6 @@
+﻿Tree,Rank,Name,Action,Outside_taxa,Change_from ,Change_to,Force_monophyletic,Reference,Note
+Afrotheria,Mismatch,elephantulus_rozeti,Yes,N/A,elephantulus_rozeti,petrosaltator_rozeti,N/A,Dumbacher et al 2016,Dumbacher et al 2016 proposed a new genus for elephantulus_rozeti
+Afrotheria,Mismatch,huetia_leucorhinus,No,N/A,N/A,N/A,N/A,Asher et al 2010,Huetia is a new proposed genus for leucorhinus
+Afrotheria,Genus,Chrysospalax,Maybe,calcochloris_obtusirostris,N/A,N/A,Maybe,Asher et al 2010,"Asher et al 2010 use morphology and partial nucler DNA. C.villosus and C.trevelyani form a monophyletic clade, but it might not be true. Maybe it is worth forcing a monophyletic clade and compare likelihood?"
+Afrotheria,Genus,Chrysochloris,No,N/A,N/A,N/A,No,Asher et al 2010,Similar paraphyletic arrangement was obserbed by Asher et al 2010
+Afrotheria,Genus,Microgale,No,limnogale_mergulus,N/A,N/A,No,Kuntner et al 2011,Similar paraphyletic arrangement was obserbed by Kuntner et al 2011

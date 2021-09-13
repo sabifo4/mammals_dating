@@ -1,0 +1,191 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=89;
+	taxlabels
+	brachylagus_idahoensis
+	bunolagus_monticularis
+	caprolagus_hispidus
+	lepus_alleni
+	lepus_americanus
+	lepus_arcticus
+	lepus_brachyurus
+	lepus_californicus
+	lepus_californicus_melanotis
+	lepus_californicus_xanti
+	lepus_callotis
+	lepus_capensis
+	lepus_capensis_mediterraneus[&!color=#ff9900]
+	lepus_castroviejoi
+	lepus_comus
+	lepus_coreanus
+	lepus_corsicanus
+	lepus_europaeus
+	lepus_flavigularis
+	lepus_granatensis
+	lepus_hainanus
+	lepus_insularis[&!color=#ff9900]
+	lepus_mandshuricus
+	lepus_oiostolus
+	lepus_oiostolus_qinghaiensis[&!color=#ff9900]
+	lepus_othus
+	lepus_peguensis
+	lepus_saxatilis
+	lepus_sinensis
+	lepus_timidus
+	lepus_tolai
+	lepus_townsendii
+	lepus_yarkandensis
+	nesolagus_netscheri
+	nesolagus_timinsi
+	ochotona_alpina
+	ochotona_annectens
+	ochotona_cansus_cansus
+	ochotona_cansus_morosa
+	ochotona_cansus_stevensi
+	ochotona_collaris
+	ochotona_curzoniae
+	ochotona_curzoniae_melanostoma[&!color=#ff9900]
+	ochotona_dauurica
+	ochotona_dauurica_bedfordi
+	ochotona_erythrotis
+	ochotona_forresti
+	ochotona_himalayana
+	ochotona_hoffmanni
+	ochotona_huangensis
+	ochotona_hyperborea
+	ochotona_koslowi
+	ochotona_ladacensis
+	ochotona_macrotis
+	ochotona_mantchurica
+	ochotona_nubrica
+	ochotona_pallasi_helanshanensis
+	ochotona_pallasi_pricei
+	ochotona_pallasi_sunidica
+	ochotona_princeps
+	ochotona_pusilla
+	ochotona_roylei
+	ochotona_rufescens
+	ochotona_rutila
+	ochotona_scorodumovi
+	ochotona_thibetana
+	ochotona_thibetana_nangqenica[&!color=#ff9900]
+	ochotona_thomasi
+	ochotona_turuchanensis
+	ornithorhynchus_anatinus
+	oryctolagus_cuniculus
+	oryctolagus_cuniculus_algirus
+	pentalagus_furnessi
+	pronolagus_crassicaudatus
+	pronolagus_randensis
+	pronolagus_rupestris
+	pronolagus_saundersiae
+	romerolagus_diazi
+	sylvilagus_aquaticus
+	sylvilagus_audubonii
+	sylvilagus_bachmani[&!color=#cc0000]
+	sylvilagus_brasiliensis
+	sylvilagus_floridanus
+	sylvilagus_nuttallii
+	sylvilagus_obscurus
+	sylvilagus_palustris
+	sylvilagus_transitionalis
+	tachyglossus_aculeatus
+	zaglossus_bruijni
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((((lepus_europaeus:0.016357,((lepus_peguensis:0.010115,lepus_hainanus:0.007225):0.02026,((lepus_brachyurus:0.031608,((lepus_saxatilis:0.019569,lepus_capensis_mediterraneus:0.038974):0.0082,(lepus_americanus:0.041023,((lepus_callotis:0.011671,lepus_flavigularis:0.009381):0.001981,(lepus_alleni:0.006887,((lepus_insularis:5.97E-4,lepus_californicus_xanti:0.00179):0.001862,(lepus_californicus_melanotis:8.83E-4,lepus_californicus:0.004537):4.16E-4):0.00427):0.002805):0.016266):0.009233):0.002707):0.005262,(((lepus_sinensis:0.012196,lepus_mandshuricus:0.00894):0.018498,(lepus_yarkandensis:0.030913,(lepus_townsendii:0.010094,(((lepus_timidus:0.001741,((lepus_granatensis:0.001613,lepus_arcticus:9.28E-4):3.6E-5,lepus_othus:0.00167):1.56E-4):1.23E-4,lepus_coreanus:0.001676):0.006464,((lepus_castroviejoi:1.0E-6,lepus_corsicanus:1.0E-6):0.007483,(lepus_oiostolus_qinghaiensis:0.004233,(lepus_tolai:0.001077,lepus_capensis:0.00106):0.002834):0.002766):0.002357):0.003356):0.010394):0.001663):0.004543,(lepus_comus:0.015383,lepus_oiostolus:0.015107):0.013924):0.001912):0.004356):0.006688):0.029979,((sylvilagus_floridanus:0.001294,sylvilagus_brasiliensis:0.005011):0.006265,(((sylvilagus_aquaticus:0.034446,sylvilagus_palustris:0.026907):0.023939,(sylvilagus_nuttallii:0.013219,sylvilagus_audubonii:0.008553):0.038655):0.013072,(sylvilagus_obscurus:2.96E-4,sylvilagus_transitionalis:0.002757):0.034659):0.015136):0.012665):0.021169,(((pronolagus_crassicaudatus:0.084287,(pronolagus_randensis:0.055779,(pronolagus_rupestris:0.029631,pronolagus_saundersiae:0.051053):0.020192):0.020974):0.087191,caprolagus_hispidus:0.065667):0.018851,((oryctolagus_cuniculus_algirus:3.81E-4,oryctolagus_cuniculus:0.006108):0.01108,(((zaglossus_bruijni:0.02773,tachyglossus_aculeatus:0.02121):0.100054,ornithorhynchus_anatinus:0.074732):0.371783,((ochotona_princeps:0.011542,ochotona_collaris:0.049982):0.009629,((((ochotona_pallasi_pricei:0.007275,ochotona_pallasi_sunidica:0.004959):0.007368,ochotona_pallasi_helanshanensis:0.013356):0.038598,((ochotona_alpina:0.005556,ochotona_turuchanensis:0.009499):0.029553,(ochotona_hoffmanni:0.031189,((ochotona_scorodumovi:0.002316,ochotona_mantchurica:0.002673):0.021477,ochotona_hyperborea:0.013527):0.003365):0.007966):0.005976):0.011225,((ochotona_pusilla:0.105088,((((ochotona_rutila:0.046987,ochotona_himalayana:0.054518):0.006126,((ochotona_ladacensis:0.049154,ochotona_koslowi:0.041776):0.010425,(ochotona_roylei:0.007059,ochotona_macrotis:0.016799):0.028841):0.006782):0.006542,ochotona_rufescens:0.046086):0.010753,(ochotona_erythrotis:0.051123,ochotona_forresti:0.065356):0.007561):0.028912):0.003413,((ochotona_thomasi:0.028567,((ochotona_dauurica_bedfordi:0.003414,ochotona_dauurica:0.005858):0.032654,(((ochotona_thibetana_nangqenica:0.001878,ochotona_curzoniae_melanostoma:4.87E-4):0.013603,ochotona_thibetana:0.006793):0.028142,((ochotona_nubrica:0.010118,ochotona_curzoniae:0.005187):0.015668,(ochotona_cansus_stevensi:0.006977,(ochotona_cansus_cansus:0.0055,(ochotona_annectens:0.005428,ochotona_cansus_morosa:0.007567):8.78E-4):0.001368):0.022721):0.007):0.002977):0.00847):0.025707,ochotona_huangensis:0.088784):0.005897):0.015097):0.008291):0.058386):0.02913):0.007787):0.001706):0.001745,((nesolagus_timinsi:0.099892,nesolagus_netscheri:0.050343):0.059741,(pentalagus_furnessi:0.050726,bunolagus_monticularis:0.071839):0.0018):0.011787):0.005705,(sylvilagus_bachmani:0.001874,romerolagus_diazi:0.068007):0.00609,brachylagus_idahoensis:0.032711);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=463;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

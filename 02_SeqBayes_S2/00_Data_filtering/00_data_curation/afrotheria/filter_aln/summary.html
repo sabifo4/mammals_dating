@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Afrotheria</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script>
+  function myFunction(identifier) {
+      var x = document.getElementById(identifier);
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  } 
+  </script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Afrotheria</h1>
+</div>
+<p>63 taxa in tree (inc. outgroup)</p>
+<h2 id="merged-taxa">Merged taxa</h2>
+<ul>
+<li>oryzorictes: oryzorictes_hova + oryzorictes_talpoides</li>
+<li>trichechus_manatus: trichechus_manatus + trichechus_manatus_latirostris</li>
+</ul>
+<h2 id="not-found-in-msw-6">Not found in MSW (6)</h2>
+<button onclick="myFunction('not_found')">
+show/hide
+</button>
+<div id="not_found" style="display:none">
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=213657">elephantulus_sp_vb001</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=432356">macroscelides_flavicaudatus</a> (<a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200025">macroscelides_proboscideus_flavicaudatus</a> in MSW)</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1460501">macroscelides_micus</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=469768">microgale_majori</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=94434">oryzorictes</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1397287">rhynchocyon_udzungwensis</a></li>
+</ul>
+</div>
+<h2 id="rank-count">Rank count</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Rank</th>
+<th align="right">NCBI</th>
+<th align="right">MSW</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Order</td>
+<td align="right">5</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td>Suborder</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td>Infraorder</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td>Superfamily</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td>Family</td>
+<td align="right">8</td>
+<td align="right">8</td>
+</tr>
+<tr class="even">
+<td>Subfamily</td>
+<td align="right">6</td>
+<td align="right">8</td>
+</tr>
+<tr class="odd">
+<td>Tribe</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td>Genus</td>
+<td align="right">33</td>
+<td align="right">30</td>
+</tr>
+<tr class="odd">
+<td>Species</td>
+<td align="right">56</td>
+<td align="right">51</td>
+</tr>
+<tr class="even">
+<td>Subspecies</td>
+<td align="right">4</td>
+<td align="right">5</td>
+</tr>
+<tr class="odd">
+<td>Subgenus</td>
+<td align="right">-</td>
+<td align="right">5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rank-mismatch">Rank mismatch</h2>
+<ul>
+<li>Genus for elephantulus_rozeti: Petrosaltator!= Elephantulus (<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=237658">NCBI</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200011">MSW</a>)</li>
+<li>Genus for huetia_leucorhinus: Huetia!= Calcochloris (<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745256">NCBI</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100104">MSW</a>)</li>
+</ul>
+<h2 id="ranks-not-found">Ranks not found</h2>
+<ul>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745233">NCBI</a> for amblysomus_corriae (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100089">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9391">NCBI</a> for amblysomus_hottentotus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100092">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745234">NCBI</a> for amblysomus_marleyi (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100098">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745240">NCBI</a> for amblysomus_robustus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100099">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745241">NCBI</a> for amblysomus_septentrionalis (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100100">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745243">NCBI</a> for calcochloris_obtusirostris (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100107">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745245">NCBI</a> for carpitalpa_arendsi (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100054">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745247">NCBI</a> for chlorotalpa_duthieae (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100056">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745249">NCBI</a> for chlorotalpa_sclateri (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100057">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185453">NCBI</a> for chrysochloris_asiatica (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100065">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185454">NCBI</a> for chrysochloris_stuhlmanni (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100066">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176108">NCBI</a> for chrysospalax_trevelyani (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100072">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745250">NCBI</a> for chrysospalax_villosus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100073">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745252">NCBI</a> for cryptochloris_wintoni (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100081">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9371">NCBI</a> for echinops_telfairi (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100042">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=481707">NCBI</a> for eremitalpa_granti (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100084">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176117">NCBI</a> for geogale_aurita (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100006">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319813">NCBI</a> for hemicentetes_semispinosus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100045">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745256">NCBI</a> for huetia_leucorhinus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100104">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319815">NCBI</a> for limnogale_mergulus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100011">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319816">NCBI</a> for microgale_brevicaudata (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100013">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229052">NCBI</a> for microgale_longicaudata (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100021">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229053">NCBI</a> for microgale_principula (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100025">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229054">NCBI</a> for microgale_pusilla (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100026">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176115">NCBI</a> for microgale_talazaci (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100029">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=105689">NCBI</a> for micropotamogale_lamottei (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100036">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745254">NCBI</a> for neamblysomus_gunningi (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100113">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745255">NCBI</a> for neamblysomus_julianae (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100114">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176119">NCBI</a> for potamogale_velox (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100039">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319819">NCBI</a> for setifer_setosus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100047">MSW</a>)</li>
+<li>Rank &quot;Order&quot; not in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=94439">NCBI</a> for tenrec_ecaudatus (AFROSORICIDA in <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100049">MSW</a>)</li>
+</ul>
+<h2 id="not-monophyletic">Not monophyletic</h2>
+<h3 id="subspecies-rank-3">Subspecies rank (3)</h3>
+<h3 id="species-rank-56">Species rank (56)</h3>
+<h3 id="genus-rank-33">Genus rank (33)</h3>
+<ul>
+<li>Chrysospalax
+<ul>
+<li>(NCBI, <strong>tree</strong>): <strong>calcochloris_obtusirostris</strong>, chrysospalax_trevelyani, chrysospalax_villosus</li>
+</ul></li>
+</ul>
+<button onclick="myFunction('aa231048-17a6-4c2b-9af3-dd6dd321c691')">
+show/hide tree
+</button>
+<div id="aa231048-17a6-4c2b-9af3-dd6dd321c691" style="display:none">
+<pre><code>                                _______ **chrysospalax_villosus** Chrysochloridae
+_______________________________|
+                               |                           , **chrysospalax_trevelyani** Chrysochloridae
+                               |___________________________|
+                                                           |____________ calcochloris_obtusirostris Chrysochloridae
+
+</code></pre>
+</div>
+<ul>
+<li>Chrysochloris
+<ul>
+<li>(NCBI, <strong>tree</strong>): chrysochloris_asiatica, chrysochloris_stuhlmanni, <strong>cryptochloris_wintoni</strong></li>
+</ul></li>
+</ul>
+<button onclick="myFunction('a9ab2e84-bf36-47a7-a4f6-4a5b2feb623b')">
+show/hide tree
+</button>
+<div id="a9ab2e84-bf36-47a7-a4f6-4a5b2feb623b" style="display:none">
+<pre><code>                                          ________________________________ **chrysochloris_stuhlmanni** Chrysochloridae
+_________________________________________|
+                                         |          ____ cryptochloris_wintoni Chrysochloridae
+                                         |_________|
+                                                   |______ **chrysochloris_asiatica** Chrysochloridae
+
+</code></pre>
+</div>
+<ul>
+<li>Microgale
+<ul>
+<li>(NCBI, <strong>tree</strong>): <strong>limnogale_mergulus</strong>, microgale_brevicaudata, microgale_longicaudata, microgale_majori, microgale_principula, microgale_pusilla, microgale_talazaci</li>
+</ul></li>
+</ul>
+<button onclick="myFunction('90208a37-268e-473e-8fe0-6bf4da566bfa')">
+show/hide tree
+</button>
+<div id="90208a37-268e-473e-8fe0-6bf4da566bfa" style="display:none">
+<pre><code>                 ____________ **microgale_talazaci** Tenrecidae
+                |
+                |   ____ limnogale_mergulus Tenrecidae
+                |__|
+________________|  |___________________ **microgale_brevicaudata** Tenrecidae
+                |
+                |                       ___________________ **microgale_pusilla** Tenrecidae
+                |______________________|
+                                       |       _________________ **microgale_principula** Tenrecidae
+                                       |______|
+                                              |              _____________ **microgale_majori** Tenrecidae
+                                              |_____________|
+                                                            |______________ **microgale_longicaudata** Tenrecidae
+
+</code></pre>
+</div>
+<h3 id="family-rank-8">Family rank (8)</h3>
+<h2 id="taxa-with-ncbi-lineage">Taxa with NCBI lineage</h2>
+<table style="width:100%;">
+<colgroup>
+<col width="6%" />
+<col width="15%" />
+<col width="10%" />
+<col width="8%" />
+<col width="13%" />
+<col width="9%" />
+<col width="15%" />
+<col width="12%" />
+<col width="8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Taxa</th>
+<th>Subspecies</th>
+<th>Species</th>
+<th>Genus</th>
+<th>Subfamily</th>
+<th>Family</th>
+<th>Infraorder</th>
+<th>Suborder</th>
+<th>Order</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>potamogale_velox <a href="https://en.wikipedia.org/wiki/Special:Search/Potamogale%20velox">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176119">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100039">m</a></td>
+<td></td>
+<td>Potamogale velox</td>
+<td>Potamogale</td>
+<td>Potamogalinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>micropotamogale_lamottei <a href="https://en.wikipedia.org/wiki/Special:Search/Micropotamogale%20lamottei">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=105689">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100036">m</a></td>
+<td></td>
+<td>Micropotamogale lamottei</td>
+<td>Micropotamogale</td>
+<td>Potamogalinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>tenrec_ecaudatus <a href="https://en.wikipedia.org/wiki/Special:Search/Tenrec%20ecaudatus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=94439">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100049">m</a></td>
+<td></td>
+<td>Tenrec ecaudatus</td>
+<td>Tenrec</td>
+<td>Tenrecinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>hemicentetes_semispinosus <a href="https://en.wikipedia.org/wiki/Special:Search/Hemicentetes%20semispinosus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319813">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100045">m</a></td>
+<td></td>
+<td>Hemicentetes semispinosus</td>
+<td>Hemicentetes</td>
+<td>Tenrecinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>setifer_setosus <a href="https://en.wikipedia.org/wiki/Special:Search/Setifer%20setosus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319819">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100047">m</a></td>
+<td></td>
+<td>Setifer setosus</td>
+<td>Setifer</td>
+<td>Tenrecinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>echinops_telfairi <a href="https://en.wikipedia.org/wiki/Special:Search/Echinops%20telfairi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9371">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100042">m</a></td>
+<td></td>
+<td>Echinops telfairi</td>
+<td>Echinops</td>
+<td>Tenrecinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>oryzorictes <a href="https://en.wikipedia.org/wiki/Special:Search/Oryzorictes">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=94434">n</a></td>
+<td></td>
+<td></td>
+<td>Oryzorictes</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>geogale_aurita <a href="https://en.wikipedia.org/wiki/Special:Search/Geogale%20aurita">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176117">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100006">m</a></td>
+<td></td>
+<td>Geogale aurita</td>
+<td>Geogale</td>
+<td>Geogalinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>microgale_talazaci <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20talazaci">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176115">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100029">m</a></td>
+<td></td>
+<td>Microgale talazaci</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>limnogale_mergulus <a href="https://en.wikipedia.org/wiki/Special:Search/Limnogale%20mergulus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319815">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100011">m</a></td>
+<td></td>
+<td>Limnogale mergulus</td>
+<td>Limnogale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>microgale_brevicaudata <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20brevicaudata">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319816">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100013">m</a></td>
+<td></td>
+<td>Microgale brevicaudata</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>microgale_pusilla <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20pusilla">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229054">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100026">m</a></td>
+<td></td>
+<td>Microgale pusilla</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>microgale_principula <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20principula">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229053">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100025">m</a></td>
+<td></td>
+<td>Microgale principula</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>microgale_majori <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20majori">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=469768">n</a></td>
+<td></td>
+<td>Microgale majori</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>microgale_longicaudata <a href="https://en.wikipedia.org/wiki/Special:Search/Microgale%20longicaudata">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=229052">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100021">m</a></td>
+<td></td>
+<td>Microgale longicaudata</td>
+<td>Microgale</td>
+<td>Oryzorictinae</td>
+<td>Tenrecidae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>dendrohyrax_dorsalis <a href="https://en.wikipedia.org/wiki/Special:Search/Dendrohyrax%20dorsalis">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=42325">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11400005">m</a></td>
+<td></td>
+<td>Dendrohyrax dorsalis</td>
+<td>Dendrohyrax</td>
+<td></td>
+<td>Procaviidae</td>
+<td></td>
+<td></td>
+<td>Hyracoidea</td>
+</tr>
+<tr class="odd">
+<td>heterohyrax_brucei <a href="https://en.wikipedia.org/wiki/Special:Search/Heterohyrax%20brucei">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=77598">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11400013">m</a></td>
+<td></td>
+<td>Heterohyrax brucei</td>
+<td>Heterohyrax</td>
+<td></td>
+<td>Procaviidae</td>
+<td></td>
+<td></td>
+<td>Hyracoidea</td>
+</tr>
+<tr class="even">
+<td>procavia_capensis <a href="https://en.wikipedia.org/wiki/Special:Search/Procavia%20capensis">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9813">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11400040">m</a></td>
+<td></td>
+<td>Procavia capensis</td>
+<td>Procavia</td>
+<td></td>
+<td>Procaviidae</td>
+<td></td>
+<td></td>
+<td>Hyracoidea</td>
+</tr>
+<tr class="odd">
+<td>trichechus_manatus <a href="https://en.wikipedia.org/wiki/Special:Search/Trichechus%20manatus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9778">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11600012">m</a></td>
+<td></td>
+<td>Trichechus manatus</td>
+<td>Trichechus</td>
+<td></td>
+<td>Trichechidae</td>
+<td></td>
+<td></td>
+<td>Sirenia</td>
+</tr>
+<tr class="even">
+<td>dugong_dugon <a href="https://en.wikipedia.org/wiki/Special:Search/Dugong%20dugon">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29137">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11600005">m</a></td>
+<td></td>
+<td>Dugong dugon</td>
+<td>Dugong</td>
+<td></td>
+<td>Dugongidae</td>
+<td></td>
+<td></td>
+<td>Sirenia</td>
+</tr>
+<tr class="odd">
+<td>loxodonta_africana <a href="https://en.wikipedia.org/wiki/Special:Search/Loxodonta%20africana">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9785">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11500009">m</a></td>
+<td></td>
+<td>Loxodonta africana</td>
+<td>Loxodonta</td>
+<td></td>
+<td>Elephantidae</td>
+<td></td>
+<td></td>
+<td>Proboscidea</td>
+</tr>
+<tr class="even">
+<td>loxodonta_cyclotis <a href="https://en.wikipedia.org/wiki/Special:Search/Loxodonta%20cyclotis">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=99490">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11500010">m</a></td>
+<td></td>
+<td>Loxodonta cyclotis</td>
+<td>Loxodonta</td>
+<td></td>
+<td>Elephantidae</td>
+<td></td>
+<td></td>
+<td>Proboscidea</td>
+</tr>
+<tr class="odd">
+<td>elephas_maximus_indicus <a href="https://en.wikipedia.org/wiki/Special:Search/Elephas%20maximus%20indicus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=99487">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11500006">m</a></td>
+<td>Elephas maximus indicus</td>
+<td>Elephas maximus</td>
+<td>Elephas</td>
+<td></td>
+<td>Elephantidae</td>
+<td></td>
+<td></td>
+<td>Proboscidea</td>
+</tr>
+<tr class="even">
+<td>elephas_maximus_maximus <a href="https://en.wikipedia.org/wiki/Special:Search/Elephas%20maximus%20maximus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=99488">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11500005">m</a></td>
+<td>Elephas maximus maximus</td>
+<td>Elephas maximus</td>
+<td>Elephas</td>
+<td></td>
+<td>Elephantidae</td>
+<td></td>
+<td></td>
+<td>Proboscidea</td>
+</tr>
+<tr class="odd">
+<td>elephas_maximus <a href="https://en.wikipedia.org/wiki/Special:Search/Elephas%20maximus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9783">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11500004">m</a></td>
+<td></td>
+<td>Elephas maximus</td>
+<td>Elephas</td>
+<td></td>
+<td>Elephantidae</td>
+<td></td>
+<td></td>
+<td>Proboscidea</td>
+</tr>
+<tr class="even">
+<td>rhynchocyon_udzungwensis <a href="https://en.wikipedia.org/wiki/Special:Search/Rhynchocyon%20udzungwensis">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1397287">n</a></td>
+<td></td>
+<td>Rhynchocyon udzungwensis</td>
+<td>Rhynchocyon</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>rhynchocyon_petersi <a href="https://en.wikipedia.org/wiki/Special:Search/Rhynchocyon%20petersi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=320637">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200046">m</a></td>
+<td></td>
+<td>Rhynchocyon petersi</td>
+<td>Rhynchocyon</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>rhynchocyon_cirnei_reichardi <a href="https://en.wikipedia.org/wiki/Special:Search/Rhynchocyon%20cirnei%20reichardi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1397288">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200043">m</a></td>
+<td>Rhynchocyon cirnei reichardi</td>
+<td>Rhynchocyon cirnei</td>
+<td>Rhynchocyon</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>elephantulus_rozeti <a href="https://en.wikipedia.org/wiki/Special:Search/Petrosaltator%20rozeti">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=237658">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200011">m</a></td>
+<td></td>
+<td>Petrosaltator rozeti</td>
+<td>Petrosaltator</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>petrodromus_tetradactylus <a href="https://en.wikipedia.org/wiki/Special:Search/Petrodromus%20tetradactylus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=113272">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200027">m</a></td>
+<td></td>
+<td>Petrodromus tetradactylus</td>
+<td>Petrodromus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>macroscelides_micus <a href="https://en.wikipedia.org/wiki/Special:Search/Macroscelides%20micus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1460501">n</a></td>
+<td></td>
+<td>Macroscelides micus</td>
+<td>Macroscelides</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>macroscelides_flavicaudatus <a href="https://en.wikipedia.org/wiki/Special:Search/Macroscelides%20flavicaudatus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=432356">n</a></td>
+<td></td>
+<td>Macroscelides flavicaudatus</td>
+<td>Macroscelides</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>macroscelides_proboscideus <a href="https://en.wikipedia.org/wiki/Special:Search/Macroscelides%20proboscideus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29082">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200023">m</a></td>
+<td></td>
+<td>Macroscelides proboscideus</td>
+<td>Macroscelides</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>macroscelides_proboscideus_proboscideus <a href="https://en.wikipedia.org/wiki/Special:Search/Macroscelides%20proboscideus%20proboscideus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=432357">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200024">m</a></td>
+<td>Macroscelides proboscideus proboscideus</td>
+<td>Macroscelides proboscideus</td>
+<td>Macroscelides</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>elephantulus_edwardii <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20edwardii">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28737">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200005">m</a></td>
+<td></td>
+<td>Elephantulus edwardii</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>elephantulus_myurus <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20myurus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=113277">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200009">m</a></td>
+<td></td>
+<td>Elephantulus myurus</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>elephantulus_sp_vb001 <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20sp.%20VB001">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=213657">n</a></td>
+<td></td>
+<td>Elephantulus sp. VB001</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>elephantulus_brachyrhynchus <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20brachyrhynchus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=113275">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200004">m</a></td>
+<td></td>
+<td>Elephantulus brachyrhynchus</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>elephantulus_rufescens <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20rufescens">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=42151">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200014">m</a></td>
+<td></td>
+<td>Elephantulus rufescens</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>elephantulus_rupestris <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20rupestris">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=113278">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200021">m</a></td>
+<td></td>
+<td>Elephantulus rupestris</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="odd">
+<td>elephantulus_intufi <a href="https://en.wikipedia.org/wiki/Special:Search/Elephantulus%20intufi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=113276">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11200008">m</a></td>
+<td></td>
+<td>Elephantulus intufi</td>
+<td>Elephantulus</td>
+<td></td>
+<td>Macroscelididae</td>
+<td></td>
+<td></td>
+<td>Macroscelidea</td>
+</tr>
+<tr class="even">
+<td>orycteropus_afer <a href="https://en.wikipedia.org/wiki/Special:Search/Orycteropus%20afer">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9818">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11300004">m</a></td>
+<td></td>
+<td>Orycteropus afer</td>
+<td>Orycteropus</td>
+<td></td>
+<td>Orycteropodidae</td>
+<td></td>
+<td></td>
+<td>Tubulidentata</td>
+</tr>
+<tr class="odd">
+<td>chrysochloris_stuhlmanni <a href="https://en.wikipedia.org/wiki/Special:Search/Chrysochloris%20stuhlmanni">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185454">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100066">m</a></td>
+<td></td>
+<td>Chrysochloris stuhlmanni</td>
+<td>Chrysochloris</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>cryptochloris_wintoni <a href="https://en.wikipedia.org/wiki/Special:Search/Cryptochloris%20wintoni">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745252">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100081">m</a></td>
+<td></td>
+<td>Cryptochloris wintoni</td>
+<td>Cryptochloris</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>chrysochloris_asiatica <a href="https://en.wikipedia.org/wiki/Special:Search/Chrysochloris%20asiatica">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185453">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100065">m</a></td>
+<td></td>
+<td>Chrysochloris asiatica</td>
+<td>Chrysochloris</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>huetia_leucorhinus <a href="https://en.wikipedia.org/wiki/Special:Search/Huetia%20leucorhinus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745256">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100104">m</a></td>
+<td></td>
+<td>Huetia leucorhinus</td>
+<td>Huetia</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>eremitalpa_granti <a href="https://en.wikipedia.org/wiki/Special:Search/Eremitalpa%20granti">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=481707">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100084">m</a></td>
+<td></td>
+<td>Eremitalpa granti</td>
+<td>Eremitalpa</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>chlorotalpa_sclateri <a href="https://en.wikipedia.org/wiki/Special:Search/Chlorotalpa%20sclateri">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745249">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100057">m</a></td>
+<td></td>
+<td>Chlorotalpa sclateri</td>
+<td>Chlorotalpa</td>
+<td></td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>chlorotalpa_duthieae <a href="https://en.wikipedia.org/wiki/Special:Search/Chlorotalpa%20duthieae">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745247">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100056">m</a></td>
+<td></td>
+<td>Chlorotalpa duthieae</td>
+<td>Chlorotalpa</td>
+<td></td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>chrysospalax_villosus <a href="https://en.wikipedia.org/wiki/Special:Search/Chrysospalax%20villosus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745250">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100073">m</a></td>
+<td></td>
+<td>Chrysospalax villosus</td>
+<td>Chrysospalax</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>chrysospalax_trevelyani <a href="https://en.wikipedia.org/wiki/Special:Search/Chrysospalax%20trevelyani">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176108">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100072">m</a></td>
+<td></td>
+<td>Chrysospalax trevelyani</td>
+<td>Chrysospalax</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>calcochloris_obtusirostris <a href="https://en.wikipedia.org/wiki/Special:Search/Calcochloris%20obtusirostris">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745243">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100107">m</a></td>
+<td></td>
+<td>Calcochloris obtusirostris</td>
+<td>Calcochloris</td>
+<td>Chrysochlorinae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>carpitalpa_arendsi <a href="https://en.wikipedia.org/wiki/Special:Search/Carpitalpa%20arendsi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745245">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100054">m</a></td>
+<td></td>
+<td>Carpitalpa arendsi</td>
+<td>Carpitalpa</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>neamblysomus_gunningi <a href="https://en.wikipedia.org/wiki/Special:Search/Neamblysomus%20gunningi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745254">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100113">m</a></td>
+<td></td>
+<td>Neamblysomus gunningi</td>
+<td>Neamblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>neamblysomus_julianae <a href="https://en.wikipedia.org/wiki/Special:Search/Neamblysomus%20julianae">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745255">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100114">m</a></td>
+<td></td>
+<td>Neamblysomus julianae</td>
+<td>Neamblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>amblysomus_robustus <a href="https://en.wikipedia.org/wiki/Special:Search/Amblysomus%20robustus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745240">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100099">m</a></td>
+<td></td>
+<td>Amblysomus robustus</td>
+<td>Amblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>amblysomus_septentrionalis <a href="https://en.wikipedia.org/wiki/Special:Search/Amblysomus%20septentrionalis">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745241">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100100">m</a></td>
+<td></td>
+<td>Amblysomus septentrionalis</td>
+<td>Amblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>amblysomus_marleyi <a href="https://en.wikipedia.org/wiki/Special:Search/Amblysomus%20marleyi">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745234">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100098">m</a></td>
+<td></td>
+<td>Amblysomus marleyi</td>
+<td>Amblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>amblysomus_hottentotus <a href="https://en.wikipedia.org/wiki/Special:Search/Amblysomus%20hottentotus">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9391">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100092">m</a></td>
+<td></td>
+<td>Amblysomus hottentotus</td>
+<td>Amblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>amblysomus_corriae <a href="https://en.wikipedia.org/wiki/Special:Search/Amblysomus%20corriae">w</a> <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=745233">n</a> <a href="https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=11100089">m</a></td>
+<td></td>
+<td>Amblysomus corriae</td>
+<td>Amblysomus</td>
+<td>Amblysominae</td>
+<td>Chrysochloridae</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

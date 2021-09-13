@@ -1,0 +1,100 @@
+
+Reading sequences in main alignment...
+
+Species visited: brachylagus_idahoensis
+Species visited: bunolagus_monticularis
+Species visited: caprolagus_hispidus
+Species visited: lepus_alleni
+Species visited: lepus_americanus
+Species visited: lepus_arcticus
+Species visited: lepus_brachyurus
+Species visited: lepus_californicus
+Species visited: lepus_californicus_melanotis
+Species visited: lepus_californicus_xanti
+Species visited: lepus_callotis
+Species visited: lepus_capensis
+Species visited: lepus_capensis_mediterraneus~
+Species visited: lepus_castroviejoi
+Species visited: lepus_comus
+Species visited: lepus_coreanus
+Species visited: lepus_corsicanus
+Species visited: lepus_europaeus
+Species visited: lepus_flavigularis
+Species visited: lepus_granatensis
+Species visited: lepus_hainanus
+Species visited: lepus_insularis~
+Species visited: lepus_mandshuricus
+Species visited: lepus_oiostolus
+Species visited: lepus_oiostolus_qinghaiensis~
+Species visited: lepus_othus
+Species visited: lepus_peguensis
+Species visited: lepus_saxatilis
+Species visited: lepus_sinensis
+Species visited: lepus_timidus
+Species visited: lepus_tolai
+Species visited: lepus_townsendii
+Species visited: lepus_yarkandensis
+Species visited: nesolagus_netscheri
+Species visited: nesolagus_timinsi
+Species visited: ochotona_alpina
+Species visited: ochotona_scorodumovi
+Species visited: ochotona_annectens
+Species visited: ochotona_cansus_cansus
+Species visited: ochotona_cansus_morosa
+Species visited: ochotona_cansus_stevensi
+Species visited: ochotona_collaris
+Species visited: ochotona_curzoniae
+Species visited: ochotona_curzoniae_melanostoma~
+Species visited: ochotona_dauurica
+Species visited: ochotona_dauurica_bedfordi
+Species visited: ochotona_erythrotis
+Species visited: ochotona_forresti
+Species visited: ochotona_himalayana
+Species visited: ochotona_hoffmanni
+Species visited: ochotona_huangensis
+Species visited: ochotona_hyperborea
+Species visited: ochotona_koslowi
+Species visited: ochotona_ladacensis
+Species visited: ochotona_macrotis
+Species visited: ochotona_mantchurica
+Species visited: ochotona_nubrica
+Species visited: ochotona_pallasi_helanshanensis
+Species visited: ochotona_pallasi_pricei
+Species visited: ochotona_pallasi_sunidica
+Species visited: ochotona_princeps
+Species visited: ochotona_pusilla
+Species visited: ochotona_roylei
+Species visited: ochotona_rufescens
+Species visited: ochotona_rutila
+Species visited: ochotona_thibetana
+Species visited: ochotona_thibetana_nangqenica~
+Species visited: ochotona_thomasi
+Species visited: ochotona_turuchanensis
+Species visited: oryctolagus_cuniculus
+Species visited: oryctolagus_cuniculus_algirus
+Species visited: pentalagus_furnessi
+Species visited: pronolagus_crassicaudatus
+Species visited: pronolagus_randensis
+Species visited: pronolagus_rupestris
+Species visited: pronolagus_saundersiae
+Species visited: romerolagus_diazi
+Species visited: sylvilagus_aquaticus
+Species visited: sylvilagus_audubonii
+Species visited: sylvilagus_brasiliensis
+Species visited: sylvilagus_floridanus
+Species visited: sylvilagus_nuttallii
+Species visited: sylvilagus_obscurus
+Species visited: sylvilagus_palustris
+Species visited: sylvilagus_transitionalis
+Species visited: ornithorhynchus_anatinus
+Species visited: zaglossus_bruijni
+Species visited: tachyglossus_aculeatus
+
+Total num of breaks = 0
+
+
+This block should only run if 12CP only or if filtered alignment.phylip!!
+
+
+Adding tmp alignments for each partition...
+
