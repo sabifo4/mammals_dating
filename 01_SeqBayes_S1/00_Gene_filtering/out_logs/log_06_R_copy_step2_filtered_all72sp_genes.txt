@@ -1,0 +1,1290 @@
+Gene 1 is: ENSG00000172817. Copy *aln and *tree from folder 11609 in baseml dir! 
+
+Gene 2 is: ENSG00000163803. Copy *aln and *tree from folder 9796 in baseml dir! 
+
+Gene 3 is: ENSG00000109944. Copy *aln and *tree from folder 3352 in baseml dir! 
+
+Gene 4 is: ENSG00000001460. Copy *aln and *tree from folder 10 in baseml dir! 
+
+Gene 5 is: ENSG00000185480. Copy *aln and *tree from folder 13329 in baseml dir! 
+
+Gene 6 is: ENSG00000082438. Copy *aln and *tree from folder 1451 in baseml dir! 
+
+Gene 7 is: ENSG00000178522. Copy *aln and *tree from folder 12383 in baseml dir! 
+
+Gene 8 is: ENSG00000136169. Copy *aln and *tree from folder 6410 in baseml dir! 
+
+Gene 9 is: ENSG00000160323. Copy *aln and *tree from folder 9246 in baseml dir! 
+
+Gene 10 is: ENSG00000165392. Copy *aln and *tree from folder 10192 in baseml dir! 
+
+Gene 11 is: ENSG00000162994. Copy *aln and *tree from folder 9595 in baseml dir! 
+
+Gene 12 is: ENSG00000134222. Copy *aln and *tree from folder 6075 in baseml dir! 
+
+Gene 13 is: ENSG00000119684. Copy *aln and *tree from folder 4458 in baseml dir! 
+
+Gene 14 is: ENSG00000130413. Copy *aln and *tree from folder 5574 in baseml dir! 
+
+Gene 15 is: ENSG00000112818. Copy *aln and *tree from folder 3705 in baseml dir! 
+
+Gene 16 is: ENSG00000182010. Copy *aln and *tree from folder 12781 in baseml dir! 
+
+Gene 17 is: ENSG00000103534. Copy *aln and *tree from folder 2561 in baseml dir! 
+
+Gene 18 is: ENSG00000059588. Copy *aln and *tree from folder 738 in baseml dir! 
+
+Gene 19 is: ENSG00000136634. Copy *aln and *tree from folder 6477 in baseml dir! 
+
+Gene 20 is: ENSG00000153820. Copy *aln and *tree from folder 8578 in baseml dir! 
+
+Gene 21 is: ENSG00000188316. Copy *aln and *tree from folder 13735 in baseml dir! 
+
+Gene 22 is: ENSG00000081791. Copy *aln and *tree from folder 1429 in baseml dir! 
+
+Gene 23 is: ENSG00000106066. Copy *aln and *tree from folder 2925 in baseml dir! 
+
+Gene 24 is: ENSG00000138380. Copy *aln and *tree from folder 6787 in baseml dir! 
+
+Gene 25 is: ENSG00000182179. Copy *aln and *tree from folder 12805 in baseml dir! 
+
+Gene 26 is: ENSG00000107554. Copy *aln and *tree from folder 3077 in baseml dir! 
+
+Gene 27 is: ENSG00000183346. Copy *aln and *tree from folder 12984 in baseml dir! 
+
+Gene 28 is: ENSG00000149292. Copy *aln and *tree from folder 8147 in baseml dir! 
+
+Gene 29 is: ENSG00000103569. Copy *aln and *tree from folder 2567 in baseml dir! 
+
+Gene 30 is: ENSG00000144736. Copy *aln and *tree from folder 7644 in baseml dir! 
+
+Gene 31 is: ENSG00000145390. Copy *aln and *tree from folder 7720 in baseml dir! 
+
+Gene 32 is: ENSG00000250305. Copy *aln and *tree from folder 15250 in baseml dir! 
+
+Gene 33 is: ENSG00000112297. Copy *aln and *tree from folder 3636 in baseml dir! 
+
+Gene 34 is: ENSG00000107447. Copy *aln and *tree from folder 3071 in baseml dir! 
+
+Gene 35 is: ENSG00000225830. Copy *aln and *tree from folder 15013 in baseml dir! 
+
+Gene 36 is: ENSG00000089091. Copy *aln and *tree from folder 1668 in baseml dir! 
+
+Gene 37 is: ENSG00000011465. Copy *aln and *tree from folder 275 in baseml dir! 
+
+Gene 38 is: ENSG00000165325. Copy *aln and *tree from folder 10183 in baseml dir! 
+
+Gene 39 is: ENSG00000070601. Copy *aln and *tree from folder 1037 in baseml dir! 
+
+Gene 40 is: ENSG00000171681. Copy *aln and *tree from folder 11418 in baseml dir! 
+
+Gene 41 is: ENSG00000074771. Copy *aln and *tree from folder 1185 in baseml dir! 
+
+Gene 42 is: ENSG00000158006. Copy *aln and *tree from folder 8997 in baseml dir! 
+
+Gene 43 is: ENSG00000109686. Copy *aln and *tree from folder 3321 in baseml dir! 
+
+Gene 44 is: ENSG00000134759. Copy *aln and *tree from folder 6160 in baseml dir! 
+
+Gene 45 is: ENSG00000149201. Copy *aln and *tree from folder 8135 in baseml dir! 
+
+Gene 46 is: ENSG00000106100. Copy *aln and *tree from folder 2932 in baseml dir! 
+
+Gene 47 is: ENSG00000166046. Copy *aln and *tree from folder 10334 in baseml dir! 
+
+Gene 48 is: ENSG00000144468. Copy *aln and *tree from folder 7603 in baseml dir! 
+
+Gene 49 is: ENSG00000178075. Copy *aln and *tree from folder 12329 in baseml dir! 
+
+Gene 50 is: ENSG00000171714. Copy *aln and *tree from folder 11422 in baseml dir! 
+
+Gene 51 is: ENSG00000143036. Copy *aln and *tree from folder 7373 in baseml dir! 
+
+Gene 52 is: ENSG00000165891. Copy *aln and *tree from folder 10299 in baseml dir! 
+
+Gene 53 is: ENSG00000125255. Copy *aln and *tree from folder 5043 in baseml dir! 
+
+Gene 54 is: ENSG00000116906. Copy *aln and *tree from folder 4193 in baseml dir! 
+
+Gene 55 is: ENSG00000148702. Copy *aln and *tree from folder 8089 in baseml dir! 
+
+Gene 56 is: ENSG00000152457. Copy *aln and *tree from folder 8448 in baseml dir! 
+
+Gene 57 is: ENSG00000168813. Copy *aln and *tree from folder 10914 in baseml dir! 
+
+Gene 58 is: ENSG00000170734. Copy *aln and *tree from folder 11247 in baseml dir! 
+
+Gene 59 is: ENSG00000162944. Copy *aln and *tree from folder 9582 in baseml dir! 
+
+Gene 60 is: ENSG00000087303. Copy *aln and *tree from folder 1604 in baseml dir! 
+
+Gene 61 is: ENSG00000146918. Copy *aln and *tree from folder 7897 in baseml dir! 
+
+Gene 62 is: ENSG00000184445. Copy *aln and *tree from folder 13160 in baseml dir! 
+
+Gene 63 is: ENSG00000135837. Copy *aln and *tree from folder 6339 in baseml dir! 
+
+Gene 64 is: ENSG00000138434. Copy *aln and *tree from folder 6799 in baseml dir! 
+
+Gene 65 is: ENSG00000163629. Copy *aln and *tree from folder 9749 in baseml dir! 
+
+Gene 66 is: ENSG00000143119. Copy *aln and *tree from folder 7382 in baseml dir! 
+
+Gene 67 is: ENSG00000178104. Copy *aln and *tree from folder 12333 in baseml dir! 
+
+Gene 68 is: ENSG00000172673. Copy *aln and *tree from folder 11587 in baseml dir! 
+
+Gene 69 is: ENSG00000163832. Copy *aln and *tree from folder 9809 in baseml dir! 
+
+Gene 70 is: ENSG00000107771. Copy *aln and *tree from folder 3098 in baseml dir! 
+
+Gene 71 is: ENSG00000198780. Copy *aln and *tree from folder 14388 in baseml dir! 
+
+Gene 72 is: ENSG00000064703. Copy *aln and *tree from folder 828 in baseml dir! 
+
+Gene 73 is: ENSG00000081800. Copy *aln and *tree from folder 1430 in baseml dir! 
+
+Gene 74 is: ENSG00000163687. Copy *aln and *tree from folder 9768 in baseml dir! 
+
+Gene 75 is: ENSG00000156463. Copy *aln and *tree from folder 8836 in baseml dir! 
+
+Gene 76 is: ENSG00000054983. Copy *aln and *tree from folder 681 in baseml dir! 
+
+Gene 77 is: ENSG00000196865. Copy *aln and *tree from folder 14046 in baseml dir! 
+
+Gene 78 is: ENSG00000083782. Copy *aln and *tree from folder 1484 in baseml dir! 
+
+Gene 79 is: ENSG00000053108. Copy *aln and *tree from folder 652 in baseml dir! 
+
+Gene 80 is: ENSG00000086570. Copy *aln and *tree from folder 1565 in baseml dir! 
+
+Gene 81 is: ENSG00000036565. Copy *aln and *tree from folder 490 in baseml dir! 
+
+Gene 82 is: ENSG00000112414. Copy *aln and *tree from folder 3657 in baseml dir! 
+
+Gene 83 is: ENSG00000064309. Copy *aln and *tree from folder 812 in baseml dir! 
+
+Gene 84 is: ENSG00000172497. Copy *aln and *tree from folder 11565 in baseml dir! 
+
+Gene 85 is: ENSG00000165309. Copy *aln and *tree from folder 10179 in baseml dir! 
+
+Gene 86 is: ENSG00000163072. Copy *aln and *tree from folder 9611 in baseml dir! 
+
+Gene 87 is: ENSG00000171557. Copy *aln and *tree from folder 11398 in baseml dir! 
+
+Gene 88 is: ENSG00000163946. Copy *aln and *tree from folder 9839 in baseml dir! 
+
+Gene 89 is: ENSG00000135775. Copy *aln and *tree from folder 6329 in baseml dir! 
+
+Gene 90 is: ENSG00000065060. Copy *aln and *tree from folder 843 in baseml dir! 
+
+Gene 91 is: ENSG00000151332. Copy *aln and *tree from folder 8319 in baseml dir! 
+
+Gene 92 is: ENSG00000174606. Copy *aln and *tree from folder 11864 in baseml dir! 
+
+Gene 93 is: ENSG00000185585. Copy *aln and *tree from folder 13345 in baseml dir! 
+
+Gene 94 is: ENSG00000204928. Copy *aln and *tree from folder 14661 in baseml dir! 
+
+Gene 95 is: ENSG00000087263. Copy *aln and *tree from folder 1597 in baseml dir! 
+
+Gene 96 is: ENSG00000115109. Copy *aln and *tree from folder 3932 in baseml dir! 
+
+Gene 97 is: ENSG00000163297. Copy *aln and *tree from folder 9657 in baseml dir! 
+
+Gene 98 is: ENSG00000173588. Copy *aln and *tree from folder 11724 in baseml dir! 
+
+Gene 99 is: ENSG00000077935. Copy *aln and *tree from folder 1300 in baseml dir! 
+
+Gene 100 is: ENSG00000028203. Copy *aln and *tree from folder 431 in baseml dir! 
+
+Gene 101 is: ENSG00000116044. Copy *aln and *tree from folder 4083 in baseml dir! 
+
+Gene 102 is: ENSG00000067704. Copy *aln and *tree from folder 941 in baseml dir! 
+
+Gene 103 is: ENSG00000111602. Copy *aln and *tree from folder 3522 in baseml dir! 
+
+Gene 104 is: ENSG00000080986. Copy *aln and *tree from folder 1406 in baseml dir! 
+
+Gene 105 is: ENSG00000163482. Copy *aln and *tree from folder 9702 in baseml dir! 
+
+Gene 106 is: ENSG00000138207. Copy *aln and *tree from folder 6767 in baseml dir! 
+
+Gene 107 is: ENSG00000164830. Copy *aln and *tree from folder 10073 in baseml dir! 
+
+Gene 108 is: ENSG00000164930. Copy *aln and *tree from folder 10095 in baseml dir! 
+
+Gene 109 is: ENSG00000187676. Copy *aln and *tree from folder 13639 in baseml dir! 
+
+Gene 110 is: ENSG00000203705. Copy *aln and *tree from folder 14484 in baseml dir! 
+
+Gene 111 is: ENSG00000073737. Copy *aln and *tree from folder 1150 in baseml dir! 
+
+Gene 112 is: ENSG00000156414. Copy *aln and *tree from folder 8833 in baseml dir! 
+
+Gene 113 is: ENSG00000164953. Copy *aln and *tree from folder 10106 in baseml dir! 
+
+Gene 114 is: ENSG00000164695. Copy *aln and *tree from folder 10045 in baseml dir! 
+
+Gene 115 is: ENSG00000104312. Copy *aln and *tree from folder 2620 in baseml dir! 
+
+Gene 116 is: ENSG00000136141. Copy *aln and *tree from folder 6398 in baseml dir! 
+
+Gene 117 is: ENSG00000124151. Copy *aln and *tree from folder 4912 in baseml dir! 
+
+Gene 118 is: ENSG00000204952. Copy *aln and *tree from folder 14665 in baseml dir! 
+
+Gene 119 is: ENSG00000115232. Copy *aln and *tree from folder 3950 in baseml dir! 
+
+Gene 120 is: ENSG00000116771. Copy *aln and *tree from folder 4174 in baseml dir! 
+
+Gene 121 is: ENSG00000165813. Copy *aln and *tree from folder 10288 in baseml dir! 
+
+Gene 122 is: ENSG00000092978. Copy *aln and *tree from folder 1828 in baseml dir! 
+
+Gene 123 is: ENSG00000136936. Copy *aln and *tree from folder 6544 in baseml dir! 
+
+Gene 124 is: ENSG00000112365. Copy *aln and *tree from folder 3651 in baseml dir! 
+
+Gene 125 is: ENSG00000172197. Copy *aln and *tree from folder 11503 in baseml dir! 
+
+Gene 126 is: ENSG00000006062. Copy *aln and *tree from folder 113 in baseml dir! 
+
+Gene 127 is: ENSG00000134200. Copy *aln and *tree from folder 6071 in baseml dir! 
+
+Gene 128 is: ENSG00000214013. Copy *aln and *tree from folder 14866 in baseml dir! 
+
+Gene 129 is: ENSG00000103494. Copy *aln and *tree from folder 2553 in baseml dir! 
+
+Gene 130 is: ENSG00000104361. Copy *aln and *tree from folder 2631 in baseml dir! 
+
+Gene 131 is: ENSG00000169085. Copy *aln and *tree from folder 10966 in baseml dir! 
+
+Gene 132 is: ENSG00000141052. Copy *aln and *tree from folder 7158 in baseml dir! 
+
+Gene 133 is: ENSG00000127325. Copy *aln and *tree from folder 5272 in baseml dir! 
+
+Gene 134 is: ENSG00000139263. Copy *aln and *tree from folder 6919 in baseml dir! 
+
+Gene 135 is: ENSG00000154553. Copy *aln and *tree from folder 8659 in baseml dir! 
+
+Gene 136 is: ENSG00000059691. Copy *aln and *tree from folder 739 in baseml dir! 
+
+Gene 137 is: ENSG00000180488. Copy *aln and *tree from folder 12618 in baseml dir! 
+
+Gene 138 is: ENSG00000125246. Copy *aln and *tree from folder 5040 in baseml dir! 
+
+Gene 139 is: ENSG00000176148. Copy *aln and *tree from folder 12085 in baseml dir! 
+
+Gene 140 is: ENSG00000187257. Copy *aln and *tree from folder 13596 in baseml dir! 
+
+Gene 141 is: ENSG00000171824. Copy *aln and *tree from folder 11450 in baseml dir! 
+
+Gene 142 is: ENSG00000139734. Copy *aln and *tree from folder 6990 in baseml dir! 
+
+Gene 143 is: ENSG00000120800. Copy *aln and *tree from folder 4601 in baseml dir! 
+
+Gene 144 is: ENSG00000135919. Copy *aln and *tree from folder 6355 in baseml dir! 
+
+Gene 145 is: ENSG00000156802. Copy *aln and *tree from folder 8871 in baseml dir! 
+
+Gene 146 is: ENSG00000213619. Copy *aln and *tree from folder 14828 in baseml dir! 
+
+Gene 147 is: ENSG00000096093. Copy *aln and *tree from folder 1887 in baseml dir! 
+
+Gene 148 is: ENSG00000143669. Copy *aln and *tree from folder 7503 in baseml dir! 
+
+Gene 149 is: ENSG00000122025. Copy *aln and *tree from folder 4709 in baseml dir! 
+
+Gene 150 is: ENSG00000146282. Copy *aln and *tree from folder 7839 in baseml dir! 
+
+Gene 151 is: ENSG00000164761. Copy *aln and *tree from folder 10062 in baseml dir! 
+
+Gene 152 is: ENSG00000122482. Copy *aln and *tree from folder 4746 in baseml dir! 
+
+Gene 153 is: ENSG00000128052. Copy *aln and *tree from folder 5337 in baseml dir! 
+
+Gene 154 is: ENSG00000148459. Copy *aln and *tree from folder 8065 in baseml dir! 
+
+Gene 155 is: ENSG00000091490. Copy *aln and *tree from folder 1770 in baseml dir! 
+
+Gene 156 is: ENSG00000197893. Copy *aln and *tree from folder 14219 in baseml dir! 
+
+Gene 157 is: ENSG00000151929. Copy *aln and *tree from folder 8397 in baseml dir! 
+
+Gene 158 is: ENSG00000178904. Copy *aln and *tree from folder 12424 in baseml dir! 
+
+Gene 159 is: ENSG00000136770. Copy *aln and *tree from folder 6499 in baseml dir! 
+
+Gene 160 is: ENSG00000163808. Copy *aln and *tree from folder 9799 in baseml dir! 
+
+Gene 161 is: ENSG00000095464. Copy *aln and *tree from folder 1861 in baseml dir! 
+
+Gene 162 is: ENSG00000082269. Copy *aln and *tree from folder 1448 in baseml dir! 
+
+Gene 163 is: ENSG00000142920. Copy *aln and *tree from folder 7363 in baseml dir! 
+
+Gene 164 is: ENSG00000152779. Copy *aln and *tree from folder 8486 in baseml dir! 
+
+Gene 165 is: ENSG00000172071. Copy *aln and *tree from folder 11488 in baseml dir! 
+
+Gene 166 is: ENSG00000059728. Copy *aln and *tree from folder 740 in baseml dir! 
+
+Gene 167 is: ENSG00000198087. Copy *aln and *tree from folder 14253 in baseml dir! 
+
+Gene 168 is: ENSG00000115290. Copy *aln and *tree from folder 3965 in baseml dir! 
+
+Gene 169 is: ENSG00000122335. Copy *aln and *tree from folder 4732 in baseml dir! 
+
+Gene 170 is: ENSG00000115295. Copy *aln and *tree from folder 3966 in baseml dir! 
+
+Gene 171 is: ENSG00000095370. Copy *aln and *tree from folder 1857 in baseml dir! 
+
+Gene 172 is: ENSG00000120725. Copy *aln and *tree from folder 4593 in baseml dir! 
+
+Gene 173 is: ENSG00000123607. Copy *aln and *tree from folder 4870 in baseml dir! 
+
+Gene 174 is: ENSG00000132561. Copy *aln and *tree from folder 5865 in baseml dir! 
+
+Gene 175 is: ENSG00000170962. Copy *aln and *tree from folder 11291 in baseml dir! 
+
+Gene 176 is: ENSG00000079335. Copy *aln and *tree from folder 1356 in baseml dir! 
+
+Gene 177 is: ENSG00000140009. Copy *aln and *tree from folder 7023 in baseml dir! 
+
+Gene 178 is: ENSG00000173239. Copy *aln and *tree from folder 11673 in baseml dir! 
+
+Gene 179 is: ENSG00000171988. Copy *aln and *tree from folder 11475 in baseml dir! 
+
+Gene 180 is: ENSG00000129460. Copy *aln and *tree from folder 5471 in baseml dir! 
+
+Gene 181 is: ENSG00000135048. Copy *aln and *tree from folder 6202 in baseml dir! 
+
+Gene 182 is: ENSG00000151690. Copy *aln and *tree from folder 8366 in baseml dir! 
+
+Gene 183 is: ENSG00000116874. Copy *aln and *tree from folder 4188 in baseml dir! 
+
+Gene 184 is: ENSG00000082397. Copy *aln and *tree from folder 1450 in baseml dir! 
+
+Gene 185 is: ENSG00000137393. Copy *aln and *tree from folder 6614 in baseml dir! 
+
+Gene 186 is: ENSG00000139767. Copy *aln and *tree from folder 6993 in baseml dir! 
+
+Gene 187 is: ENSG00000153233. Copy *aln and *tree from folder 8538 in baseml dir! 
+
+Gene 188 is: ENSG00000186417. Copy *aln and *tree from folder 13484 in baseml dir! 
+
+Gene 189 is: ENSG00000112214. Copy *aln and *tree from folder 3619 in baseml dir! 
+
+Gene 190 is: ENSG00000150722. Copy *aln and *tree from folder 8261 in baseml dir! 
+
+Gene 191 is: ENSG00000058804. Copy *aln and *tree from folder 732 in baseml dir! 
+
+Gene 192 is: ENSG00000155158. Copy *aln and *tree from folder 8715 in baseml dir! 
+
+Gene 193 is: ENSG00000139209. Copy *aln and *tree from folder 6913 in baseml dir! 
+
+Gene 194 is: ENSG00000120254. Copy *aln and *tree from folder 4541 in baseml dir! 
+
+Gene 195 is: ENSG00000140694. Copy *aln and *tree from folder 7115 in baseml dir! 
+
+Gene 196 is: ENSG00000134775. Copy *aln and *tree from folder 6164 in baseml dir! 
+
+Gene 197 is: ENSG00000141424. Copy *aln and *tree from folder 7196 in baseml dir! 
+
+Gene 198 is: ENSG00000138593. Copy *aln and *tree from folder 6813 in baseml dir! 
+
+Gene 199 is: ENSG00000147647. Copy *aln and *tree from folder 7982 in baseml dir! 
+
+Gene 200 is: ENSG00000111859. Copy *aln and *tree from folder 3570 in baseml dir! 
+
+Gene 201 is: ENSG00000110066. Copy *aln and *tree from folder 3366 in baseml dir! 
+
+Gene 202 is: ENSG00000146809. Copy *aln and *tree from folder 7883 in baseml dir! 
+
+Gene 203 is: ENSG00000094975. Copy *aln and *tree from folder 1845 in baseml dir! 
+
+Gene 204 is: ENSG00000113615. Copy *aln and *tree from folder 3790 in baseml dir! 
+
+Gene 205 is: ENSG00000061936. Copy *aln and *tree from folder 768 in baseml dir! 
+
+Gene 206 is: ENSG00000164318. Copy *aln and *tree from folder 9962 in baseml dir! 
+
+Gene 207 is: ENSG00000275066. Copy *aln and *tree from folder 15471 in baseml dir! 
+
+Gene 208 is: ENSG00000117597. Copy *aln and *tree from folder 4274 in baseml dir! 
+
+Gene 209 is: ENSG00000112874. Copy *aln and *tree from folder 3710 in baseml dir! 
+
+Gene 210 is: ENSG00000169499. Copy *aln and *tree from folder 11039 in baseml dir! 
+
+Gene 211 is: ENSG00000140563. Copy *aln and *tree from folder 7100 in baseml dir! 
+
+Gene 212 is: ENSG00000185002. Copy *aln and *tree from folder 13248 in baseml dir! 
+
+Gene 213 is: ENSG00000100983. Copy *aln and *tree from folder 2192 in baseml dir! 
+
+Gene 214 is: ENSG00000101605. Copy *aln and *tree from folder 2319 in baseml dir! 
+
+Gene 215 is: ENSG00000064989. Copy *aln and *tree from folder 836 in baseml dir! 
+
+Gene 216 is: ENSG00000136111. Copy *aln and *tree from folder 6395 in baseml dir! 
+
+Gene 217 is: ENSG00000083857. Copy *aln and *tree from folder 1490 in baseml dir! 
+
+Gene 218 is: ENSG00000147606. Copy *aln and *tree from folder 7979 in baseml dir! 
+
+Gene 219 is: ENSG00000134987. Copy *aln and *tree from folder 6195 in baseml dir! 
+
+Gene 220 is: ENSG00000186104. Copy *aln and *tree from folder 13434 in baseml dir! 
+
+Gene 221 is: ENSG00000118514. Copy *aln and *tree from folder 4357 in baseml dir! 
+
+Gene 222 is: ENSG00000057657. Copy *aln and *tree from folder 714 in baseml dir! 
+
+Gene 223 is: ENSG00000139737. Copy *aln and *tree from folder 6991 in baseml dir! 
+
+Gene 224 is: ENSG00000160688. Copy *aln and *tree from folder 9279 in baseml dir! 
+
+Gene 225 is: ENSG00000115183. Copy *aln and *tree from folder 3943 in baseml dir! 
+
+Gene 226 is: ENSG00000174099. Copy *aln and *tree from folder 11797 in baseml dir! 
+
+Gene 227 is: ENSG00000116747. Copy *aln and *tree from folder 4168 in baseml dir! 
+
+Gene 228 is: ENSG00000188158. Copy *aln and *tree from folder 13717 in baseml dir! 
+
+Gene 229 is: ENSG00000139324. Copy *aln and *tree from folder 6930 in baseml dir! 
+
+Gene 230 is: ENSG00000120910. Copy *aln and *tree from folder 4616 in baseml dir! 
+
+Gene 231 is: ENSG00000103671. Copy *aln and *tree from folder 2574 in baseml dir! 
+
+Gene 232 is: ENSG00000090432. Copy *aln and *tree from folder 1725 in baseml dir! 
+
+Gene 233 is: ENSG00000154736. Copy *aln and *tree from folder 8676 in baseml dir! 
+
+Gene 234 is: ENSG00000125885. Copy *aln and *tree from folder 5151 in baseml dir! 
+
+Gene 235 is: ENSG00000074527. Copy *aln and *tree from folder 1175 in baseml dir! 
+
+Gene 236 is: ENSG00000138308. Copy *aln and *tree from folder 6774 in baseml dir! 
+
+Gene 237 is: ENSG00000144452. Copy *aln and *tree from folder 7600 in baseml dir! 
+
+Gene 238 is: ENSG00000147576. Copy *aln and *tree from folder 7972 in baseml dir! 
+
+Gene 239 is: ENSG00000132305. Copy *aln and *tree from folder 5820 in baseml dir! 
+
+Gene 240 is: ENSG00000134247. Copy *aln and *tree from folder 6080 in baseml dir! 
+
+Gene 241 is: ENSG00000138315. Copy *aln and *tree from folder 6776 in baseml dir! 
+
+Gene 242 is: ENSG00000115616. Copy *aln and *tree from folder 4022 in baseml dir! 
+
+Gene 243 is: ENSG00000148516. Copy *aln and *tree from folder 8073 in baseml dir! 
+
+Gene 244 is: ENSG00000177034. Copy *aln and *tree from folder 12199 in baseml dir! 
+
+Gene 245 is: ENSG00000131747. Copy *aln and *tree from folder 5764 in baseml dir! 
+
+Gene 246 is: ENSG00000170836. Copy *aln and *tree from folder 11265 in baseml dir! 
+
+Gene 247 is: ENSG00000106524. Copy *aln and *tree from folder 2983 in baseml dir! 
+
+Gene 248 is: ENSG00000125703. Copy *aln and *tree from folder 5098 in baseml dir! 
+
+Gene 249 is: ENSG00000172399. Copy *aln and *tree from folder 11545 in baseml dir! 
+
+Gene 250 is: ENSG00000165338. Copy *aln and *tree from folder 10184 in baseml dir! 
+
+Gene 251 is: ENSG00000111049. Copy *aln and *tree from folder 3458 in baseml dir! 
+
+Gene 252 is: ENSG00000130347. Copy *aln and *tree from folder 5565 in baseml dir! 
+
+Gene 253 is: ENSG00000154556. Copy *aln and *tree from folder 8660 in baseml dir! 
+
+Gene 254 is: ENSG00000115221. Copy *aln and *tree from folder 3948 in baseml dir! 
+
+Gene 255 is: ENSG00000077943. Copy *aln and *tree from folder 1302 in baseml dir! 
+
+Gene 256 is: ENSG00000103316. Copy *aln and *tree from folder 2532 in baseml dir! 
+
+Gene 257 is: ENSG00000111058. Copy *aln and *tree from folder 3461 in baseml dir! 
+
+Gene 258 is: ENSG00000155886. Copy *aln and *tree from folder 8774 in baseml dir! 
+
+Gene 259 is: ENSG00000040199. Copy *aln and *tree from folder 519 in baseml dir! 
+
+Gene 260 is: ENSG00000078098. Copy *aln and *tree from folder 1310 in baseml dir! 
+
+Gene 261 is: ENSG00000128829. Copy *aln and *tree from folder 5410 in baseml dir! 
+
+Gene 262 is: ENSG00000165097. Copy *aln and *tree from folder 10132 in baseml dir! 
+
+Gene 263 is: ENSG00000101577. Copy *aln and *tree from folder 2317 in baseml dir! 
+
+Gene 264 is: ENSG00000196141. Copy *aln and *tree from folder 13914 in baseml dir! 
+
+Gene 265 is: ENSG00000128881. Copy *aln and *tree from folder 5414 in baseml dir! 
+
+Gene 266 is: ENSG00000132837. Copy *aln and *tree from folder 5913 in baseml dir! 
+
+Gene 267 is: ENSG00000168077. Copy *aln and *tree from folder 10775 in baseml dir! 
+
+Gene 268 is: ENSG00000112280. Copy *aln and *tree from folder 3631 in baseml dir! 
+
+Gene 269 is: ENSG00000103319. Copy *aln and *tree from folder 2533 in baseml dir! 
+
+Gene 270 is: ENSG00000198954. Copy *aln and *tree from folder 14469 in baseml dir! 
+
+Gene 271 is: ENSG00000120708. Copy *aln and *tree from folder 4591 in baseml dir! 
+
+Gene 272 is: ENSG00000009830. Copy *aln and *tree from folder 221 in baseml dir! 
+
+Gene 273 is: ENSG00000198542. Copy *aln and *tree from folder 14326 in baseml dir! 
+
+Gene 274 is: ENSG00000125630. Copy *aln and *tree from folder 5086 in baseml dir! 
+
+Gene 275 is: ENSG00000112851. Copy *aln and *tree from folder 3707 in baseml dir! 
+
+Gene 276 is: ENSG00000155304. Copy *aln and *tree from folder 8725 in baseml dir! 
+
+Gene 277 is: ENSG00000146374. Copy *aln and *tree from folder 7845 in baseml dir! 
+
+Gene 278 is: ENSG00000155636. Copy *aln and *tree from folder 8749 in baseml dir! 
+
+Gene 279 is: ENSG00000120798. Copy *aln and *tree from folder 4600 in baseml dir! 
+
+Gene 280 is: ENSG00000114988. Copy *aln and *tree from folder 3920 in baseml dir! 
+
+Gene 281 is: ENSG00000119927. Copy *aln and *tree from folder 4501 in baseml dir! 
+
+Gene 282 is: ENSG00000115947. Copy *aln and *tree from folder 4065 in baseml dir! 
+
+Gene 283 is: ENSG00000110422. Copy *aln and *tree from folder 3397 in baseml dir! 
+
+Gene 284 is: ENSG00000119125. Copy *aln and *tree from folder 4400 in baseml dir! 
+
+Gene 285 is: ENSG00000177054. Copy *aln and *tree from folder 12203 in baseml dir! 
+
+Gene 286 is: ENSG00000005483. Copy *aln and *tree from folder 95 in baseml dir! 
+
+Gene 287 is: ENSG00000172575. Copy *aln and *tree from folder 11577 in baseml dir! 
+
+Gene 288 is: ENSG00000070882. Copy *aln and *tree from folder 1053 in baseml dir! 
+
+Gene 289 is: ENSG00000118402. Copy *aln and *tree from folder 4339 in baseml dir! 
+
+Gene 290 is: ENSG00000139687. Copy *aln and *tree from folder 6983 in baseml dir! 
+
+Gene 291 is: ENSG00000138686. Copy *aln and *tree from folder 6842 in baseml dir! 
+
+Gene 292 is: ENSG00000116991. Copy *aln and *tree from folder 4202 in baseml dir! 
+
+Gene 293 is: ENSG00000119596. Copy *aln and *tree from folder 4444 in baseml dir! 
+
+Gene 294 is: ENSG00000147408. Copy *aln and *tree from folder 7947 in baseml dir! 
+
+Gene 295 is: ENSG00000103479. Copy *aln and *tree from folder 2551 in baseml dir! 
+
+Gene 296 is: ENSG00000157450. Copy *aln and *tree from folder 8940 in baseml dir! 
+
+Gene 297 is: ENSG00000136874. Copy *aln and *tree from folder 6525 in baseml dir! 
+
+Gene 298 is: ENSG00000146122. Copy *aln and *tree from folder 7816 in baseml dir! 
+
+Gene 299 is: ENSG00000118058. Copy *aln and *tree from folder 4311 in baseml dir! 
+
+Gene 300 is: ENSG00000198650. Copy *aln and *tree from folder 14347 in baseml dir! 
+
+Gene 301 is: ENSG00000102531. Copy *aln and *tree from folder 2424 in baseml dir! 
+
+Gene 302 is: ENSG00000132965. Copy *aln and *tree from folder 5935 in baseml dir! 
+
+Gene 303 is: ENSG00000134851. Copy *aln and *tree from folder 6172 in baseml dir! 
+
+Gene 304 is: ENSG00000075035. Copy *aln and *tree from folder 1192 in baseml dir! 
+
+Gene 305 is: ENSG00000072682. Copy *aln and *tree from folder 1113 in baseml dir! 
+
+Gene 306 is: ENSG00000143514. Copy *aln and *tree from folder 7476 in baseml dir! 
+
+Gene 307 is: ENSG00000168938. Copy *aln and *tree from folder 10940 in baseml dir! 
+
+Gene 308 is: ENSG00000145860. Copy *aln and *tree from folder 7775 in baseml dir! 
+
+Gene 309 is: ENSG00000080839. Copy *aln and *tree from folder 1403 in baseml dir! 
+
+Gene 310 is: ENSG00000156304. Copy *aln and *tree from folder 8825 in baseml dir! 
+
+Gene 311 is: ENSG00000137573. Copy *aln and *tree from folder 6647 in baseml dir! 
+
+Gene 312 is: ENSG00000139436. Copy *aln and *tree from folder 6945 in baseml dir! 
+
+Gene 313 is: ENSG00000151617. Copy *aln and *tree from folder 8357 in baseml dir! 
+
+Gene 314 is: ENSG00000118407. Copy *aln and *tree from folder 4340 in baseml dir! 
+
+Gene 315 is: ENSG00000145730. Copy *aln and *tree from folder 7755 in baseml dir! 
+
+Gene 316 is: ENSG00000179520. Copy *aln and *tree from folder 12505 in baseml dir! 
+
+Gene 317 is: ENSG00000141627. Copy *aln and *tree from folder 7242 in baseml dir! 
+
+Gene 318 is: ENSG00000147650. Copy *aln and *tree from folder 7984 in baseml dir! 
+
+Gene 319 is: ENSG00000182158. Copy *aln and *tree from folder 12799 in baseml dir! 
+
+Gene 320 is: ENSG00000152990. Copy *aln and *tree from folder 8507 in baseml dir! 
+
+Gene 321 is: ENSG00000078687. Copy *aln and *tree from folder 1333 in baseml dir! 
+
+Gene 322 is: ENSG00000180998. Copy *aln and *tree from folder 12673 in baseml dir! 
+
+Gene 323 is: ENSG00000087274. Copy *aln and *tree from folder 1600 in baseml dir! 
+
+Gene 324 is: ENSG00000120053. Copy *aln and *tree from folder 4518 in baseml dir! 
+
+Gene 325 is: ENSG00000104154. Copy *aln and *tree from folder 2607 in baseml dir! 
+
+Gene 326 is: ENSG00000137177. Copy *aln and *tree from folder 6582 in baseml dir! 
+
+Gene 327 is: ENSG00000025434. Copy *aln and *tree from folder 411 in baseml dir! 
+
+Gene 328 is: ENSG00000171408. Copy *aln and *tree from folder 11363 in baseml dir! 
+
+Gene 329 is: ENSG00000166068. Copy *aln and *tree from folder 10335 in baseml dir! 
+
+Gene 330 is: ENSG00000162819. Copy *aln and *tree from folder 9556 in baseml dir! 
+
+Gene 331 is: ENSG00000204262. Copy *aln and *tree from folder 14560 in baseml dir! 
+
+Gene 332 is: ENSG00000140479. Copy *aln and *tree from folder 7081 in baseml dir! 
+
+Gene 333 is: ENSG00000198336. Copy *aln and *tree from folder 14295 in baseml dir! 
+
+Gene 334 is: ENSG00000143437. Copy *aln and *tree from folder 7458 in baseml dir! 
+
+Gene 335 is: ENSG00000196091. Copy *aln and *tree from folder 13907 in baseml dir! 
+
+Gene 336 is: ENSG00000112379. Copy *aln and *tree from folder 3654 in baseml dir! 
+
+Gene 337 is: ENSG00000080815. Copy *aln and *tree from folder 1398 in baseml dir! 
+
+Gene 338 is: ENSG00000123983. Copy *aln and *tree from folder 4890 in baseml dir! 
+
+Gene 339 is: ENSG00000106105. Copy *aln and *tree from folder 2933 in baseml dir! 
+
+Gene 340 is: ENSG00000111144. Copy *aln and *tree from folder 3466 in baseml dir! 
+
+Gene 341 is: ENSG00000175175. Copy *aln and *tree from folder 11945 in baseml dir! 
+
+Gene 342 is: ENSG00000133056. Copy *aln and *tree from folder 5946 in baseml dir! 
+
+Gene 343 is: ENSG00000116675. Copy *aln and *tree from folder 4151 in baseml dir! 
+
+Gene 344 is: ENSG00000071073. Copy *aln and *tree from folder 1061 in baseml dir! 
+
+Gene 345 is: ENSG00000141699. Copy *aln and *tree from folder 7253 in baseml dir! 
+
+Gene 346 is: ENSG00000115252. Copy *aln and *tree from folder 3954 in baseml dir! 
+
+Gene 347 is: ENSG00000168434. Copy *aln and *tree from folder 10840 in baseml dir! 
+
+Gene 348 is: ENSG00000124228. Copy *aln and *tree from folder 4939 in baseml dir! 
+
+Gene 349 is: ENSG00000119913. Copy *aln and *tree from folder 4497 in baseml dir! 
+
+Gene 350 is: ENSG00000012504. Copy *aln and *tree from folder 292 in baseml dir! 
+
+Gene 351 is: ENSG00000116266. Copy *aln and *tree from folder 4117 in baseml dir! 
+
+Gene 352 is: ENSG00000143799. Copy *aln and *tree from folder 7519 in baseml dir! 
+
+Gene 353 is: ENSG00000134313. Copy *aln and *tree from folder 6097 in baseml dir! 
+
+Gene 354 is: ENSG00000164122. Copy *aln and *tree from folder 9906 in baseml dir! 
+
+Gene 355 is: ENSG00000112234. Copy *aln and *tree from folder 3622 in baseml dir! 
+
+Gene 356 is: ENSG00000143952. Copy *aln and *tree from folder 7545 in baseml dir! 
+
+Gene 357 is: ENSG00000138738. Copy *aln and *tree from folder 6849 in baseml dir! 
+
+Gene 358 is: ENSG00000138032. Copy *aln and *tree from folder 6727 in baseml dir! 
+
+Gene 359 is: ENSG00000100697. Copy *aln and *tree from folder 2151 in baseml dir! 
+
+Gene 360 is: ENSG00000023318. Copy *aln and *tree from folder 392 in baseml dir! 
+
+Gene 361 is: ENSG00000185722. Copy *aln and *tree from folder 13373 in baseml dir! 
+
+Gene 362 is: ENSG00000112837. Copy *aln and *tree from folder 3706 in baseml dir! 
+
+Gene 363 is: ENSG00000189184. Copy *aln and *tree from folder 13873 in baseml dir! 
+
+Gene 364 is: ENSG00000198785. Copy *aln and *tree from folder 14390 in baseml dir! 
+
+Gene 365 is: ENSG00000168234. Copy *aln and *tree from folder 10797 in baseml dir! 
+
+Gene 366 is: ENSG00000122707. Copy *aln and *tree from folder 4773 in baseml dir! 
+
+Gene 367 is: ENSG00000115020. Copy *aln and *tree from folder 3924 in baseml dir! 
+
+Gene 368 is: ENSG00000123612. Copy *aln and *tree from folder 4873 in baseml dir! 
+
+Gene 369 is: ENSG00000110395. Copy *aln and *tree from folder 3395 in baseml dir! 
+
+Gene 370 is: ENSG00000138735. Copy *aln and *tree from folder 6848 in baseml dir! 
+
+Gene 371 is: ENSG00000122884. Copy *aln and *tree from folder 4792 in baseml dir! 
+
+Gene 372 is: ENSG00000111713. Copy *aln and *tree from folder 3546 in baseml dir! 
+
+Gene 373 is: ENSG00000084073. Copy *aln and *tree from folder 1495 in baseml dir! 
+
+Gene 374 is: ENSG00000116194. Copy *aln and *tree from folder 4104 in baseml dir! 
+
+Gene 375 is: ENSG00000115977. Copy *aln and *tree from folder 4070 in baseml dir! 
+
+Gene 376 is: ENSG00000112175. Copy *aln and *tree from folder 3610 in baseml dir! 
+
+Gene 377 is: ENSG00000099250. Copy *aln and *tree from folder 1906 in baseml dir! 
+
+Gene 378 is: ENSG00000138190. Copy *aln and *tree from folder 6765 in baseml dir! 
+
+Gene 379 is: ENSG00000165646. Copy *aln and *tree from folder 10246 in baseml dir! 
+
+Gene 380 is: ENSG00000188487. Copy *aln and *tree from folder 13756 in baseml dir! 
+
+Gene 381 is: ENSG00000155561. Copy *aln and *tree from folder 8745 in baseml dir! 
+
+Gene 382 is: ENSG00000007202. Copy *aln and *tree from folder 156 in baseml dir! 
+
+Gene 383 is: ENSG00000084110. Copy *aln and *tree from folder 1499 in baseml dir! 
+
+Gene 384 is: ENSG00000143153. Copy *aln and *tree from folder 7388 in baseml dir! 
+
+Gene 385 is: ENSG00000141576. Copy *aln and *tree from folder 7236 in baseml dir! 
+
+Gene 386 is: ENSG00000167723. Copy *aln and *tree from folder 10696 in baseml dir! 
+
+Gene 387 is: ENSG00000146416. Copy *aln and *tree from folder 7854 in baseml dir! 
+
+Gene 388 is: ENSG00000113569. Copy *aln and *tree from folder 3780 in baseml dir! 
+
+Gene 389 is: ENSG00000135334. Copy *aln and *tree from folder 6246 in baseml dir! 
+
+Gene 390 is: ENSG00000143469. Copy *aln and *tree from folder 7465 in baseml dir! 
+
+Gene 391 is: ENSG00000164161. Copy *aln and *tree from folder 9916 in baseml dir! 
+
+Gene 392 is: ENSG00000168538. Copy *aln and *tree from folder 10865 in baseml dir! 
+
+Gene 393 is: ENSG00000174607. Copy *aln and *tree from folder 11865 in baseml dir! 
+
+Gene 394 is: ENSG00000164187. Copy *aln and *tree from folder 9930 in baseml dir! 
+
+Gene 395 is: ENSG00000123737. Copy *aln and *tree from folder 4881 in baseml dir! 
+
+Gene 396 is: ENSG00000120733. Copy *aln and *tree from folder 4596 in baseml dir! 
+
+Gene 397 is: ENSG00000112305. Copy *aln and *tree from folder 3639 in baseml dir! 
+
+Gene 398 is: ENSG00000018510. Copy *aln and *tree from folder 351 in baseml dir! 
+
+Gene 399 is: ENSG00000181827. Copy *aln and *tree from folder 12763 in baseml dir! 
+
+Gene 400 is: ENSG00000108506. Copy *aln and *tree from folder 3182 in baseml dir! 
+
+Gene 401 is: ENSG00000113319. Copy *aln and *tree from folder 3754 in baseml dir! 
+
+Gene 402 is: ENSG00000112367. Copy *aln and *tree from folder 3652 in baseml dir! 
+
+Gene 403 is: ENSG00000156642. Copy *aln and *tree from folder 8860 in baseml dir! 
+
+Gene 404 is: ENSG00000058272. Copy *aln and *tree from folder 724 in baseml dir! 
+
+Gene 405 is: ENSG00000187098. Copy *aln and *tree from folder 13579 in baseml dir! 
+
+Gene 406 is: ENSG00000006576. Copy *aln and *tree from folder 133 in baseml dir! 
+
+Gene 407 is: ENSG00000010803. Copy *aln and *tree from folder 247 in baseml dir! 
+
+Gene 408 is: ENSG00000082556. Copy *aln and *tree from folder 1458 in baseml dir! 
+
+Gene 409 is: ENSG00000074803. Copy *aln and *tree from folder 1186 in baseml dir! 
+
+Gene 410 is: ENSG00000114933. Copy *aln and *tree from folder 3914 in baseml dir! 
+
+Gene 411 is: ENSG00000149474. Copy *aln and *tree from folder 8164 in baseml dir! 
+
+Gene 412 is: ENSG00000092439. Copy *aln and *tree from folder 1810 in baseml dir! 
+
+Gene 413 is: ENSG00000197442. Copy *aln and *tree from folder 14141 in baseml dir! 
+
+Gene 414 is: ENSG00000116745. Copy *aln and *tree from folder 4167 in baseml dir! 
+
+Gene 415 is: ENSG00000101782. Copy *aln and *tree from folder 2334 in baseml dir! 
+
+Gene 416 is: ENSG00000151276. Copy *aln and *tree from folder 8313 in baseml dir! 
+
+Gene 417 is: ENSG00000159461. Copy *aln and *tree from folder 9161 in baseml dir! 
+
+Gene 418 is: ENSG00000041353. Copy *aln and *tree from folder 528 in baseml dir! 
+
+Gene 419 is: ENSG00000118257. Copy *aln and *tree from folder 4327 in baseml dir! 
+
+Gene 420 is: ENSG00000135127. Copy *aln and *tree from folder 6220 in baseml dir! 
+
+Gene 421 is: ENSG00000152377. Copy *aln and *tree from folder 8438 in baseml dir! 
+
+Gene 422 is: ENSG00000183762. Copy *aln and *tree from folder 13051 in baseml dir! 
+
+Gene 423 is: ENSG00000118276. Copy *aln and *tree from folder 4331 in baseml dir! 
+
+Gene 424 is: ENSG00000143028. Copy *aln and *tree from folder 7370 in baseml dir! 
+
+Gene 425 is: ENSG00000175161. Copy *aln and *tree from folder 11942 in baseml dir! 
+
+Gene 426 is: ENSG00000167210. Copy *aln and *tree from folder 10597 in baseml dir! 
+
+Gene 427 is: ENSG00000124198. Copy *aln and *tree from folder 4924 in baseml dir! 
+
+Gene 428 is: ENSG00000131730. Copy *aln and *tree from folder 5761 in baseml dir! 
+
+Gene 429 is: ENSG00000116711. Copy *aln and *tree from folder 4162 in baseml dir! 
+
+Gene 430 is: ENSG00000137872. Copy *aln and *tree from folder 6703 in baseml dir! 
+
+Gene 431 is: ENSG00000133958. Copy *aln and *tree from folder 6035 in baseml dir! 
+
+Gene 432 is: ENSG00000166111. Copy *aln and *tree from folder 10343 in baseml dir! 
+
+Gene 433 is: ENSG00000170242. Copy *aln and *tree from folder 11162 in baseml dir! 
+
+Gene 434 is: ENSG00000154065. Copy *aln and *tree from folder 8604 in baseml dir! 
+
+Gene 435 is: ENSG00000128595. Copy *aln and *tree from folder 5381 in baseml dir! 
+
+Gene 436 is: ENSG00000170390. Copy *aln and *tree from folder 11189 in baseml dir! 
+
+Gene 437 is: ENSG00000175216. Copy *aln and *tree from folder 11955 in baseml dir! 
+
+Gene 438 is: ENSG00000021776. Copy *aln and *tree from folder 378 in baseml dir! 
+
+Gene 439 is: ENSG00000138411. Copy *aln and *tree from folder 6795 in baseml dir! 
+
+Gene 440 is: ENSG00000165029. Copy *aln and *tree from folder 10120 in baseml dir! 
+
+Gene 441 is: ENSG00000052841. Copy *aln and *tree from folder 650 in baseml dir! 
+
+Gene 442 is: ENSG00000038358. Copy *aln and *tree from folder 505 in baseml dir! 
+
+Gene 443 is: ENSG00000164327. Copy *aln and *tree from folder 9966 in baseml dir! 
+
+Gene 444 is: ENSG00000033627. Copy *aln and *tree from folder 463 in baseml dir! 
+
+Gene 445 is: ENSG00000065413. Copy *aln and *tree from folder 856 in baseml dir! 
+
+Gene 446 is: ENSG00000155111. Copy *aln and *tree from folder 8713 in baseml dir! 
+
+Gene 447 is: ENSG00000151812. Copy *aln and *tree from folder 8384 in baseml dir! 
+
+Gene 448 is: ENSG00000115419. Copy *aln and *tree from folder 3987 in baseml dir! 
+
+Gene 449 is: ENSG00000114948. Copy *aln and *tree from folder 3916 in baseml dir! 
+
+Gene 450 is: ENSG00000204560. Copy *aln and *tree from folder 14612 in baseml dir! 
+
+Gene 451 is: ENSG00000100504. Copy *aln and *tree from folder 2110 in baseml dir! 
+
+Gene 452 is: ENSG00000105810. Copy *aln and *tree from folder 2872 in baseml dir! 
+
+Gene 453 is: ENSG00000149294. Copy *aln and *tree from folder 8148 in baseml dir! 
+
+Gene 454 is: ENSG00000174839. Copy *aln and *tree from folder 11891 in baseml dir! 
+
+Gene 455 is: ENSG00000108788. Copy *aln and *tree from folder 3223 in baseml dir! 
+
+Gene 456 is: ENSG00000145348. Copy *aln and *tree from folder 7710 in baseml dir! 
+
+Gene 457 is: ENSG00000156671. Copy *aln and *tree from folder 8862 in baseml dir! 
+
+Gene 458 is: ENSG00000124818. Copy *aln and *tree from folder 5021 in baseml dir! 
+
+Gene 459 is: ENSG00000145675. Copy *aln and *tree from folder 7744 in baseml dir! 
+
+Gene 460 is: ENSG00000145725. Copy *aln and *tree from folder 7754 in baseml dir! 
+
+Gene 461 is: ENSG00000158435. Copy *aln and *tree from folder 9043 in baseml dir! 
+
+Gene 462 is: ENSG00000146247. Copy *aln and *tree from folder 7832 in baseml dir! 
+
+Gene 463 is: ENSG00000117528. Copy *aln and *tree from folder 4265 in baseml dir! 
+
+Gene 464 is: ENSG00000146463. Copy *aln and *tree from folder 7859 in baseml dir! 
+
+Gene 465 is: ENSG00000164176. Copy *aln and *tree from folder 9925 in baseml dir! 
+
+Gene 466 is: ENSG00000102302. Copy *aln and *tree from folder 2404 in baseml dir! 
+
+Gene 467 is: ENSG00000082805. Copy *aln and *tree from folder 1463 in baseml dir! 
+
+Gene 468 is: ENSG00000080546. Copy *aln and *tree from folder 1390 in baseml dir! 
+
+Gene 469 is: ENSG00000116729. Copy *aln and *tree from folder 4164 in baseml dir! 
+
+Gene 470 is: ENSG00000131323. Copy *aln and *tree from folder 5713 in baseml dir! 
+
+Gene 471 is: ENSG00000168488. Copy *aln and *tree from folder 10852 in baseml dir! 
+
+Gene 472 is: ENSG00000081019. Copy *aln and *tree from folder 1408 in baseml dir! 
+
+Gene 473 is: ENSG00000163686. Copy *aln and *tree from folder 9767 in baseml dir! 
+
+Gene 474 is: ENSG00000101746. Copy *aln and *tree from folder 2330 in baseml dir! 
+
+Gene 475 is: ENSG00000136152. Copy *aln and *tree from folder 6402 in baseml dir! 
+
+Gene 476 is: ENSG00000175073. Copy *aln and *tree from folder 11928 in baseml dir! 
+
+Gene 477 is: ENSG00000165868. Copy *aln and *tree from folder 10296 in baseml dir! 
+
+Gene 478 is: ENSG00000184588. Copy *aln and *tree from folder 13186 in baseml dir! 
+
+Gene 479 is: ENSG00000153956. Copy *aln and *tree from folder 8592 in baseml dir! 
+
+Gene 480 is: ENSG00000109819. Copy *aln and *tree from folder 3337 in baseml dir! 
+
+Gene 481 is: ENSG00000117114. Copy *aln and *tree from folder 4213 in baseml dir! 
+
+Gene 482 is: ENSG00000137198. Copy *aln and *tree from folder 6584 in baseml dir! 
+
+Gene 483 is: ENSG00000101542. Copy *aln and *tree from folder 2311 in baseml dir! 
+
+Gene 484 is: ENSG00000011566. Copy *aln and *tree from folder 279 in baseml dir! 
+
+Gene 485 is: ENSG00000125686. Copy *aln and *tree from folder 5096 in baseml dir! 
+
+Gene 486 is: ENSG00000133107. Copy *aln and *tree from folder 5958 in baseml dir! 
+
+Gene 487 is: ENSG00000152520. Copy *aln and *tree from folder 8457 in baseml dir! 
+
+Gene 488 is: ENSG00000134215. Copy *aln and *tree from folder 6074 in baseml dir! 
+
+Gene 489 is: ENSG00000145715. Copy *aln and *tree from folder 7751 in baseml dir! 
+
+Gene 490 is: ENSG00000140443. Copy *aln and *tree from folder 7070 in baseml dir! 
+
+Gene 491 is: ENSG00000185278. Copy *aln and *tree from folder 13303 in baseml dir! 
+
+Gene 492 is: ENSG00000165995. Copy *aln and *tree from folder 10322 in baseml dir! 
+
+Gene 493 is: ENSG00000136068. Copy *aln and *tree from folder 6388 in baseml dir! 
+
+Gene 494 is: ENSG00000162409. Copy *aln and *tree from folder 9457 in baseml dir! 
+
+Gene 495 is: ENSG00000081803. Copy *aln and *tree from folder 1431 in baseml dir! 
+
+Gene 496 is: ENSG00000159579. Copy *aln and *tree from folder 9166 in baseml dir! 
+
+Gene 497 is: ENSG00000119912. Copy *aln and *tree from folder 4496 in baseml dir! 
+
+Gene 498 is: ENSG00000113578. Copy *aln and *tree from folder 3782 in baseml dir! 
+
+Gene 499 is: ENSG00000104812. Copy *aln and *tree from folder 2684 in baseml dir! 
+
+Gene 500 is: ENSG00000188895. Copy *aln and *tree from folder 13828 in baseml dir! 
+
+Gene 501 is: ENSG00000083642. Copy *aln and *tree from folder 1481 in baseml dir! 
+
+Gene 502 is: ENSG00000198513. Copy *aln and *tree from folder 14321 in baseml dir! 
+
+Gene 503 is: ENSG00000121741. Copy *aln and *tree from folder 4674 in baseml dir! 
+
+Gene 504 is: ENSG00000170325. Copy *aln and *tree from folder 11180 in baseml dir! 
+
+Gene 505 is: ENSG00000091039. Copy *aln and *tree from folder 1752 in baseml dir! 
+
+Gene 506 is: ENSG00000005339. Copy *aln and *tree from folder 87 in baseml dir! 
+
+Gene 507 is: ENSG00000078142. Copy *aln and *tree from folder 1313 in baseml dir! 
+
+Gene 508 is: ENSG00000109738. Copy *aln and *tree from folder 3325 in baseml dir! 
+
+Gene 509 is: ENSG00000120063. Copy *aln and *tree from folder 4522 in baseml dir! 
+
+Gene 510 is: ENSG00000109680. Copy *aln and *tree from folder 3318 in baseml dir! 
+
+Gene 511 is: ENSG00000124067. Copy *aln and *tree from folder 4897 in baseml dir! 
+
+Gene 512 is: ENSG00000112319. Copy *aln and *tree from folder 3643 in baseml dir! 
+
+Gene 513 is: ENSG00000013016. Copy *aln and *tree from folder 299 in baseml dir! 
+
+Gene 514 is: ENSG00000147852. Copy *aln and *tree from folder 7998 in baseml dir! 
+
+Gene 515 is: ENSG00000204217. Copy *aln and *tree from folder 14548 in baseml dir! 
+
+Gene 516 is: ENSG00000106025. Copy *aln and *tree from folder 2918 in baseml dir! 
+
+Gene 517 is: ENSG00000181690. Copy *aln and *tree from folder 12744 in baseml dir! 
+
+Gene 518 is: ENSG00000138696. Copy *aln and *tree from folder 6844 in baseml dir! 
+
+Gene 519 is: ENSG00000175893. Copy *aln and *tree from folder 12049 in baseml dir! 
+
+Gene 520 is: ENSG00000197535. Copy *aln and *tree from folder 14157 in baseml dir! 
+
+Gene 521 is: ENSG00000198739. Copy *aln and *tree from folder 14374 in baseml dir! 
+
+Gene 522 is: ENSG00000161217. Copy *aln and *tree from folder 9345 in baseml dir! 
+
+Gene 523 is: ENSG00000168280. Copy *aln and *tree from folder 10808 in baseml dir! 
+
+Gene 524 is: ENSG00000155897. Copy *aln and *tree from folder 8777 in baseml dir! 
+
+Gene 525 is: ENSG00000104413. Copy *aln and *tree from folder 2641 in baseml dir! 
+
+Gene 526 is: ENSG00000104756. Copy *aln and *tree from folder 2677 in baseml dir! 
+
+Gene 527 is: ENSG00000160695. Copy *aln and *tree from folder 9281 in baseml dir! 
+
+Gene 528 is: ENSG00000092964. Copy *aln and *tree from folder 1826 in baseml dir! 
+
+Gene 529 is: ENSG00000134569. Copy *aln and *tree from folder 6136 in baseml dir! 
+
+Gene 530 is: ENSG00000197702. Copy *aln and *tree from folder 14187 in baseml dir! 
+
+Gene 531 is: ENSG00000148154. Copy *aln and *tree from folder 8021 in baseml dir! 
+
+Gene 532 is: ENSG00000198742. Copy *aln and *tree from folder 14376 in baseml dir! 
+
+Gene 533 is: ENSG00000107021. Copy *aln and *tree from folder 3037 in baseml dir! 
+
+Gene 534 is: ENSG00000261609. Copy *aln and *tree from folder 15374 in baseml dir! 
+
+Gene 535 is: ENSG00000005812. Copy *aln and *tree from folder 100 in baseml dir! 
+
+Gene 536 is: ENSG00000100505. Copy *aln and *tree from folder 2111 in baseml dir! 
+
+Gene 537 is: ENSG00000196376. Copy *aln and *tree from folder 13959 in baseml dir! 
+
+Gene 538 is: ENSG00000132170. Copy *aln and *tree from folder 5809 in baseml dir! 
+
+Gene 539 is: ENSG00000113532. Copy *aln and *tree from folder 3777 in baseml dir! 
+
+Gene 540 is: ENSG00000278311. Copy *aln and *tree from folder 15520 in baseml dir! 
+
+Gene 541 is: ENSG00000166889. Copy *aln and *tree from folder 10525 in baseml dir! 
+
+Gene 542 is: ENSG00000147475. Copy *aln and *tree from folder 7960 in baseml dir! 
+
+Gene 543 is: ENSG00000162402. Copy *aln and *tree from folder 9455 in baseml dir! 
+
+Gene 544 is: ENSG00000105926. Copy *aln and *tree from folder 2892 in baseml dir! 
+
+Gene 545 is: ENSG00000115904. Copy *aln and *tree from folder 4059 in baseml dir! 
+
+Gene 546 is: ENSG00000198648. Copy *aln and *tree from folder 14346 in baseml dir! 
+
+Gene 547 is: ENSG00000157542. Copy *aln and *tree from folder 8950 in baseml dir! 
+
+Gene 548 is: ENSG00000184014. Copy *aln and *tree from folder 13099 in baseml dir! 
+
+Gene 549 is: ENSG00000152127. Copy *aln and *tree from folder 8407 in baseml dir! 
+
+Gene 550 is: ENSG00000047188. Copy *aln and *tree from folder 565 in baseml dir! 
+
+Gene 551 is: ENSG00000169554. Copy *aln and *tree from folder 11047 in baseml dir! 
+
+Gene 552 is: ENSG00000179454. Copy *aln and *tree from folder 12499 in baseml dir! 
+
+Gene 553 is: ENSG00000175115. Copy *aln and *tree from folder 11936 in baseml dir! 
+
+Gene 554 is: ENSG00000109670. Copy *aln and *tree from folder 3316 in baseml dir! 
+
+Gene 555 is: ENSG00000081189. Copy *aln and *tree from folder 1418 in baseml dir! 
+
+Gene 556 is: ENSG00000144290. Copy *aln and *tree from folder 7582 in baseml dir! 
+
+Gene 557 is: ENSG00000122012. Copy *aln and *tree from folder 4708 in baseml dir! 
+
+Gene 558 is: ENSG00000158966. Copy *aln and *tree from folder 9103 in baseml dir! 
+
+Gene 559 is: ENSG00000149136. Copy *aln and *tree from folder 8128 in baseml dir! 
+
+Gene 560 is: ENSG00000137942. Copy *aln and *tree from folder 6707 in baseml dir! 
+
+Gene 561 is: ENSG00000137764. Copy *aln and *tree from folder 6676 in baseml dir! 
+
+Gene 562 is: ENSG00000166206. Copy *aln and *tree from folder 10374 in baseml dir! 
+
+Gene 563 is: ENSG00000186318. Copy *aln and *tree from folder 13468 in baseml dir! 
+
+Gene 564 is: ENSG00000275410. Copy *aln and *tree from folder 15477 in baseml dir! 
+
+Gene 565 is: ENSG00000082482. Copy *aln and *tree from folder 1453 in baseml dir! 
+
+Gene 566 is: ENSG00000182732. Copy *aln and *tree from folder 12890 in baseml dir! 
+
+Gene 567 is: ENSG00000153012. Copy *aln and *tree from folder 8510 in baseml dir! 
+
+Gene 568 is: ENSG00000173406. Copy *aln and *tree from folder 11697 in baseml dir! 
+
+Gene 569 is: ENSG00000162923. Copy *aln and *tree from folder 9576 in baseml dir! 
+
+Gene 570 is: ENSG00000135999. Copy *aln and *tree from folder 6373 in baseml dir! 
+
+Gene 571 is: ENSG00000102547. Copy *aln and *tree from folder 2426 in baseml dir! 
+
+Gene 572 is: ENSG00000115464. Copy *aln and *tree from folder 3995 in baseml dir! 
+
+Gene 573 is: ENSG00000176658. Copy *aln and *tree from folder 12146 in baseml dir! 
+
+Gene 574 is: ENSG00000165219. Copy *aln and *tree from folder 10163 in baseml dir! 
+
+Gene 575 is: ENSG00000156687. Copy *aln and *tree from folder 8864 in baseml dir! 
+
+Gene 576 is: ENSG00000136631. Copy *aln and *tree from folder 6476 in baseml dir! 
+
+Gene 577 is: ENSG00000120251. Copy *aln and *tree from folder 4539 in baseml dir! 
+
+Gene 578 is: ENSG00000145451. Copy *aln and *tree from folder 7728 in baseml dir! 
+
+Gene 579 is: ENSG00000110693. Copy *aln and *tree from folder 3416 in baseml dir! 
+
+Gene 580 is: ENSG00000166266. Copy *aln and *tree from folder 10389 in baseml dir! 
+
+Gene 581 is: ENSG00000059758. Copy *aln and *tree from folder 741 in baseml dir! 
+
+Gene 582 is: ENSG00000154127. Copy *aln and *tree from folder 8612 in baseml dir! 
+
+Gene 583 is: ENSG00000156983. Copy *aln and *tree from folder 8892 in baseml dir! 
+
+Gene 584 is: ENSG00000131459. Copy *aln and *tree from folder 5731 in baseml dir! 
+
+Gene 585 is: ENSG00000164532. Copy *aln and *tree from folder 10009 in baseml dir! 
+
+Gene 586 is: ENSG00000162670. Copy *aln and *tree from folder 9516 in baseml dir! 
+
+Gene 587 is: ENSG00000115306. Copy *aln and *tree from folder 3968 in baseml dir! 
+
+Gene 588 is: ENSG00000151572. Copy *aln and *tree from folder 8350 in baseml dir! 
+
+Gene 589 is: ENSG00000132356. Copy *aln and *tree from folder 5829 in baseml dir! 
+
+Gene 590 is: ENSG00000005249. Copy *aln and *tree from folder 86 in baseml dir! 
+
+Gene 591 is: ENSG00000198380. Copy *aln and *tree from folder 14302 in baseml dir! 
+
+Gene 592 is: ENSG00000151240. Copy *aln and *tree from folder 8311 in baseml dir! 
+
+Gene 593 is: ENSG00000064419. Copy *aln and *tree from folder 815 in baseml dir! 
+
+Gene 594 is: ENSG00000148200. Copy *aln and *tree from folder 8027 in baseml dir! 
+
+Gene 595 is: ENSG00000134363. Copy *aln and *tree from folder 6108 in baseml dir! 
+
+Gene 596 is: ENSG00000177511. Copy *aln and *tree from folder 12264 in baseml dir! 
+
+Gene 597 is: ENSG00000171724. Copy *aln and *tree from folder 11426 in baseml dir! 
+
+Gene 598 is: ENSG00000138443. Copy *aln and *tree from folder 6803 in baseml dir! 
+
+Gene 599 is: ENSG00000119820. Copy *aln and *tree from folder 4486 in baseml dir! 
+
+Gene 600 is: ENSG00000112062. Copy *aln and *tree from folder 3593 in baseml dir! 
+
+Gene 601 is: ENSG00000198963. Copy *aln and *tree from folder 14473 in baseml dir! 
+
+Gene 602 is: ENSG00000072110. Copy *aln and *tree from folder 1090 in baseml dir! 
+
+Gene 603 is: ENSG00000100201. Copy *aln and *tree from folder 2009 in baseml dir! 
+
+Gene 604 is: ENSG00000004866. Copy *aln and *tree from folder 62 in baseml dir! 
+
+Gene 605 is: ENSG00000147894. Copy *aln and *tree from folder 8006 in baseml dir! 
+
+Gene 606 is: ENSG00000152413. Copy *aln and *tree from folder 8444 in baseml dir! 
+
+Gene 607 is: ENSG00000140015. Copy *aln and *tree from folder 7024 in baseml dir! 
+
+Gene 608 is: ENSG00000013503. Copy *aln and *tree from folder 309 in baseml dir! 
+
+Gene 609 is: ENSG00000069667. Copy *aln and *tree from folder 1000 in baseml dir! 
+
+Gene 610 is: ENSG00000178538. Copy *aln and *tree from folder 12385 in baseml dir! 
+
+Gene 611 is: ENSG00000157500. Copy *aln and *tree from folder 8944 in baseml dir! 
+
+Gene 612 is: ENSG00000061676. Copy *aln and *tree from folder 765 in baseml dir! 
+
+Gene 613 is: ENSG00000196628. Copy *aln and *tree from folder 14009 in baseml dir! 
+
+Gene 614 is: ENSG00000131473. Copy *aln and *tree from folder 5737 in baseml dir! 
+
+Gene 615 is: ENSG00000129083. Copy *aln and *tree from folder 5434 in baseml dir! 
+
+Gene 616 is: ENSG00000113648. Copy *aln and *tree from folder 3795 in baseml dir! 
+
+Gene 617 is: ENSG00000109339. Copy *aln and *tree from folder 3291 in baseml dir! 
+
+Gene 618 is: ENSG00000182985. Copy *aln and *tree from folder 12928 in baseml dir! 
+
+Gene 619 is: ENSG00000110328. Copy *aln and *tree from folder 3390 in baseml dir! 
+
+Gene 620 is: ENSG00000159899. Copy *aln and *tree from folder 9196 in baseml dir! 
+
+Gene 621 is: ENSG00000047249. Copy *aln and *tree from folder 567 in baseml dir! 
+
+Gene 622 is: ENSG00000113719. Copy *aln and *tree from folder 3801 in baseml dir! 
+
+Gene 623 is: ENSG00000080298. Copy *aln and *tree from folder 1384 in baseml dir! 
+
+Gene 624 is: ENSG00000198728. Copy *aln and *tree from folder 14368 in baseml dir! 
+
+Gene 625 is: ENSG00000198700. Copy *aln and *tree from folder 14359 in baseml dir! 
+
+Gene 626 is: ENSG00000135903. Copy *aln and *tree from folder 6348 in baseml dir! 
+
+Gene 627 is: ENSG00000112333. Copy *aln and *tree from folder 3645 in baseml dir! 
+
+Gene 628 is: ENSG00000204178. Copy *aln and *tree from folder 14541 in baseml dir! 
+
+Gene 629 is: ENSG00000196092. Copy *aln and *tree from folder 13908 in baseml dir! 
+
+Gene 630 is: ENSG00000035403. Copy *aln and *tree from folder 476 in baseml dir! 
+
+Gene 631 is: ENSG00000165997. Copy *aln and *tree from folder 10324 in baseml dir! 
+
+Gene 632 is: ENSG00000036257. Copy *aln and *tree from folder 485 in baseml dir! 
+
+Gene 633 is: ENSG00000156113. Copy *aln and *tree from folder 8800 in baseml dir! 
+
+Gene 634 is: ENSG00000153234. Copy *aln and *tree from folder 8539 in baseml dir! 
+
+Gene 635 is: ENSG00000127955. Copy *aln and *tree from folder 5326 in baseml dir! 
+
+Gene 636 is: ENSG00000107105. Copy *aln and *tree from folder 3042 in baseml dir! 
+
+Gene 637 is: ENSG00000137817. Copy *aln and *tree from folder 6689 in baseml dir! 
+
+Gene 638 is: ENSG00000102974. Copy *aln and *tree from folder 2472 in baseml dir! 
+
+Gene 639 is: ENSG00000132639. Copy *aln and *tree from folder 5879 in baseml dir! 
+
+Gene 640 is: ENSG00000117569. Copy *aln and *tree from folder 4269 in baseml dir! 
+
+Gene 641 is: ENSG00000143995. Copy *aln and *tree from folder 7548 in baseml dir! 
+
+Gene 642 is: ENSG00000154975. Copy *aln and *tree from folder 8697 in baseml dir! 
+
+Gene 643 is: ENSG00000139910. Copy *aln and *tree from folder 7007 in baseml dir! 
+
+Gene 644 is: ENSG00000119396. Copy *aln and *tree from folder 4419 in baseml dir! 
+
+Gene 645 is: ENSG00000115963. Copy *aln and *tree from folder 4067 in baseml dir! 
+

@@ -1,0 +1,6 @@
+Raw,First_filter,Second_filter,Third filter
+Num_genes,15904,15569,15436,15431
+Lost_genes,0,335,133,5
+%_Loss,0,2.106,0.854,0.032
+Cum_lost_genes,0,335,468,473
+%_Cum_loss,0,2.106,2.943,2.974

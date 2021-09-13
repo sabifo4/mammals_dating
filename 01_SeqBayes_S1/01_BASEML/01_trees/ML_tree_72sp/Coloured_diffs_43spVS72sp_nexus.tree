@@ -1,0 +1,174 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=72;
+	taxlabels
+	ailuropoda_melanoleuca
+	aotus_nancymaae[&!color=#ff0000]
+	bos_taurus
+	callithrix_jacchus
+	canis_familiaris
+	capra_hircus[&!color=#ff0000]
+	carlito_syrichta
+	cavia_aperea[&!color=#cc0000]
+	cavia_porcellus
+	cebus_capucinus[&!color=#cc0000]
+	cercocebus_atys[&!color=#ff0000]
+	chinchilla_lanigera[&!color=#cc0000]
+	chlorocebus_sabaeus[&!color=#000000]
+	choloepus_hoffmanni
+	colobus_angolensis_palliatus[&!color=#ff0000]
+	cricetulus_griseus_chok1gshd[&!color=#ff0033]
+	dasypus_novemcinctus
+	dipodomys_ordii
+	echinops_telfairi
+	equus_caballus
+	erinaceus_europaeus
+	felis_catus
+	fukomys_damarensis[&!color=#cc0000]
+	gorilla_gorilla
+	heterocephalus_glaber_female[&!color=#cc0000]
+	homo_sapiens
+	ictidomys_tridecemlineatus
+	jaculus_jaculus[&!color=#ff0033]
+	loxodonta_africana
+	macaca_fascicularis[&!color=#ff0000]
+	macaca_mulatta
+	macaca_nemestrina[&!color=#ff0000]
+	mandrillus_leucophaeus[&!color=#ff0000]
+	mesocricetus_auratus[&!color=#ff0033]
+	microcebus_murinus
+	microtus_ochrogaster[&!color=#ff0033]
+	monodelphis_domestica
+	mus_caroli[&!color=#cc0000]
+	mus_musculus
+	mus_pahari[&!color=#cc0000]
+	mus_spretus[&!color=#cc0000]
+	mustela_putorius_furo
+	myotis_lucifugus
+	nannospalax_galili[&!color=#ff0033]
+	nomascus_leucogenys
+	notamacropus_eugenii
+	ochotona_princeps
+	octodon_degus[&!color=#cc0000]
+	ornithorhynchus_anatinus
+	oryctolagus_cuniculus
+	otolemur_garnettii
+	ovis_aries
+	pan_paniscus[&!color=#ff0000]
+	pan_troglodytes
+	panthera_pardus[&!color=#ff0000]
+	panthera_tigris_altaica[&!color=#ff0000]
+	papio_anubis
+	peromyscus_maniculatus_bairdii[&!color=#ff0033]
+	pongo_abelii
+	procavia_capensis
+	propithecus_coquereli[&!color=#ff0033]
+	pteropus_vampyrus
+	rattus_norvegicus
+	rhinopithecus_bieti[&!color=#ff0000]
+	rhinopithecus_roxellana[&!color=#ff0000]
+	saimiri_boliviensis_boliviensis[&!color=#ff0000]
+	sarcophilus_harrisii
+	sorex_araneus
+	sus_scrofa
+	tupaia_belangeri
+	tursiops_truncatus
+	vicugna_pacos
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((((((((((((((((mus_spretus:0.003734,mus_musculus[&!color=#0033cc]:0.003639)[&!color=#0033cc]:0.004066,mus_caroli:0.007313)[&!color=#0033cc]:0.006982,mus_pahari:0.014559)[&!color=#0033cc]:0.014303,rattus_norvegicus[&!color=#0033cc]:0.03271)[&!color=#0000ff]:0.023682,((mesocricetus_auratus:0.02543,cricetulus_griseus_chok1gshd:0.018241):0.012345,(peromyscus_maniculatus_bairdii:0.029528,microtus_ochrogaster:0.036756):0.002707):0.010031)[&!color=#0000ff]:0.031285,nannospalax_galili:0.04951)[&!color=#0000ff]:0.013825,jaculus_jaculus:0.077496)[&!color=#0000ff]:0.013828,dipodomys_ordii[&!color=#0000ff]:0.079647)[&!color=#0033ff]:0.008018,(((cavia_porcellus:0.002165,cavia_aperea:0.019436)[&!color=#0033ff]:0.045331,(chinchilla_lanigera:0.026554,octodon_degus:0.045933):0.006117)[&!color=#0033ff]:0.010049,(fukomys_damarensis:0.034279,heterocephalus_glaber_female:0.029427):0.012989)[&!color=#0033ff]:0.03869)[&!color=#0033cc]:0.002959,ictidomys_tridecemlineatus[&!color=#0033cc]:0.050409)[&!color=#0033cc]:0.008836,(oryctolagus_cuniculus[&!color=#0033cc]:0.039799,ochotona_princeps[&!color=#0033cc]:0.073304)[&!color=#0033cc]:0.034035)[&!color=#0033cc]:0.004795,((((((((((cercocebus_atys:0.003987,mandrillus_leucophaeus:0.002248):5.09E-4,papio_anubis[&!color=#00cc00]:0.00264)[&!color=#00cc00]:5.26E-4,((macaca_mulatta[&!color=#00cc00]:0.001545,macaca_fascicularis:8.42E-4):3.86E-4,macaca_nemestrina:0.001865)[&!color=#00cc00]:0.001479)[&!color=#00cc00]:0.001062,chlorocebus_sabaeus[&!color=#00cc00]:0.004648)[&!color=#00cc00]:0.001775,((rhinopithecus_roxellana:0.001301,rhinopithecus_bieti:0.002275):0.003569,colobus_angolensis_palliatus:0.005465):0.002241)[&!color=#00cc00,!rotate=true]:0.006946,(((((pan_paniscus:0.001737,pan_troglodytes[&!color=#00cc00]:0.001244)[&!rotate=true,!color=#00cc00]:0.001876,homo_sapiens[&!color=#00cc00]:0.002978)[&!rotate=true,!color=#00cc00]:6.37E-4,gorilla_gorilla[&!color=#00cc00]:0.003777)[&!color=#00cc00]:0.003151,pongo_abelii[&!color=#00cc00]:0.008277)[&!color=#00cc00]:0.001002,nomascus_leucogenys[&!color=#00cc00]:0.009633)[&!color=#00cc00]:0.003655)[&!color=#00cc00,!rotate=true]:0.006404,((aotus_nancymaae:0.009674,callithrix_jacchus[&!color=#00cc00]:0.013109)[&!color=#00cc00]:5.75E-4,(saimiri_boliviensis_boliviensis:0.010431,cebus_capucinus:0.009323):0.001497)[&!color=#00cc00]:0.014176)[&!color=#00cc00]:0.020362,carlito_syrichta[&!color=#00cc00]:0.052934)[&!color=#00cc00]:0.004173,((propithecus_coquereli:0.018822,microcebus_murinus[&!color=#00cc00]:0.021145)[&!color=#00cc00]:0.01317,otolemur_garnettii[&!color=#00cc00]:0.050886)[&!color=#00cc00]:0.013243):0.005586,tupaia_belangeri[&!color=#0033cc]:0.07569)[&!color=#0033cc]:0.00146)[&!rotate=true]:0.007846,((((((((capra_hircus:0.004475,ovis_aries:0.006044):0.008207,bos_taurus:0.013837):0.031769,tursiops_truncatus:0.033929):0.006474,sus_scrofa:0.040753):0.003377,vicugna_pacos:0.04646):0.011904,equus_caballus:0.043568)[&!color=#cc0000]:0.00195,((((ailuropoda_melanoleuca:0.021452,mustela_putorius_furo:0.02848):0.005485,canis_familiaris:0.028283)[&!color=#0033ff]:0.006209,((panthera_tigris_altaica:0.003102,panthera_pardus:0.001372):0.002206,felis_catus:0.00305)[&!color=#0033ff]:0.024888)[&!rotate=true]:0.017065,(pteropus_vampyrus:0.045964,myotis_lucifugus:0.071454):0.012353)[&!color=#cc0000]:0.001326)[&!rotate=true]:0.002701,(erinaceus_europaeus:0.097243,sorex_araneus:0.10993):0.018506):0.007728):0.008412,(choloepus_hoffmanni:0.052848,dasypus_novemcinctus:0.054991):0.021143):0.003269,((loxodonta_africana:0.036412,procavia_capensis:0.067427):0.012243,echinops_telfairi:0.108117):0.01544):0.100087,((sarcophilus_harrisii:0.051565,notamacropus_eugenii:0.047675):0.011544,monodelphis_domestica:0.052231):0.080326):0.020361,ornithorhynchus_anatinus:0.216039);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=911;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="decreasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

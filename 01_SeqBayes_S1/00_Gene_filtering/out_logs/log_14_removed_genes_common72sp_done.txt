@@ -1,0 +1,11 @@
+Dir 101 with gene ENSG00000116044 has been removed
+Dir 127 with gene ENSG00000134200 has been removed
+Dir 177 with gene ENSG00000140009 has been removed
+Dir 19 with gene ENSG00000136634 has been removed
+Dir 300 with gene ENSG00000198650 has been removed
+Dir 372 with gene ENSG00000111713 has been removed
+Dir 393 with gene ENSG00000174607 has been removed
+Dir 499 with gene ENSG00000104812 has been removed
+Dir 552 with gene ENSG00000179454 has been removed
+Dir 56 with gene ENSG00000152457 has been removed
+Dir 7 with gene ENSG00000178522 has been removed

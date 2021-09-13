@@ -1,0 +1,174 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=72;
+	taxlabels
+	ailuropoda_melanoleuca
+	aotus_nancymaae
+	bos_taurus
+	callithrix_jacchus
+	canis_familiaris
+	capra_hircus
+	carlito_syrichta
+	cavia_aperea
+	cavia_porcellus
+	cebus_capucinus
+	cercocebus_atys
+	chinchilla_lanigera
+	chlorocebus_sabaeus
+	choloepus_hoffmanni
+	colobus_angolensis_palliatus
+	cricetulus_griseus_chok1gshd
+	dasypus_novemcinctus
+	dipodomys_ordii
+	echinops_telfairi
+	equus_caballus
+	erinaceus_europaeus
+	felis_catus
+	fukomys_damarensis
+	gorilla_gorilla
+	heterocephalus_glaber_female
+	homo_sapiens
+	ictidomys_tridecemlineatus
+	jaculus_jaculus
+	loxodonta_africana
+	macaca_fascicularis
+	macaca_mulatta
+	macaca_nemestrina
+	mandrillus_leucophaeus
+	mesocricetus_auratus
+	microcebus_murinus
+	microtus_ochrogaster
+	monodelphis_domestica
+	mus_caroli
+	mus_musculus
+	mus_pahari
+	mus_spretus
+	mustela_putorius_furo
+	myotis_lucifugus
+	nannospalax_galili
+	nomascus_leucogenys
+	notamacropus_eugenii
+	ochotona_princeps
+	octodon_degus
+	ornithorhynchus_anatinus
+	oryctolagus_cuniculus
+	otolemur_garnettii
+	ovis_aries
+	pan_paniscus
+	pan_troglodytes
+	panthera_pardus
+	panthera_tigris_altaica
+	papio_anubis
+	peromyscus_maniculatus_bairdii
+	pongo_abelii
+	procavia_capensis
+	propithecus_coquereli
+	pteropus_vampyrus
+	rattus_norvegicus
+	rhinopithecus_bieti
+	rhinopithecus_roxellana
+	saimiri_boliviensis_boliviensis
+	sarcophilus_harrisii
+	sorex_araneus
+	sus_scrofa
+	tupaia_belangeri
+	tursiops_truncatus
+	vicugna_pacos
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (ornithorhynchus_anatinus:1.0,((monodelphis_domestica:1.0,(notamacropus_eugenii:1.0,sarcophilus_harrisii:1.0)[&label="[EOMETATHERIA]"]:1.0)[&label="[MARSUPIALIA]"]:1.0,(((choloepus_hoffmanni:1.0,dasypus_novemcinctus:1.0)[&label="[XENARTHRA]"]:1.0,(echinops_telfairi:1.0,(procavia_capensis:1.0,loxodonta_africana:1.0)[&label="[PAENUNGULATA]"]:1.0)[&label="[AFROTHERIA]"]:1.0):1.0,(((sorex_araneus:1.0,erinaceus_europaeus:1.0)[&label="[LIPOTYPHLA]"]:1.0,((sus_scrofa:1.0,(vicugna_pacos:1.0,(tursiops_truncatus:1.0,(bos_taurus:1.0,(ovis_aries:1.0,capra_hircus:1.0):1.0)[&label="[BOV-ANTIL]"]:1.0)[&label="[WHIP-RUM]"]:1.0):1.0)[&label="[ARTIODACTYLA]"]:1.0,((pteropus_vampyrus:1.0,myotis_lucifugus:1.0)[&label="[CHIROPTERA]"]:1.0,(equus_caballus:1.0,((felis_catus:1.0,(panthera_tigris_altaica:1.0,panthera_pardus:1.0):1.0):1.0,(canis_familiaris:1.0,(mustela_putorius_furo:1.0,ailuropoda_melanoleuca:1.0):1.0)[&label="[CANIFORMIA]"]:1.0)[&label="[CARNIVORA]"]:1.0):1.0):1.0):1.0):1.0,((tupaia_belangeri:1.0,((oryctolagus_cuniculus:1.0,ochotona_princeps:1.0)[&label="[LAGOMORPHA]"]:1.0,(ictidomys_tridecemlineatus:1.0,(((fukomys_damarensis:1.0,heterocephalus_glaber_female:1.0):1.0,((cavia_porcellus:1.0,cavia_aperea:1.0):1.0,(chinchilla_lanigera:1.0,octodon_degus:1.0):1.0):1.0):1.0,(dipodomys_ordii:1.0,(jaculus_jaculus:1.0,(nannospalax_galili:1.0,(((mesocricetus_auratus:1.0,cricetulus_griseus_chok1gshd:1.0):1.0,(peromyscus_maniculatus_bairdii:1.0,microtus_ochrogaster:1.0):1.0):1.0,((mus_pahari:1.0,(mus_caroli:1.0,(mus_musculus:1.0,mus_spretus:1.0):1.0):1.0):1.0,rattus_norvegicus:1.0)[&label="[MURIDAE]"]:1.0):1.0):1.0):1.0)[&label="[DIPOD-RATT]"]:1.0)[&label="[ROD-NOSQUIRREL]"]:1.0)[&label="[RODENTIA]"]:1.0)[&label="[GLIRES]"]:1.0):1.0,((otolemur_garnettii:1.0,(propithecus_coquereli:1.0,microcebus_murinus:1.0):1.0)[&label="[STREPSIRHINI]"]:1.0,(carlito_syrichta:1.0,(((aotus_nancymaae:1.0,callithrix_jacchus:1.0):1.0,(saimiri_boliviensis_boliviensis:1.0,cebus_capucinus:1.0):1.0):1.0,(((chlorocebus_sabaeus:1.0,((papio_anubis:1.0,(cercocebus_atys:1.0,mandrillus_leucophaeus:1.0):1.0):1.0,(macaca_nemestrina:1.0,(macaca_mulatta:1.0,macaca_fascicularis:1.0):1.0):1.0)[&label="[PAPIONINI]"]:1.0)[&label="[CERCOPITHECINAE]"]:1.0,(colobus_angolensis_palliatus:1.0,(rhinopithecus_roxellana:1.0,rhinopithecus_bieti:1.0):1.0):1.0):1.0,(nomascus_leucogenys:1.0,(pongo_abelii:1.0,(gorilla_gorilla:1.0,((pan_troglodytes:1.0,pan_paniscus:1.0):1.0,homo_sapiens:1.0)[&label="[HOMININI]"]:1.0)[&label="[GORILLA-HUMAN]"]:1.0)[&label="[HOMINIDAE]"]:1.0):1.0)[&label="[CATARRHINI]"]:1.0)[&label="[ANTHROPOIDEA]"]:1.0):1.0)[&label="[PRIMATES]"]:1.0)[&label="[EUARCHONTOGLIRES]"]:1.0):1.0)[&label="[PLACENTALIA]"]:1.0)[&label="[THERIA]"]:1.0)[&label="[MAMMALIA]"];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="label";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=13;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=true;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=935;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=691;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=true;
+	set trees.transformType="cladogram";
+end;
+

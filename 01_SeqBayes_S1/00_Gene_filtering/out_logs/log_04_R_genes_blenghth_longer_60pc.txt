@@ -1,0 +1,270 @@
+Gene ENSG00000005022 - row71- has a branch length longer than 60% of the total tree length: 65.5207542837553%
+
+Gene ENSG00000020577 - row370- has a branch length longer than 60% of the total tree length: 62.6479906181092%
+
+Gene ENSG00000036473 - row487- has a branch length longer than 60% of the total tree length: 65.9803138641519%
+
+Gene ENSG00000057663 - row715- has a branch length longer than 60% of the total tree length: 78.2094851722393%
+
+Gene ENSG00000065559 - row865- has a branch length longer than 60% of the total tree length: 64.7629204496145%
+
+Gene ENSG00000067167 - row925- has a branch length longer than 60% of the total tree length: 73.6650908404415%
+
+Gene ENSG00000068308 - row960- has a branch length longer than 60% of the total tree length: 90.6344625233396%
+
+Gene ENSG00000068796 - row976- has a branch length longer than 60% of the total tree length: 79.0208922067565%
+
+Gene ENSG00000071894 - row1081- has a branch length longer than 60% of the total tree length: 62.7574410229307%
+
+Gene ENSG00000075089 - row1195- has a branch length longer than 60% of the total tree length: 72.0763998581632%
+
+Gene ENSG00000084463 - row1503- has a branch length longer than 60% of the total tree length: 78.8964524464368%
+
+Gene ENSG00000086200 - row1556- has a branch length longer than 60% of the total tree length: 73.5115975362912%
+
+Gene ENSG00000091136 - row1757- has a branch length longer than 60% of the total tree length: 71.5175814723862%
+
+Gene ENSG00000092295 - row1806- has a branch length longer than 60% of the total tree length: 73.6027999747887%
+
+Gene ENSG00000101457 - row2302- has a branch length longer than 60% of the total tree length: 63.1410317362171%
+
+Gene ENSG00000102078 - row2373- has a branch length longer than 60% of the total tree length: 61.7810095834346%
+
+Gene ENSG00000102104 - row2379- has a branch length longer than 60% of the total tree length: 80.5922812818734%
+
+Gene ENSG00000103160 - row2505- has a branch length longer than 60% of the total tree length: 62.8668049335682%
+
+Gene ENSG00000104408 - row2639- has a branch length longer than 60% of the total tree length: 81.0179060231861%
+
+Gene ENSG00000104765 - row2680- has a branch length longer than 60% of the total tree length: 64.2260808011989%
+
+Gene ENSG00000105229 - row2759- has a branch length longer than 60% of the total tree length: 69.5115245973726%
+
+Gene ENSG00000105447 - row2802- has a branch length longer than 60% of the total tree length: 83.7021355668936%
+
+Gene ENSG00000105968 - row2901- has a branch length longer than 60% of the total tree length: 74.9491682124524%
+
+Gene ENSG00000106290 - row2950- has a branch length longer than 60% of the total tree length: 64.7412972717142%
+
+Gene ENSG00000106554 - row2988- has a branch length longer than 60% of the total tree length: 71.6416576278039%
+
+Gene ENSG00000108797 - row3224- has a branch length longer than 60% of the total tree length: 85.7527692569523%
+
+Gene ENSG00000111596 - row3521- has a branch length longer than 60% of the total tree length: 88.2741936655235%
+
+Gene ENSG00000111897 - row3579- has a branch length longer than 60% of the total tree length: 61.6541461104324%
+
+Gene ENSG00000113597 - row3788- has a branch length longer than 60% of the total tree length: 62.8313621320933%
+
+Gene ENSG00000114331 - row3851- has a branch length longer than 60% of the total tree length: 80.0221097103894%
+
+Gene ENSG00000115234 - row3952- has a branch length longer than 60% of the total tree length: 69.6036915782637%
+
+Gene ENSG00000115380 - row3983- has a branch length longer than 60% of the total tree length: 89.278071249114%
+
+Gene ENSG00000115866 - row4054- has a branch length longer than 60% of the total tree length: 80.1237422161044%
+
+Gene ENSG00000120738 - row4597- has a branch length longer than 60% of the total tree length: 76.8654840121106%
+
+Gene ENSG00000124160 - row4915- has a branch length longer than 60% of the total tree length: 84.3406859724524%
+
+Gene ENSG00000124181 - row4919- has a branch length longer than 60% of the total tree length: 84.3957028889347%
+
+Gene ENSG00000124333 - row4952- has a branch length longer than 60% of the total tree length: 59.592861339352%
+
+Gene ENSG00000124783 - row5011- has a branch length longer than 60% of the total tree length: 73.1173463953624%
+
+Gene ENSG00000125945 - row5160- has a branch length longer than 60% of the total tree length: 74.8300818385117%
+
+Gene ENSG00000125991 - row5170- has a branch length longer than 60% of the total tree length: 89.2552622416025%
+
+Gene ENSG00000126216 - row5187- has a branch length longer than 60% of the total tree length: 89.0134986062623%
+
+Gene ENSG00000127054 - row5257- has a branch length longer than 60% of the total tree length: 61.2101738572195%
+
+Gene ENSG00000128652 - row5393- has a branch length longer than 60% of the total tree length: 59.5598788639265%
+
+Gene ENSG00000129354 - row5465- has a branch length longer than 60% of the total tree length: 87.9954004451031%
+
+Gene ENSG00000129515 - row5480- has a branch length longer than 60% of the total tree length: 85.1439676522435%
+
+Gene ENSG00000131791 - row5772- has a branch length longer than 60% of the total tree length: 67.9457968456006%
+
+Gene ENSG00000132510 - row5857- has a branch length longer than 60% of the total tree length: 62.1695070096703%
+
+Gene ENSG00000132535 - row5861- has a branch length longer than 60% of the total tree length: 67.9665706333035%
+
+Gene ENSG00000132680 - row5887- has a branch length longer than 60% of the total tree length: 77.9845488599941%
+
+Gene ENSG00000134343 - row6106- has a branch length longer than 60% of the total tree length: 86.7950869378146%
+
+Gene ENSG00000135932 - row6362- has a branch length longer than 60% of the total tree length: 74.0333896034478%
+
+Gene ENSG00000136267 - row6425- has a branch length longer than 60% of the total tree length: 92.1719164830291%
+
+Gene ENSG00000136485 - row6455- has a branch length longer than 60% of the total tree length: 62.1153038402553%
+
+Gene ENSG00000136535 - row6465- has a branch length longer than 60% of the total tree length: 66.8833567700727%
+
+Gene ENSG00000137252 - row6594- has a branch length longer than 60% of the total tree length: 81.5709401880382%
+
+Gene ENSG00000137845 - row6699- has a branch length longer than 60% of the total tree length: 69.3683737003956%
+
+Gene ENSG00000138378 - row6785- has a branch length longer than 60% of the total tree length: 70.3922364113301%
+
+Gene ENSG00000138709 - row6846- has a branch length longer than 60% of the total tree length: 76.364327913326%
+
+Gene ENSG00000138814 - row6877- has a branch length longer than 60% of the total tree length: 94.0923637126924%
+
+Gene ENSG00000139625 - row6969- has a branch length longer than 60% of the total tree length: 62.6256362021477%
+
+Gene ENSG00000140386 - row7061- has a branch length longer than 60% of the total tree length: 92.6880368025525%
+
+Gene ENSG00000140416 - row7069- has a branch length longer than 60% of the total tree length: 62.9794313052275%
+
+Gene ENSG00000143256 - row7413- has a branch length longer than 60% of the total tree length: 90.3360747100954%
+
+Gene ENSG00000143341 - row7431- has a branch length longer than 60% of the total tree length: 68.4860381159605%
+
+Gene ENSG00000143621 - row7493- has a branch length longer than 60% of the total tree length: 63.1686455249535%
+
+Gene ENSG00000143774 - row7514- has a branch length longer than 60% of the total tree length: 85.0733155337664%
+
+Gene ENSG00000144591 - row7621- has a branch length longer than 60% of the total tree length: 63.1359583284287%
+
+Gene ENSG00000145495 - row7732- has a branch length longer than 60% of the total tree length: 73.140544098928%
+
+Gene ENSG00000145996 - row7796- has a branch length longer than 60% of the total tree length: 86.9594772048079%
+
+Gene ENSG00000148737 - row8095- has a branch length longer than 60% of the total tree length: 72.7706574580583%
+
+Gene ENSG00000148826 - row8101- has a branch length longer than 60% of the total tree length: 87.9683843357262%
+
+Gene ENSG00000151322 - row8318- has a branch length longer than 60% of the total tree length: 88.6187428976956%
+
+Gene ENSG00000151923 - row8396- has a branch length longer than 60% of the total tree length: 83.9692997236075%
+
+Gene ENSG00000152192 - row8413- has a branch length longer than 60% of the total tree length: 65.9594899734203%
+
+Gene ENSG00000152601 - row8468- has a branch length longer than 60% of the total tree length: 67.0747662380187%
+
+Gene ENSG00000152969 - row8505- has a branch length longer than 60% of the total tree length: 84.3979968894542%
+
+Gene ENSG00000154864 - row8688- has a branch length longer than 60% of the total tree length: 74.2182265847516%
+
+Gene ENSG00000155974 - row8785- has a branch length longer than 60% of the total tree length: 62.8844726839595%
+
+Gene ENSG00000157445 - row8939- has a branch length longer than 60% of the total tree length: 74.7023978468116%
+
+Gene ENSG00000158623 - row9065- has a branch length longer than 60% of the total tree length: 63.2406151510858%
+
+Gene ENSG00000158669 - row9067- has a branch length longer than 60% of the total tree length: 72.9420111352751%
+
+Gene ENSG00000159164 - row9115- has a branch length longer than 60% of the total tree length: 76.3592907270943%
+
+Gene ENSG00000162227 - row9429- has a branch length longer than 60% of the total tree length: 88.7711942567671%
+
+Gene ENSG00000162761 - row9542- has a branch length longer than 60% of the total tree length: 92.4242318422501%
+
+Gene ENSG00000162843 - row9558- has a branch length longer than 60% of the total tree length: 62.0194445153908%
+
+Gene ENSG00000162971 - row9587- has a branch length longer than 60% of the total tree length: 79.6041021493499%
+
+Gene ENSG00000164002 - row9851- has a branch length longer than 60% of the total tree length: 60.2394486263867%
+
+Gene ENSG00000164494 - row10002- has a branch length longer than 60% of the total tree length: 91.4908039747191%
+
+Gene ENSG00000164754 - row10059- has a branch length longer than 60% of the total tree length: 93.6469359257681%
+
+Gene ENSG00000166426 - row10425- has a branch length longer than 60% of the total tree length: 69.0539154279859%
+
+Gene ENSG00000166532 - row10457- has a branch length longer than 60% of the total tree length: 72.2731217184417%
+
+Gene ENSG00000166793 - row10494- has a branch length longer than 60% of the total tree length: 70.7582287652829%
+
+Gene ENSG00000167632 - row10668- has a branch length longer than 60% of the total tree length: 81.3924050660558%
+
+Gene ENSG00000167889 - row10728- has a branch length longer than 60% of the total tree length: 88.2742806401275%
+
+Gene ENSG00000168056 - row10767- has a branch length longer than 60% of the total tree length: 65.8452219487422%
+
+Gene ENSG00000169047 - row10958- has a branch length longer than 60% of the total tree length: 63.1550029993109%
+
+Gene ENSG00000169375 - row11024- has a branch length longer than 60% of the total tree length: 93.4325771974019%
+
+Gene ENSG00000169398 - row11026- has a branch length longer than 60% of the total tree length: 92.2476559185631%
+
+Gene ENSG00000171863 - row11458- has a branch length longer than 60% of the total tree length: 63.1262454537283%
+
+Gene ENSG00000172209 - row11506- has a branch length longer than 60% of the total tree length: 76.9002141799408%
+
+Gene ENSG00000172264 - row11516- has a branch length longer than 60% of the total tree length: 64.8128779166232%
+
+Gene ENSG00000172987 - row11635- has a branch length longer than 60% of the total tree length: 95.1014165046967%
+
+Gene ENSG00000174498 - row11848- has a branch length longer than 60% of the total tree length: 75.3796344886031%
+
+Gene ENSG00000174516 - row11852- has a branch length longer than 60% of the total tree length: 66.1403613287143%
+
+Gene ENSG00000174871 - row11895- has a branch length longer than 60% of the total tree length: 76.2678936771289%
+
+Gene ENSG00000175711 - row12027- has a branch length longer than 60% of the total tree length: 86.5646148424688%
+
+Gene ENSG00000176125 - row12082- has a branch length longer than 60% of the total tree length: 83.5660107567361%
+
+Gene ENSG00000179965 - row12563- has a branch length longer than 60% of the total tree length: 88.2577363566729%
+
+Gene ENSG00000180917 - row12665- has a branch length longer than 60% of the total tree length: 66.9804571254781%
+
+Gene ENSG00000182557 - row12862- has a branch length longer than 60% of the total tree length: 60.4436529010844%
+
+Gene ENSG00000182870 - row12909- has a branch length longer than 60% of the total tree length: 65.850628897958%
+
+Gene ENSG00000183098 - row12949- has a branch length longer than 60% of the total tree length: 84.1052188658588%
+
+Gene ENSG00000184486 - row13167- has a branch length longer than 60% of the total tree length: 79.0988934978065%
+
+Gene ENSG00000185008 - row13249- has a branch length longer than 60% of the total tree length: 86.4665900733649%
+
+Gene ENSG00000185338 - row13311- has a branch length longer than 60% of the total tree length: 70.8764948729215%
+
+Gene ENSG00000185345 - row13315- has a branch length longer than 60% of the total tree length: 71.6118724512872%
+
+Gene ENSG00000185420 - row13322- has a branch length longer than 60% of the total tree length: 86.9482246878101%
+
+Gene ENSG00000185813 - row13388- has a branch length longer than 60% of the total tree length: 87.3778250768319%
+
+Gene ENSG00000187416 - row13605- has a branch length longer than 60% of the total tree length: 79.2579296874748%
+
+Gene ENSG00000188580 - row13770- has a branch length longer than 60% of the total tree length: 67.8929216064339%
+
+Gene ENSG00000188859 - row13823- has a branch length longer than 60% of the total tree length: 88.0909106184702%
+
+Gene ENSG00000197757 - row14197- has a branch length longer than 60% of the total tree length: 85.9828415620702%
+
+Gene ENSG00000197859 - row14212- has a branch length longer than 60% of the total tree length: 83.7367470390331%
+
+Gene ENSG00000197860 - row14213- has a branch length longer than 60% of the total tree length: 62.8073501600584%
+
+Gene ENSG00000198604 - row14338- has a branch length longer than 60% of the total tree length: 63.7780433837164%
+
+Gene ENSG00000204435 - row14596- has a branch length longer than 60% of the total tree length: 74.6832628543218%
+
+Gene ENSG00000213015 - row14788- has a branch length longer than 60% of the total tree length: 59.6579694404454%
+
+Gene ENSG00000213892 - row14850- has a branch length longer than 60% of the total tree length: 60.0607350593142%
+
+Gene ENSG00000231256 - row15047- has a branch length longer than 60% of the total tree length: 64.2739678684786%
+
+Gene ENSG00000247626 - row15220- has a branch length longer than 60% of the total tree length: 67.5268714913686%
+
+Gene ENSG00000254469 - row15292- has a branch length longer than 60% of the total tree length: 91.5203500136309%
+
+Gene ENSG00000262814 - row15385- has a branch length longer than 60% of the total tree length: 72.4896344148519%
+
+Gene ENSG00000277258 - row15502- has a branch length longer than 60% of the total tree length: 65.9378030082371%
+
+
+A total of 133genes had a branch length longer than 60% of
+                  the total tree length
+

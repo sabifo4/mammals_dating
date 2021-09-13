@@ -1,0 +1,289 @@
+#-------------------#
+# CLEAN ENVIRONMENT #
+#-------------------#
+rm( list = ls( ) )
+
+#-----------------------#
+# SET WORKING DIRECTORY #
+#-----------------------#
+library( rstudioapi ) 
+# Get the path to current open R script and find main dir
+path_to_file <- getActiveDocumentContext()$path
+wd <- paste( dirname( path_to_file ), "/", sep = "" )
+setwd( wd )
+wd_mcmctree <- gsub( pattern = "03_Fit_ST_to_posteriors/", replacement = "", x = wd )
+#--------------#
+# LOAD LIBRARY #
+#--------------#
+library( sn )
+
+#---------------------#
+# LOAD AND PARSE DATA #
+#---------------------#
+## POSTERIOR - GBM
+# 1. Load files and get parameters
+run1    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc1/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+run2    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc2/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ),
+                       header = T, sep = "\t" )
+run3    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc3/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+run5    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc5/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+run6    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc6/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+run9    <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc9/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+run10   <- read.table( paste( wd_mcmctree,
+                              "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/mcmc10/mcmctree_GBM/02_atlantogenata_tarver2016/mcmc.txt",
+                              sep = "" ), header = T, sep = "\t" )
+
+# 2. Summarise parameters for all runs 
+divtimes1  <- run1[,-c(1, (dim(run1)[2]-8):(dim(run1)[2]) )]
+divtimes2  <- run2[,-c(1, (dim(run2)[2]-8):(dim(run2)[2]) )]
+divtimes3  <- run3[,-c(1, (dim(run3)[2]-8):(dim(run3)[2]) )]
+divtimes5  <- run5[,-c(1, (dim(run5)[2]-8):(dim(run5)[2]) )]
+divtimes6  <- run6[,-c(1, (dim(run6)[2]-8):(dim(run6)[2]) )]
+divtimes9  <- run9[,-c(1, (dim(run9)[2]-8):(dim(run9)[2]) )]
+divtimes10 <- run10[,-c(1, (dim(run10)[2]-8):(dim(run10)[2]) )]
+divtimes   <- rbind( divtimes1, divtimes2, divtimes3, divtimes5,
+                     divtimes6, divtimes9, divtimes10 )
+
+mean_est_divt  <- apply( X = divtimes, MARGIN = 2, FUN = mean )
+quant_est_divt <- apply( X = divtimes, MARGIN = 2, FUN = quantile, probs = c(0.025,0.975) )
+quant_est_divt <- t( quant_est_divt )
+all.equal( quant_est_divt[1,], quantile( divtimes[,1], probs = c( 0.025, 0.975 ) ) )
+
+# Save object with post.divtimes to later be used 
+save( divtimes, file = "00_fitST/Rdata/post.divtimes.RData" )
+
+## PRIOR - GBM 
+# 1. Load files and get parameters
+run1.prior    <- read.table( paste( wd_mcmctree,
+                                    "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior/mcmc1/mcmc.txt",
+                                    sep = "" ),header = T, sep = "\t" )
+run2.prior    <- read.table( paste( wd_mcmctree,
+                                    "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior/mcmc2/mcmc.txt",
+                                    sep = "" ),header = T, sep = "\t" )
+run3.prior    <- read.table( paste( wd_mcmctree,
+                                    "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior/mcmc3/mcmc.txt",
+                                    sep = "" ),header = T, sep = "\t" )
+run4.prior    <- read.table( paste( wd_mcmctree,
+                                    "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior/mcmc4/mcmc.txt",
+                                    sep = "" ),header = T, sep = "\t" )
+run5.prior    <- read.table( paste( wd_mcmctree,
+                                    "02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior/mcmc5/mcmc.txt",
+                                    sep = "" ),header = T, sep = "\t" )
+
+# 2. Summarise parameters for both runs 
+divtimes1.prior <- run1.prior[,-c(1, (dim(run1.prior)[2]) )]
+divtimes2.prior <- run2.prior[,-c(1, (dim(run2.prior)[2]) )]
+divtimes3.prior <- run3.prior[,-c(1, (dim(run3.prior)[2]) )]
+divtimes4.prior <- run4.prior[,-c(1, (dim(run4.prior)[2]) )]
+divtimes5.prior <- run5.prior[,-c(1, (dim(run5.prior)[2]) )]
+
+divtimes.prior72sp  <- rbind( divtimes1.prior, divtimes2.prior, divtimes3.prior,
+                              divtimes4.prior, divtimes5.prior)
+
+mean_est_divt.prior72sp  <- apply( X = divtimes.prior72sp, MARGIN = 2, FUN = mean )
+quant_est_divt.prior72sp <- apply( X = divtimes.prior72sp, MARGIN = 2, FUN = quantile, probs = c(0.025,0.975) )
+quant_est_divt.prior72sp <- t( quant_est_divt.prior72sp )
+all.equal( quant_est_divt.prior72sp[1,], quantile( divtimes.prior72sp[,1], probs = c( 0.025, 0.975 ) ) )
+
+# Save object with prior.divtimes to later be used 
+save( divtimes.prior72sp, file = "00_fitST/Rdata/prior.divtimes.RData" )
+
+#---------------------#
+# FIT ST DIST - trial #
+#---------------------#
+# Try sn::st.mple
+# Source: https://faculty.washington.edu/ezivot/econ589/econ589returnProperties.r
+root <- sn::st.mple( y = divtimes$t_n73 )
+plot( density( run1$t_n73, adj = 0.1 ), xlim =  )
+curve( dst( x, xi = root$dp[1], omega = root$dp[2],
+            alpha = root$dp[3], nu = root$dp[4]),
+       from=0, to=5, add = TRUE, col = "red" )
+abline( v = c( quant_est_divt[1,] ), col = "blue" )
+
+node_81 <- sn::st.mple( y = divtimes$t_n81, penalty = NULL )
+plot( density( run1$t_n81, adj = 0.1 ) )
+curve( dst( x, xi = node_81$dp[1], omega = node_81$dp[2],
+            alpha = node_81$dp[3], nu = node_81$dp[4]),
+       from=0, to=1, n = 5e2, add = TRUE, col = "red" )
+# abline( v = c( quant_est_divt[9,] ), col = "blue" )
+
+qqplot( x = pst( divtimes$t_n73, xi = root$dp[1], omega = root$dp[2],
+                 alpha = root$dp[3], nu = root$dp[4]),
+        y = pst( divtimes$t_n81, xi = node_81$dp[1], omega = node_81$dp[2],
+                 alpha = node_81$dp[3], nu = node_81$dp[4])
+)
+
+
+#---------------------------#
+# FUNCTION TO FIND ST-FITS  #
+#---------------------------#
+# 1. Create list to store fitted ST-distributions
+ST.fitted.dists          <- vector( mode = "list", length = length( colnames( divtimes ) ) )
+names( ST.fitted.dists ) <- colnames( divtimes )
+ST.fitted.objects          <- vector( mode = "list", length = length( colnames( divtimes ) ) )
+names( ST.fitted.objects ) <- colnames( divtimes )
+
+# 2. Set seed and start loop 
+set.seed( 12345 )
+for ( i in 1:length( colnames( divtimes ) ) ){
+  
+  # 1. Fit a ST distribution to each node. Then save in 
+  #    the lists previously created both the object
+  #    output by sn::st.mple and only the "dp" pars
+  cat( "Working with node", colnames( divtimes )[i], "...\n\n" )
+  write( paste( "Working with node ", colnames( divtimes )[i], "...\n\n", sep = "" ),
+         file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+  tmp_node <- sn::st.mple( y = divtimes[,i], opt.method = "BFGS" )
+
+  # 2. Check for convergence, otherwise keep trying
+  count_tries_conv <- 1
+  while( tmp_node$opt.method$convergence != 0 ){
+    
+    count_tries_conv <- count_tries_conv + 1
+    cat( "Convergence has not been reached with node", colnames( divtimes )[i],
+         "...\nSEARCH NUMBER", count_tries_conv, "...\n",
+         "The parameters found in the previous search:\n",
+         tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",tmp_node$dp[4],
+         "\nare now used\as starting values now\n\n" )
+    write( paste( "Convergence has not been reached with node ", colnames( divtimes )[i],
+                "...\nSEARCH NUMBER ", count_tries_conv, "...\n",
+                "The parameters found in the previous search are used\n",
+                "as starting values now:\n",
+                tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",tmp_node$dp[4],
+                "\n\n", sep = "" ),
+           file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+    
+    tmp_node <- sn::st.mple( y = divtimes[,i], opt.method = "BFGS",
+                             dp = tmp_node$dp.complete )
+    
+    if( tmp_node$opt.method$convergence == 0 ){
+      cat( "Convergenced reached now!\n" )
+      cat( "Final parameters for node", colnames( divtimes )[i], "are:\n",
+           tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",tmp_node$dp[4],"\n\n" )
+      write( paste( "Convergenced reached now!\n\n", 
+                    "Final parameters for node ", colnames( divtimes )[i], "are:\n",
+                    tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",
+                    tmp_node$dp[4],"\n\n", sep = "" ),
+             file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+             
+    }
+    
+    if( count_tries_conv == 50 ){
+      
+      cat( "You have tried 50 times\n",
+           "We will try the optimizing approach within this function...\n" )
+      write( paste( "You have tried 50 times\n",
+                    "We will try the optimizing approach within this function...\n", sep = "" ),
+             file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+      count_tries_conv_FUN <- 0
+      
+      while( tmp_node$opt.method$convergence != 0 ){
+        
+        count_tries_conv_FUN <- count_tries_conv_FUN + 1
+        tmp_node <- sn::st.mple( y = divtimes[,i], dp = tmp_node$dp.complete )
+        if( tmp_node$opt.method$convergence == 0 ){
+          cat( "Convergenced reached with their method now!\n" )
+          cat( "Final parameters for node", colnames( divtimes )[i], "are :\n",
+               tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",
+               tmp_node$dp[4],"\n\n" )
+          write( paste( "Convergenced reached with their method now!\n\n", 
+                        "Final parameters for node ", colnames( divtimes )[i], "are:\n",
+                        tmp_node$dp[1], "|", tmp_node$dp[2], "|",tmp_node$dp[3], "|",
+                        tmp_node$dp[4],"\n\n", sep = "" ),
+                 file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+        }
+        if( count_tries_conv_FUN == 50 ){
+          cat( "You have tried 50 times with their approach,",
+                 "this is going to be killed\n" )
+          write( paste( "You have tried 50 times with their approach,",
+                        "this is going to be killed\n", sep = "" ),
+                 file = "00_fitST/logs/log_file_convergence_BFGS.txt", sep = "\n", append = TRUE )
+          break
+        }
+        
+      }
+    
+    }
+    
+  }
+  
+  # Get data 
+  ST.fitted.objects[[ i ]] <- tmp_node
+  ST.fitted.dists[[ i ]]   <- tmp_node$dp
+  
+  # 3. Plot fitted ST for each node previously 
+  #    computed using the values sampled during the MCMC
+  png( filename = paste( "00_fitST/plots/Fit_ST_", colnames( divtimes )[i], ".png", sep = "" ),
+       width = 1024, height = 768 )
+  # 3.1. Find limit axis
+  max_x_st    <- round( max( density( rst( n = 1000, dp = tmp_node$dp.complete ) )$x ) + 0.5 )
+  max_x_chain <- round( max( density( divtimes[,i] )$x ) + 0.5 )
+  x_lim       <- max( max_x_chain, max_x_st )
+  max_y_st    <- round( max( density( rst( n = 1000, dp = tmp_node$dp.complete ) )$y ) )
+  max_y_chain <- round( max( density( divtimes[,i] )$y ) + 0.5 )
+  y_lim       <- max( max_y_chain, max_y_st )
+  write( paste( colnames( divtimes )[i], max_x_chain, max_y_chain, sep = "\t" ),
+         file = "00_fitST/logs/log_limaxis.txt", sep = "\n", append = TRUE )
+  # 3.2. Plot
+  plot( density( divtimes[,i], adj = 1 ),
+        xlim = c( 0, x_lim ), ylim = c( 0, y_lim ), 
+        main = paste( colnames( divtimes )[i], " = ",
+                     "ST(", paste0( round(tmp_node$dp, 2),
+                                    collapse = "," ),
+                     ")", sep = "" ) )
+  curve( dst( x, xi = tmp_node$dp[1], omega = tmp_node$dp[2],
+              alpha = tmp_node$dp[3], nu = tmp_node$dp[4] ),
+         from = 0, to = x_lim,
+         n = 1e4, add = TRUE, col = "red" )
+  dev.off()
+  
+}
+
+# 3. Save objects so they can later used for extra plots
+save( ST.fitted.objects, file = "00_fitST/Rdata/ST.fitted.objects.RData" )
+save( ST.fitted.dists, file = "00_fitST/Rdata/ST.fitted.dists.RData" )
+
+# 4. Transform list into a matrix
+mat_ST <- matrix( 0, nrow = length( ST.fitted.dists ), ncol = 6 )
+#names( ST.fitted.dists[[1]] )
+colnames( mat_ST ) <- c( "xi-location", "omega-scale", "alpha-shape", "nu-df",
+                         "MCMCtree-calib", "MCMCtree-calib-rounded" )
+rownames( mat_ST ) <- names( ST.fitted.dists )
+for ( i in 1:length( ST.fitted.dists ) ){
+  
+  mat_ST[i,1] <- ST.fitted.dists[[ i ]][1]
+  mat_ST[i,2] <- ST.fitted.dists[[ i ]][2]
+  mat_ST[i,3] <- ST.fitted.dists[[ i ]][3]
+  mat_ST[i,4] <- ST.fitted.dists[[ i ]][4]
+  
+  tmp.ST.fitted.dists.rounded <- round( ST.fitted.dists[[ i ]], 3 )
+  mat_ST[i,5] <- paste( "ST(", ST.fitted.dists[[ i ]][1], ",", ST.fitted.dists[[ i ]][2],
+                        ",", ST.fitted.dists[[ i ]][3], ",", ST.fitted.dists[[ i ]][4], ")",
+                        sep = "" )
+  mat_ST[i,6] <- paste( "ST(", tmp.ST.fitted.dists.rounded[1], ",",
+                        tmp.ST.fitted.dists.rounded[2], ",", tmp.ST.fitted.dists.rounded[3],
+                        ",", tmp.ST.fitted.dists.rounded[4], ")", sep = "" )
+  
+}
+
+write.table( mat_ST, file = "00_fitST/Rout/ST.fitted.dists.G2.40.tsv", sep = "\t",
+             quote = F )
+
+##===============================================##
+## STOP THIS SCRIPT HERE. NOW GO TO SCRIPT       ##
+## "01_Add_STcalibs_to_tree.R" SO THE TREES      ##
+## CAN BE IMPLEMENTED WITH THE ST DISTRIBUTIONS  ##
+## THAT HAVE BEEN FITTED TO EACH NODE            ##
+##===============================================##

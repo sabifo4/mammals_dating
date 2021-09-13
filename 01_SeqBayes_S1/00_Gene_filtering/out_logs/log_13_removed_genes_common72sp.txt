@@ -1,0 +1,11 @@
+Gene ENSG00000116044 found in dir 101! This will be deleted in step 3
+Gene ENSG00000134200 found in dir 127! This will be deleted in step 3
+Gene ENSG00000140009 found in dir 177! This will be deleted in step 3
+Gene ENSG00000136634 found in dir 19! This will be deleted in step 3
+Gene ENSG00000198650 found in dir 300! This will be deleted in step 3
+Gene ENSG00000111713 found in dir 372! This will be deleted in step 3
+Gene ENSG00000174607 found in dir 393! This will be deleted in step 3
+Gene ENSG00000104812 found in dir 499! This will be deleted in step 3
+Gene ENSG00000179454 found in dir 552! This will be deleted in step 3
+Gene ENSG00000152457 found in dir 56! This will be deleted in step 3
+Gene ENSG00000178522 found in dir 7! This will be deleted in step 3
