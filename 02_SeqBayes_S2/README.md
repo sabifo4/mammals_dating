@@ -203,7 +203,7 @@ are explained (see
 are the following:   
 
    * [Afrotheria](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria)   
-   * [Chiroptera](https://github.com/sabifo4/mammals_dating)   
+   * [Chiroptera](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera)   
    * [Euarchonta](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta)   
    * [Lagomorpha](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha)   
    * [Laurasiatheria_cetartiodactyla](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla)   
