@@ -76,10 +76,10 @@
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree2/00_Prior_onlyST
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree2/01_Prior_SBandST
 
-
-
 02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns
 02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/Rdata
+
+02_SeqBayes_S2/01_BASEML/*/
 
 02_SeqBayes_S2/02_MCMCtree/*/7
 
