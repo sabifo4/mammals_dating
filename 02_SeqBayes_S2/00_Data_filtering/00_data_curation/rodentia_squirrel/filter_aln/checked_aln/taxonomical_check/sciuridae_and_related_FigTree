@@ -1,0 +1,370 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=268;
+	taxlabels
+	aeretes_melanopterus
+	aeromys_tephromelas
+	ammospermophilus_harrisii
+	ammospermophilus_insularis
+	ammospermophilus_interpres
+	ammospermophilus_leucurus
+	aplodontia_rufa
+	aplodontia_rufa_californica
+	aplodontia_rufa_humboldtiana
+	aplodontia_rufa_nigra
+	aplodontia_rufa_olympica
+	aplodontia_rufa_pacifica
+	aplodontia_rufa_phaea
+	atlantoxerus_getulus
+	belomys_pearsonii
+	callosciurus_caniceps
+	callosciurus_erythraeus
+	callosciurus_erythraeus_griseimanus
+	callosciurus_finlaysonii[&!color=#ff6600]
+	callosciurus_inornatus
+	callosciurus_nigrovittatus
+	callosciurus_notatus
+	callosciurus_prevostii
+	callospermophilus_lateralis
+	callospermophilus_madrensis
+	callospermophilus_saturatus
+	cynomys_gunnisoni
+	cynomys_leucurus
+	cynomys_ludovicianus
+	cynomys_mexicanus
+	cynomys_parvidens
+	dremomys_gularis
+	dremomys_lokriah
+	dremomys_pernyi
+	dremomys_pernyi_owstoni[&!color=#ff6600]
+	dremomys_pyrrhomerus
+	dremomys_rufigenis
+	dryomys_laniger
+	dryomys_nitedula
+	dryomys_nitedula_tichomirowi
+	eliomys_melanurus
+	eliomys_quercinus
+	eoglaucomys_fimbriatus
+	epixerus_wilsoni
+	eupetaurus_cinereus
+	exilisciurus_concinnus
+	exilisciurus_exilis
+	funambulus_layardi
+	funambulus_palmarum
+	funambulus_pennantii
+	funambulus_sublineatus
+	funisciurus[&!color=#ff6600]
+	glaucomys_sabrinus
+	glaucomys_sabrinus_griseifrons
+	glaucomys_volans
+	glirulus_japonicus
+	glis_glis
+	graphiurus_kelleni
+	graphiurus_lorraineus
+	graphiurus_microtis
+	graphiurus_murinus
+	graphiurus_ocularis
+	graphiurus_parvus
+	graphiurus_platyops
+	heliosciurus_ruwenzorii
+	heliosciurus_undulatus
+	hylopetes_alboniger
+	hylopetes_lepidus
+	hylopetes_nigripes
+	hylopetes_phayrei
+	hylopetes_spadiceus
+	hyosciurus_heinrichi
+	ictidomys_mexicanus_mexicanus
+	ictidomys_parvidens
+	ictidomys_tridecemlineatus
+	ictidomys_tridecemlineatus_arenicola
+	iomys_horsfieldi[&!color=#ff6600]
+	lariscus_insignis
+	marmota_baibacina
+	marmota_bobak
+	marmota_broweri
+	marmota_caligata
+	marmota_camtschatica
+	marmota_caudata
+	marmota_flaviventris
+	marmota_himalayana
+	marmota_marmota
+	marmota_menzbieri
+	marmota_monax
+	marmota_olympus
+	marmota_sibirica
+	marmota_vancouverensis
+	menetes_berdmorei
+	microsciurus_alfari[&!color=#ff6600]
+	microsciurus_flaviventer[&!color=#ff6600]
+	muscardinus_avellanarius
+	myomimus_roachi
+	myosciurus_pumilio
+	nannosciurus_melanotis
+	notocitellus_adocetus
+	notocitellus_annulatus
+	ornithorhynchus_anatinus
+	otospermophilus_atricapillus[&!color=#ff6600]
+	otospermophilus_beecheyi
+	otospermophilus_beecheyi_douglasii
+	otospermophilus_beecheyi_fisheri
+	otospermophilus_beecheyi_nudipes
+	otospermophilus_beecheyi_parvulus
+	otospermophilus_beecheyi_rupinarum
+	otospermophilus_beecheyi_sierrae
+	otospermophilus_variegatus
+	otospermophilus_variegatus_utah
+	paraxerus_alexandri
+	paraxerus_cepapi
+	paraxerus_ochraceus
+	paraxerus_vexillarius
+	petaurillus_kinlochii[&!color=#ff6600]
+	petaurista_albiventer
+	petaurista_alborufus
+	petaurista_alborufus_castaneus
+	petaurista_alborufus_lena
+	petaurista_elegans
+	petaurista_elegans_caniceps
+	petaurista_elegans_sybilla
+	petaurista_hainana
+	petaurista_leucogenys
+	petaurista_leucogenys_nikkonis
+	petaurista_petaurista
+	petaurista_petaurista_melanotus
+	petaurista_philippensis
+	petaurista_philippensis_grandis
+	petaurista_xanthotis
+	petaurista_yunanensis
+	petinomys_setosus[&!color=#ff6600]
+	poliocitellus_franklinii
+	prosciurillus_murinus
+	protoxerus_stangeri
+	pteromys_momonga
+	pteromys_volans
+	pteromyscus_pulverulentus
+	ratufa_affinis
+	ratufa_bicolor
+	rheithrosciurus_macrotis[&!color=#ff6600]
+	rhinosciurus_laticaudatus
+	rubrisciurus_rubriventer
+	sciurillus_pusillus
+	sciurillus_pusillus_kuhlii
+	sciurotamias_davidianus
+	sciurus_aberti
+	sciurus_aestuans
+	sciurus_anomalus
+	sciurus_aureogaster
+	sciurus_carolinensis
+	sciurus_colliaei[&!color=#ff6600]
+	sciurus_deppei
+	sciurus_gilvigularis
+	sciurus_granatensis
+	sciurus_granatensis_hoffmanni
+	sciurus_griseus
+	sciurus_ignitus
+	sciurus_igniventris
+	sciurus_lis
+	sciurus_niger
+	sciurus_oculatus
+	sciurus_pyrrhinus
+	sciurus_spadiceus
+	sciurus_stramineus
+	sciurus_variegatoides
+	sciurus_variegatoides_rigidus
+	sciurus_variegatoides_thomasi
+	sciurus_vulgaris
+	spermophilopsis_leptodactylus
+	spermophilus_alashanicus
+	spermophilus_citellus
+	spermophilus_dauricus[&!color=#cc0000]
+	spermophilus_erythrogenys
+	spermophilus_fulvus
+	spermophilus_major
+	spermophilus_musicus
+	spermophilus_pallidicauda
+	spermophilus_pygmaeus
+	spermophilus_relictus
+	spermophilus_suslicus
+	spermophilus_taurensis
+	spermophilus_xanthoprymnus
+	sundasciurus_brookei
+	sundasciurus_fraterculus
+	sundasciurus_hippurus
+	sundasciurus_hoogstraali
+	sundasciurus_jentinki
+	sundasciurus_juvencus
+	sundasciurus_lowii
+	sundasciurus_mindanensis
+	sundasciurus_moellendorffi
+	sundasciurus_philippinensis
+	sundasciurus_rabori
+	sundasciurus_samarensis
+	sundasciurus_steerii
+	sundasciurus_tahan
+	sundasciurus_tenuis
+	sundasciurus_tenuis_altitudinus
+	syntheosciurus_brochus[&!color=#ff6600]
+	tachyglossus_aculeatus
+	tamias_alpinus
+	tamias_amoenus
+	tamias_bulleri
+	tamias_canipes
+	tamias_cinereicollis
+	tamias_dorsalis
+	tamias_durangae
+	tamias_merriami
+	tamias_minimus
+	tamias_minimus_scrutator[&!color=#ff6600]
+	tamias_obscurus
+	tamias_ochrogenys
+	tamias_palmeri
+	tamias_panamintinus
+	tamias_quadrimaculatus
+	tamias_quadrivittatus
+	tamias_ruficaudus
+	tamias_rufus
+	tamias_senex
+	tamias_sibiricus
+	tamias_siskiyou
+	tamias_sonomae
+	tamias_speciosus
+	tamias_striatus
+	tamias_townsendii
+	tamias_umbrinus
+	tamiasciurus_douglasii
+	tamiasciurus_hudsonicus
+	tamiasciurus_hudsonicus_grahamensis
+	tamiops_maritimus
+	tamiops_mcclellandii
+	tamiops_rodolphii
+	tamiops_swinhoei
+	trogopterus_xanthipes
+	urocitellus_armatus
+	urocitellus_beldingi_creber
+	urocitellus_brunneus_brunneus
+	urocitellus_brunneus_endemicus
+	urocitellus_columbianus
+	urocitellus_columbianus_ruficaudus
+	urocitellus_elegans_elegans
+	urocitellus_mollis
+	urocitellus_mollis_idahoensis
+	urocitellus_parryii
+	urocitellus_parryii_ablusus
+	urocitellus_parryii_kennicotti
+	urocitellus_parryii_kodiacensis
+	urocitellus_parryii_lyratus
+	urocitellus_parryii_nebulicola
+	urocitellus_parryii_plesius
+	urocitellus_richardsonii
+	urocitellus_townsendi_nancyae
+	urocitellus_townsendi_townsendi
+	urocitellus_townsendi_vigilis
+	urocitellus_undulatus
+	urocitellus_washingtoni
+	xerospermophilus_mohavensis
+	xerospermophilus_perotensis
+	xerospermophilus_spilosoma
+	xerospermophilus_spilosoma_marginatus
+	xerospermophilus_tereticaudus
+	xerus_inauris
+	xerus_princeps
+	xerus_rutilus
+	zaglossus_bruijni
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((pteromyscus_pulverulentus:0.119519,((((((((petaurista_yunanensis:0.009606,petaurista_albiventer:0.018642):0.098401,(petaurista_philippensis:0.041994,(petaurista_hainana:0.063708,(petaurista_alborufus_castaneus:0.005225,petaurista_alborufus:0.011966):0.057098):0.006427):0.03455):0.078885,(petaurista_elegans:0.022736,petaurista_elegans_sybilla:0.059267):0.181078):0.030464,((petaurista_alborufus_lena:0.145455,((petaurista_philippensis_grandis:0.049831,(petaurista_petaurista:1.0E-6,petaurista_petaurista_melanotus:1.0E-6):0.023294):0.037593,petaurista_elegans_caniceps:0.110714):0.042407):0.037225,petaurista_xanthotis:0.130416):0.031817):0.033048,(petaurista_leucogenys_nikkonis:0.019911,petaurista_leucogenys:0.011903):0.121489):0.122441,((eoglaucomys_fimbriatus:0.239266,((glaucomys_sabrinus:0.080011,(glaucomys_volans:0.052878,glaucomys_sabrinus_griseifrons:0.062408):0.009574):0.133236,((hylopetes_nigripes:0.144837,(hylopetes_spadiceus:0.043132,hylopetes_lepidus:0.119157):0.080834):0.036001,(iomys_horsfieldi:0.121313,(petinomys_setosus:0.207052,((hylopetes_phayrei:0.052266,hylopetes_alboniger:0.013971):0.105561,petaurillus_kinlochii:0.221268):0.034389):0.08202):0.024059):0.048997):0.020767):0.045244,(((tamiasciurus_douglasii:0.025971,(tamiasciurus_hudsonicus:0.014752,tamiasciurus_hudsonicus_grahamensis:0.042898):1.0E-6):0.333127,(((sciurus_anomalus:0.282874,((sciurus_carolinensis:0.150707,(sciurus_aberti:0.246946,(((((((sciurus_granatensis:0.015784,(sciurus_colliaei:0.075156,sciurus_granatensis_hoffmanni:0.002345):0.00456):0.087874,(sciurus_variegatoides:0.002945,(sciurus_variegatoides_rigidus:0.008456,sciurus_variegatoides_thomasi:0.026177):9.46E-4):0.125412):0.013405,sciurus_deppei:0.178293):0.012232,microsciurus_alfari:0.114635):0.009617,syntheosciurus_brochus:0.052772):0.006955,(sciurus_aureogaster:1.0E-6,sciurus_oculatus:0.001499):0.114934):0.028393,(((sciurus_aestuans:0.019634,sciurus_gilvigularis:0.009946):0.083806,((sciurus_igniventris:0.030056,sciurus_pyrrhinus:0.063276):0.017131,(sciurus_stramineus:0.039757,microsciurus_flaviventer:1.0E-6):0.053888):0.007673):0.012778,(sciurus_ignitus:1.0E-6,sciurus_spadiceus:0.128228):0.050394):0.013361):0.007894):0.013637):0.01833,sciurus_niger:0.12375):0.051507):0.010404,(((sciurus_vulgaris:0.010824,spermophilus_dauricus:0.028203):0.032319,sciurus_lis:0.044228):0.107448,rheithrosciurus_macrotis:0.194974):0.055047):1.0E-6,sciurus_griseus:0.025518):0.095868):0.155515,((((sciurillus_pusillus:0.15057,sciurillus_pusillus_kuhlii:0.196195):0.553422,((ratufa_affinis:0.128502,ratufa_bicolor:0.211927):0.47358,((((((aplodontia_rufa_nigra:0.012699,aplodontia_rufa_olympica:1.0E-6):0.005567,aplodontia_rufa:0.007818):0.046789,(aplodontia_rufa_humboldtiana:0.001296,aplodontia_rufa_phaea:0.008377):0.015342):0.013405,aplodontia_rufa_californica:0.035637):0.100734,aplodontia_rufa_pacifica:0.122849):0.444999,((ornithorhynchus_anatinus:0.433861,(zaglossus_bruijni:0.077877,tachyglossus_aculeatus:0.07855):0.33054):4.19465,(((dryomys_laniger:0.157273,(dryomys_nitedula:1.0E-6,dryomys_nitedula_tichomirowi:0.00653):0.175889):0.103632,(eliomys_melanurus:0.069253,eliomys_quercinus:0.061812):0.339328):0.161967,((graphiurus_platyops:0.205843,(graphiurus_ocularis:0.114487,(((graphiurus_murinus:0.050508,graphiurus_microtis:0.089084):0.004911,(graphiurus_parvus:0.007486,graphiurus_lorraineus:0.00767):0.050585):0.006836,graphiurus_kelleni:0.10335):0.005306):0.036326):0.394194,((myomimus_roachi:0.650415,muscardinus_avellanarius:0.157458):0.15864,(glirulus_japonicus:0.309087,glis_glis:0.332386):0.090311):0.110781):0.05187):0.362375):0.14867):0.067738):0.052754):0.034254,((sciurotamias_davidianus:0.399331,((((((((spermophilus_pygmaeus:0.040598,spermophilus_musicus:0.059254):0.096599,((spermophilus_fulvus:0.026122,(spermophilus_major:0.026339,(spermophilus_relictus:0.035884,(spermophilus_pallidicauda:0.003128,spermophilus_alashanicus:0.001196):0.024848):0.007675):0.007464):0.005012,spermophilus_erythrogenys:0.066158):0.084937):0.021834,((spermophilus_taurensis:0.056174,spermophilus_citellus:0.051063):0.05839,(spermophilus_suslicus:0.090499,spermophilus_xanthoprymnus:0.110812):0.006962):0.007497):0.069988,((((urocitellus_armatus:0.077227,urocitellus_beldingi_creber:0.060914):0.022936,(((urocitellus_mollis_idahoensis:0.044891,(urocitellus_mollis:0.020637,urocitellus_townsendi_vigilis:0.023834):0.010259):0.014696,(urocitellus_brunneus_brunneus:0.009699,urocitellus_brunneus_endemicus:0.022379):0.046477):0.020421,(urocitellus_washingtoni:0.065265,(urocitellus_townsendi_townsendi:0.004013,urocitellus_townsendi_nancyae:0.004554):0.074266):0.008502):0.022878):0.011961,(((urocitellus_columbianus_ruficaudus:0.029544,urocitellus_columbianus:0.013693):0.05898,(((urocitellus_parryii_kodiacensis:0.004525,urocitellus_parryii_nebulicola:0.002683):0.030821,(urocitellus_parryii_plesius:0.010078,(urocitellus_parryii_ablusus:0.010347,urocitellus_parryii_lyratus:0.008733):0.006633):0.022384):0.007666,((urocitellus_richardsonii:0.011855,urocitellus_elegans_elegans:0.005815):0.010653,(urocitellus_parryii_kennicotti:0.002906,urocitellus_parryii:0.001427):0.021873):0.003988):0.053466):0.010358,urocitellus_undulatus:0.107782):0.007995):0.071345,((ictidomys_mexicanus_mexicanus:0.049048,(ictidomys_parvidens:0.051451,(ictidomys_tridecemlineatus:0.004649,ictidomys_tridecemlineatus_arenicola:0.005861):0.015009):0.021777):0.048905,((((xerospermophilus_tereticaudus:0.038495,xerospermophilus_mohavensis:0.020402):0.059308,(xerospermophilus_spilosoma_marginatus:0.04737,(xerospermophilus_perotensis:0.034018,xerospermophilus_spilosoma:0.042048):0.007171):0.040435):0.032164,((cynomys_mexicanus:0.004643,cynomys_ludovicianus:0.014598):0.032371,(cynomys_parvidens:0.028681,(cynomys_gunnisoni:0.007211,cynomys_leucurus:0.00852):0.010632):0.016812):0.054055):0.021883,poliocitellus_franklinii:0.161816):0.016033):0.017407):0.019829):0.017164,(((callospermophilus_saturatus:0.081371,(callospermophilus_lateralis:0.061399,callospermophilus_madrensis:0.077024):0.011449):0.098091,((otospermophilus_beecheyi_douglasii:0.075119,(otospermophilus_beecheyi:1.0E-6,((otospermophilus_beecheyi_rupinarum:0.001352,otospermophilus_atricapillus:0.007381):0.010452,(otospermophilus_beecheyi_sierrae:0.008132,((otospermophilus_beecheyi_nudipes:0.001484,otospermophilus_beecheyi_fisheri:0.001494):0.002995,otospermophilus_beecheyi_parvulus:0.001484):0.001448):0.002013):0.005853):0.039481):0.027292,(otospermophilus_variegatus_utah:0.015202,otospermophilus_variegatus:0.011983):0.046917):0.134566):0.046775,(marmota_monax:0.045361,(marmota_marmota:0.100245,(((marmota_baibacina:0.059539,marmota_bobak:0.048757):0.022523,(marmota_himalayana:0.039602,(marmota_sibirica:0.058902,marmota_camtschatica:0.081984):0.010296):0.013418):0.005557,((((marmota_caligata:0.026962,marmota_vancouverensis:0.018123):0.02061,marmota_olympus:0.073346):0.018236,marmota_flaviventris:0.041586):0.068063,(marmota_broweri:0.104382,(marmota_caudata:0.052237,marmota_menzbieri:0.035872):0.018002):0.006484):0.007602):0.002779):0.011974):0.09056):0.02177):0.08632,((notocitellus_adocetus:0.171507,notocitellus_annulatus:0.106281):0.133015,(ammospermophilus_harrisii:0.019666,(ammospermophilus_interpres:0.060748,(ammospermophilus_insularis:0.014107,ammospermophilus_leucurus:0.002411):0.029876):0.015058):0.146757):0.034205):0.19603,((tamias_striatus:0.045536,((tamias_ochrogenys:0.032564,(((((tamias_ruficaudus:0.072731,(((tamias_alpinus:0.002291,tamias_minimus_scrutator:0.003599):0.034064,tamias_panamintinus:0.031341):0.010771,((tamias_quadrimaculatus:0.005323,tamias_speciosus:0.005867):0.022281,tamias_minimus:0.034893):0.004961):0.028669):0.025003,((tamias_merriami:0.027976,tamias_obscurus:0.049305):0.075354,((tamias_canipes:0.065084,(tamias_bulleri:0.057314,((tamias_quadrivittatus:0.028608,((tamias_cinereicollis:0.011485,(tamias_palmeri:0.008348,tamias_dorsalis:0.019234):0.001305):0.008556,tamias_umbrinus:0.027127):0.008374):0.004534,tamias_rufus:0.026852):0.019514):0.006457):0.015053,tamias_durangae:0.070249):0.02653):0.005601):0.034278,tamias_amoenus:0.061439):0.023032,tamias_siskiyou:0.092233):0.051872,(tamias_sonomae:0.016234,tamias_senex:0.023492):0.008533):0.003188):0.021192,tamias_townsendii:1.0E-6):0.061013):0.122979,tamias_sibiricus:0.331687):0.119115):0.026584,((heliosciurus_ruwenzorii:0.191114,heliosciurus_undulatus:0.221561):0.117606,((protoxerus_stangeri:0.178965,epixerus_wilsoni:0.154224):0.160801,(myosciurus_pumilio:0.550819,((paraxerus_alexandri:0.191126,paraxerus_cepapi:0.290163):0.061997,((paraxerus_vexillarius:0.068806,paraxerus_ochraceus:0.087633):0.198598,funisciurus:0.183855):1.0E-6):0.086088):0.003406):0.017408):0.087029):0.014204):0.052234,(spermophilopsis_leptodactylus:0.317118,(atlantoxerus_getulus:0.23182,(xerus_rutilus:0.152759,(xerus_princeps:0.087674,xerus_inauris:0.070414):0.108191):0.021397):0.231243):0.106):0.023827):0.022082,((funambulus_layardi:0.067292,(funambulus_palmarum:0.058521,(funambulus_sublineatus:0.022257,funambulus_pennantii:0.104703):0.037662):0.041197):0.171833,(((nannosciurus_melanotis:0.266854,(lariscus_insignis:0.340684,(((((tamiops_swinhoei:0.135468,tamiops_maritimus:0.08021):0.054366,(tamiops_mcclellandii:0.132271,tamiops_rodolphii:0.235388):0.018467):0.044532,(dremomys_pernyi_owstoni:0.100461,(((dremomys_gularis:0.213276,(dremomys_pyrrhomerus:0.133681,dremomys_rufigenis:0.064014):0.036009):0.03659,dremomys_pernyi:0.094131):0.032063,dremomys_lokriah:0.12586):0.024078):0.032528):0.02727,(menetes_berdmorei:0.203377,rhinosciurus_laticaudatus:0.160669):0.063629):0.049986,((((callosciurus_erythraeus_griseimanus:0.064048,(callosciurus_erythraeus:0.055366,callosciurus_finlaysonii:0.066021):0.048173):0.115103,(callosciurus_inornatus:0.086148,callosciurus_caniceps:0.151529):0.109391):0.026553,(callosciurus_notatus:0.208376,(callosciurus_nigrovittatus:0.094485,callosciurus_prevostii:0.087713):0.158732):0.044337):0.106378,((sundasciurus_lowii:0.144203,(sundasciurus_fraterculus:1.0E-6,sundasciurus_brookei:1.0E-6):0.161803):0.086713,(((sundasciurus_tenuis:0.123007,sundasciurus_jentinki:0.191287):0.031266,(sundasciurus_tahan:0.134987,sundasciurus_tenuis_altitudinus:0.182933):0.044371):0.084464,(((sundasciurus_samarensis:0.022713,(sundasciurus_philippinensis:0.036538,sundasciurus_mindanensis:0.081767):0.017529):0.161304,sundasciurus_hippurus:0.209009):0.02152,(sundasciurus_rabori:0.13973,((sundasciurus_hoogstraali:0.002112,(sundasciurus_juvencus:0.006073,sundasciurus_moellendorffi:0.008604):0.005256):0.009154,sundasciurus_steerii:0.029948):0.069442):0.170937):0.019908):0.032513):0.028925):0.010761):0.035544):0.014474):0.008972,(hyosciurus_heinrichi:0.168886,(prosciurillus_murinus:0.132102,rubrisciurus_rubriventer:0.088911):0.021145):0.040719):0.034879,(exilisciurus_exilis:0.311398,exilisciurus_concinnus:0.225142):0.226209):0.039852):0.077552):0.097005):0.0937):0.032665):0.043495,(pteromys_momonga:0.170196,pteromys_volans:0.129472):0.221023):0.06084,(eupetaurus_cinereus:0.187119,aeromys_tephromelas:0.111081):0.072714):0.090672):0.085806,(trogopterus_xanthipes:0.033744,belomys_pearsonii:0.136425):0.010364,aeretes_melanopterus:0.040321);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=569;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
