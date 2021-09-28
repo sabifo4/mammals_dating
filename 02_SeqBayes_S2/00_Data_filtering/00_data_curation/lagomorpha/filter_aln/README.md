@@ -32,7 +32,7 @@ lagomorpha
          |- checked_aln                        
          |     |- unfiltered_aln
          |     |    |- alignment_nt3cp.phylip      # Alignment with 3CP 
-         |     |- RAxML_bestTree.BS_ML_GTRCAT
+         |     |- RAxML_bestTree.BS_ML_GTRCAT      # Unfiltered tree (found in `original_tree`)
          |     |- taxonomical_check                # Visual checks to evaluate 
          |          |- lagomorpha.png              # dubious taxa placement
          |          |- lagomorpha_FigTree
@@ -242,7 +242,6 @@ Instructions to follow:
    in RStudio and change line 25 so it is `subt    <- "lagomorpha"`, uncomment line 27, and comment line 29. Now, we
    can run it from RStudio. This script will generate a concatenated alignment file with all
    partitions, as well as one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/lagomorpha/unfiltered/`
-   `00_mammal_alns/lagomorpha`
    inside [`00_Data_filtering/01_alignments/`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
    Log and RData files will be saved inside
    [`00_Data_filtering/01_alignments/Rout`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
