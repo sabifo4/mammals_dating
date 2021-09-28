@@ -37,6 +37,8 @@ All the details about our study is structured as it follows:
 	  Click the link above to be redirected to the steps and results for this step.    
       * [02_MCMCtree](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/02_MCMCtree)   
       Here you will find the final results regarding the inferred posterior times for the mammal phylogeny with 4,705 taxa.   
+      * [03_Generate_final_mammal_tree](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/03_Generate_final_mammal_tree)   
+      Here you will find the final mammal Tree of Life that we generated at the end of the sequential Bayesian dating approach.   
    4. [**calibrations**](https://github.com/sabifo4/mammals_dating/tree/main/calibrations)   
    This directory contains an excel file with a summary of the calibration priors used in both Bayesian dating analyses.   
    5. [**figs**](https://github.com/sabifo4/mammals_dating/tree/main/figs)   
