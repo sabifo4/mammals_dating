@@ -36,7 +36,6 @@
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2/01_perl_parsing/[1-6]*
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2/02_mafft/mafft_rodsubt2
 
-
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/00_Prior_onlyST
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/01_Prior_SBandST
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Prior_onlyST
@@ -82,7 +81,6 @@
 02_SeqBayes_S2/01_BASEML/*/
 
 02_SeqBayes_S2/02_MCMCtree/*/7
-
 
 03_Extra_analyses/00_Data_filtering/00_alignments
 03_Extra_analyses/02_MCMCtree
