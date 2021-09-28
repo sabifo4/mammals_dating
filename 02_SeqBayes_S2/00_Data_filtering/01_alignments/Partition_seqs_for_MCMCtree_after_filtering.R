@@ -21,10 +21,10 @@ setwd( wd )
 # LOAD FILES #
 #------------#
 # 0. Set paths and main subtree name 
-subt    <- "laurasiatheria_cetartiodactyla"
-# Uncomment and run when checking Laurasiatheria and Lagomorpha subtrees
+subt    <- "chiroptera"
+# Uncomment and run when checking Laurasiatheria and Lagomorpha subtrees -- also for Rodentia with new structure
 aln_dir <- paste( "../00_data_curation/", subt, "/filter_aln", sep = "" )
-# Uncomment and run when checking Rodentia subtrees
+# Uncomment and run when checking Rodentia subtrees -- OLD DATA STRUCTURE, UNUSED
 # aln_dir <- paste( "../00_data_curation/rodentia/filter_aln/", subt, sep = "" )
 # Uncomment and run when checking updated Afrotheria and Euarchonta subtrees
 # aln_dir <- paste( "../00_data_curation/", subt, "/filter_aln", sep = "" )

@@ -44,8 +44,8 @@ for( i in 1:dim( calibrations )[1] ){
   
   # If there is an original calibration, use the original
   tree <- gsub( pattern = paste0("\\'",calibrations[i,1],"\\'"),
-                                 x = tree,
-                                 replacement = paste( "'", calibrations[i,2], "'", sep = "" ) )
+                x = tree,
+                replacement = paste( "'", calibrations[i,2], "'", sep = "" ) )
 }
 
 #=======================#

@@ -681,7 +681,7 @@ set.seed( 12345 )
 ## First calib> Aotus-S-L-C-C
 dSTnSB.Aotus.2    <- as.numeric( unlist( STnSB.2$divt[ind.post.cal[dub.pos.2]] ) )
 AotusSTnSB_node.2 <- sn::st.mple( y = dSTnSB.Aotus.2,
-                                penalty = NULL )
+                                  penalty = NULL )
 # > AotusSTnSB_node.2$dp.complete
 # Est. STnSB.2     :  x=0.20004385  w=0.01926385 a=-1.31703350 n=19.28874579  
 # >  ST.calibs.tweak.2[[ dub.pos.2 ]]
