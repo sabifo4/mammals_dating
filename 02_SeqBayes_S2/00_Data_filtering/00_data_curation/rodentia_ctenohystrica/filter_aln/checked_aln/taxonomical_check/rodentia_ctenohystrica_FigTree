@@ -1,0 +1,312 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=210;
+	taxlabels
+	abrocoma_bennettii
+	abrocoma_cinerea
+	aconaemys_fuscus
+	aconaemys_porteri
+	aconaemys_sagei
+	atherurus_africanus[&!color=#ff6600]
+	atherurus_macrourus[&!color=#ff6600]
+	bathyergus_janetta
+	bathyergus_suillus
+	callistomys_pictus
+	capromys_pilorides
+	carterodon_sulcidens[&!color=#ff6600]
+	cavia_aperea[&!color=#ff6600]
+	cavia_aperea_anolaimae
+	cavia_aperea_guianae
+	cavia_aperea_hypoleuca
+	cavia_aperea_pamparum
+	cavia_cutleri
+	cavia_fulgida
+	cavia_magna
+	cavia_porcellus
+	cavia_tschudii[&!color=#ff6600]
+	cavia_tschudii_osgoodi
+	chaetomys_subspinosus
+	chinchilla_lanigera
+	clyomys_laticeps
+	coendou_bicolor
+	coendou_ichillus
+	coendou_insidiosus
+	coendou_melanurus
+	coendou_mexicanus
+	coendou_prehensilis
+	coendou_quichua
+	coendou_rufescens
+	coendou_spinosus
+	coendou_villosus
+	cryptomys_hottentotus_anomalus
+	cryptomys_hottentotus_holosericeus
+	cryptomys_hottentotus_hottentotus
+	cryptomys_hottentotus_mahali
+	cryptomys_hottentotus_natalensis
+	cryptomys_hottentotus_nimrodi
+	cryptomys_hottentotus_pretoriae
+	ctenodactylus_gundi
+	ctenodactylus_vali
+	ctenomys_argentinus
+	ctenomys_australis
+	ctenomys_boliviensis
+	ctenomys_colburni
+	ctenomys_conoveri
+	ctenomys_coyhaiquensis
+	ctenomys_dorbignyi
+	ctenomys_erikacuellarae
+	ctenomys_flamarioni
+	ctenomys_fodax
+	ctenomys_frater
+	ctenomys_fulvus
+	ctenomys_goodfellowi
+	ctenomys_haigi
+	ctenomys_lami
+	ctenomys_latro
+	ctenomys_leucodon
+	ctenomys_lewisi
+	ctenomys_magellanicus
+	ctenomys_maulinus
+	ctenomys_mendocinus
+	ctenomys_minutus
+	ctenomys_nattereri
+	ctenomys_occultus
+	ctenomys_opimus
+	ctenomys_pearsoni
+	ctenomys_perrensi
+	ctenomys_porteousi
+	ctenomys_pundti
+	ctenomys_rionegrensis
+	ctenomys_roigi
+	ctenomys_saltarius
+	ctenomys_scagliai
+	ctenomys_sericeus
+	ctenomys_sociabilis
+	ctenomys_steinbachi
+	ctenomys_talarum
+	ctenomys_torquatus
+	ctenomys_tuconax
+	ctenomys_tucumanus
+	cuniculus_paca
+	cuniculus_taczanowskii
+	cuscomys_ashaninka[&!color=#ff6600]
+	dactylomys_boliviensis
+	dactylomys_dactylinus
+	dasyprocta_fuliginosa
+	dasyprocta_leporina
+	dasyprocta_punctata
+	dinomys_branickii
+	diplomys_labilis
+	dolichotis_patagonum
+	dolichotis_patagonum_centricola
+	dolichotis_salinicola
+	echimys_chrysurus
+	erethizon_dorsatum
+	euryzygomatomys_spinosus
+	fukomys_amatus
+	fukomys_anselli
+	fukomys_bocagei
+	fukomys_choma
+	fukomys_damarensis[&!color=#cc0000]
+	fukomys_darlingi
+	fukomys_foxi
+	fukomys_kafuensis
+	fukomys_mechowii
+	fukomys_micklemi
+	fukomys_ochraceocinereus
+	fukomys_whytei
+	fukomys_whytei_occlusus
+	galea_musteloides
+	galea_musteloides_leucoblephara
+	galea_spixii
+	geocapromys_brownii
+	geocapromys_ingrahami
+	georychus_capensis
+	heliophobius_argenteocinereus
+	heterocephalus_glaber
+	hoplomys_gymnurus
+	hydrochoerus_hydrochaeris
+	hystrix_africaeaustralis
+	hystrix_brachyura
+	hystrix_cristata
+	isothrix_barbarabrownae
+	isothrix_bistriata
+	isothrix_orinoci
+	isothrix_pagurus
+	isothrix_sinnamariensis
+	kannabateomys_amblyonyx
+	kerodon_acrobata
+	kerodon_rupestris
+	lagidium_viscacia
+	lagostomus_maximus
+	laonastes_aenigmamus
+	lonchothrix_emiliae
+	makalata_didelphoides
+	makalata_macrura
+	massoutiera_mzabi
+	mesocapromys_angelcabrerai
+	mesocapromys_auritus
+	mesocapromys_melanurus
+	mesomys_hispidus
+	mesomys_occultus
+	mesomys_stimulax
+	microcavia
+	myocastor_coypus
+	myoprocta_acouchy
+	myoprocta_pratti
+	mysateles_prehensilis
+	octodon_bridgesi
+	octodon_degus
+	octodon_lunatus
+	octodontomys_gliroides
+	octomys_mimax
+	olallamys_albicauda
+	ornithorhynchus_anatinus
+	pattonomys_occasius[&!color=#ff6600]
+	pattonomys_semivillosus[&!color=#ff6600]
+	petromus_typicus
+	phyllomys_aff_dasythrix
+	phyllomys_blainvillii
+	phyllomys_brasiliensis
+	phyllomys_dasythrix
+	phyllomys_lamarum
+	phyllomys_lundi
+	phyllomys_mantiqueirensis
+	phyllomys_nigrispinus
+	phyllomys_pattoni
+	phyllomys_sulinus
+	phyllomys_unicolor
+	pipanacoctomys_aureus
+	plagiodontia_aedium
+	proechimys_cuvieri
+	proechimys_guyannensis
+	proechimys_longicaudatus
+	proechimys_oris
+	proechimys_quadruplicatus
+	proechimys_roberti
+	proechimys_simonsi
+	santamartamys_rufodorsalis
+	spalacopus_cyanus
+	tachyglossus_aculeatus
+	thrichomys_aff_apereoides
+	thrichomys_aff_inermis
+	thrichomys_apereoides_apereoides
+	thrichomys_fosteri
+	thrichomys_inermis
+	thrichomys_laurenteus
+	thrichomys_pachyurus
+	thryonomys_swinderianus
+	toromys_grandis
+	toromys_rhipidurus
+	trichys_fasciculata
+	trinomys_albispinus
+	trinomys_dimidiatus
+	trinomys_eliasi
+	trinomys_gratiosus
+	trinomys_iheringi
+	trinomys_moojeni
+	trinomys_paratus
+	trinomys_setosus[&!color=#cc0000]
+	trinomys_setosus_elegans
+	trinomys_yonenagae
+	tympanoctomys_barrerae
+	tympanoctomys_loschalchalerosorum
+	zaglossus_bruijni
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((((dinomys_branickii:0.052123,((lagidium_viscacia:0.012126,chinchilla_lanigera:0.005792):0.047432,lagostomus_maximus:0.077184):0.010888):0.038938,((((((coendou_mexicanus:0.019558,(coendou_quichua:0.015716,coendou_rufescens:0.010605):0.010046):0.007874,(coendou_bicolor:0.001806,coendou_prehensilis:0.002714):0.021333):0.012182,((coendou_spinosus:0.006132,(coendou_insidiosus:0.002673,coendou_villosus:0.002713):0.007758):0.061036,(coendou_melanurus:0.024651,coendou_ichillus:0.021083):0.004686):0.008539):0.039518,erethizon_dorsatum:0.012681):0.01789,chaetomys_subspinosus:0.142108):0.023395,(((((massoutiera_mzabi:0.070961,(ctenodactylus_vali:0.034808,ctenodactylus_gundi:0.008225):0.012494):0.074331,laonastes_aenigmamus:0.097544):0.203683,((tachyglossus_aculeatus:0.022156,zaglossus_bruijni:0.026081):0.103203,ornithorhynchus_anatinus:0.060303):0.391408):0.046559,((((heterocephalus_glaber:0.005137,fukomys_damarensis:0.008968):0.065994,(((georychus_capensis:0.09411,(bathyergus_suillus:0.007316,bathyergus_janetta:0.021664):0.041956):0.016082,(((((fukomys_darlingi:0.02197,(fukomys_anselli:0.001048,((fukomys_kafuensis:0.001097,fukomys_choma:0.008326):0.003872,fukomys_micklemi:0.004265):0.005855):0.01092):0.005955,(fukomys_whytei:0.02028,(fukomys_whytei_occlusus:0.017384,fukomys_amatus:0.015216):0.006305):0.006722):0.007809,(fukomys_bocagei:0.027815,fukomys_mechowii:0.026877):0.00916):0.009219,(fukomys_ochraceocinereus:0.030061,fukomys_foxi:0.017896):0.054843):0.024698,(cryptomys_hottentotus_mahali:0.028974,((cryptomys_hottentotus_natalensis:0.034824,(cryptomys_hottentotus_anomalus:0.01004,cryptomys_hottentotus_pretoriae:0.009228):0.009512):0.003878,((cryptomys_hottentotus_holosericeus:0.023626,cryptomys_hottentotus_hottentotus:0.031804):0.004289,cryptomys_hottentotus_nimrodi:0.025536):0.006282):0.005909):0.04258):0.008812):0.012905,heliophobius_argenteocinereus:0.093881):0.027845):0.022825,(thryonomys_swinderianus:0.114807,petromus_typicus:0.05973):0.059481):0.017306,(((atherurus_africanus:0.071055,((hystrix_cristata:0.022666,hystrix_africaeaustralis:0.012756):0.006017,hystrix_brachyura:0.007463):0.013573):0.004191,atherurus_macrourus:0.042611):0.013755,trichys_fasciculata:0.040478):0.043429):0.003567):0.016229,(((microcavia:0.089109,(cavia_magna:0.038106,((cavia_porcellus:1.0E-6,cavia_cutleri:1.0E-6):0.013609,((((cavia_fulgida:0.022967,cavia_aperea:0.008744):0.005678,((cavia_aperea_guianae:0.003538,cavia_aperea_anolaimae:0.003938):0.008858,(cavia_aperea_pamparum:1.0E-6,cavia_aperea_hypoleuca:0.004357):0.005794):0.019106):0.015244,cavia_tschudii:0.001561):0.003644,cavia_tschudii_osgoodi:0.007123):0.007228):0.018249):0.041193):0.023567,(((hydrochoerus_hydrochaeris:0.036062,(kerodon_acrobata:0.033555,kerodon_rupestris:0.030856):0.030865):0.012403,(dolichotis_salinicola:0.062591,(dolichotis_patagonum_centricola:0.006879,dolichotis_patagonum:0.010865):0.032495):0.026438):0.006932,((galea_musteloides_leucoblephara:0.04329,galea_musteloides:0.019493):0.036121,galea_spixii:0.081773):0.073556):0.004267):0.029877,(((dasyprocta_punctata:0.011428,(dasyprocta_fuliginosa:0.030182,dasyprocta_leporina:0.028579):0.016102):0.009455,(myoprocta_acouchy:0.024784,myoprocta_pratti:0.031008):0.027359):0.040648,(cuniculus_paca:0.018576,cuniculus_taczanowskii:0.009519):0.053765):0.003149):0.020814):0.00474):0.012384):0.099276,((((octomys_mimax:0.026155,(pipanacoctomys_aureus:0.013094,(tympanoctomys_loschalchalerosorum:0.001793,tympanoctomys_barrerae:0.007163):0.007591):0.025282):0.03424,((((aconaemys_sagei:0.00568,aconaemys_fuscus:0.007779):0.01668,(aconaemys_porteri:0.014819,spalacopus_cyanus:0.027385):0.00594):0.021558,(octodon_degus:0.039425,(octodon_lunatus:0.00169,octodon_bridgesi:0.007983):0.01229):0.010525):0.022991,octodontomys_gliroides:0.019509):0.002055):0.028959,((((ctenomys_nattereri:0.022807,(ctenomys_boliviensis:0.002546,ctenomys_goodfellowi:0.006957):0.006098):0.003256,ctenomys_steinbachi:0.017777):0.003421,ctenomys_erikacuellarae:0.018668):1.0E-6,((((ctenomys_tucumanus:0.019427,(ctenomys_latro:0.003014,(ctenomys_occultus:0.004924,ctenomys_argentinus:0.002686):0.002038):0.02432):0.009016,(((ctenomys_coyhaiquensis:0.001444,(ctenomys_sericeus:0.002718,ctenomys_fodax:0.006526):5.23E-4):0.00548,ctenomys_haigi:0.013836):0.004704,(ctenomys_colburni:0.001046,ctenomys_magellanicus:0.002807):0.016639):0.003488):0.001415,((ctenomys_leucodon:0.037062,((ctenomys_sociabilis:0.040166,(ctenomys_conoveri:0.033088,(ctenomys_frater:0.021424,ctenomys_lewisi:0.01448):0.014669):0.017481):0.007797,ctenomys_tuconax:0.037285):0.003962):0.004043,((ctenomys_minutus:0.018382,((ctenomys_lami:0.010618,ctenomys_torquatus:0.010315):0.002139,((ctenomys_perrensi:0.004553,ctenomys_roigi:0.010321):0.00324,(ctenomys_pearsoni:0.005368,ctenomys_dorbignyi:0.004911):0.001994):0.005779):0.002542):0.003603,((ctenomys_rionegrensis:0.010165,((ctenomys_flamarioni:0.009442,(ctenomys_porteousi:0.002945,ctenomys_australis:0.004048):0.002929):0.002785,ctenomys_mendocinus:0.006073):0.001099):0.006071,(ctenomys_pundti:0.008967,ctenomys_talarum:0.005964):0.011372):0.002281):0.004986):0.005172):4.36E-4,(((ctenomys_opimus:0.005128,ctenomys_fulvus:0.002656):0.015297,(ctenomys_scagliai:3.59E-4,ctenomys_saltarius:0.003516):0.015704):0.006473,ctenomys_maulinus:0.016722):0.00147):0.019377):0.059063):0.012551,(carterodon_sulcidens:0.134304,((((euryzygomatomys_spinosus:0.034707,clyomys_laticeps:0.044495):0.043914,(trinomys_albispinus:0.058215,(((trinomys_eliasi:0.013074,trinomys_paratus:0.017845):0.043038,(trinomys_yonenagae:0.028641,trinomys_setosus_elegans:0.042214):0.007313):0.025413,(trinomys_iheringi:0.061542,(trinomys_moojeni:0.035863,(trinomys_dimidiatus:0.00239,trinomys_gratiosus:0.00716):0.030008):0.017779):0.021598):0.005632):0.024407):0.004963,(plagiodontia_aedium:0.059111,((geocapromys_ingrahami:0.016211,geocapromys_brownii:0.021852):0.032301,(capromys_pilorides:0.013826,(mysateles_prehensilis:0.007877,(mesocapromys_angelcabrerai:0.005473,(mesocapromys_melanurus:0.004329,mesocapromys_auritus:0.006412):0.002612):0.009474):0.012329):0.006052):0.014054):0.017235):0.003293,(((trinomys_setosus:0.054736,((thrichomys_inermis:0.001906,thrichomys_aff_inermis:0.002449):0.023921,((thrichomys_pachyurus:0.020753,((thrichomys_laurenteus:0.017118,thrichomys_apereoides_apereoides:0.009192):0.003046,thrichomys_aff_apereoides:0.010356):0.007238):0.012858,thrichomys_fosteri:0.022814):0.010207):0.005259):0.067111,(myocastor_coypus:0.043355,(callistomys_pictus:0.075669,(hoplomys_gymnurus:0.017306,(proechimys_guyannensis:0.054845,((proechimys_roberti:0.048257,(proechimys_cuvieri:0.029527,proechimys_longicaudatus:0.037585):0.017764):0.006208,(proechimys_simonsi:0.049696,(proechimys_oris:0.031751,proechimys_quadruplicatus:0.042409):0.015241):0.004858):0.001623):0.025975):0.009719):0.003711):0.004691):0.003441,(((isothrix_bistriata:0.004666,isothrix_orinoci:0.005293):0.018544,(isothrix_barbarabrownae:0.024753,(isothrix_sinnamariensis:0.001754,isothrix_pagurus:0.002142):0.028514):0.007239):0.067146,(((((makalata_macrura:0.054809,makalata_didelphoides:0.033675):0.033047,(echimys_chrysurus:0.045961,(((((phyllomys_lamarum:0.011908,(phyllomys_blainvillii:0.006315,phyllomys_brasiliensis:0.008487):0.015803):0.011621,((phyllomys_dasythrix:0.004158,(phyllomys_aff_dasythrix:1.0E-6,phyllomys_sulinus:1.0E-6):0.009149):0.018844,(phyllomys_lundi:0.032738,phyllomys_nigrispinus:0.024715):0.008494):0.006047):0.002723,phyllomys_unicolor:0.050341):0.007411,phyllomys_mantiqueirensis:0.03028):0.004421,phyllomys_pattoni:0.027799):0.02519):0.00462):0.0064,(pattonomys_semivillosus:0.070709,((toromys_grandis:0.059214,toromys_rhipidurus:0.028685):0.045975,pattonomys_occasius:0.062051):0.010023):0.019253):0.007074,((santamartamys_rufodorsalis:0.058548,diplomys_labilis:0.060449):0.053501,(olallamys_albicauda:0.050251,(kannabateomys_amblyonyx:0.048462,(dactylomys_dactylinus:0.022298,dactylomys_boliviensis:0.020057):0.0357):0.001845):0.009815):0.011609):0.0039,(lonchothrix_emiliae:0.037982,(mesomys_occultus:0.019697,(mesomys_stimulax:0.0307,mesomys_hispidus:0.019033):0.00633):0.023993):0.036586):0.005622):0.006168):0.003027):0.002984):0.021214):0.0021):0.049188,(cuscomys_ashaninka:0.037307,abrocoma_cinerea:0.034913):0.028112,abrocoma_bennettii:0.006056);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=748;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
