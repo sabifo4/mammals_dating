@@ -37,7 +37,7 @@ results when running the scripts provided here.
 
 ## Prior 
 We provide the results obtained when using `MCMCtree` while sampling from the prior and using the
-main tree hypothesis (T2) [here]().
+main tree hypothesis (T2) [here](https://www.dropbox.com/s/bum031cge8qp8sb/SeqBayesS1_MCMCtree_mainT2_prior.zip?dl=0).
 
 We ran five independent MCMC with the aim to increase ESS and improve MCMC convergence. When 
 running `MCMCtree`, we used a dummy alignment because, when sampling from the prior,
