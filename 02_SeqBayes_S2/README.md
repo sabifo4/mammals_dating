@@ -1,7 +1,7 @@
 # 1. Quick summary of tasks accomplished in step 1
 
 ## 1.1 Generating alignment with 72 species and 15K loci (genomic data)
-[`Here`](https://github.com/sabifo4/mammals_dating/tree/master/01_SeqBayes_S1/00_Gene_filtering),
+[`Here`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering),
 you will find the steps followed to obtain 
 the final partitioned genomic alignment for the 72 mammal taxa used in the first step of the sequential 
 Bayesian dating analysis:   
@@ -170,7 +170,7 @@ Once `MCMCtree` finished, we used the results obtained under the
 main tree hypothesis 
 and fitted a skew-_t_ (ST) distribution to each of the estimated posterior
 distributions for each node. The whole procedure is detailed
-[here](https://github.com/sabifo4/mammals_dating/tree/master/01_SeqBayes_S1/03_Fit_ST_to_posteriors)).
+[here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/03_Fit_ST_to_posteriors)).
 
 # 2. Second part of the sequential Bayesian dating approach 
 
@@ -199,20 +199,20 @@ subset, the data subset with the rest of rodentia had too many taxa for `MCMCtre
 further subset it into two: "rodentia subtree 1" and "rodentia subtree 2" data subsets. In total, we had 
 4 data subsets for Rodentia. The directories where all the steps followed to curate each of these data subsets
 are explained (see 
-[here](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation))
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation))
 are the following:   
 
-   * [Afrotheria](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria)   
+   * [Afrotheria](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria)   
    * [Chiroptera](https://github.com/sabifo4/mammals_dating)   
-   * [Euarchonta](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta)   
-   * [Lagomorpha](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha)   
-   * [Laurasiatheria_cetartiodactyla](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla)   
-   * [Laurasiatheria_therest](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest)   
-   * [Marsupialia](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia)   
-   * [Rodentia_ctenohystrica](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica)   
-   * [Rodentia_squirrel](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel)   
-   * [Rodentia_therest](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest)   
-   * [Xenarthra](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra)   
+   * [Euarchonta](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta)   
+   * [Lagomorpha](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha)   
+   * [Laurasiatheria_cetartiodactyla](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla)   
+   * [Laurasiatheria_therest](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest)   
+   * [Marsupialia](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia)   
+   * [Rodentia_ctenohystrica](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica)   
+   * [Rodentia_squirrel](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel)   
+   * [Rodentia_therest](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest)   
+   * [Xenarthra](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra)   
 
 Note that all these data subsets (the steps followed to further subset Laurasiatheria and Rodentia data subsets 
 as mentioned above is included in the corresponding directories listed above) had the corresponding inferred 
@@ -252,10 +252,10 @@ each data subset for more information).
 Once the data subsets are filtered and the corresponding calibrated phylogenies are obtained,
 we can run `BASEML` to estimate the Hessian and the gradient needed to run `MCMCtree` with the 
 approximate likelihood. You may check the tutorial used in the first step
-[here](https://github.com/sabifo4/mammals_dating/tree/master/01_SeqBayes_S1/01_BASEML/02_Hessian)
+[here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/02_Hessian)
 to remember how we carry out this analysis. 
 
-[`Here`](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/01_BASEML),
+[`Here`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/01_BASEML),
 you will find a description of how we ran `BASEML` with the data subsets for this second step 
 of the sequential Bayesian dating approach. We also provide you with the links to download the data 
 you will need to reproduce our results as well as the results we obtained. 
@@ -268,13 +268,13 @@ calculation ([dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7
 Before running `MCMCtree`, however, we ran safety checks to make sure that the calibrations that we 
 were using were not in conflict. For each of the directories with the information to filter each 
 data subset that you can find 
-[here](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/00_Data_filtering/00_data_curation),
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation),
 you will find a description of these checks inside the `filter_tree` directory. The R script and the 
 output plots will be inside `filter_tree/01_Check_conflict` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
 obtained [here](ADD LINK),
 while you can find 
-[here](https://github.com/sabifo4/mammals_dating/tree/master/02_SeqBayes_S2/02_MCMCtree) 
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/02_MCMCtree) 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
 estimated divergence times.
