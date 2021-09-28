@@ -1,0 +1,757 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=655;
+	taxlabels
+	acinonyx_jubatus
+	ailuropoda_melanoleuca
+	ailuropoda_melanoleuca_qinlingensis
+	ailurus_fulgens
+	ailurus_fulgens_styani
+	anourosorex_squamipes
+	anourosorex_yamashinai
+	aonyx_capensis
+	aonyx_cinerea
+	arctictis_binturong
+	arctocephalus_australis
+	arctocephalus_forsteri
+	arctocephalus_gazella
+	arctocephalus_pusillus
+	arctocephalus_townsendi
+	arctocephalus_tropicalis[&!color=#cc6600]
+	arctogalidia_trivirgata
+	arctonyx_collaris
+	atelerix_albiventris
+	atelerix_algirus
+	atelerix_frontalis
+	atelocynus_microtis
+	atilax_paludinosus
+	bassaricyon_alleni
+	bassaricyon_gabbii
+	bassaricyon_medius_medius
+	bassaricyon_neblina_neblina
+	bassariscus_astutus
+	bassariscus_sumichrasti
+	bdeogale_crassicauda
+	bdeogale_nigripes
+	blarina_brevicauda
+	blarina_carolinensis
+	blarina_hylophaga
+	blarinella_griselda
+	blarinella_quadraticauda
+	blarinella_wardi
+	callorhinus_ursinus
+	canis_anthus
+	canis_aureus
+	canis_familiaris
+	canis_himalayensis
+	canis_indica
+	canis_latrans
+	canis_lupaster[&!color=#cc6600]
+	canis_lupus
+	canis_lupus_baileyi
+	canis_lupus_campestris
+	canis_lupus_chanco
+	canis_lupus_desertorum
+	canis_lupus_dingo
+	canis_lupus_laniger
+	canis_lupus_lycaon[&!color=#cc6600]
+	canis_rufus
+	canis_simensis
+	caracal_caracal
+	catopuma_badia
+	catopuma_temminckii
+	ceratotherium_simum
+	ceratotherium_simum_cottoni
+	cerdocyon_thous
+	chimarrogale_himalayica
+	chimarrogale_phaeura
+	chimarrogale_platycephala
+	chimarrogale_styani
+	chodsigoa_caovansunga
+	chodsigoa_hypsibia
+	chodsigoa_parca
+	chodsigoa_sodalis
+	chrotogale_owstoni
+	chrysocyon_brachyurus
+	civettictis_civetta
+	condylura_cristata
+	conepatus
+	congosorex_phillipsorum
+	crocidura_aleksandrisi
+	crocidura_attenuata
+	crocidura_baileyi
+	crocidura_batakorum
+	crocidura_batesi
+	crocidura_beatus
+	crocidura_beccarii
+	crocidura_brunnea
+	crocidura_buettikoferi
+	crocidura_canariensis
+	crocidura_caspica[&!color=#cc6600]
+	crocidura_crenata
+	crocidura_crossei
+	crocidura_cyanea
+	crocidura_douceti
+	crocidura_dsinezumi
+	crocidura_eburnea
+	crocidura_fingui
+	crocidura_flavescens
+	crocidura_foetida
+	crocidura_fuliginosa
+	crocidura_fulvastra
+	crocidura_fumosa
+	crocidura_fuscomurina
+	crocidura_glassi
+	crocidura_goliath
+	crocidura_grandiceps
+	crocidura_grassei
+	crocidura_grayi
+	crocidura_grayi_halconus
+	crocidura_hikmiya
+	crocidura_hildegardeae
+	crocidura_hirta
+	crocidura_horsfieldii
+	crocidura_ichnusae
+	crocidura_indochinensis
+	crocidura_jouvenetae
+	crocidura_lamottei
+	crocidura_lasiura
+	crocidura_lepidura
+	crocidura_leucodon
+	crocidura_levicula
+	crocidura_luna
+	crocidura_lusitania
+	crocidura_macmillani
+	crocidura_malayana
+	crocidura_mariquensis
+	crocidura_maxi
+	crocidura_mdumai
+	crocidura_mindorus
+	crocidura_miya
+	crocidura_monacha
+	crocidura_monax
+	crocidura_monticola
+	crocidura_munissii
+	crocidura_muricauda
+	crocidura_musseri
+	crocidura_nanilla
+	crocidura_neglecta
+	crocidura_negligens
+	crocidura_negrina
+	crocidura_newmarki
+	crocidura_nigripes
+	crocidura_nigripes_lipara
+	crocidura_nimbae
+	crocidura_nimbasilvanus
+	crocidura_ninoyi
+	crocidura_obscurior
+	crocidura_olivieri
+	crocidura_olivieri_cara
+	crocidura_olivieri_giffardi
+	crocidura_olivieri_kivu
+	crocidura_olivieri_spurelli
+	crocidura_olivieri_sururae
+	crocidura_orientalis
+	crocidura_orientalis_lawuana[&!color=#cc6600]
+	crocidura_orii
+	crocidura_palawanensis
+	crocidura_panayensis
+	crocidura_paradoxura
+	crocidura_parvipes
+	crocidura_phanluongi
+	crocidura_phuquocensis
+	crocidura_poensis
+	crocidura_rapax_kurodai
+	crocidura_rhoditis
+	crocidura_roosevelti
+	crocidura_russula
+	crocidura_shantungensis
+	crocidura_sibirica[&!color=#cc6600]
+	crocidura_sicula
+	crocidura_silacea
+	crocidura_sokolovi
+	crocidura_somalica
+	crocidura_suaveolens
+	crocidura_suaveolens_gueldenstaedtii
+	crocidura_suaveolens_mimula
+	crocidura_tanakae
+	crocidura_tansaniana
+	crocidura_tarfayensis
+	crocidura_theresae
+	crocidura_usambarae
+	crocidura_viaria
+	crocidura_watasei
+	crocidura_wimmeri
+	crocidura_wuchihensis
+	crocidura_zaitsevi
+	crocidura_zarudnyi
+	crocidura_zimmermanni
+	crocuta_crocuta
+	crossarchus_alexandri
+	crossarchus_obscurus
+	crossarchus_platycephalus
+	cryptoprocta_ferox
+	cryptotis_alticola
+	cryptotis_goldmani
+	cryptotis_magna
+	cryptotis_mayensis
+	cryptotis_mexicana
+	cryptotis_nelsoni
+	cryptotis_obscura
+	cryptotis_parva
+	cryptotis_peregrina
+	cryptotis_phillipsii
+	cuon_alpinus
+	cuon_alpinus_lepturus
+	cynictis_penicillata
+	cynogale_bennettii
+	cystophora_cristata
+	desmana_moschata
+	dicerorhinus_sumatrensis
+	dicerorhinus_sumatrensis_harrissoni
+	diceros_bicornis
+	diceros_bicornis_michaeli
+	diceros_bicornis_minor
+	diplomesodon_pulchellum
+	dusicyon_australis
+	dusicyon_avus
+	dymecodon_pilirostris
+	echinosorex_gymnura
+	eira_barbara[&!color=#cc6600]
+	enhydra_lutris
+	enhydra_lutris_kenyoni
+	episoriculus_caudatus
+	episoriculus_caudatus_soluensis
+	episoriculus_fumidus[&!color=#cc6600]
+	episoriculus_leucops
+	episoriculus_macrurus
+	equus_asinus
+	equus_asinus_africanus
+	equus_asinus_somalicus
+	equus_burchellii
+	equus_burchellii_antiquorum[&!color=#cc6600]
+	equus_burchellii_chapmani
+	equus_burchellii_cuninghamei[&!color=#cc6600]
+	equus_caballus
+	equus_grevyi
+	equus_hemionus
+	equus_hemionus_kulan
+	equus_hemionus_onager
+	equus_kiang[&!color=#cc6600]
+	equus_przewalskii
+	equus_zebra
+	equus_zebra_hartmannae
+	erignathus_barbatus
+	erinaceus_amurensis
+	erinaceus_concolor
+	erinaceus_europaeus
+	erinaceus_roumanicus
+	eumetopias_jubatus
+	eupleres_goudotii
+	euroscaptor_klossi
+	euroscaptor_longirostris
+	euroscaptor_malayana
+	euroscaptor_mizura
+	euroscaptor_parvidens
+	euroscaptor_subanura
+	felis_catus[&!color=#cc6600]
+	felis_chaus
+	felis_margarita
+	felis_nigripes
+	felis_silvestris
+	felis_silvestris_bieti
+	felis_silvestris_cafra
+	felis_silvestris_lybica
+	felis_silvestris_ornata
+	feroculus_feroculus
+	fossa_fossana
+	galemys_pyrenaicus
+	galerella_nigrata
+	galerella_pulverulenta
+	galerella_sanguinea
+	galictis_cuja
+	galictis_vittata
+	galidia_elegans
+	galidictis_fasciata
+	genetta_angolensis
+	genetta_bourloni
+	genetta_cristata
+	genetta_genetta
+	genetta_johnstoni
+	genetta_maculata
+	genetta_pardina
+	genetta_poensis
+	genetta_servalina
+	genetta_thierryi
+	genetta_tigrina
+	genetta_victoriae
+	gulo_gulo
+	halichoerus_grypus
+	helarctos_malayanus
+	helogale_hirtula
+	helogale_parvula
+	hemiechinus_auritus
+	hemigalus_derbyanus
+	herpestes_auropunctatus
+	herpestes_brachyurus
+	herpestes_edwardsii
+	herpestes_fuscus
+	herpestes_ichneumon[&!color=#cc6600]
+	herpestes_javanicus
+	herpestes_naso[&!color=#cc6600]
+	herpestes_urva
+	hyaena_hyaena
+	hydrictis_maculicollis
+	hydrurga_leptonyx
+	hylomys_megalotis
+	hylomys_parvus[&!color=#cc6600]
+	hylomys_suillus
+	hylomys_suillus_microtinus
+	hylomys_suillus_siamensis
+	ichneumia_albicauda
+	ictonyx_libyca
+	ictonyx_striatus
+	leopardus_colocolo
+	leopardus_geoffroyi
+	leopardus_guigna
+	leopardus_jacobita
+	leopardus_pardalis
+	leopardus_tigrinus
+	leopardus_wiedii
+	leptailurus_serval
+	leptonychotes_weddellii
+	liberiictis_kuhni
+	lobodon_carcinophaga
+	lontra_canadensis
+	lontra_felina
+	lontra_longicaudis
+	lontra_provocax
+	lupulella_adusta[&!color=#cc6600]
+	lupulella_mesomelas[&!color=#cc6600]
+	lupulella_mesomelas_elongae[&!color=#cc6600]
+	lutra_lutra
+	lutra_sumatrana
+	lutrogale_perspicillata
+	lycalopex_culpaeus
+	lycalopex_fulvipes
+	lycalopex_griseus
+	lycalopex_gymnocercus
+	lycalopex_sechurae
+	lycalopex_vetulus
+	lycaon_pictus
+	lyncodon_patagonicus[&!color=#cc6600]
+	lynx_canadensis
+	lynx_lynx
+	lynx_pardinus
+	lynx_rufus
+	macrogalidia_musschenbroekii
+	manis_javanica
+	manis_pentadactyla
+	manis_temminckii
+	manis_tetradactyla
+	manis_tricuspis
+	martes_americana
+	martes_americana_caurina
+	martes_americana_humboldtensis
+	martes_americana_sierrae
+	martes_flavigula
+	martes_foina
+	martes_martes
+	martes_melampus
+	martes_melampus_tsuensis
+	martes_zibellina
+	megasorex_gigas
+	meles_anakuma
+	meles_canescens
+	meles_leucurus
+	meles_meles
+	meles_meles_arcalus
+	mellivora_capensis
+	melogale_moschata
+	melogale_moschata_subaurantiaca
+	melogale_personata
+	melursus_ursinus
+	mephitis_mephitis
+	mesechinus_dauuricus
+	mesechinus_hughi
+	mirounga_angustirostris
+	mirounga_leonina
+	mogera_imaizumii
+	mogera_insularis
+	mogera_insularis_latouchei[&!color=#cc6600]
+	mogera_kanoana
+	mogera_robusta
+	mogera_tokudae
+	mogera_wogura
+	monachus_monachus
+	monachus_schauinslandi
+	mungos_mungo
+	mungotictis_decemlineata
+	mustela_africana
+	mustela_altaica
+	mustela_erminea
+	mustela_eversmannii
+	mustela_felipei
+	mustela_frenata
+	mustela_itatsi
+	mustela_kathiah
+	mustela_lutreola
+	mustela_nigripes
+	mustela_nivalis
+	mustela_nudipes
+	mustela_putorius
+	mustela_putorius_furo
+	mustela_sibirica
+	mustela_strigidorsa
+	mydaus
+	myosorex_cafer
+	myosorex_geata
+	myosorex_kihaulei
+	myosorex_sclateri
+	myosorex_varius
+	myosorex_zinki
+	nandinia_binotata
+	nasua_narica
+	nasua_nasua
+	nasuella_olivacea
+	nectogale_elegans
+	neofelis_nebulosa
+	neohylomys_hainanensis
+	neomys_anomalus
+	neomys_anomalus_milleri
+	neomys_fodiens
+	neomys_teres
+	neophoca_cinerea
+	neotetracus_sinensis
+	neovison_vison[&!color=#cc6600]
+	neurotrichus_gibbsii
+	notiosorex_cockrumi
+	notiosorex_crawfordi
+	nyctereutes_procyonoides
+	nyctereutes_procyonoides_koreensis
+	odobenus_rosmarus
+	odobenus_rosmarus_divergens
+	odobenus_rosmarus_laptevi
+	ommatophoca_rossii
+	ornithorhynchus_anatinus
+	osbornictis_piscivora
+	otaria_byronia
+	otocolobus_manul
+	otocyon_megalotis
+	paguma_larvata
+	panthera_leo
+	panthera_leo_krugeri
+	panthera_leo_persica
+	panthera_onca
+	panthera_pardus
+	panthera_pardus_fusca
+	panthera_pardus_orientalis
+	panthera_pardus_saxicolor[&!color=#cc6600]
+	panthera_tigris
+	panthera_tigris_altaica
+	panthera_tigris_amoyensis
+	panthera_tigris_corbetti
+	panthera_tigris_sumatrae
+	panthera_uncia
+	paracynictis_selousi
+	paradoxurus_hermaphroditus
+	paradoxurus_jerdoni
+	paradoxurus_zeylonensis
+	paraechinus_aethiopicus
+	paraechinus_hypomelas
+	parahyaena_brunnea
+	parascalops_breweri
+	parascaptor_leucura
+	pardofelis_marmorata
+	pekania_pennanti[&!color=#cc6600]
+	phoca_fasciata
+	phoca_groenlandica
+	phoca_largha[&!color=#cc6600]
+	phoca_vitulina
+	phoca_vitulina_concolor
+	phoca_vitulina_richardii
+	phoca_vitulina_stejnegeri
+	phocarctos_hookeri
+	podogymnura_truei
+	poecilogale_albinucha
+	poiana_richardsonii
+	potos_flavus
+	prionailurus_bengalensis
+	prionailurus_bengalensis_euptilurus
+	prionailurus_iriomotensis
+	prionailurus_planiceps
+	prionailurus_rubiginosus
+	prionailurus_viverrinus
+	prionodon_linsang
+	prionodon_pardicolor
+	procyon_cancrivorus
+	procyon_lotor
+	profelis_aurata
+	proteles_cristatus
+	pteronura_brasiliensis
+	puma_concolor
+	puma_concolor_couguar
+	puma_yagouaroundi
+	pusa_caspica
+	pusa_hispida
+	pusa_sibirica
+	rhinoceros_sondaicus
+	rhinoceros_sondaicus_annamiticus
+	rhinoceros_unicornis
+	rhynchogale_melleri
+	salanoia_concolor
+	scalopus_aquaticus
+	scapanulus_oweni
+	scapanus_latimanus
+	scapanus_orarius
+	scapanus_townsendii
+	scaptochirus_moschatus
+	scaptonyx_fusicaudus
+	solenodon_cubanus
+	solenodon_paradoxus
+	solisorex_pearsoni
+	sorex_alpinus
+	sorex_antinorii
+	sorex_araneus
+	sorex_arcticus
+	sorex_arizonae
+	sorex_asper
+	sorex_bairdi
+	sorex_bedfordiae
+	sorex_bendirii_bendirii
+	sorex_caecutiens
+	sorex_camtschatica
+	sorex_cinereus
+	sorex_coronatus
+	sorex_cylindricauda
+	sorex_daphaenodon
+	sorex_dispar_dispar
+	sorex_excelsus
+	sorex_fumeus
+	sorex_gaspensis
+	sorex_gracillimus
+	sorex_granarius
+	sorex_haydeni
+	sorex_hosonoi
+	sorex_hoyi
+	sorex_hydrodromus
+	sorex_isodon
+	sorex_jacksoni
+	sorex_longirostris
+	sorex_lyelli
+	sorex_maritimensis
+	sorex_milleri
+	sorex_minutissimus
+	sorex_minutus
+	sorex_mirabilis
+	sorex_monticolus
+	sorex_ornatus
+	sorex_pacificus
+	sorex_palustris
+	sorex_palustris_brooksi
+	sorex_palustris_labradorensis
+	sorex_palustris_navigator
+	sorex_portenkoi
+	sorex_preblei
+	sorex_raddei
+	sorex_roboratus
+	sorex_rohweri
+	sorex_samniticus
+	sorex_satunini
+	sorex_satunini_tembotovi
+	sorex_saussurei
+	sorex_shinto
+	sorex_tenellus
+	sorex_thompsoni
+	sorex_trowbridgii
+	sorex_tundrensis
+	sorex_ugyunak
+	sorex_unguiculatus
+	sorex_vagrans
+	sorex_volnuchini
+	sorex_yukonicus
+	soriculus_nigrescens[&!color=#cc6600]
+	speothos_venaticus
+	spilogale
+	suncus_dayi
+	suncus_etruscus
+	suncus_fellowesgordoni
+	suncus_hututsi
+	suncus_infinitesimus
+	suncus_lixus
+	suncus_madagascariensis
+	suncus_malayanus
+	suncus_megalura
+	suncus_montanus[&!color=#cc6600]
+	suncus_murinus
+	suncus_murinus_caerulescens
+	suncus_murinus_kandianus
+	suncus_remyi
+	suncus_stoliczkanus
+	suncus_varilla
+	suricata_suricatta
+	sylvisorex_granti
+	sylvisorex_granti_mundus
+	sylvisorex_howelli
+	sylvisorex_johnstoni
+	sylvisorex_lunaris
+	sylvisorex_ollula
+	sylvisorex_vulcanorum[&!color=#cc6600]
+	tachyglossus_aculeatus
+	talpa_altaica
+	talpa_caeca
+	talpa_caucasica
+	talpa_davidiana
+	talpa_europaea
+	talpa_levantis
+	talpa_occidentalis
+	talpa_romana
+	talpa_stankovici
+	tapirus_bairdii
+	tapirus_indicus
+	tapirus_kabomani
+	tapirus_pinchaque
+	tapirus_terrestris
+	taxidea_taxus
+	tremarctos_ornatus
+	urocyon_cinereoargenteus
+	urocyon_littoralis_catalinae
+	urocyon_littoralis_clementae
+	urocyon_littoralis_dickeyi
+	urocyon_littoralis_littoralis
+	urocyon_littoralis_santacruzae
+	urocyon_littoralis_santarosae
+	uropsilus_aequodonenia
+	uropsilus_andersoni
+	uropsilus_atronates
+	uropsilus_gracilis
+	uropsilus_investigator
+	uropsilus_nivatus
+	uropsilus_soricipes
+	uropsilus_sp_1_ft_2014
+	uropsilus_sp_4_ft_2015
+	urotrichus_talpoides
+	ursus_americanus
+	ursus_arctos
+	ursus_maritimus
+	ursus_thibetanus
+	ursus_thibetanus_formosanus
+	ursus_thibetanus_japonicus
+	ursus_thibetanus_mupinensis
+	ursus_thibetanus_ussuricus
+	viverra_megaspila
+	viverra_tangalunga
+	viverra_zibetha
+	viverricula_indica
+	vormela_peregusna
+	vulpes_cana
+	vulpes_chama
+	vulpes_corsac
+	vulpes_ferrilata
+	vulpes_lagopus
+	vulpes_macrotis
+	vulpes_rueppellii
+	vulpes_velox
+	vulpes_vulpes
+	vulpes_vulpes_montana
+	vulpes_zerda
+	zaglossus_bruijni
+	zalophus_californianus
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((puma_concolor_couguar:1.0E-6,puma_concolor:1.0E-6):0.032044,puma_yagouaroundi:0.036206):0.005751,(((pardofelis_marmorata:0.049649,(catopuma_temminckii:0.026656,catopuma_badia:0.025008):0.016267):0.003612,(((profelis_aurata:0.029339,caracal_caracal:0.031237):0.017514,leptailurus_serval:0.037827):0.01077,(((otocolobus_manul:0.046857,((prionailurus_planiceps:0.027604,(prionailurus_viverrinus:0.014904,(prionailurus_iriomotensis:0.001574,(prionailurus_bengalensis:5.1E-5,prionailurus_bengalensis_euptilurus:1.0E-6):0.001934):0.010037):0.012208):0.00671,prionailurus_rubiginosus:0.024894):0.015103):0.00502,((felis_chaus:0.025029,felis_nigripes:0.028975):0.006701,(felis_margarita:0.008215,(((felis_silvestris_bieti:0.00318,felis_silvestris:0.003154):6.51E-4,(felis_silvestris_lybica:0.002044,felis_catus:0.001487):3.89E-4):1.0E-6,(felis_silvestris_cafra:0.002231,felis_silvestris_ornata:0.002548):2.66E-4):9.16E-4):0.006696):0.006414):0.00212,(((((((((((viverra_megaspila:0.016975,viverra_zibetha:0.01454):0.012054,viverra_tangalunga:0.021959):0.022842,civettictis_civetta:0.055402):0.01241,viverricula_indica:0.058096):0.010812,(poiana_richardsonii:0.03786,((((osbornictis_piscivora:0.016886,genetta_johnstoni:0.024353):0.005044,(genetta_cristata:0.005226,genetta_servalina:0.00354):0.010803):0.004449,((genetta_tigrina:9.98E-4,genetta_genetta:0.00376):0.00994,((genetta_maculata:0.009074,(genetta_bourloni:0.003985,genetta_poensis:0.003899):0.007333):9.0E-4,(genetta_pardina:0.009117,genetta_angolensis:0.009914):0.002249):0.002743):0.005753):0.003594,(genetta_thierryi:0.042064,genetta_victoriae:0.004424):0.010119):0.017116):0.020941):0.009551,((arctogalidia_trivirgata:0.07635,((paradoxurus_hermaphroditus:0.030002,(paradoxurus_jerdoni:0.018162,paradoxurus_zeylonensis:0.009154):0.019018):0.018105,(arctictis_binturong:0.070558,paguma_larvata:0.029842):0.004259):0.032348):0.00869,(macrogalidia_musschenbroekii:0.054155,(cynogale_bennettii:0.106653,(chrotogale_owstoni:0.05985,hemigalus_derbyanus:0.055344):0.01903):0.009815):0.029771):0.007949):0.021762,(((parahyaena_brunnea:0.022007,hyaena_hyaena:0.023885):0.017546,(proteles_cristatus:0.049914,crocuta_crocuta:0.026456):0.010384):0.065162,((((galidia_elegans:0.039924,(galidictis_fasciata:0.021992,(salanoia_concolor:0.010237,mungotictis_decemlineata:0.015174):0.017807):0.012216):0.023559,cryptoprocta_ferox:0.054165):0.004109,(eupleres_goudotii:0.020732,fossa_fossana:0.023868):0.013754):0.009371,(((((ichneumia_albicauda:0.041259,(((bdeogale_nigripes:0.011169,bdeogale_crassicauda:0.020685):0.022508,(cynictis_penicillata:0.02105,paracynictis_selousi:0.014633):0.010349):0.006467,rhynchogale_melleri:0.041334):0.005473):0.008702,(herpestes_ichneumon:0.031128,((galerella_nigrata:0.030791,galerella_sanguinea:0.019609):0.017239,galerella_pulverulenta:0.033858):0.006007):0.010034):0.007246,((((herpestes_auropunctatus:0.001252,herpestes_javanicus:0.009601):0.01037,herpestes_edwardsii:0.019152):0.014209,herpestes_fuscus:0.039259):0.011919,(herpestes_urva:0.035434,herpestes_brachyurus:0.034003):0.012688):0.004857):2.28E-4,(herpestes_naso:0.041544,atilax_paludinosus:0.027541):0.009913):0.017349,(suricata_suricatta:0.042335,((liberiictis_kuhni:0.05174,mungos_mungo:0.057816):0.007806,((crossarchus_platycephalus:0.01345,(crossarchus_obscurus:0.018142,crossarchus_alexandri:0.019298):1.0E-6):0.026011,(helogale_hirtula:0.043408,helogale_parvula:0.02918):0.017316):0.012989):0.008062):0.007752):0.031229):0.014419):0.018501):0.00829,((((((urocyon_cinereoargenteus:9.56E-4,((urocyon_littoralis_catalinae:2.02E-4,(urocyon_littoralis_littoralis:5.0E-5,(urocyon_littoralis_santarosae:2.02E-4,urocyon_littoralis_santacruzae:5.0E-5):1.0E-6):3.03E-4):2.07E-4,(urocyon_littoralis_dickeyi:2.48E-4,urocyon_littoralis_clementae:5.11E-4):1.0E-6):0.001315):0.094332,((((vulpes_lagopus:0.007741,vulpes_macrotis:0.003047):0.02718,((vulpes_velox:0.004065,((vulpes_chama:0.008516,(vulpes_cana:0.003582,vulpes_zerda:0.004877):0.004902):0.00485,(vulpes_rueppellii:0.008883,(vulpes_vulpes:0.001121,vulpes_vulpes_montana:0.002977):1.0E-6):0.00331):0.015896):1.0E-6,(vulpes_corsac:0.012552,vulpes_ferrilata:0.012984):0.02242):0.009744):0.037095,(nyctereutes_procyonoides:0.002027,nyctereutes_procyonoides_koreensis:0.002801):0.062168):0.001604,otocyon_megalotis:0.054142):0.005149):0.013474,((speothos_venaticus:0.060063,(((lycalopex_sechurae:0.010805,(lycalopex_gymnocercus:0.003414,(lycalopex_culpaeus:0.005385,((lycalopex_fulvipes:1.0E-6,lycalopex_vetulus:0.004484):0.00654,lycalopex_griseus:0.001479):0.001264):9.97E-4):7.14E-4):0.017076,(atelocynus_microtis:0.012803,cerdocyon_thous:0.014328):0.004164):0.022363,((dusicyon_australis:1.0E-6,dusicyon_avus:0.001897):0.04528,chrysocyon_brachyurus:0.033011):0.020084):0.011152):0.009187,((lupulella_adusta:0.043989,lycaon_pictus:0.051782):0.007446,(((cuon_alpinus_lepturus:0.002312,cuon_alpinus:3.81E-4):0.020668,canis_rufus:0.005001):0.028089,((lupulella_mesomelas_elongae:0.018393,lupulella_mesomelas:0.015599):0.023292,((canis_simensis:0.019388,(canis_latrans:5.39E-4,canis_lupus_lycaon:9.74E-4):0.013167):0.002799,(((canis_anthus:0.001899,canis_lupaster:0.005928):0.005084,canis_aureus:0.007998):0.004373,((canis_himalayensis:0.002053,((canis_lupus:1.0E-6,canis_lupus_chanco:1.0E-6):5.69E-4,canis_lupus_laniger:3.37E-4):5.24E-4):0.009417,(canis_indica:0.00457,((canis_lupus_desertorum:4.73E-4,canis_lupus_campestris:6.31E-4):9.33E-4,(canis_lupus_baileyi:0.002697,(canis_lupus_dingo:0.003332,canis_familiaris:1.0E-6):7.96E-4):1.0E-6):0.001402):0.002072):2.65E-4):0.002599):0.004398):0.00127):0.002699):0.00145):0.007352):0.027696,((((((mephitis_mephitis:0.063575,spilogale:0.080504):0.018486,conepatus:0.082017):0.028747,mydaus:0.144802):0.043286,(ailurus_fulgens:1.0E-6,ailurus_fulgens_styani:1.0E-6):0.104868):0.013183,((potos_flavus:0.107006,(((((bassaricyon_gabbii:0.002421,bassaricyon_medius_medius:0.006998):0.011743,bassaricyon_alleni:0.017495):0.018184,bassaricyon_neblina_neblina:0.027555):0.042219,((nasua_narica:0.021799,nasuella_olivacea:0.033612):0.033014,nasua_nasua:0.055822):0.036751):0.041278,(bassariscus_astutus:0.054715,(bassariscus_sumichrasti:0.040429,(procyon_lotor:0.001768,procyon_cancrivorus:0.003686):0.043978):0.005651):0.032184):0.015):0.021782,(taxidea_taxus:0.099506,((((melogale_personata:0.016015,(melogale_moschata_subaurantiaca:0.011704,melogale_moschata:0.009158):0.005743):0.07374,(((((poecilogale_albinucha:0.039727,ictonyx_striatus:0.036402):0.005427,ictonyx_libyca:0.077778):0.012168,vormela_peregusna:0.040102):0.034701,(((galictis_cuja:0.038853,(lyncodon_patagonicus:0.04376,galictis_vittata:0.033419):9.15E-4):0.04847,(((enhydra_lutris:1.0E-6,enhydra_lutris_kenyoni:1.64E-4):0.055839,(hydrictis_maculicollis:0.053761,((aonyx_capensis:0.035686,(aonyx_cinerea:0.025077,lutrogale_perspicillata:0.018694):0.017287):0.006904,(lutra_lutra:0.022262,lutra_sumatrana:0.016925):0.019895):0.014437):0.00152):0.012017,((lontra_longicaudis:0.018099,(lontra_provocax:1.0E-6,lontra_felina:0.008731):0.009393):0.020087,lontra_canadensis:0.029839):0.045584):0.008752):0.003228,pteronura_brasiliensis:0.070773):0.003359):0.004901,((neovison_vison:0.033328,(mustela_felipei:0.032204,(mustela_africana:0.032539,mustela_frenata:0.019728):1.0E-6):0.019086):0.025566,(((mustela_strigidorsa:0.042814,mustela_nudipes:0.039911):0.030485,mustela_kathiah:0.059281):0.006876,(mustela_erminea:0.038505,((mustela_altaica:0.025438,mustela_nivalis:0.029314):0.015393,(mustela_itatsi:0.025754,(mustela_sibirica:0.013412,(mustela_nigripes:0.006736,(mustela_eversmannii:0.005231,(mustela_lutreola:0.004166,(mustela_putorius:1.61E-4,mustela_putorius_furo:2.9E-5):0.001149):1.77E-4):7.11E-4):0.001343):0.002397):0.004642):0.00292):0.003087):0.003079):0.006022):0.001456):0.001031,((eira_barbara:0.071849,pekania_pennanti:0.053521):0.008832,(gulo_gulo:0.059348,(martes_flavigula:0.052703,(martes_foina:0.032998,(((martes_melampus_tsuensis:0.001926,martes_melampus:0.001985):0.0077,(martes_zibellina:0.007155,martes_martes:0.006874):0.004764):0.003854,(martes_americana_sierrae:1.0E-6,(martes_americana:3.68E-4,(martes_americana_caurina:5.39E-4,martes_americana_humboldtensis:0.001059):0.002118):1.0E-6):0.013675):0.012535):0.023795):0.006662):0.009325):0.028075):0.001004,(mellivora_capensis:0.077501,(arctonyx_collaris:0.040932,((meles_anakuma:0.013109,meles_leucurus:0.012585):0.017895,((meles_canescens:0.001634,meles_meles_arcalus:5.8E-4):0.018802,meles_meles:0.012907):0.010462):0.012718):0.046775):0.007434):0.003284):0.010253):0.003145):0.00507,(((ailuropoda_melanoleuca:1.0E-6,ailuropoda_melanoleuca_qinlingensis:1.0E-6):0.019602,(tremarctos_ornatus:0.07074,(melursus_ursinus:0.03346,((ursus_maritimus:0.006793,ursus_arctos:0.006318):0.026518,(helarctos_malayanus:0.033743,(ursus_americanus:0.030249,(ursus_thibetanus_japonicus:0.011602,(((ursus_thibetanus_mupinensis:1.0E-6,ursus_thibetanus:1.0E-6):0.004111,ursus_thibetanus_ussuricus:0.00179):0.002224,ursus_thibetanus_formosanus:0.004018):0.006947):0.016842):0.004099):0.005529):0.004926):0.041242):0.031715):0.013681,(((odobenus_rosmarus:2.97E-4,(odobenus_rosmarus_divergens:1.0E-6,odobenus_rosmarus_laptevi:6.4E-4):0.01004):0.074562,(callorhinus_ursinus:0.047404,((zalophus_californianus:0.021739,eumetopias_jubatus:0.024876):0.006717,(arctocephalus_tropicalis:1.0E-6,((arctocephalus_pusillus:0.028578,((phocarctos_hookeri:0.027763,neophoca_cinerea:0.027652):0.003102,(arctocephalus_townsendi:0.021776,(arctocephalus_gazella:0.020607,(arctocephalus_australis:0.006957,arctocephalus_forsteri:0.007775):0.009327):7.93E-4):0.0053):0.002375):0.001455,otaria_byronia:0.035435):0.007224):1.0E-6):0.01614):0.029821):0.026953,(((monachus_monachus:0.052564,monachus_schauinslandi:0.052908):0.008998,((ommatophoca_rossii:0.034878,(lobodon_carcinophaga:0.03131,(hydrurga_leptonyx:0.023027,leptonychotes_weddellii:0.01771):0.012801):0.002781):0.012192,(mirounga_leonina:0.011298,mirounga_angustirostris:0.013514):0.035933):0.006447):0.018796,(erignathus_barbatus:0.054954,(cystophora_cristata:0.037765,((phoca_groenlandica:0.02639,phoca_fasciata:0.025986):0.01195,((((pusa_hispida:0.010847,pusa_sibirica:0.00691):6.59E-4,pusa_caspica:0.009465):4.55E-4,halichoerus_grypus:0.011331):0.002078,((phoca_vitulina_richardii:0.00295,(phoca_vitulina_stejnegeri:0.004527,phoca_vitulina:0.004493):5.0E-6):0.001873,(phoca_vitulina_concolor:1.0E-6,phoca_largha:0.005914):1.0E-6):0.004795):0.015066):0.007366):0.015321):0.007457):0.017156):0.031179):0.001318):0.008602):0.008844,((((tapirus_indicus:0.038298,(tapirus_bairdii:0.036168,(tapirus_kabomani:5.59E-4,(tapirus_terrestris:0.005431,tapirus_pinchaque:0.003573):0.001615):0.027316):0.022612):0.057471,((dicerorhinus_sumatrensis_harrissoni:1.0E-6,dicerorhinus_sumatrensis:2.0E-6):0.065219,((rhinoceros_unicornis:0.019518,(rhinoceros_sondaicus_annamiticus:1.0E-6,rhinoceros_sondaicus:0.010509):0.021093):0.036326,((diceros_bicornis_michaeli:0.001889,(diceros_bicornis:0.006374,diceros_bicornis_minor:0.003726):0.001055):0.021397,(ceratotherium_simum_cottoni:0.002585,ceratotherium_simum:0.004998):0.017515):0.019978):0.002637):0.03084):0.017153,((equus_burchellii_cuninghamei:1.0E-6,(((equus_asinus_africanus:0.00233,equus_asinus:0.005384):1.0E-6,equus_asinus_somalicus:0.004587):0.015769,(equus_burchellii_antiquorum:1.0E-6,(((equus_hemionus:1.0E-6,equus_hemionus_kulan:1.0E-6):0.004823,(equus_hemionus_onager:0.003537,equus_kiang:0.00412):5.27E-4):0.012898,(((equus_burchellii:0.006804,equus_burchellii_chapmani:0.004919):0.007111,equus_grevyi:0.010647):0.004691,(equus_zebra:1.0E-6,equus_zebra_hartmannae:1.0E-6):0.017701):0.003881):1.0E-6):0.001833):0.01594):0.003107,(equus_przewalskii:0.001034,equus_caballus:8.76E-4):0.007336):0.037173):0.022695,(((manis_pentadactyla:0.00238,manis_javanica:0.001899):0.10377,(manis_temminckii:0.110835,(manis_tricuspis:0.027121,manis_tetradactyla:0.032718):0.077503):0.072222):0.154445,(((solenodon_cubanus:0.091523,solenodon_paradoxus:0.060408):0.250273,(((uropsilus_investigator:0.065648,(uropsilus_sp_1_ft_2014:0.060588,(((uropsilus_nivatus:0.004837,uropsilus_gracilis:0.001089):0.027308,(uropsilus_aequodonenia:0.034218,uropsilus_andersoni:0.03053):0.023758):0.01617,((uropsilus_atronates:0.035844,uropsilus_soricipes:0.023851):0.006189,uropsilus_sp_4_ft_2015:0.032007):0.024289):0.002952):0.027051):0.112477,(((((scaptonyx_fusicaudus:0.111089,neurotrichus_gibbsii:0.100595):0.029025,(((((talpa_caucasica:0.052091,talpa_davidiana:0.064424):0.00199,(((talpa_romana:0.034139,talpa_caeca:0.03002):0.00655,(talpa_occidentalis:0.028649,talpa_europaea:0.022766):0.00846):0.006447,(talpa_stankovici:0.033078,talpa_levantis:0.025625):0.003479):0.010826):0.004473,talpa_altaica:0.058478):0.022935,((((((euroscaptor_subanura:0.082713,euroscaptor_parvidens:0.058208):0.015423,parascaptor_leucura:0.039624):0.009371,scaptochirus_moschatus:0.067903):1.0E-6,(euroscaptor_klossi:0.03094,(euroscaptor_longirostris:0.024056,euroscaptor_malayana:0.026411):0.003986):0.036352):0.005741,((mogera_insularis_latouchei:0.032955,(mogera_insularis:0.023807,mogera_kanoana:0.028642):0.023186):0.007935,((mogera_imaizumii:0.029308,(mogera_robusta:0.019589,mogera_wogura:0.016273):0.01074):0.010649,mogera_tokudae:0.047315):0.003601):0.027661):0.007014,euroscaptor_mizura:0.049918):0.016767):0.04093,(desmana_moschata:0.076623,galemys_pyrenaicus:0.08444):0.097905):0.005736):0.008494,(dymecodon_pilirostris:0.055664,urotrichus_talpoides:0.046163):0.084842):0.014781,(scapanulus_oweni:0.091751,(parascalops_breweri:0.078115,((scapanus_latimanus:0.046792,(scapanus_orarius:0.01093,scapanus_townsendii:0.024855):0.015015):0.044713,scalopus_aquaticus:0.104299):0.021898):0.02262):0.028842):0.016662,condylura_cristata:0.10283):0.023526):0.074006,((((congosorex_phillipsorum:0.130514,((((myosorex_varius:0.012876,myosorex_cafer:0.01374):0.002189,myosorex_sclateri:0.021166):0.058831,myosorex_zinki:0.055412):0.017938,(myosorex_geata:0.012866,myosorex_kihaulei:0.007813):0.034096):0.101933):0.030697,(solisorex_pearsoni:0.116067,((((((suncus_infinitesimus:0.042347,(suncus_remyi:0.059152,suncus_hututsi:0.06605):0.003907):0.07131,suncus_varilla:0.111552):0.030196,((sylvisorex_lunaris:0.077714,(sylvisorex_granti:0.048447,(sylvisorex_vulcanorum:0.005705,sylvisorex_granti_mundus:0.006537):0.036034):0.0236):0.022201,sylvisorex_johnstoni:0.139514):0.018289):0.009479,(sylvisorex_ollula:0.101116,suncus_megalura:0.099882):0.02686):0.009835,(((suncus_fellowesgordoni:0.031701,(suncus_malayanus:0.036356,(suncus_etruscus:0.002068,suncus_madagascariensis:0.001797):0.013252):0.006545):0.05449,(((((((crocidura_grassei:0.057683,crocidura_crenata:0.069653):0.018532,(crocidura_fuscomurina:0.05009,(crocidura_lusitania:0.03871,(crocidura_jouvenetae:0.029211,crocidura_crossei:0.010541):0.027794):0.012766):0.017023):0.001912,(crocidura_cyanea:0.047501,(((crocidura_batesi:0.048883,crocidura_hildegardeae:0.026788):0.00861,((((crocidura_fingui:0.021147,crocidura_poensis:0.014569):0.03663,(crocidura_buettikoferi:0.017094,crocidura_wimmeri:0.041046):0.018719):0.006536,crocidura_theresae:0.026713):0.005707,crocidura_grandiceps:0.015923):0.013298):0.004534,(crocidura_silacea:0.018394,crocidura_mariquensis:0.022875):0.020389):0.010153):0.011914):0.005087,crocidura_roosevelti:0.06086):0.004592,((crocidura_nanilla:0.048142,((crocidura_nimbasilvanus:1.0E-6,crocidura_nimbae:0.02064):0.036586,(crocidura_muricauda:0.03663,crocidura_douceti:0.044685):0.013437):0.0065):0.007355,(crocidura_parvipes:0.053828,(crocidura_lamottei:0.042183,(((crocidura_goliath:0.013072,((((crocidura_olivieri_cara:0.002365,(crocidura_olivieri_giffardi:0.003259,crocidura_olivieri_spurelli:0.001414):1.0E-6):0.007324,crocidura_fulvastra:0.00271):1.0E-6,crocidura_viaria:0.00406):0.004612,(crocidura_olivieri_kivu:0.003412,(crocidura_olivieri:1.0E-6,crocidura_olivieri_sururae:0.001117):0.00379):0.00436):0.006979):1.0E-6,crocidura_somalica:0.014722):0.016823,(crocidura_flavescens:0.029814,crocidura_hirta:0.03918):0.005132):0.020704):1.0E-6):0.022667):0.006587):0.009828,(crocidura_ichnusae:0.027361,crocidura_russula:0.019549):0.044907):0.006811,((((crocidura_leucodon:0.078998,(crocidura_sicula:0.048921,(crocidura_canariensis:0.039547,crocidura_tarfayensis:0.042529):0.016083):0.022854):0.003705,(((crocidura_tansaniana:0.028112,(crocidura_usambarae:1.0E-6,(crocidura_newmarki:1.0E-6,crocidura_monax:1.0E-6):1.0E-6):0.017478):1.0E-6,((crocidura_fumosa:0.010782,crocidura_mdumai:1.0E-6):1.0E-6,crocidura_munissii:0.009329):0.018747):0.02912,((((crocidura_baileyi:0.047879,(crocidura_luna:0.014701,crocidura_macmillani:0.02019):0.026382):1.0E-6,crocidura_glassi:0.03288):0.030221,crocidura_zimmermanni:0.045155):0.010387,(crocidura_eburnea:0.07696,crocidura_obscurior:0.052546):0.018394):1.0E-6):0.004866):0.004874,(crocidura_batakorum:0.079887,((crocidura_levicula:0.045185,crocidura_rhoditis:0.030561):0.007614,crocidura_musseri:0.032309):0.01538):0.019296):0.005607,((crocidura_orii:0.06843,((((crocidura_phanluongi:0.057701,((crocidura_paradoxura:0.041797,(((((crocidura_neglecta:1.0E-6,crocidura_negligens:1.0E-6):0.014122,crocidura_malayana:0.008736):0.027414,(crocidura_foetida:0.023564,(crocidura_nigripes_lipara:0.001321,crocidura_nigripes:1.0E-6):0.024233):0.006561):0.001678,((crocidura_mindorus:0.017622,(crocidura_beatus:0.019838,((crocidura_negrina:0.007293,(crocidura_ninoyi:0.009213,crocidura_panayensis:0.006944):4.48E-4):0.012851,(crocidura_grayi_halconus:0.001982,crocidura_grayi:0.001114):0.018054):0.001323):0.001228):0.001796,crocidura_palawanensis:0.019023):0.006873):0.007263,(((crocidura_beccarii:0.004547,crocidura_lepidura:1.0E-6):0.022188,(crocidura_orientalis:0.015857,crocidura_brunnea:0.020391):0.004028):3.43E-4,crocidura_orientalis_lawuana:0.016727):0.013677):0.012697):0.014111,(((((crocidura_phuquocensis:0.082342,crocidura_tanakae:0.042709):0.011806,(crocidura_indochinensis:0.029133,(crocidura_fuliginosa:0.026498,crocidura_wuchihensis:0.01828):0.011494):0.01504):0.004655,(crocidura_attenuata:0.034753,(crocidura_zaitsevi:0.041636,(crocidura_rapax_kurodai:0.00991,(crocidura_lasiura:0.002723,crocidura_dsinezumi:0.003121):0.015345):0.030107):0.004505):0.003232):0.004098,(crocidura_monticola:0.052537,crocidura_maxi:0.042974):0.007539):0.004804,crocidura_watasei:0.074626):0.00651):0.006196):1.0E-6,crocidura_sokolovi:0.073196):0.002858,(crocidura_horsfieldii:0.058541,(crocidura_miya:0.033245,crocidura_hikmiya:0.04487):0.015161):0.014812):0.003581,(crocidura_shantungensis:0.025535,(crocidura_zarudnyi:0.03837,((crocidura_aleksandrisi:0.01633,(crocidura_monacha:0.016456,crocidura_suaveolens_mimula:0.014829):0.007863):0.017611,((crocidura_suaveolens:0.003762,(crocidura_sibirica:0.002715,crocidura_suaveolens_gueldenstaedtii:7.3E-4):4.94E-4):0.01174,crocidura_caspica:0.020089):0.004977):0.005804):0.004234):0.03584):0.004821):1.0E-6,diplomesodon_pulchellum:0.106669):0.003257):0.009931):0.016279):0.011804,(feroculus_feroculus:0.072366,(suncus_dayi:0.089781,(suncus_stoliczkanus:0.031893,((suncus_murinus_kandianus:0.001365,suncus_montanus:0.004189):0.019359,(suncus_murinus_caerulescens:0.001581,suncus_murinus:0.003722):0.019334):0.008511):0.026292):0.011066):0.003264):0.020672):0.012723,(sylvisorex_howelli:0.097169,suncus_lixus:0.089197):0.063554):0.051175):0.054949):0.062653,(((anourosorex_squamipes:0.009042,anourosorex_yamashinai:0.021475):0.142945,((megasorex_gigas:0.106132,(notiosorex_cockrumi:0.002189,notiosorex_crawfordi:1.0E-6):0.093896):0.053761,((((episoriculus_macrurus:0.083891,((episoriculus_caudatus_soluensis:0.064787,episoriculus_caudatus:0.042066):0.007999,episoriculus_leucops:0.046937):0.032654):0.013684,((nectogale_elegans:0.059549,(chimarrogale_phaeura:0.072469,(chimarrogale_styani:0.048881,(chimarrogale_himalayica:0.029986,chimarrogale_platycephala:0.046596):0.020063):0.010789):0.021939):0.025016,((neomys_teres:0.013832,(neomys_anomalus_milleri:0.004234,neomys_anomalus:0.006743):0.030112):0.04154,neomys_fodiens:0.050793):0.057751):0.006919):0.009903,(soriculus_nigrescens:0.077418,episoriculus_fumidus:0.0915):0.008052):0.008741,(((chodsigoa_caovansunga:0.05394,chodsigoa_parca:0.044395):0.005647,chodsigoa_sodalis:0.054813):0.016867,chodsigoa_hypsibia:0.054948):0.052524):0.031801):0.011476):0.021644,(((((blarina_hylophaga:0.033244,blarina_carolinensis:0.018326):0.005227,blarina_brevicauda:0.033694):0.03761,(((((cryptotis_nelsoni:0.032026,(cryptotis_obscura:0.016589,cryptotis_mexicana:0.01991):0.005936):0.02973,(cryptotis_phillipsii:0.029806,cryptotis_magna:0.017178):0.049172):0.010785,cryptotis_mayensis:0.06271):0.005659,((cryptotis_goldmani:0.004916,cryptotis_peregrina:0.004378):0.033293,cryptotis_alticola:0.054259):0.005841):0.014181,cryptotis_parva:0.068525):0.025457):0.054693,(blarinella_wardi:0.053403,(blarinella_griselda:0.014342,blarinella_quadraticauda:0.011076):0.038739):0.064506):0.049754,(((((((((sorex_dispar_dispar:0.002584,sorex_gaspensis:1.0E-6):0.034669,sorex_fumeus:0.042864):0.01609,((sorex_preblei:0.009914,(sorex_haydeni:0.009694,(sorex_lyelli:0.004012,((sorex_camtschatica:1.0E-6,sorex_jacksoni:1.0E-6):8.72E-4,(sorex_hydrodromus:0.003462,sorex_portenkoi:5.59E-4):8.66E-4):0.001781):0.002152):0.004337):0.014185,(sorex_longirostris:0.013002,(sorex_milleri:0.006164,(sorex_ugyunak:7.09E-4,sorex_cinereus:0.002581):0.002938):0.003382):0.009326):0.01439):0.012066,(sorex_hoyi:0.008423,sorex_thompsoni:0.011531):0.043894):0.005944,((sorex_ornatus:0.032275,sorex_vagrans:0.020566):0.012392,(sorex_palustris_labradorensis:0.029636,((sorex_pacificus:0.001245,(sorex_bairdi:0.00202,sorex_monticolus:0.003492):1.0E-6):0.012979,(sorex_bendirii_bendirii:0.00864,(sorex_palustris_brooksi:0.001671,(sorex_palustris_navigator:0.001114,sorex_palustris:0.00154):5.13E-4):0.009217):0.003422):0.007092):0.009167):0.024507):0.001443,sorex_rohweri:0.042721):0.00376,sorex_tenellus:0.04775):0.014842,(sorex_saussurei:0.080514,(sorex_trowbridgii:0.051048,sorex_arizonae:0.087986):0.027431):0.018045):0.018067,(sorex_alpinus:0.069112,(((sorex_excelsus:0.022288,sorex_bedfordiae:0.013461):0.005341,sorex_cylindricauda:0.022434):0.037124,((((((sorex_shinto:0.046072,sorex_caecutiens:0.024535):0.020702,(sorex_unguiculatus:0.019254,sorex_isodon:0.026832):0.013523):0.005157,((sorex_hosonoi:0.032091,(sorex_minutissimus:0.007096,sorex_yukonicus:0.003416):0.030882):0.021504,sorex_gracillimus:0.044159):0.005656):0.004511,(sorex_minutus:0.025948,sorex_volnuchini:0.024278):0.033944):0.0109,((sorex_roboratus:0.037886,sorex_raddei:0.045822):0.008569,(sorex_samniticus:0.04743,((sorex_arcticus:0.033909,sorex_maritimensis:0.028052):0.017513,((sorex_tundrensis:0.010671,sorex_asper:0.01689):0.015346,(sorex_daphaenodon:0.020215,(sorex_coronatus:0.017359,(sorex_antinorii:0.007249,((sorex_satunini:0.001914,sorex_satunini_tembotovi:5.42E-4):0.009172,(sorex_granarius:0.007062,sorex_araneus:0.002601):6.16E-4):0.001101):0.003968):0.00357):0.003627):0.006687):0.002451):0.011603):0.003777):0.002517,sorex_mirabilis:0.077244):0.003621):0.005583):0.010058):0.017173):0.011148):0.027244):0.043513,((hylomys_megalotis:0.235106,(((neotetracus_sinensis:0.133479,neohylomys_hainanensis:0.164154):0.043692,(((hylomys_suillus_siamensis:1.0E-6,hylomys_suillus:0.011998):0.068945,hylomys_parvus:0.047078):0.047681,hylomys_suillus_microtinus:0.050797):0.095523):0.092003,(echinosorex_gymnura:0.137834,podogymnura_truei:0.053715):0.098543):0.061015):0.123091,(((paraechinus_hypomelas:0.066309,paraechinus_aethiopicus:0.059781):0.023175,(hemiechinus_auritus:0.036516,(mesechinus_dauuricus:0.022914,mesechinus_hughi:0.027431):0.008625):0.051003):0.043948,((atelerix_frontalis:0.040896,(atelerix_algirus:0.034403,atelerix_albiventris:0.031627):0.01149):0.071135,((erinaceus_concolor:0.022138,erinaceus_roumanicus:0.018762):0.021433,(erinaceus_amurensis:0.039344,erinaceus_europaeus:0.018146):0.004597):0.013852):0.003578):0.080268):0.053211):0.00893):0.001644):0.007805,(ornithorhynchus_anatinus:0.059381,(zaglossus_bruijni:0.025149,tachyglossus_aculeatus:0.024514):0.152178):0.486991):0.006084):0.003875):0.024186):0.011398,nandinia_binotata:0.097494):0.004156):0.003073,(prionodon_linsang:0.033029,prionodon_pardicolor:0.07356):0.044757):0.012277,(neofelis_nebulosa:0.052253,((panthera_onca:0.024526,(((panthera_pardus_fusca:0.004292,(panthera_pardus_orientalis:8.57E-4,panthera_pardus:0.001772):1.0E-6):0.021319,((panthera_leo_persica:1.0E-6,panthera_leo:1.0E-6):0.012185,panthera_leo_krugeri:0.005036):0.010001):0.004719,panthera_uncia:0.034781):0.003089):0.008388,((panthera_tigris_amoyensis:1.0E-6,panthera_tigris:1.0E-6):0.002611,((panthera_pardus_saxicolor:1.0E-6,panthera_tigris_sumatrae:7.42E-4):2.0E-6,(panthera_tigris_corbetti:8.66E-4,panthera_tigris_altaica:4.09E-4):5.99E-4):0.006809):0.028788):0.012263):0.023945):0.001786,(((leopardus_geoffroyi:0.010993,leopardus_guigna:0.010673):0.01191,leopardus_tigrinus:0.02115):0.012404,((leopardus_pardalis:0.014552,leopardus_wiedii:0.014464):0.011709,(leopardus_colocolo:0.029569,leopardus_jacobita:0.027589):0.003381):0.002823):0.028045):0.001538):0.003212):0.00833):0.002572,(lynx_rufus:0.028404,((lynx_pardinus:0.013181,lynx_canadensis:0.011131):0.002672,lynx_lynx:0.011152):0.019565):0.014744):0.008513,acinonyx_jubatus:0.040497);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=650;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
