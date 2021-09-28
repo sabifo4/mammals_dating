@@ -273,7 +273,7 @@ you will find a description of these checks inside the `filter_tree` directory. 
 output plots will be inside `filter_tree/01_Check_conflict` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
-obtained [here](ADD LINK),
+obtained [here](https://www.dropbox.com/s/1vjkggr4ujrnfha/SeqBayesS2_MCMCtree.zip?dl=0),
 while you can find 
 [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/02_MCMCtree) 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
