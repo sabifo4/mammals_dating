@@ -27,8 +27,7 @@ After running this script, you will have the following files:
      |- afrotheria_rooted_calibnames.tree     # Input file used by the R script
      |- Calibrations_Afrotheria.R             # R script
      |- Calibrations_Afrotheria.txt           # Input file used by the R script. It matches the tag names
-     |                                        # in input tree with corresponding calibrations to be replaced
-     |- README.md                             # This file
+                                              # in input tree with corresponding calibrations to be replaced
 ```
 
 Note that we have manually generated the
@@ -52,6 +51,12 @@ Topology from Tarver et al. paper, 2016:fig. S7 (reanalysis of Oleary 2013 with 
 loci & topology also in Upham et al. 2019) and 
 Esselstyn et al. 2017: fig. 1 (3700 UCEs).
 ```
+
+The updated file to be used by `BASEML` and the calibrated tree before the checks 
+shown in the next step can be found
+[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/extra_filtering). 
+The "dummy" alignments have also been updated in their corresponding directory 
+[here](), where the previous version has been saved in a directory called "before_updating_topology".
 
 ## 3. Check if calibrations are in conflict
 The tree with the topology described above (60 taxa) was used to check 

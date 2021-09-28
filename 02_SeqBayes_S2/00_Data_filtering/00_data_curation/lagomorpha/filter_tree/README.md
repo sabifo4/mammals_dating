@@ -20,15 +20,14 @@ After running this script, you will have the following files:
      |- RAxML_tree
      |         |- lagomorpha.tree            # File not used. Best-scoring ML tree obtained with RAxML
      |         
-     |- 33sp_Lagomorpha_MCMCtree_calib.tree  # File output by the R script
-     |- 33sp_Lagomorpha_spnameslist.txt      # File output by the R script
+     |- 88sp_Lagomorpha_MCMCtree_calib.tree  # File output by the R script
+     |- 88sp_Lagomorpha_spnameslist.txt      # File output by the R script
      |- Calibrations_Lagomorpha.R            # R script
      |- Calibrations_Lagomorpha.txt          # Input file used by the R script. It matches the tag names
      |                                       # in input tree with corresponding calibrations to be replaced
      |- lagomorpha_rooted_baseml.tree        # File manually generated after running R script 
      |                                       # to be used by BASEML (calibrations manually removed)
      |- lagomorpha_rooted_calibnames.tree    # Input file used by the R script
-     |- README.md                            # This file
 ```
 
 Note that we have manually generated the

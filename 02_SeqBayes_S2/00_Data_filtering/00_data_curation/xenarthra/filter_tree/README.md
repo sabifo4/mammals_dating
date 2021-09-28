@@ -28,7 +28,6 @@ After running this script, you will have the following files:
      |- xenarthra_rooted_baseml.tree        # File manually generated after running R script 
      |                                      # to be used by BASEML (calibrations manually removed)
      |- xenarthra_rooted_calibnames.tree    # Input file used by the R script
-     |- README.md                           # This file
 ```
 
 Note that we have manually generated the

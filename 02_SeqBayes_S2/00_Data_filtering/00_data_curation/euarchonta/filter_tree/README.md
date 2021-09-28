@@ -22,13 +22,12 @@ After running this script, you will have the following files:
      |         
      |- 486sp_Euarchonta_MCMCtree_calib.tree  # File output by the R script
      |- 486sp_Euarchonta_spnameslist.txt      # File output by the R script
-     |- euarchonta_rooted_baseml.tree         # File manually generated after running R script 
-     |                                        # to be used by BASEML (calibrations manually removed)
-     |- euarchonta_rooted_calibnames.tree     # Input file used by the R script
      |- Calibrations_Euarchonta.R             # R script
      |- Calibrations_Euarchonta.txt           # Input file used by the R script. It matches the tag names
      |                                        # in input tree with corresponding calibrations to be replaced
-     |- README.md                             # This file
+     |- euarchonta_rooted_baseml.tree         # File manually generated after running R script 
+     |                                        # to be used by BASEML (calibrations manually removed)
+     |- euarchonta_rooted_calibnames.tree     # Input file used by the R script
 ```
 
 Note that we have manually generated the
@@ -143,12 +142,12 @@ Calibrations used:
    * Haplorrhini: ST(0.622,0.011,-1.196,166.803)    
    * Anthropoidea: ST(0.415,0.021,-1.14,156.796)    
    * **Aotidae-Callitrichidae: ~ST(0.1996,0.0266,-1.8564,48.1352)~ -- CONFLICT, adjusted**
-   **to ST(0.1933,0.0292,-1.8564,48.1352 )for next round**    
+   **to ST(0.1933,0.0292,-1.8564,48.1352) for next round**    
    * **Cebidae: ~ST(0.1754,0.0237,-1.7218,40.5053)~ -- CONFLICT, adjusted**
-   **to ST(0.1889,0.0208,-1.7218,40.5053 ) for next round**   
+   **to ST(0.1889,0.0208,-1.7218,40.5053) for next round**   
    * Catarrhini: ST(0.314,0.018,-1.23,314.095)    
    * Cercopithecoidea: ST(0.182,0.012,-0.054,88.157)    
-   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000 )    
+   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000)    
    * Papionini: ST(0.1,0.009,0.641,145.414)    
    * Papio-Mandrillus: ST(0.087,0.007,0.195,50.335)    
    * *Cercocebus atys*-*Mandrillus leucophaeus*: ST(0.073,0.006,0.229,40.768)    
@@ -161,6 +160,11 @@ Calibrations used:
    * Homininae: ST(0.122,0.012,-4.859,295.449)   
    * Hominini: ST(0.101,0.01,-7.603,93.226)   
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)     
+   * Monotremata: B(0.1289,1.345)   
+   * Tachyglossidae: B(0.0258,1.345)   
+   * Platyrrhini: B(0.118,0.373)   
+   * Primatomorpha: B(0.652,0.838)   
+   * Scandentia: B(0.34,0.66)   
    
 <p align="center">
   <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/01_SBnST_Euarchonta_MCMCruns.png">
@@ -177,23 +181,28 @@ Calibrations used:
    * Haplorrhini: ST(0.622,0.011,-1.196,166.803)    
    * Anthropoidea: ST(0.415,0.021,-1.14,156.796)    
    * **Aotidae-Callitrichidae: ~ST(0.1933,0.0292,-1.8564,48.1352)~ -- CONFLICT, adjusted**
-   **to ST(0.1866,0.0327,-1.8564,48.1352 ) for next round**    
-   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053 ) 
+   **to ST(0.1866,0.0327,-1.8564,48.1352) for next round**    
+   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053) 
    * Catarrhini: ST(0.314,0.018,-1.23,314.095)    
    * Cercopithecoidea: ST(0.182,0.012,-0.054,88.157)    
-   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000 )    
+   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000)    
    * Papionini: ST(0.1,0.009,0.641,145.414)    
    * Papio-Mandrillus: ST(0.087,0.007,0.195,50.335)    
    * *Cercocebus atys*-*Mandrillus leucophaeus*: ST(0.073,0.006,0.229,40.768)    
    * Genus macaca: ST(0.053,0.007,1.101,200.596)    
    * *Macaca fascicularis*-*Macaca mulatta*: ST(0.039,0.005,1.207,108.063)    
    * Colobinae: ST(0.127,0.011,0.584,209.998)  
-   * _R. roxellana_-_R. bieti: ST(0.0363,0.0061,1.5249,104.3879 )   
+   * _R. roxellana_-_R. bieti: ST(0.0363,0.0061,1.5249,104.3879)   
    * Hominoidea: ST(0.236,0.016,-1.223,135.248)   
    * Hominidae: ST(0.21,0.015,-1.248,109.524)   
    * Homininae: ST(0.122,0.012,-4.859,295.449)   
    * Hominini: ST(0.101,0.01,-7.603,93.226)   
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)  
+   * Monotremata: B(0.1289,1.345)   
+   * Tachyglossidae: B(0.0258,1.345)   
+   * Platyrrhini: B(0.118,0.373)   
+   * Primatomorpha: B(0.652,0.838)   
+   * Scandentia: B(0.34,0.66)   
    
 <p align="center">
   <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/02_SBandSTtweak1_Euarchonta_MCMCruns.png">
@@ -210,24 +219,29 @@ Calibrations used:
    * Haplorrhini: ST(0.622,0.011,-1.196,166.803)    
    * Anthropoidea: ST(0.415,0.021,-1.14,156.796)    
    * **Aotidae-Callitrichidae: ~ST(0.1866,0.0327,-1.8564,48.1352)~ -- CONFLICT, adjusted**
-   **to ST(0.1841,0.0350,-1.8564,48.1352 ) for next round**    
-   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053 ) 
+   **to ST(0.1841,0.0350,-1.8564,48.1352) for next round**    
+   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053) 
    * Catarrhini: ST(0.314,0.018,-1.23,314.095)    
    * Cercopithecoidea: ST(0.182,0.012,-0.054,88.157)    
-   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000 )    
+   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000)    
    * Papionini: ST(0.1,0.009,0.641,145.414)    
    * Papio-Mandrillus: ST(0.087,0.007,0.195,50.335)    
    * *Cercocebus atys*-*Mandrillus leucophaeus*: ST(0.073,0.006,0.229,40.768)    
    * Genus macaca: ST(0.053,0.007,1.101,200.596)    
    * *Macaca fascicularis*-*Macaca mulatta*: ST(0.039,0.005,1.207,108.063)    
    * Colobinae: ST(0.127,0.011,0.584,209.998)  
-   * **_R. roxellana_-_R. bieti: ST(0.0363,0.0061,1.5249,104.3879 ) - CONFLICT,adjusted**
-   **to ST(0.0382,0.0067,1.5249,104.3879 ) for next round**   
+   * **_R. roxellana_-_R. bieti: ST(0.0363,0.0061,1.5249,104.3879) - CONFLICT,adjusted**
+   **to ST(0.0382,0.0067,1.5249,104.3879) for next round**   
    * Hominoidea: ST(0.236,0.016,-1.223,135.248)   
    * Hominidae: ST(0.21,0.015,-1.248,109.524)   
    * Homininae: ST(0.122,0.012,-4.859,295.449)   
    * Hominini: ST(0.101,0.01,-7.603,93.226)   
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)  
+   * Monotremata: B(0.1289,1.345)   
+   * Tachyglossidae: B(0.0258,1.345)   
+   * Platyrrhini: B(0.118,0.373)   
+   * Primatomorpha: B(0.652,0.838)   
+   * Scandentia: B(0.34,0.66)   
    
 <p align="center">
   <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/03_SBandSTtweak2_Euarchonta_MCMCruns.png">
@@ -243,10 +257,10 @@ Calibrations used:
    * Haplorrhini: ST(0.622,0.011,-1.196,166.803)    
    * Anthropoidea: ST(0.415,0.021,-1.14,156.796)    
    * Aotidae-Callitrichidae: ST(0.1841,0.0350,-1.8564,48.1352)   
-   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053 ) 
+   * Cebidae: ST(0.1889,0.0208,-1.7218,40.5053) 
    * Catarrhini: ST(0.314,0.018,-1.23,314.095)    
    * Cercopithecoidea: ST(0.182,0.012,-0.054,88.157)    
-   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000 )    
+   * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000)    
    * Papionini: ST(0.1,0.009,0.641,145.414)    
    * Papio-Mandrillus: ST(0.087,0.007,0.195,50.335)    
    * *Cercocebus atys*-*Mandrillus leucophaeus*: ST(0.073,0.006,0.229,40.768)    
@@ -259,6 +273,11 @@ Calibrations used:
    * Homininae: ST(0.122,0.012,-4.859,295.449)   
    * Hominini: ST(0.101,0.01,-7.603,93.226)   
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)  
+   * Monotremata: B(0.1289,1.345)   
+   * Tachyglossidae: B(0.0258,1.345)   
+   * Platyrrhini: B(0.118,0.373)   
+   * Primatomorpha: B(0.652,0.838)   
+   * Scandentia: B(0.34,0.66)   
    
 <p align="center">
   <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBandSTtweak3_Euarchonta_MCMCruns.png">

@@ -23,8 +23,8 @@ you can obtain once you unzip the file provided above:
 euarchonta 
    |- filter_aln
          |- checked_aln                        
-         |     |- alignment_nt3cp.phylip      # Alignment with 3CP 
-         |     |- RAxML_bestTree.BS_ML_GTRCAT
+         |     |- alignment_nt3cp.phylip      # Alignment with 3CP (found in `original_aln_tree`)
+         |     |- RAxML_bestTree.BS_ML_GTRCAT # Unfiltered tree (found in `original_aln_tree`)
          |     
          |- alignment.phylip # Alignment with 12CP
          |- euarchonta_taxonomy_check.csv 

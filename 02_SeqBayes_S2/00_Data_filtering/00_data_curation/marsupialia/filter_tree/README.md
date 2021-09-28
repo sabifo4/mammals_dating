@@ -22,13 +22,12 @@ After running this script, you will have the following files:
      |         
      |- 307sp_Marsupialia_MCMCtree_calib.tree  # File output by the R script
      |- 307sp_Marsupialia_spnameslist.txt      # File output by the R script
-     |- marsupialia_rooted_baseml.tree         # File manually generated after running R script 
-     |                                         # to be used by BASEML (calibrations manually removed)
-     |- marsupialia_rooted_calibnames.tree     # Input file used by the R script
      |- Calibrations_Marsupialia.R             # R script
      |- Calibrations_Marsupialia.txt           # Input file used by the R script. It matches the tag names
      |                                         # in input tree with corresponding calibrations to be replaced
-     |- README.md                              # This file
+     |- marsupialia_rooted_baseml.tree         # File manually generated after running R script 
+     |                                         # to be used by BASEML (calibrations manually removed)
+     |- marsupialia_rooted_calibnames.tree     # Input file used by the R script
 ```
 
 Note that we have manually generated the
@@ -40,7 +39,7 @@ likelihood.
 
 ## 2. Manual change due to conflict with literature
 The pyhlogeny in
-[`307sp_Marsupialia_MCMCtree_calib.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/307sp_Marsupialia_MCMCtree_calib.tree)
+[`307sp_Marsupialia_MCMCtree_calib.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/307sp_Marsupialia_MCMCtree_calib.tree)
 has an outdated 
 tree topology that does not correspond to the latest literature.
 The new tree topology has the following clustering:
@@ -52,6 +51,11 @@ The topology from Mitchell et al. 2014 MB&E shows a pretty robust dataset
 as in supp fig. s1 here:
 https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Facademic.oup.com%2Fmbe%2Farticle%2F31%2F9%2F2322%2F2925703&amp;data=02%7C01%7C%7C03e288fc3d954af8220408d80e43f743%7C569df091b01340e386eebd9cb9e25814%7C0%7C0%7C637275032363930685&amp;sdata=41BkZWuHS8z9jeHyoxXWRKnvxg1QTl8eSkhFFvwJOpc%3D&amp;reserved=0
 ```
+
+The updated file to be used by `BASEML` and the calibrated tree before the checks 
+shown in the next step can be found
+[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/extra_filtering). 
+
 
 ## 3. Check if calibrations are in conflict
 The tree with the topology described above was used to check 
@@ -164,10 +168,10 @@ Calibrations used:
    * Didelphimorphia: B(0.11608,0.281)   
    * Dasyuromorphia: B(0.1597,0.3)
    * Peramelemorphia: B(0.0436,0.238)    
-   * **Vombatiformes: B(0.2550,0.3)   
-   * **Phalangeriformes: B( 0.2500,0.3)   
-   * **Petauridae: B(0.2550,0.3)   
-   * **Macropodoidea: B(0.2470,0.3)    
+   * Vombatiformes: B(0.2550,0.3)   
+   * Phalangeriformes: B( 0.2500,0.3)   
+   * Petauridae: B(0.2550,0.3)   
+   * Macropodoidea: B(0.2470,0.3)    
    
 <p align="center">
   <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/02_SBnST_max0.3_pU0.025_Marsupialia_MCMCruns.png">

@@ -1,4 +1,4 @@
-# LAURASIATHERIA CETARTIODACTYLA - Filtering alignment
+# LAURASIATHERIA CETARTIODACTYLA (ARTIODACTYLA) - Filtering alignment
 The initial files that you can find in this directory are the following:
 
 ```
@@ -21,7 +21,7 @@ laurasiatheria_cetartiodactyla
 		 
 The output files during the filtering step that is described below as well as the input 
 files needed have been zipped in a file as they are very large. You can download 
-this file [here]().
+this file [here](https://www.dropbox.com/s/4szw979qocelxf5/SeqBayesS2_filtaln_artiodactyla.zip?dl=0).
 To start the filtering step, you should have the following files arranged in the file 
 architecture detailed above (you can obtain the files once you unzip the file
 provided in the link above): 
@@ -32,7 +32,7 @@ laurasiatheria_cetartiodactyla
          |- checked_aln                        
          |     |- unfiltered_aln
          |     |    |- alignment_nt3cp.phylip      # Alignment with 3CP 
-         |     |- RAxML_bestTree.BS_ML_GTRCAT
+         |     |- RAxML_bestTree.BS_ML_GTRCAT      # Unfiltered tree (found in `original_tree`)
          |     |- taxonomical_check                           # Visual checks to evaluate 
          |          |- laurasiatheria_cetartiodactyla.png     # dubious taxa placement
          |          |- laurasiatheria_cetartiodactyla_FigTree
@@ -605,6 +605,6 @@ Instructions to follow:
    do not change paths in the Rscript! 
 
 The final alignments generated at the end of this step can be downloaded from 
-[here]().
+[here](https://www.dropbox.com/s/94z6yura9rtaobb/SeqBayesS2_Raln_artiodactyla.zip?dl=0).
 They should be saved here if the same file architecture as the one set in the R scripts 
 is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/laurasiatheria_cetartiodactyla`.

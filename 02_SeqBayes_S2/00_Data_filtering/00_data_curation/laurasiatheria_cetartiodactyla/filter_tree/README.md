@@ -20,15 +20,14 @@ After running this script, you will have the following files:
      |- RAxML_tree
      |         |- laurasiatheria_cetartiodactyla.tree             # File not used. Best-scoring ML tree obtained with RAxML
      |         
-     |- 61sp_laurasiatheria_cetartiodactyla_MCMCtree_calib.tree   # File output by the R script
-     |- 61sp_laurasiatheria_cetartiodactyla_spnameslist.txt       # File output by the R script
+     |- 431sp_laurasiatheria_cetartiodactyla_MCMCtree_calib.tree  # File output by the R script
+     |- 431sp_laurasiatheria_cetartiodactyla_spnameslist.txt      # File output by the R script
+     |- Calibrations_LaurCetart.txt                               # Input file used by the R script. It matches the tag names
+     |                                                            # in input tree with corresponding calibrations to be replaced
+     |- Calibrations_Lcetartiodactyla.R                           # R script
      |- laurasiatheria_cetartiodactyla_rooted_baseml.tree         # File manually generated after running R script 
      |                                                            # to be used by BASEML (calibrations manually removed)
      |- laurasiatheria_cetartiodactyla_rooted_calibnames.tree     # Input file used by the R script
-     |- Calibrations_Lcetartiodactyla.R                           # R script
-     |- Calibrations_LaurCetart.txt           # Input file used by the R script. It matches the tag names
-     |                                        # in input tree with corresponding calibrations to be replaced
-     |- README.md                             # This file
 ```
 
 Note that we have manually generated the
@@ -43,7 +42,7 @@ The tree describd above was used to find
 if there were any conflicts with the calibations used.
 You can download the directories 
 with the results obtained when running `MCMCtree` without the data
-[here]().
+[here](https://www.dropbox.com/s/7zbyex71dwea0w4/SeqBayesS2_check_conflict_artiodactyla.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
 [`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict)
