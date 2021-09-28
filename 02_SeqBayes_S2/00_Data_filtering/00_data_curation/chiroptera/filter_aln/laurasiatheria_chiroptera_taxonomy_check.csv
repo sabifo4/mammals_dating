@@ -1,0 +1,92 @@
+﻿Tree,Rank,Name,Action,Outside_taxa,Change_from ,Change_to,Force_monophyletic,Reference,Note
+laurasiatheria_chiroptera,Mismatch,boneia_bidens,No,N/A,N/A,N/A,N/A,Helgen et al 2008,"""Simons (2005) follows Corbet and Hill (1992) by referrering this  species to the subgenus Boneia. Some authors (Andersen 1912, Koopman 1993) place it in its own genus (Boneia) but see Bergmans and Rozendal (1998) and Bergmans (1994)."" 
+I guess it depends who you would like to follow. Just leave the name of the genus as it is."
+laurasiatheria_chiroptera,Mismatch,cloeotis_percivali,No,N/A,N/A,N/A,N/A,Armstrong et al 2016,Keep family name as Rhinonycteridae.
+laurasiatheria_chiroptera,Mismatch,mimon_crenulatum,No,N/A,N/A,N/A,N/A,Ramirez-Chavez et al 2016; Hurtado and Pacheco 2014,Keep genus name as Gardnerycteris.
+laurasiatheria_chiroptera,Mismatch,rhinonicteris_aurantia,No,N/A,N/A,N/A,N/A,Armstrong et al 2016,Keep family name as Rhinonycteridae.
+laurasiatheria_chiroptera,Mismatch,triaenops_persicus,No,N/A,N/A,N/A,N/A,Armstrong et al 2016,Keep family name as Rhinonycteridae.
+laurasiatheria_chiroptera,Family,Hipposideridae,Remove,rhinolophus_rufus,N/A,N/A,N/A,N/A,There is only one sequence represting this taxa. I did not find a publication associated to this sequence. Maybe it was contaminated with Hipposideros DNA.
+laurasiatheria_chiroptera,Family,Rhinolophidae,No,N/A,N/A,N/A,N/A,N/A,"Same as Hipposideridae. The taxa making the tree paraphyletic is rhinolophus_rufus, a taxa that should be removed as only one sequence is available."
+laurasiatheria_chiroptera,Genus,Hypsugo,No,falsistrellus_petersi,N/A,N/A,No,Heaney et al 2012,Similar grouping was observed by Heaney et al 2012.
+laurasiatheria_chiroptera,Genus,Hypsugo,No,hypsugo_eisentrauti,N/A,N/A,No,Koubínová et al 2013,Similar grouping was observed by Koubínová et al 2013.
+laurasiatheria_chiroptera,Genus,Hypsugo,No,hypsugo_anchietae,N/A,N/A,No,Goodman et al 2015,Similar grouping was observed by Goodman et al 2015. Paraphyletic arrangement of H. anchietae with species of Neoromicia.
+laurasiatheria_chiroptera,Genus,Tonatia,No,phyllostomus_discolor,N/A,N/A,No,Datzman et al 2010,"Similar grouping was observed by Datzman et al 2010, but others find Tonatia as monophyletic (see Rojas et al 2016)."
+laurasiatheria_chiroptera,Genus,Artibeus,Yes,N/A,artibeus_hartii,enchisthenes_hartii,No,Arroyo-Cabrales and Owen 1997; Gardner 2007,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Artibeus,Yes,N/A,dermanura_incomitata,artibeus_watsoni,No,Solari et al 2009,Some authors recognize the genus Dermanura. I think we can keep the same genus name for the moment.
+laurasiatheria_chiroptera,Genus,Artibeus,Yes,N/A,artibeus_glaucus_watsoni,artibeus_watsoni,No,Gardner 2007,Species name was changed.
+laurasiatheria_chiroptera,Genus,Artibeus,Yes,N/A,artibeus_glaucus_rosenbergii,artibeus_watsoni,No,Gardner 2007,Species name was changed.
+laurasiatheria_chiroptera,Genus,Artibeus,Yes,N/A,dermanura_rava,artibeus_rava,No,Solari et al 2009,Some authors recognize the genus Dermanura. I think we can keep the same genus name for the moment.
+laurasiatheria_chiroptera,Genus,Pipistrellus,Yes,N/A,pipistrellus_subflavus,perimyotis_subflavus,No,Hoofer et al 2006,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Pipistrellus,No,nyctalus,N/A,N/A,No,Heaney et al 2012; Koubínová et al 2013,The grouping of some Pipistrellus species with Nyctalus species is also obervsed by other researchers.
+laurasiatheria_chiroptera,Genus,Pipistrellus,No,pipistrellus_rueppellii,N/A,N/A,No,Koubínová et al 2013,The paraphyletic arrangement of P. rueppellii was also observed by Koubínová et al 2013.
+laurasiatheria_chiroptera,Genus,Plecotus,Yes,N/A,plecotus_rafinesquii,corynorhinus_rafinesquii,No,Arroyo-Cabrales and Ávarez-Castañeda 2008,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Plecotus,Yes,plecotus_macrobullaris,N/A,N/A,Yes,Juste et al 2013,Plecotus macrobullaris should group with the other species of Plecotus.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_nasutus_batinensis,rhyneptesicus_nasutus_batinensis,No,Juste et al 2013,Genus/species name was changed.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_nasutus_matschiei,rhyneptesicus_nasutus_matschiei,No,Juste et al 2013,Genus/species name was changed.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_nasutus,rhyneptesicus_nasutus,No,Juste et al 2013,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,histiotus_macrotus,eptesicus_macrotus,No,Hoofer and van Den Bussche 2003,Genus name was changed. Some authors still consider the genus Eptesicus paraphyletic and keep the genus name Histiotus (Gardner 2007).
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,histiotus_magellanicus,eptesicus_magellanicus,No,Hoofer and van Den Bussche 2003,Genus name was changed. Some authors still consider the genus Eptesicus paraphyletic and keep the genus name Histiotus (Gardner 2007).
+laurasiatheria_chiroptera,Genus,Eptesicus,No,myotis_moluccarum,N/A,N/A,No,Lack et al 2010,See genus Myotis.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_sagittula,vespadelus_darlingtoni,No,Jackson and Grooves 2015,Genus/species name was changed.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_regulus,vespadelus_regulus,No,Lumsden et al 2008,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Eptesicus,Yes,N/A,eptesicus_vulturnus,vespadelus_vulturnus,No,Jackson and Grooves 2015,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Hipposideros,No,coelops_frithii,N/A,N/A,No,Foley et al 2017,Similar grouping observed by Foley et al 2017.
+laurasiatheria_chiroptera,Genus,Hipposideros,No,aselliscus_tricuspidatus,N/A,N/A,No,Foley et al 2017,Similar grouping observed by Foley et al 2017.
+laurasiatheria_chiroptera,Genus,Hipposideros,No,aselliscus_stoliczkanus,N/A,N/A,No,Foley et al 2017,Similar grouping observed by Foley et al 2017.
+laurasiatheria_chiroptera,Genus,Aethalops,No,N/A,N/A,N/A,No,N/A,I did not find much information about this genus. Leave as it is.
+laurasiatheria_chiroptera,Genus,Molossops,No,cynomops,N/A,N/A,No,Gardner 2007,"Sometimes, cynomops is considered a subgenus of Molossops (see Gardner 2007)."
+laurasiatheria_chiroptera,Genus,Phyllostomus,Maybe,N/A,N/A,N/A,Maybe,N/A,Maybe it is worth forcing a monophyletic clade and compare likelihoods. Some authors find Phyllostomus as monophyletic (see Rojas et al 2016).
+laurasiatheria_chiroptera,Genus,Chaerephon,No,N/A,N/A,N/A,No,Gregorin and Cirranelo 2016; Ammerman et al 2012,Similar paraphyletic arrangement was observed by Gregorin and Cirranello 2016 and Ammerman et al 2012.
+laurasiatheria_chiroptera,Genus,Rousettus,No,N/A,N/A,N/A,No,Nesi et al 2013,stenonycteris_lanosus is a different genus than Rosettus. See Nesi et al 2013 for further information.
+laurasiatheria_chiroptera,Genus,Tadarida,No,N/A,N/A,N/A,No,Gregorin and Cirranelo 2016; Ammerman et al 2012,Other researchers do not support the monophyly of Tadarida (see Gregorin and Cirranelo 2016; Ammerman et al 2012).
+laurasiatheria_chiroptera,Genus,Epomophorus,No,micropteropus_pusillus,N/A,N/A,No,Nesi et al 2011,Similar arrangement observed by Nesi et al 2011.
+laurasiatheria_chiroptera,Genus,Micronycteris,Yes,N/A,micronycteris_nicefori,trinycteris_nicefori,No,Gardner 2007,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Dermanura,No,N/A,N/A,N/A,No,Arroyo-Cabrales and Owen 1997; Gardner 2007,See genus Artibeus.
+laurasiatheria_chiroptera,Genus,Eonycteris,No,N/A,N/A,N/A,No,N/A,See genus Aethalops.
+laurasiatheria_chiroptera,Genus,Mormopterus,No,N/A,N/A,N/A,No,Gregorin and Cirranelo 2016; Ammerman et al 2012,See genus Tadarida.
+laurasiatheria_chiroptera,Genus,Mops,No,N/A,N/A,N/A,No,Gregorin and Cirranelo 2016; Ammerman et al 2012,See genus Chaerephon.
+laurasiatheria_chiroptera,Genus,Megaderma,No,macroderma_gigas,N/A,N/A,No,N/A,I would just leave as it is. I did not find much information.
+laurasiatheria_chiroptera,Genus,Rhinolophus,No,N/A,N/A,N/A,No,N/A,See Family Rhinolophidae.
+laurasiatheria_chiroptera,Genus,Hesperoptenus,No,N/A,N/A,N/A,No,Pacheco 2013,Similar arrangement observed in master thesis of Pacheco 2013.
+laurasiatheria_chiroptera,Genus,Vampyressa,Yes,N/A,vampyressa_bidens,vampyriscus_bidens,No,Gardner 2007,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Vampyressa,Yes,N/A,vampyressa_brocki,vampyriscus_brocki,No,Gardner 2007,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Vampyressa,Yes,N/A,vampyressa_nymphaea,vampyriscus_nymphaea,No,Gardner 2007,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Emballonura,Yes,N/A,emballonura_tiavato,paremballonura_tiavato,No,Goodman et al 2012,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Emballonura,Yes,N/A,emballonura_atrata,paremballonura_atrata,No,Goodman et al 2012,Genus name was changed.
+laurasiatheria_chiroptera,Genus,Glyphonycteris,No,N/A,N/A,N/A,No,N/A,See genus Phyllostomus.
+laurasiatheria_chiroptera,Genus,Dobsonia,Yes,aproteles_bulmerae,N/A,N/A,Yes,Colgan and Costa 2002,Dobsonia appears to be a monophyletic genus.
+laurasiatheria_chiroptera,Genus,Scotonycteris,No,N/A,N/A,N/A,No,Hassanin 2014,Similar arrangement observed by Hassanin 2014.
+laurasiatheria_chiroptera,Genus,Chilonatalus,Maybe,nyctiellus_lepidus,N/A,N/A,Maye,Davalos 2005,This genus seems to be monophyletic; it's worth checking comparing likelihood after forcing a monophyletic clade.
+laurasiatheria_chiroptera,Genus,Myotis,Yes,myotis_moluccarum,N/A,N/A,Yes,Lack et al 2010,This species myotis_moluccarum should group with the other Myotis species. It is in a very weird position.
+laurasiatheria_chiroptera,Genus,Megaerops,No,ptenochirus_jagori,N/A,N/A,No,Almeida et al 2009,Similar arrangement observed by Almeida et al 2009.
+laurasiatheria_chiroptera,Genus,Pteropus,Yes,acerodon,N/A,N/A,Yes,Colgan and Costa 2002,"Maybe Pteropus should form a monophyletic group. The species P. personatus is in a weird position, but there are only 2 sequences representing this taxa. Colgan and Costa 2012 recovered a monophyletic group, but they did not have any species of acerodon."
+laurasiatheria_chiroptera,Genus,Lonchophylla,No,lionycteris_spurrelli,N/A,N/A,No,Parlos et al 2014,Similar arrangement observed by Parlos et al 2014.
+laurasiatheria_chiroptera,Genus,Neoromicia,No,hypsugo_anchietae,N/A,N/A,No,Goodman et al 2015,See genus Hypsugo.
+laurasiatheria_chiroptera,Genus,Neoromicia,No,laephotis,N/A,N/A,No,Koubínová et al 2013,Paraphyletic arrangement involving the genus Laephotis was also observed in other studies (see Koubínová et al 2013).
+laurasiatheria_chiroptera,Genus,Vespertilio,Yes,eptesicus_serotinus,N/A,N/A,Yes,Juste et al 2013,eptesicus_serotinus should group with other species of Eptesicus. Force a monophyletic group for Vespertilio and check whether eptesicus_serotinus grouped with the other Eptesicus species.
+laurasiatheria_chiroptera,Species,Natalus stramineus,No,N/A,N/A,N/A,No,López-Wilchis et al 2012,I would leave as it is. Maybe N. stramineus mexicanus is a new species N. mexicanus (see López-Wilchis et al 2012).
+laurasiatheria_chiroptera,Species,Sturnira lilium,Yes,N/A,sturnira_lilium_paulsoni,sturnira_paulsoni,No,Velazco and Patterson 2013,Species name was changed.
+laurasiatheria_chiroptera,Species,Myotis daubentonii,Yes,N/A,myotis_daubentonii_nathalinae,myotis_nathalinae,No,Simões et al 2007; Trujillo et al 2008,myotis_daubentonii_nathalinae does seem to be a new species myotis_nathalinae
+laurasiatheria_chiroptera,Species,Myotis daubentonii,No,N/A,N/A,N/A,No,N/A,myotis_daubentonii_daubentonii and myotis_daubentonii does not form a monophyletic clade. I would leave as it is as I did not find much information about it.
+laurasiatheria_chiroptera,Species,Artibeus glaucus,Yes,N/A,artibeus_glaucus_gnomus,artibeus_gnomus,No,Gardner 2007,IUCN considers Dermanura gnoma. Maybe we should leave genus as it is. See genus Artibeus.
+laurasiatheria_chiroptera,Species,Eptesicus isabellinus,No,N/A,N/A,N/A,No,Juste et al 2013,Leave as it is. Note that eptesicus_isabellinus_isabellinus has a long branch.
+laurasiatheria_chiroptera,Species,Miniopterus schreibersii,No,N/A,N/A,N/A,No,Furman et al 2010,Similar grouping observed by Furman et al 2010.
+laurasiatheria_chiroptera,Species,Myotis blythii,No,N/A,N/A,N/A,No,Ruedi et al 2013,Similar arrangment observed by Ruedi et al 2013.
+laurasiatheria_chiroptera,Species,Myotis lucifugus,No,N/A,N/A,N/A,No,N/A,I did not find a study that used all species/subspecies of M. lucifugus. It might be paraphyletic or some subspecies is actually new species. 
+laurasiatheria_chiroptera,Species,Platyrrhinus helleri,Yes,N/A,platyrrhinus_helleri_incarum,platyrrhinus_incarum,No,Velazco and Patterson 2008,Species name was changed.
+laurasiatheria_chiroptera,Species,Hipposideros turpis,Yes,N/A,hipposideros_turpis_pendelburyi,hipposideros_pendleburyi,No,Thong et al 2012,Species name was changed.
+laurasiatheria_chiroptera,Species,Myotis evotis,No,N/A,N/A,N/A,No,Patrick and Stevens 2014,"Leave as it is. Not much info about it. It might be that M. evotis milleri should be considered another species. Patrick and Stevens 2014 use M. milleri, but it is not clear about the species status. Also note that myotis_thysanodes has a long branch."
+laurasiatheria_chiroptera,Species,Eumops glaucinus,Yes,N/A,eumops_glaucinus_floridanus,eumops_floridanus,No,Timm and Gonoways 2004,Species name was changed.
+laurasiatheria_chiroptera,Species,Rhinolophus ferrumequinum,No,N/A,N/A,N/A,No,N/A,Leave as it is. I did not find much information. Subspecies might actually be different species.
+laurasiatheria_chiroptera,Species,Lophostoma silvicolum,Yes,N/A,lophostoma_silvicolum_occidentalis,lophostoma_occidentalis,No,Velazco and Cardenillas 2011,Species name was changed.
+laurasiatheria_chiroptera,Species,Eptesicus serotinus,No,N/A,N/A,N/A,No,Juste et al 2013,"Similar arrangements regarding the subspecies of E. serotinus was observed by Juste et al. 2013. However, the position of E. serotinus (without considering the subspecies) seems strange. See genus Vespertilio. "
+laurasiatheria_chiroptera,Species,Brachyphylla nana,No,brachyphylla_cavernarum,N/A,N/A,No,Dávalos and Mancina 2008,Leave as it is. I did not find much information about this grouping.
+laurasiatheria_chiroptera,Species,Scotonycteris zenkeri,Yes,N/A,scotonycteris_zenkeri_occidentalis,scotonycteris_occidentalis,No,Hassanin et al 2015,Species name was changed.
+laurasiatheria_chiroptera,Species,Myotis muricola,No,N/A,N/A,N/A,No,N/A,Leave as it is. I did not find much information. It might be that M. muricola browni is a different species.
+laurasiatheria_chiroptera,Species,Rhinolophus darlingi,No,N/A,N/A,N/A,No,Jacobs et al 2013,Part of your phylogeny shows similar arrangement as in Jacobs et al 2013.
+laurasiatheria_chiroptera,Species,Myotis nattereri,No,N/A,N/A,N/A,No,Jones et al 2006,Similar arrangement observed by Jones et al 2006.
+laurasiatheria_chiroptera,Species,Lasiurus cinereus,No,N/A,N/A,N/A,No,Bard et al 2015,Leave as it is. Althought Bard et al 2015 observed a monophyletic group.
+laurasiatheria_chiroptera,Species,Pteropus seychellensis,No,N/A,N/A,N/A,No,Chan et al 2011,Similar arrangment observed by Chan et al 2011.
+laurasiatheria_chiroptera,Species,Myotis martiniquensis,No,N/A,N/A,N/A,No,Larsen et al 2012,"Similar arrangement observed by Larsen et al 2012. Similar, but not identical."
+laurasiatheria_chiroptera,Species,Platyrrhinus lineatus,Yes,N/A,platyrrhinus_lineatus_nigellus,platyrrhinus_nigellus,No,Velazco and Patterson 2008,Species name was changed.
+laurasiatheria_chiroptera,Species,Myotis adversus,No,N/A,N/A,N/A,No,Han et al 2010,Leave as it is. Some consider myotis_adversus_taiwanensis as myotis_taiwanensis (see Han et al 2010).

@@ -14,6 +14,8 @@
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing/log*
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/[1-6]
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/02_mafft/mafft_lchiro1
+02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt2/01_perl_parsing/[1-6]
+02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt2/02_mafft/mafft_lchiro2
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/00_perl_parsing/[1-6]*
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT/mafft_ltherest
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/00_perl_parsing/[1-6]*
