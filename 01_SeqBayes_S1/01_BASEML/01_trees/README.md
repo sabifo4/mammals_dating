@@ -76,7 +76,7 @@ that the true age is beyond the bound.
 | GLIRES                | 'B(0.56,1.646)'        |
 | RODENTIA              | 'B(0.56,0.6611)'       |
 | NONSQUIRREL RODENTS   | 'B(0.476,0.592)'       |
-| *D.ordi*-MYOMORPHA    | 'B(0.407,0.592)'       |
+| DIPODIDAE-MUROIDEA    | 'B(0.407,0.592)'       |
 | MURINAE               | 'B(0.072,0.16)'        |
 | LAGOMORPHA            | 'B(0.476,0.6611)'      |
 | EUUNGULATA            | 'B(0.524,0.6611)'      |
@@ -86,7 +86,7 @@ that the true age is beyond the bound.
 | CARNIVORA             | 'B(0.373,0.6611)'      |
 | CANIFORMIA            | 'B(0.373,0.6611)'      |
 | CHIROPTERA            | 'B(0.4760,0.6611)'     |
-| ERINACEIDAE-SORICIDAE | 'B(0.6160,1.6460)'     |
+| LIPOTYPHLA            | 'B(0.6160,1.6460)'     |
 | XENARTHRA             | 'B(0.476,1.646)'       |
 | AFROTHERIA            | 'B(0.56,1.646)'        |
 | PAENUNGULATA          | 'B(0.56,1.646)'        |
@@ -99,8 +99,7 @@ and the one on the left the corresponding soft calibrations in `MCMCtree` format
 >> **NOTE**: You will see that there are four nodes in the text file that have different tag names if compared to the ones included
 >> in the table above: "HOMININAE" is "GORILLA-HUMAN", "STREPSIRRHINI" is "STREPSIRHINI (we had a typo found at the end of the study. 
 >> We have not changed it in the file as it might affect downstream analyses), "NONSQUIRREL RODENTS" is "ROD-NOSQUIRREL",
->> "*D.ordi*-MYOMORPHA" is "DIPOD-RATT", "MURINAE" is "MURIDAE" (another typo we found late), "CETRUMINANTIA" is "WHIP-RUM", "BOVIDAE" is "BOV-ANTIL",
->> and "ERINACEIDAE-SORICIDAE" is "LIPOTYPHLA".
+>> "DIPODIDAE-MUROIDEA" is "DIPOD-RATT", "MURINAE" is "MURIDAE" (another typo we found late), "CETRUMINANTIA" is "WHIP-RUM", and "BOVIDAE" is "BOV-ANTIL".
 
 First, we manually included the names of the nodes to be calibrated in the newick trees for each of 
 the 7 hypotheses (files that end with `*_calibrated.tree` and are saved in each of the seven directories 
