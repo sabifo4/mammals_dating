@@ -15,6 +15,8 @@ wd      <- paste( dirname( path_to_file ), "/", sep = "" )
 wd.name <- dirname( path_to_file )
 # Set wd
 setwd( wd )
+wd2 <- gsub( pattern = "00_data_curation..*", replacement = "",
+             x = wd )
 # Set name 
 tname <- "laurasiatheria_cetartiodactyla"
 
@@ -44,8 +46,8 @@ for( i in 1:dim( calibrations )[1] ){
   
   # If there is an original calibration, use the original
   tree <- gsub( pattern = paste0("\\'",calibrations[i,1],"\\'"),
-                                 x = tree,
-                                 replacement = paste( "'", calibrations[i,2], "'", sep = "" ) )
+                x = tree,
+                replacement = paste( "'", calibrations[i,2], "'", sep = "" ) )
 }
 
 #=======================#
@@ -64,17 +66,18 @@ write( x = tree, file = paste( num_sp, "sp_", tname, "_MCMCtree_calib.tree", sep
        append = TRUE )
 write( x = spnames, file = paste( num_sp, "sp_", tname, "_spnameslist.txt", sep = "" ) )
 
+
 # Generate dummy aln
-if( ! dir.exists( "../../../01_generate_alignments/01_mammal_dummy_alns/" ) ){
-  dir.create( "../../../01_generate_alignments/01_mammal_dummy_alns/" )
+if( ! dir.exists( paste( wd2, "01_alignments/01_mammal_dummy_alns/", sep = "" ) ) ){
+  dir.create( paste( wd2, "01_alignments/01_mammal_dummy_alns/", sep = "" ) )
 }
-if( ! dir.exists( paste( "../../../01_generate_alignments/01_mammal_dummy_alns/",
+if( ! dir.exists( paste( wd2, "01_alignments/01_mammal_dummy_alns/",
                          tolower( tname ), sep = "" ) ) ){
-  dir.create( paste( "../../../01_generate_alignments/01_mammal_dummy_alns/",
+  dir.create( paste( wd2, "01_alignments/01_mammal_dummy_alns/",
                      tolower( tname ), sep = "" ) )
 }
-write( x = phylip_header_aln, file = paste( "../../../01_generate_alignments/01_mammal_dummy_alns/", 
+write( x = phylip_header_aln, file = paste( wd2, "01_alignments/01_mammal_dummy_alns/", 
                                             tolower( tname ), "/dummy_aln.aln", sep = "" ) )
-write( x = spnames.2nuc, file = paste( "../../../01_generate_alignments/01_mammal_dummy_alns/", 
+write( x = spnames.2nuc, file = paste( wd2, "01_alignments/01_mammal_dummy_alns/", 
                                        tolower( tname ), "/dummy_aln.aln", sep = "" ), append = TRUE )
 
