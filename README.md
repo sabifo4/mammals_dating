@@ -39,11 +39,16 @@ All the details about our study is structured as it follows:
       Here you will find the final results regarding the inferred posterior times for the mammal phylogeny with 4,705 taxa.   
       * [03_Generate_final_mammal_tree](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/03_Generate_final_mammal_tree)   
       Here you will find the final mammal Tree of Life that we generated at the end of our Bayesian sequential-subtree dating approach.   
-   4. [**calibrations**](https://github.com/sabifo4/mammals_dating/tree/main/calibrations)   
+   4. [**03_Extra_analyses**](https://github.com/sabifo4/mammals_dating/tree/main/03_Extra_analyses)   
+   This directory contains a description of extra analyses that were carried out after the main analyses were finished. The
+   main purpose was to compare the divergence times inferred with the 72-sp alignment (data 1) to those estimated for these same
+   72 taxa when using (i) the 182 loci for these taxa, (ii) only the nuclear (1st+2nd CPs) for these taxa, and (iii) only mitochondrial
+   (1st+ 2nd CPs) for these taxa (everything extracted from data 2).   
+   5. [**calibrations**](https://github.com/sabifo4/mammals_dating/tree/main/calibrations)   
    This directory contains an excel file with a summary of the calibration priors used in both Bayesian dating analyses.   
-   5. [**figs**](https://github.com/sabifo4/mammals_dating/tree/main/figs)   
+   6. [**figs**](https://github.com/sabifo4/mammals_dating/tree/main/figs)   
    This directory contains figures that are embedded in some of the `README.md` files in this GitHub repository.   
-   6. [**src**](https://github.com/sabifo4/mammals_dating/tree/main/src)   
+   7. [**src**](https://github.com/sabifo4/mammals_dating/tree/main/src)   
    This directory contains the software needed to carry out the tasks described above.   
 
 ## Do you have a compiled version of your data?
