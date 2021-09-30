@@ -1,6 +1,6 @@
 # Extra analyses
 
-[Here](https://github.com/sabifo4/mammals_)
+[Here](https://github.com/sabifo4/mammals_dating/tree/main/03_Extra_analyses/00_Data_filtering)
 you will find a detailed description of the steps we followed to generate the data alignments we 
 needed for these extra analyses. 
 
