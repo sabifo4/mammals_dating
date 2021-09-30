@@ -1,0 +1,73 @@
+Parsing alignment afrotheria_mt12cp ... ... 
+Length alignment: 7226
+Number of taxa: 60
+Taxon: amblysomus_corriae | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: amblysomus_hottentotus | Num gaps: 6772 | Missing taxon?: N | % Missing data: 93.717132576806
+Taxon: amblysomus_marleyi | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: amblysomus_robustus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: amblysomus_septentrionalis | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: calcochloris_obtusirostris | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: carpitalpa_arendsi | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: chlorotalpa_duthieae | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: chlorotalpa_sclateri | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: chrysochloris_asiatica | Num gaps: 30 | Missing taxon?: N | % Missing data: 0.415167450871852
+Taxon: chrysochloris_stuhlmanni | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: chrysospalax_trevelyani | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: chrysospalax_villosus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: cryptochloris_wintoni | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: dendrohyrax_dorsalis | Num gaps: 34 | Missing taxon?: N | % Missing data: 0.470523110988099
+Taxon: dugong_dugon | Num gaps: 32 | Missing taxon?: N | % Missing data: 0.442845280929975
+Taxon: echinops_telfairi | Num gaps: 34 | Missing taxon?: N | % Missing data: 0.470523110988099
+Taxon: elephantulus_brachyrhynchus | Num gaps: 6606 | Missing taxon?: N | % Missing data: 91.4198726819817
+Taxon: elephantulus_edwardii | Num gaps: 6548 | Missing taxon?: N | % Missing data: 90.6172156102962
+Taxon: elephantulus_intufi | Num gaps: 6606 | Missing taxon?: N | % Missing data: 91.4198726819817
+Taxon: elephantulus_myurus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: petrosaltator_rozeti | Num gaps: 6604 | Missing taxon?: N | % Missing data: 91.3921948519236
+Taxon: elephantulus_rufescens | Num gaps: 6110 | Missing taxon?: N | % Missing data: 84.5557708275671
+Taxon: elephantulus_rupestris | Num gaps: 6588 | Missing taxon?: N | % Missing data: 91.1707722114586
+Taxon: elephantulus_sp_vb001 | Num gaps: 30 | Missing taxon?: N | % Missing data: 0.415167450871852
+Taxon: elephas_maximus | Num gaps: 38 | Missing taxon?: N | % Missing data: 0.525878771104345
+Taxon: elephas_maximus_indicus | Num gaps: 6496 | Missing taxon?: N | % Missing data: 89.8975920287849
+Taxon: eremitalpa_granti | Num gaps: 32 | Missing taxon?: N | % Missing data: 0.442845280929975
+Taxon: geogale_aurita | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: hemicentetes_semispinosus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: heterohyrax_brucei | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: limnogale_mergulus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: loxodonta_africana | Num gaps: 30 | Missing taxon?: N | % Missing data: 0.415167450871852
+Taxon: loxodonta_cyclotis | Num gaps: 38 | Missing taxon?: N | % Missing data: 0.525878771104345
+Taxon: macroscelides_flavicaudatus | Num gaps: 6564 | Missing taxon?: N | % Missing data: 90.8386382507611
+Taxon: macroscelides_micus | Num gaps: 6598 | Missing taxon?: N | % Missing data: 91.3091613617492
+Taxon: macroscelides_proboscideus | Num gaps: 36 | Missing taxon?: N | % Missing data: 0.498200941046222
+Taxon: microgale_brevicaudata | Num gaps: 6532 | Missing taxon?: N | % Missing data: 90.3957929698312
+Taxon: microgale_longicaudata | Num gaps: 6532 | Missing taxon?: N | % Missing data: 90.3957929698312
+Taxon: microgale_majori | Num gaps: 6532 | Missing taxon?: N | % Missing data: 90.3957929698312
+Taxon: microgale_principula | Num gaps: 6532 | Missing taxon?: N | % Missing data: 90.3957929698312
+Taxon: microgale_pusilla | Num gaps: 6532 | Missing taxon?: N | % Missing data: 90.3957929698312
+Taxon: microgale_talazaci | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: micropotamogale_lamottei | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: neamblysomus_gunningi | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: neamblysomus_julianae | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: orycteropus_afer | Num gaps: 32 | Missing taxon?: N | % Missing data: 0.442845280929975
+Taxon: oryzorictes | Num gaps: 6542 | Missing taxon?: N | % Missing data: 90.5341821201218
+Taxon: petrodromus_tetradactylus | Num gaps: 6608 | Missing taxon?: N | % Missing data: 91.4475505120399
+Taxon: potamogale_velox | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: procavia_capensis | Num gaps: 28 | Missing taxon?: N | % Missing data: 0.387489620813728
+Taxon: rhynchocyon_cirnei_reichardi | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: rhynchocyon_petersi | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: rhynchocyon_udzungwensis | Num gaps: 6610 | Missing taxon?: N | % Missing data: 91.475228342098
+Taxon: setifer_setosus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: tenrec_ecaudatus | Num gaps: 7226 | Missing taxon?: Y | % Missing data: 100
+Taxon: trichechus_manatus | Num gaps: 32 | Missing taxon?: N | % Missing data: 0.442845280929975
+Taxon: ornithorhynchus_anatinus | Num gaps: 40 | Missing taxon?: N | % Missing data: 0.553556601162469
+Taxon: zaglossus_bruijni | Num gaps: 40 | Missing taxon?: N | % Missing data: 0.553556601162469
+Taxon: tachyglossus_aculeatus | Num gaps: 40 | Missing taxon?: N | % Missing data: 0.553556601162469
+
+Number of missing taxa = 26
+Number of present taxa = 34
+Total number of taxa = 60
+
+Eq: num_gaps / ( num_taxa * len_aln ) --> (187876+118458)/((26+34)*7226)
+Avg missing data before removing missing taxa = 0.706555032752099 = 70.6555032752099%
+Eq: num_gaps / ( num_taxa * len_aln ) --> 118458/(34*7226)
+Avg missing data after removing missing taxa = 0.482155940150763 = 48.2155940150763%
+

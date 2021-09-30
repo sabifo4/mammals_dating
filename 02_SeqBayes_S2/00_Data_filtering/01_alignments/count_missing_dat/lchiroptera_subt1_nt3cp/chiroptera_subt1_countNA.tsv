@@ -1,0 +1,6 @@
+<< DIR chiroptera_subt1/lchiroptera_subt1_nt3cp.aln >>
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+93	163	256	0.97688567616487	0.963697749068753
+Missing data before (total taxa): 97.69 (256)
+Missing data after (present taxa): 96.37 (163)
+

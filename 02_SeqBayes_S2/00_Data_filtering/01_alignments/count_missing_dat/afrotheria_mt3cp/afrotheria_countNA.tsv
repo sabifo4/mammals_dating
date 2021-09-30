@@ -1,0 +1,6 @@
+<< DIR afrotheria/afrotheria_mt3cp.aln >>
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+26	34	60	0.706555032752099	0.482155940150763
+Missing data before (total taxa): 70.66 (60)
+Missing data after (present taxa): 48.22 (34)
+

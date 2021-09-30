@@ -1,0 +1,9 @@
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+13	20	33	0.900436288224131	0.835719875569816
+
+Eq. before removing missing taxa: num_gaps / ( num_taxa * len_aln ) --> (664469+854323)/((13+20)*51113)
+Eq. after removing missing taxa:  num_gaps / ( num_taxa * len_aln ) --> 854323/(20*51113)
+
+Missing data before (total taxa): 90.04 (33)
+
+Missing data after (present taxa): 83.57 (20)

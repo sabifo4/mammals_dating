@@ -1,0 +1,6 @@
+<< DIR marsupialia/marsupialia_nt12cp.aln >>
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+58	249	307	0.973944286254446	0.967875083855883
+Missing data before (total taxa): 97.39 (307)
+Missing data after (present taxa): 96.79 (249)
+

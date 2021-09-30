@@ -1,0 +1,101 @@
+Parsing alignment lagomorpha_nt12cp ... ... 
+Length alignment: 130746
+Number of taxa: 88
+Taxon: brachylagus_idahoensis | Num gaps: 127278 | Missing taxon?: N | % Missing data: 97.3475287962921
+Taxon: bunolagus_monticularis | Num gaps: 130114 | Missing taxon?: N | % Missing data: 99.5166200113197
+Taxon: caprolagus_hispidus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_alleni | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_americanus | Num gaps: 128938 | Missing taxon?: N | % Missing data: 98.6171661083322
+Taxon: lepus_arcticus | Num gaps: 130158 | Missing taxon?: N | % Missing data: 99.5502730485063
+Taxon: lepus_brachyurus | Num gaps: 129896 | Missing taxon?: N | % Missing data: 99.3498845088951
+Taxon: lepus_californicus | Num gaps: 129534 | Missing taxon?: N | % Missing data: 99.0730117938598
+Taxon: lepus_californicus_melanotis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_californicus_xanti | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_callotis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_capensis | Num gaps: 127172 | Missing taxon?: N | % Missing data: 97.2664555703425
+Taxon: lepus_capensis_mediterraneus~ | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_castroviejoi | Num gaps: 128914 | Missing taxon?: N | % Missing data: 98.5988099062304
+Taxon: lepus_comus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_coreanus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_corsicanus | Num gaps: 129562 | Missing taxon?: N | % Missing data: 99.0944273629786
+Taxon: lepus_europaeus | Num gaps: 120254 | Missing taxon?: N | % Missing data: 91.9752803145029
+Taxon: lepus_flavigularis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_granatensis | Num gaps: 128378 | Missing taxon?: N | % Missing data: 98.1888547259572
+Taxon: lepus_hainanus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_insularis~ | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_mandshuricus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_oiostolus | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: lepus_oiostolus_qinghaiensis~ | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_othus | Num gaps: 130160 | Missing taxon?: N | % Missing data: 99.5518027320147
+Taxon: lepus_peguensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_saxatilis | Num gaps: 129518 | Missing taxon?: N | % Missing data: 99.060774325792
+Taxon: lepus_sinensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_timidus | Num gaps: 129552 | Missing taxon?: N | % Missing data: 99.0867789454362
+Taxon: lepus_tolai | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: lepus_townsendii | Num gaps: 129526 | Missing taxon?: N | % Missing data: 99.0668930598259
+Taxon: lepus_yarkandensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: nesolagus_netscheri | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: nesolagus_timinsi | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_alpina | Num gaps: 130156 | Missing taxon?: N | % Missing data: 99.5487433649978
+Taxon: ochotona_scorodumovi | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_annectens | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: ochotona_cansus_cansus | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: ochotona_cansus_morosa | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_cansus_stevensi | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_collaris | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_curzoniae | Num gaps: 128454 | Missing taxon?: N | % Missing data: 98.2469826992795
+Taxon: ochotona_curzoniae_melanostoma~ | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_dauurica | Num gaps: 129204 | Missing taxon?: N | % Missing data: 98.8206140149603
+Taxon: ochotona_dauurica_bedfordi | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: ochotona_erythrotis | Num gaps: 130438 | Missing taxon?: N | % Missing data: 99.7644287396938
+Taxon: ochotona_forresti | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_himalayana | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_hoffmanni | Num gaps: 130150 | Missing taxon?: N | % Missing data: 99.5441543144723
+Taxon: ochotona_huangensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_hyperborea | Num gaps: 127576 | Missing taxon?: N | % Missing data: 97.5754516390559
+Taxon: ochotona_koslowi | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_ladacensis | Num gaps: 130438 | Missing taxon?: N | % Missing data: 99.7644287396938
+Taxon: ochotona_macrotis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_mantchurica | Num gaps: 130148 | Missing taxon?: N | % Missing data: 99.5426246309639
+Taxon: ochotona_nubrica | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: ochotona_pallasi_helanshanensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_pallasi_pricei | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_pallasi_sunidica | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_princeps | Num gaps: 3234 | Missing taxon?: N | % Missing data: 2.47349823321555
+Taxon: ochotona_pusilla | Num gaps: 130284 | Missing taxon?: N | % Missing data: 99.6466431095406
+Taxon: ochotona_roylei | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_rufescens | Num gaps: 130290 | Missing taxon?: N | % Missing data: 99.6512321600661
+Taxon: ochotona_rutila | Num gaps: 130154 | Missing taxon?: N | % Missing data: 99.5472136814893
+Taxon: ochotona_thibetana | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_thibetana_nangqenica~ | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ochotona_thomasi | Num gaps: 130412 | Missing taxon?: N | % Missing data: 99.7445428540835
+Taxon: ochotona_turuchanensis | Num gaps: 130148 | Missing taxon?: N | % Missing data: 99.5426246309639
+Taxon: oryctolagus_cuniculus | Num gaps: 3100 | Missing taxon?: N | % Missing data: 2.37100943814725
+Taxon: oryctolagus_cuniculus_algirus | Num gaps: 124920 | Missing taxon?: N | % Missing data: 95.5440319397917
+Taxon: pentalagus_furnessi | Num gaps: 130158 | Missing taxon?: N | % Missing data: 99.5502730485063
+Taxon: pronolagus_crassicaudatus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: pronolagus_randensis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: pronolagus_rupestris | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: pronolagus_saundersiae | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: romerolagus_diazi | Num gaps: 130160 | Missing taxon?: N | % Missing data: 99.5518027320147
+Taxon: sylvilagus_aquaticus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: sylvilagus_audubonii | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: sylvilagus_brasiliensis | Num gaps: 130114 | Missing taxon?: N | % Missing data: 99.5166200113197
+Taxon: sylvilagus_floridanus | Num gaps: 122764 | Missing taxon?: N | % Missing data: 93.895033117648
+Taxon: sylvilagus_nuttallii | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: sylvilagus_obscurus | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: sylvilagus_palustris | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: sylvilagus_transitionalis | Num gaps: 130746 | Missing taxon?: Y | % Missing data: 100
+Taxon: ornithorhynchus_anatinus | Num gaps: 58346 | Missing taxon?: N | % Missing data: 44.6254569929482
+Taxon: zaglossus_bruijni | Num gaps: 130290 | Missing taxon?: N | % Missing data: 99.6512321600661
+Taxon: tachyglossus_aculeatus | Num gaps: 125686 | Missing taxon?: N | % Missing data: 96.1299007235403
+
+Number of missing taxa = 45
+Number of present taxa = 43
+Total number of taxa = 88
+
+Eq: num_gaps / ( num_taxa * len_aln ) --> (5883570+5227638)/((45+43)*130746)
+Avg missing data before removing missing taxa = 0.965717706642859 = 96.5717706642859%
+Eq: num_gaps / ( num_taxa * len_aln ) --> 5227638/(43*130746)
+Avg missing data after removing missing taxa = 0.929840888013293 = 92.9840888013293%
+
