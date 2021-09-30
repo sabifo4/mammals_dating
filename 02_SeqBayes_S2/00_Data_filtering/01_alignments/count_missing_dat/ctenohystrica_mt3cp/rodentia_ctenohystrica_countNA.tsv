@@ -1,0 +1,6 @@
+<< DIR rodentia_ctenohystrica/ctenohystrica_mt3cp.aln >>
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+36	174	210	0.83328455413173	0.798791703262433
+Missing data before (total taxa): 83.33 (210)
+Missing data after (present taxa): 79.88 (174)
+

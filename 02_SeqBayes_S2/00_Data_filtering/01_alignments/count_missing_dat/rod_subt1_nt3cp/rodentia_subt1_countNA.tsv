@@ -1,0 +1,6 @@
+<< DIR rodentia_subt1/rod_subt1_nt3cp.aln >>
+Num_missing_taxa	Num_present_taxa	Num_total_taxa	Avg_missdat_with_missing_taxa	Avg_missdat_without_missing_taxa
+251	379	630	0.98895012115049	0.981632127506092
+Missing data before (total taxa): 98.90 (630)
+Missing data after (present taxa): 98.16 (379)
+

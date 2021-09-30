@@ -248,6 +248,10 @@ placing tags in the nodes to be calibrated and then using and R script to replac
 the corresponding calibrations (see the `filter_tree/00_Filter_trees` content inside the directories for 
 each data subset for more information).
 
+[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments) 
+you will find the instructions to run a perl script that will count the missing data for each 
+individual partition of each data subset. 
+
 ## 2.2. Run `BASEML` to estimate the Hessian and the gradient
 Once the data subsets are filtered and the corresponding calibrated phylogenies are obtained,
 we can run `BASEML` to estimate the Hessian and the gradient needed to run `MCMCtree` with the 

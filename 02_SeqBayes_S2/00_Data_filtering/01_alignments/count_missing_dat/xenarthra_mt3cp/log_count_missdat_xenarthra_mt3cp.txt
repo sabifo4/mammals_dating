@@ -1,0 +1,46 @@
+Parsing alignment xenarthra_mt3cp ... ... 
+Length alignment: 3605
+Number of taxa: 33
+Taxon: myrmecophaga_tridactyla | Num gaps: 5 | Missing taxon?: N | % Missing data: 0.13869625520111
+Taxon: tamandua_tetradactyla | Num gaps: 5 | Missing taxon?: N | % Missing data: 0.13869625520111
+Taxon: tamandua_mexicana | Num gaps: 5 | Missing taxon?: N | % Missing data: 0.13869625520111
+Taxon: cyclopes_didactylus | Num gaps: 19 | Missing taxon?: N | % Missing data: 0.527045769764216
+Taxon: choloepus_didactylus | Num gaps: 4 | Missing taxon?: N | % Missing data: 0.110957004160888
+Taxon: choloepus_hoffmanni | Num gaps: 4 | Missing taxon?: N | % Missing data: 0.110957004160888
+Taxon: bradypus_torquatus | Num gaps: 2 | Missing taxon?: N | % Missing data: 0.0554785020804438
+Taxon: bradypus_pygmaeus | Num gaps: 0 | Missing taxon?: N | % Missing data: 0
+Taxon: bradypus_tridactylus | Num gaps: 3605 | Missing taxon?: Y | % Missing data: 100
+Taxon: bradypus_variegatus | Num gaps: 2 | Missing taxon?: N | % Missing data: 0.0554785020804438
+Taxon: euphractus_sexcinctus | Num gaps: 20 | Missing taxon?: N | % Missing data: 0.554785020804438
+Taxon: zaedyus_pichiy | Num gaps: 24 | Missing taxon?: N | % Missing data: 0.665742024965326
+Taxon: tolypeutes_matacus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: tolypeutes_tricinctus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: priodontes_maximus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: chaetophractus_villosus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: chaetophractus_vellerosus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: chlamyphorus_truncatus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: cabassous_chacoensis | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: cabassous_tatouay | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: cabassous_centralis | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: cabassous_unicinctus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: calyptophractus_retusus | Num gaps: 20 | Missing taxon?: N | % Missing data: 0.554785020804438
+Taxon: dasypus_septemcinctus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_sabanicola | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_yepesi | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_pilosus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_hybridus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_kappleri | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: dasypus_novemcinctus | Num gaps: 10 | Missing taxon?: N | % Missing data: 0.277392510402219
+Taxon: ornithorhynchus_anatinus | Num gaps: 13 | Missing taxon?: N | % Missing data: 0.360610263522885
+Taxon: zaglossus_bruijni | Num gaps: 13 | Missing taxon?: N | % Missing data: 0.360610263522885
+Taxon: tachyglossus_aculeatus | Num gaps: 13 | Missing taxon?: N | % Missing data: 0.360610263522885
+
+Number of missing taxa = 1
+Number of present taxa = 32
+Total number of taxa = 33
+
+Eq: num_gaps / ( num_taxa * len_aln ) --> (3605+319)/((1+32)*3605)
+Avg missing data before removing missing taxa = 0.0329844912369184 = 3.29844912369184%
+Eq: num_gaps / ( num_taxa * len_aln ) --> 319/(32*3605)
+Avg missing data after removing missing taxa = 0.00276525658807212 = 0.276525658807212%
+
