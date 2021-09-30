@@ -1,0 +1,8 @@
+Parsing alignment xenarthra_nt12cp_out_72sp.aln ... ... 
+
+Species found: choloepus_hoffmanni
+Species found: dasypus_novemcinctus
+
+There are 2 taxa with length 102226
+Output file generated and saved as out_aln/xenarthra_nt12cp_out_72sp.aln
+
