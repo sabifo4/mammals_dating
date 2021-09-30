@@ -82,5 +82,9 @@
 
 02_SeqBayes_S2/02_MCMCtree/*/7
 
-03_Extra_analyses/00_Data_filtering/00_alignments
-03_Extra_analyses/02_MCMCtree
+03_Extra_analyses/00_Data_filtering/00_partition_alignments
+03_Extra_analyses/00_Data_filtering/alignments
+
+03_Extra_analyses/00_Data_filtering/01_BASEML
+
+03_Extra_analyses/00_Data_filtering/02_MCMCtree
