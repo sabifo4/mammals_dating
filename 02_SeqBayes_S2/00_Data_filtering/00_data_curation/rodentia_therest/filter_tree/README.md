@@ -126,21 +126,20 @@ We plotted both our manually adjusted calibrations based on
 previous analyses with the whole data set against the ST calibrations without adjustments:
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/fig_comp_1.png">
+  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_1.png">
 </p>
 >>Manually adjusted ST calibration (black) against ST calibration (red) for node 
->>"*M. auratus*-*C. griseus*. In green and purple you have the densities for neighbouring nodes, 
->> "*P. maniculatus*-*M. ochrogaster*" and "Muridae"; respectively. All densities are adjusted to 1.
+>>"_M. auratus_-_C. griseus_. In green and purple you have the densities for neighbouring nodes, 
+>> "_P. maniculatus_-_M. ochrogaster_" and "Muridae"; respectively. All densities are adjusted to 1.
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/fig_comp_2.png">
+  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_2.png">
 </p>
 >>Manually adjusted ST calibration (black) against ST calibration (red) for node 
->>"Murinae*. In green and purple you have the densities for neighbouring nodes, 
->> "*N. galili*-Muridae" and "Muridae"; respectively. All densities are adjusted to 1.
+>>"Murinae". In green and purple you have the densities for neighbouring nodes, 
+>> "_N. galili_-Muridae" and "Muridae"; respectively. All densities are adjusted to 1.
  
-Despite the differences not being that large, we have now (210922) sent this subtree to be analysed 
-with `MCMCtree` and are waiting for the results to come back. 
+The differences are not large and should not be affecting downstream analyses.
 
 
 ## Rodentia subtree 2
@@ -187,7 +186,7 @@ Calibrations used:
    * _Mus spretus_-_Mus musculus_: ST(0.0101,0.003,3.38,83.529)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBandSTtweak1_Rod_subtree2_MCMCruns.png">
+  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBnSTtweak1_Rod_subtree2_meanquant.png">
 </p>
 
 
