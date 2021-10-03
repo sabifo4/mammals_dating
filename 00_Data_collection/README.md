@@ -45,7 +45,7 @@ largest branch length (also in percentage), we found an outlier (ENSG00000176973
 see figure below). 
 
 <p align="center">
-  <img width="400" height="400" src="https://github.com/sabifo4/mammals/blob/main/figs/check_logtreelengthVSlargestbl.png">
+  <img width="400" height="400" src="https://github.com/sabifo4/mammals_dating/blob/main/figs/FigS1.PNG">
 </p>
 
 >>**Fig S1: Quality control check of the estimated relative branch lengths (%) for each gene**
