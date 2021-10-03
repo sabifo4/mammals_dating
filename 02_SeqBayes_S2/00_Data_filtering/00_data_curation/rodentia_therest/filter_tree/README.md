@@ -186,13 +186,13 @@ Calibrations used:
    * _Mus spretus_-_Mus musculus_: ST(0.0101,0.003,3.38,83.529)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBnSTtweak1_Rod_subtree2_meanquant.png">
+  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBandSTtweak1_Rod_subtree2_MCMCruns.png">
 </p>
 
 
 **Deviations (main 72-taxa VS rodentia_therest data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SBnSTtweak1_Rod_subtree2_meanquant.png">
+  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBnSTtweak1_Rod_subtree2_meanquant.png">
 </p>
 
 The final tree topology can be found in the
