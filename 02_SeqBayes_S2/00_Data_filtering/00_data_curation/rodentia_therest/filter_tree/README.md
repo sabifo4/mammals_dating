@@ -126,7 +126,7 @@ We plotted both our manually adjusted calibrations based on
 previous analyses with the whole data set against the ST calibrations without adjustments:
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_1.png">
+  <img width="700" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_1.png">
 </p>   
 
 >>Manually adjusted ST calibration (black) against ST calibration (red) for node   
@@ -134,7 +134,7 @@ previous analyses with the whole data set against the ST calibrations without ad
 >>`P. maniculatus - M. ochrogaster` and `Muridae`; respectively. All densities are adjusted to 1.   
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_2.png">
+  <img width="700" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_2.png">
 </p>   
 
 >> Manually adjusted ST calibration (black) against ST calibration (red) for node   
