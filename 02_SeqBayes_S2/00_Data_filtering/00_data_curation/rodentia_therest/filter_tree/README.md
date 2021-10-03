@@ -190,7 +190,6 @@ Calibrations used:
 </p>
 
 
-
 **Deviations (main 72-taxa VS rodentia_therest data sets)**   
 <p align="center">
   <img width="1000" height="600" src="02_SBnSTtweak1_Rod_subtree2_meanquant.png">
