@@ -7,10 +7,11 @@ alignments with genes ordered from slow- to fast-evolving under each of the 7 tr
 Both the Hessian and the gradient will be needed when we run `MCMCtree` to estimate 
 the divergence times using the approximate likelihood. Note that both `MCMCtree` and `BASEML` are 
 two software included in the `PAML` suite [Yang 2007](https://academic.oup.com/mbe/article/24/8/1586/1103731),
-which you can download [here](http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz). 
+which you can download [here](http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz) (if you had issues with this link,
+just click here and download the PAML. 
 Note that the latest version is `v4.9j`, although we have inclued `PAML` v4.9h in the [src](https://github.com/sabifo4/mammals_dating/tree/main/src) 
 directory because this is the one that was used in this study. If you are to run `BASEML` and `MCMCtree` 
-to reproduce the results we have generated, make sure that you download and extract the [paml4.9h.zip](https://github.com/sabifo4/mammals_dating/tree/master/src/paml4.9h.zip) file,
+to reproduce the results we have generated, make sure that you download and extract the [paml4.9h.zip](https://github.com/sabifo4/mammals_dating/tree/main/src/paml4.9h.zip) file,
 install it on your PC, and export the path to the executable files.
 
 All the tasks that are next described were carried out in the [Queen Mary's Apocrita HPC](https://zenodo.org/record/438045#.XhW1eUf7RPY).

@@ -349,7 +349,7 @@ sed -n '2,73p' ../../filtered_genes_step2_all72sp/1/partitions12_*.aln | awk '{p
 
 # 2. Now, run the pipeline. If you wanted more information about how to install this pipeline 
 #    and the arguments used,
-#    please read the tutorial [here](https://github.com/sabifo4/fasta-phylip-partitions/blob/master/README.md)
+#    please read the tutorial [here](https://github.com/sabifo4/fasta-phylip-partitions/blob/main/README.md)
 #    NOTE: If you are running this code in a directory that you have synched to Dropbox or another 
 #    cloud storage and you have issues, just move the folder out of the synched directory and run the 
 #    command below again.
