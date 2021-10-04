@@ -379,8 +379,9 @@ nilgiritragus_hylocrius,nilgiritragus_hylocrius~
 Taxa to remove:
 capra_pyrenaica
 ```
-
-**NOTE:**Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
+   
+   
+**NOTE:** Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
 these checks before 2018 (i.e., they had already been "cleaned", while the data subset for Lagomorpha 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 

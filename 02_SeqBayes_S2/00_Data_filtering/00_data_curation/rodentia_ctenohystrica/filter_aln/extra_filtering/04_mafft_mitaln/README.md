@@ -1,10 +1,10 @@
 # 1. Getting data
-This time, we only ran MAFFT for the mitochondrial data subsets so we could re-align the 
+This time, we only ran `MAFFT` for the mitochondrial data subsets so we could re-align the 
 CYTB sequence for _F. damarensis_ to the previously generated alignment (i.e., with the 
-squirrel). Once MAFFT finished, we ran the following code to obtain the fasta sequences in one line:
+squirrel). Once `MAFFT` finished, we ran the following code to obtain the fasta sequences in one line:
 
 ```sh
-# Run from 04_mafft/aln
+# Run from `04_mafft_mitaln/aln`
 for i in `seq 2 3`
 do
 
@@ -27,14 +27,14 @@ Then, we used the file `species.txt` output for each of the alignments (one part
 that the order of the taxa was the same:
 
 ```sh
-# Run from 04_mafft/aln
+# Run from `04_mafft_mitaln/aln`
 diff 2/species.txt 3/species.txt 
 ```
 
 Now, we converted the FASTA files into PHYLIP format:
 
 ```sh
-# Run from 04_mafft/aln
+# Run from `04_mafft_mitaln/aln`
 for i in `seq 2 3`
 do 
 
@@ -48,13 +48,13 @@ done
 ```
 
 Now, we manually change the name of the sequence for *F. damarensis* so the tag 
-is "fukomys_damarensis" instead of "C.damarensis_AY425857".
+is `fukomys_damarensis` instead of `C.damarensis_AY425857`.
 
 Last, we generated the new concatenated alignment with these two mit new data as well 
 as the alignment with 5 partitions:
 
 ```sh 
-# Run from 04/mafft_mitaln/aln
+# Run from `04/mafft_mitaln/aln`
 for i in `seq 2 3`
 do 
 
@@ -89,3 +89,8 @@ cat ../../../03_mafft/aln/$i/*aln >> ctenohystrica_5parts.aln
 printf "\n\n" >> ctenohystrica_5parts.aln
 done
 ```
+
+You can download 
+[this zip file](https://www.dropbox.com/s/9cjmclt4q2h9p3n/SeqBayesS2_Raln_ctenohystrica_ALLFILTERS.zip?dl=0),
+which contains the final alignments for the mitochondrial here generated at the end 
+of this filtering step as well as the nuclear and mit-rna alignments.

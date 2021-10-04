@@ -19,6 +19,7 @@ After running this script, you will have the following files:
 00_Filter_trees
       |- RAxML_tree
       |         |- rodentia_therest.tree               # File not used. Best-scoring ML tree obtained with RAxML
+      |- extra_filtering         
       |         
       |- 1314sp_Rodentia_therest_MCMCtree_calib.tree   # File output by the R script
       |- 1314sp_Rodentia_therest_spnameslist.txt       # File output by the R script
@@ -30,23 +31,22 @@ After running this script, you will have the following files:
       |- rodentia_therest_rooted_calibnames.tree       # Input file used by the R script
 ```
 
-Note that we have manually generated the
+Note that we manually generated the
 [`rodentia_therest_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/rodentia_therest_rooted_baseml.tree),
 which does 
-not contain the calibrations. This file will be used when running `BASEML` to compute 
-the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
-likelihood.
+not contain the calibrations. This file was used before we further split this data set into 
+two data subsets (see below).
 
 ## 2. Generating subtree -- splitting the main tree into two
 After partitioning the big data subset (1314 rodent species in "rodentia the rest") into two 
 data subsets (see the details in
 [this `README.md` file](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/README.md),
-section "`# EXTRA FILTERING -- DATA SUBSETTING`", if you did not go through the data filtering before,
+section `# EXTRA FILTERING -- DATA SUBSETTING`, if you did not go through the data filtering before,
 which explains why we further partition "rodentia the rest").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/extra_analyses).
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
@@ -60,9 +60,9 @@ The trees described above were used to find
 if there were any conflicts with the calibations used in both subtrees.
 You can download the directories 
 with the results obtained when running `MCMCtree` without the data
-[here]()
+[here](https://www.dropbox.com/s/d2s8qfwhaso34kl/SeqBayesS2_check_conflict_rodsubt1.zip?dl=0)
 for the first subtree and 
-[here]()
+[here](https://www.dropbox.com/s/zog16ga689jhabv/SeqBayesS2_check_conflict_rodsubt2.zip?dl=0)
 for the second subtree.
 Once you download them, you should unzip its content and save the 
 directories inside the corresponding
@@ -142,7 +142,9 @@ previous analyses with the whole data set against the ST calibrations without ad
 >> `N. galili_-Muridae` and `Muridae`; respectively. All densities are adjusted to 1.   
  
 The differences are not large and should not be affecting downstream analyses.
-
+The final tree topology used in the subsequent analyses can be found in the
+[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
+directory.
 
 ## Rodentia subtree 2
 

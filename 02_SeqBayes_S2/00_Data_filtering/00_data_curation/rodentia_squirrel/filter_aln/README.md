@@ -23,7 +23,7 @@ rodentia_squirrel
 		 
 The output files during the filtering step that is described below as well as the input 
 files needed have been zipped in a file as they are very large. You can download 
-this file [here]().
+this file [here](https://www.dropbox.com/s/9cxw3vnis640wpn/SeqBayesS2_filtaln_sciuridae.zip?dl=0).
 To start the filtering step, you should have the following files arranged in the file 
 architecture detailed above (you can obtain the files once you unzip the file
 provided in the link above): 
@@ -109,7 +109,7 @@ microsciurus_flaviventer            --> "ENSG00000166349"
 microsciurus_flaviventer_sabanillae --> "RNR1"            "ENSG00000265203"
 ```
 
-**NOTE**
+**NOTE**   
 Log files will be found in this same directory with the name `log_taxaNOTIN_<level>.txt`,
 being `level` the one that has been checked (i.e., family, genus, order, or subfamily). In addition, 
 you can also generate the `levels.checked.RData`, which you can use to explore the taxonomical 
@@ -119,7 +119,7 @@ present in the other three data subsets.
 # 2. First checks before applying filtering
 First, we checked if there were any further species that should be removed:
 
-```{sh}
+```sh
 # Run from `filter_aln/checked_aln` directory 
 grep -o '[a-z]*_[a-z]*_[a-z]*' RAxML_bestTree.BS_ML_GTRCAT | sed 's/\_/\t/g' | awk '$2==$3{print $1,$2,$3}' | awk '$1!="aeb"{print $1,$2,$3}' > subsp_check.txt
 
@@ -130,7 +130,7 @@ printf "There are $num subspecies with species\n"
 ```
 The output names have been saved in a file called `subsp_check.txt` to further explore it:
 
-```{sh}
+```sh
 # Run from `00_data_curation/rodentia_squirrel/filter_aln/checked_aln` directory 
 input="subsp_check.txt"
 while IFS= read -r line 
@@ -260,8 +260,9 @@ sciurus_colliaei,sciurus_colliaei~
 Taxa to remove:
 spermophilus_dauricus
 ```
-
-**NOTE:**Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
+   
+   
+**NOTE:** Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
 these checks before 2018 (i.e., they had already been "cleaned", while the data subset for Lagomorpha 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
@@ -282,7 +283,7 @@ you unzip the file which link provided above, inside a directory called `checked
 we ran the following code to make sure they had both undergone the same filtering steps and that were 
 at the same "filtering stage":
 
-```{sh} 
+```sh
 # Run the next code from `rodentia_squirrel/filter_aln/checked_aln/unfiltered_aln`
 
 # Check they have the same info
@@ -322,9 +323,9 @@ Instructions to follow:
 Now, we are going to use this unfiltered alignment phylip to apply the next filtering steps. 
 
 ## 3. Apply the filtering step
-Run the following commands from `rodentia_squirrel/filter_aln/checked_aln`
+Run the following commands from `rodentia_squirrel/filter_aln/checked_aln`:
 
-```{sh}
+```sh
 # Run the next code from `rodentia_squirrel/filter_aln/checked_aln`
 
 # 1. Fix species names in `names.txt`. We used the RAxML file, the `names.txt` file, and 
@@ -435,6 +436,6 @@ Instructions to follow:
    do not change paths in the Rscript! 
 
 The final alignments generated at the end of this step can be downloaded from 
-[here]().
+[here](https://www.dropbox.com/s/eg0tjgadha0nnld/SeqBayesS2_Raln_sciuridae.zip?dl=0).
 They should be saved here if the same file architecture as the one set in the R scripts 
 is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/rodentia_squirrel`.

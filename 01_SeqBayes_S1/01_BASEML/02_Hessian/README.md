@@ -8,7 +8,9 @@ Both the Hessian and the gradient will be needed when we run `MCMCtree` to estim
 the divergence times using the approximate likelihood. Note that both `MCMCtree` and `BASEML` are 
 two software included in the `PAML` suite [Yang 2007](https://academic.oup.com/mbe/article/24/8/1586/1103731),
 which you can download [here](http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz) (if you had issues with this link,
-just click here and download the PAML. 
+just click
+[here](http://abacus.gene.ucl.ac.uk/software/#phylogenetic-analysis-by-maximum-likelihood-paml)
+and download it from the PAML website). 
 Note that the latest version is `v4.9j`, although we have inclued `PAML` v4.9h in the [src](https://github.com/sabifo4/mammals_dating/tree/main/src) 
 directory because this is the one that was used in this study. If you are to run `BASEML` and `MCMCtree` 
 to reproduce the results we have generated, make sure that you download and extract the [paml4.9h.zip](https://github.com/sabifo4/mammals_dating/tree/main/src/paml4.9h.zip) file,
@@ -63,7 +65,7 @@ zipped file and go through each directory and pipelines used in this project. We
 
 ### IMPORTANT NOTE
 The results for the main tree hypothesis (T2) were repeated as we found out that 11 nuclear genes out of the final 
-15,268 genes included in data set 1 were also present in data set 2 (the data set that we were going to use in
+filtered genes included in data set 1 were also present in data set 2 (the data set that we were going to use in
 the second step of the sequential Bayesian dating analysis).
 While this does not affect the other 6 tree hypotheses, we had to make sure that there were no overlapping 
 genes between the two data sets that are going to be used in the sequential Bayesian dating approach to

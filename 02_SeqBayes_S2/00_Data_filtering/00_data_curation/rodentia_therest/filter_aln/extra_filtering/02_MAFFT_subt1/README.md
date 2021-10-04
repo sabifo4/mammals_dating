@@ -6,7 +6,8 @@ script appends the sequences from the taxa within the second rodentia subtree sp
 [`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
-of the partitions:
+of the partitions (before running the code below, make sure you have generated the alignments 
+for this data subset in previous steps!):
 
 ```sh
 # Run from `01_perl_parsing`
@@ -62,6 +63,10 @@ mv rod_subt1_4.txt rod_subt1.txt
 # Now, add the species in fasta format
 perl ../concatenated_format.pl rod_subt1.txt ../2/species.txt
 ```
+
+You can download
+[this zip file](https://www.dropbox.com/s/f3ddloolzop8hfd/SeqBayesS2_filteraln2_rodtherest_02_MAFFT_subt1_01.zip?dl=0), 
+which contains the data you should have generated with the code above. 
 
 # 2. Getting alignment with new taxa 
 We copied the files in the directories `01_perl_parsing/[2-6]/forMAFFT` to directories 
@@ -125,7 +130,7 @@ done
 Now, we can concatenate the sequences in the same order that had been previously done 
 (i.e., mt12cp > mt3cp > mtrna > nt12cp > nt3cp):
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt1`
 mkdir 1
 cd 1
@@ -139,7 +144,7 @@ mv rod_subt1_4.fasta rod_subt1.fasta
 
 Now, the last step is to convert the FASTA files into PHYLIP format:
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt1`
 for i in `seq 1 6`
 do 
@@ -155,7 +160,7 @@ done
 
 Last, we generate the file with the five partitions concatenated:
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt1`
 mkdir 7 
 cd 7 
@@ -169,3 +174,9 @@ printf "\n\n" >> rod_subt1_5parts.aln
 done 
 ```
 
+[Here](https://www.dropbox.com/s/unw9a4ssr6i3xl1/SeqBayesS2_filteraln2_rodtherest_02_MAFFT_subt1_02.zip?dl=0)
+you can download the directory `mafft_rodsubt1` with the data generated after 
+all the steps detailed above.
+
+[Here](https://www.dropbox.com/s/5cxvn2fvqdevti8/SeqBayesS2_Raln_rod_subt1.zip?dl=0) 
+you can find the final alignments for this data subset.

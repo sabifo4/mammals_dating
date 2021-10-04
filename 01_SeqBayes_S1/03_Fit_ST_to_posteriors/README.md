@@ -118,7 +118,7 @@ All analyses regarding this step can be found in the directory [`02_MCMCtree_pri
 **to find the link to download the data) with the same R version we did (we are unsure about which one this was,**
 **but it was one of the released R versions between 2018 and 2020), you will get the results we provide in**
 **this directory when you use the data in [`00_main_tree_T2/01_MCMCtree_posterior_old`](https://www.dropbox.com/s/qxsgfe0gbwxro9p/SeqBayesS1_MCMCtree_mainT2_posterior_old.zip?dl=0).**
-**Note that removing 11 genes out of the 15,268 genes in the alignment did not have an impact on the**
+**Note that removing 11 genes out of the final filtered genes in the alignment did not have an impact on the**
 **estimated posterior divergence times as we show** 
 **[here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-I.pdf)** 
 **and [here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-II.pdf)**
@@ -134,7 +134,7 @@ All analyses regarding this step can be found in the directory [`02_MCMCtree_pri
 
 ---
 The plots show that the ST distributions are sensible (see image below), and so they can be used to continue with the sequential
-Bayesian dating analysis. The ST distributions estimated with the `sn:st.mple` R function are plotted in red, those estimated when
+Bayesian dating analysis. The ST distributions estimated with the `sn::st.mple` R function are plotted in red, those estimated when
 sampling from the prior with `MCMCtree` in light green, and when sampling from the posterior with `MCMCtree` in black:
 
 <p align="center">

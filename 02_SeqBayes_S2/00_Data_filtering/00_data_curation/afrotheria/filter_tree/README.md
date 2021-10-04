@@ -13,6 +13,10 @@ In addition, this R script generates dummy alignments that can be used
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
 This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/afrotheria).
 
+>> **NOTE**: Now, this output "dummy" alignment is saved in the `before_updating_topology` directory   
+>> that you will find when you click the link above. The "dummy_aln.aln" file you will see in the   
+>> main directory when clicking the link above has an extra filtering (keep reading).   
+
 After running this script, you will have the following files:
 
 ```
@@ -56,7 +60,7 @@ The updated file to be used by `BASEML` and the calibrated tree before the check
 shown in the next step can be found
 [here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/extra_filtering). 
 The "dummy" alignments have also been updated in their corresponding directory 
-[here](), where the previous version has been saved in a directory called "before_updating_topology".
+[here](), where the previous version has been saved in a directory called `before_updating_topology`.
 
 ## 3. Check if calibrations are in conflict
 The tree with the topology described above (60 taxa) was used to check 

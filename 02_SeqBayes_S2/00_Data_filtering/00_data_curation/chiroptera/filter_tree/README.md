@@ -1,22 +1,20 @@
 # Chiroptera - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Lchiroptera.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/Calibrations_Rtherest.R)
+We use the R script [`Calibrations_Lchiroptera.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/Calibrations_Lchiroptera.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`rodentia_therest_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/laurasiatheria_chiroptera_rooted_calibnames.tree)
+[`laurasiatheria_chiroptera_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/laurasiatheria_chiroptera_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
 [`Calibrations_LaurChiroptera.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/Calibrations_LaurChiroptera.txt)
 file. 
-In addition, this R script generates dummy alignments that can be used 
-when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera).
 
 After running this script, you will have the following files:
 
 ```
 00_Filter_trees
+      |- extra_filtering
       |- RAxML_tree
       |         |- Laurasiatheria_chiroptera.tree              # File not used. Best-scoring ML tree obtained with RAxML
       |         
@@ -25,47 +23,47 @@ After running this script, you will have the following files:
       |- Calibrations_LaurChiroptera.txt                       # Input file used by the R script. It matches the tag names
       |                                                        # in input tree with corresponding calibrations to be replaced
       |- Calibrations_LChiroptera.R                            # R script
-      |- laurasiatheria_chiroptera_rooted_baseml.tree          # File manually generated after running R script 
-      |                                                        # to be used by BASEML (calibrations manually removed)
       |- laurasiatheria_chiroptera_calibnames.tree             # Input file used by the R script
+      |- laurasiatheria_chiroptera_rooted_baseml.tree          # File manually generated after running R script 
+                                                               # to be used by BASEML (calibrations manually removed)
 ```
 
-Note that we have manually generated the
+Note that we manually generated the
 [`laurasiatheria_chiroptera_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/laurasiatheria_chiroptera_rooted_baseml.tree),
 which does 
-not contain the calibrations. This file will be used when running `BASEML` to compute 
+not contain the calibrations. This file was used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
-likelihood.
+likelihood before we realised that this data subset needed to be further split 
+into two.
 
 ## 2. Generating subtree -- splitting the main tree into two
 After partitioning the big data subset (885 bat species in "chiroptera" data subset) into two 
 data subsets (see the details in
 [this `README.md` file](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/README.md),
-section "`# EXTRA FILTERING -- DATA SUBSETTING`", if you did not go through the data filtering before,
+section `# EXTRA FILTERING -- DATA SUBSETTING`, if you did not go through the data filtering before,
 which explains why we further partition "chiroptera").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/extra_analyses).
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
-([here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera_subt1),
-for the first subtree and 
+(find [here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera_subt1)
+the one for the first subtree and 
 [here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera_subt2)
-for the second subtree) and used them in the subsequent steps.
+the one for the second subtree) and used them in the subsequent steps.
 
 ## 3. Check if calibrations are in conflict
 The trees described above were used to find 
 if there were any conflicts with the calibations used in both subtrees.
 You can download the directories 
 with the results obtained when running `MCMCtree` without the data
-[here]()
+[here](https://www.dropbox.com/s/69mbdkvdri0oeii/SeqBayesS2_check_conflict_chirosubt1.zip?dl=0)
 for the first subtree and 
-[here]()
+[here](https://www.dropbox.com/s/yv5uhhajg71ibr9/SeqBayesS2_check_conflict_chirosubt2.zip?dl=0)
 for the second subtree.
-Once you download them, you should unzip its content and save the 
-directories inside the corresponding
+Once you download them, you should unzip their content inside the corresponding
 [`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict)
 directory for each subtree:
 
@@ -123,7 +121,6 @@ Calibrations used:
 
 **When using both ST and soft bound calibrations**   
 Calibrations used:   
-Calibrations used:   
    * Mammalia: ST(1.642,0.425,12.652,1714.565)   
    * Chiroptera: ST(0.596,0.016,-1.239,13.572)   
    * Monotremata: B(0.1289,1.345)   
@@ -156,7 +153,6 @@ Calibrations used:
 </p>
 
 **When using both ST and soft bound calibrations**   
-Calibrations used:   
 Calibrations used:   
    * Mammalia: ST(1.642,0.425,12.652,1714.565)   
    * Chiroptera: ST(0.596,0.016,-1.239,13.572)   

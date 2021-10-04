@@ -6,7 +6,8 @@ script appends the sequences from the taxa within the second chiroptera subtree 
 [`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
-of the partitions:
+of the partitions (before running the code below, make sure you have generated the alignments 
+for this data subset in previous steps!):
 
 ```sh
 # Run from `01_perl_parsing`
@@ -62,6 +63,10 @@ mv chiroptera_subt1_4.txt chiroptera_subt1.txt
 # Now, add the species in fasta format
 perl ../concatenated_format.pl chiroptera_subt1.txt ../2/species.txt
 ```
+
+You can download
+[this zip file](https://www.dropbox.com/s/jz79d3lp8cdupcb/SeqBayesS2_filteraln2_chiroptera_02_MAFFT_subt1_01.zip?dl=0), 
+which contains the data you should have generated with the code above. 
 
 # 2. Getting alignment with new taxa 
 We copied the files in the directories `01_perl_parsing/[2-6]/forMAFFT` to directories 
@@ -174,3 +179,9 @@ printf "\n\n" >> lchiroptera_subt1_5parts.aln
 done 
 ```
 
+[Here](https://www.dropbox.com/s/go4vx9y5ja6g5fo/SeqBayesS2_filteraln2_chiroptera_02_MAFFT_subt1_02.zip?dl=0)
+you can download the directory `mafft_lchiro1` with the data generated after 
+all the steps detailed above.
+
+[Here](https://www.dropbox.com/s/h5mqaqd8tabkww8/SeqBayesS2_Raln_chiroptera_subt1.zip?dl=0) 
+you can find the final alignments for this data subset.

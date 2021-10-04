@@ -312,7 +312,7 @@ grep -o '[a-z].* ' alignment.phylip > names_3nt_filt.txt
 ## 5. Data partitioning 
 Now that we have the concatenated and filtered alignment ready, we need to generate the filtered
 partitioned alignments by running the R script 
-[`Partition_seqs_for_MCMCtree_after_filtering`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
+[`Partition_seqs_for_MCMCtree_after_filtering.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
 As we had already created partitioned alignments 
 before the subspecies check had been applied, we will need to rearrange the files output for
 this data subset in the
@@ -349,6 +349,14 @@ Now, run the Rscript mentioned above following the next instructions:
    do not change paths in the Rscript! 
    
 The final alignments generated at the end of this step can be downloaded from 
-[here](https://www.dropbox.com/s/rdatnuzurpj3o8s/SeqBayesS2_Raln_afrotheria.zip?dl=0).
+[here](https://www.dropbox.com/s/2oen0brrb4o124e/SeqBayesS2_Raln_afrotheria_ALLFILTERS.zip?dl=0).
 They should be saved here if the same file architecture as the one set in the R scripts 
-is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/afrotheria`.
+is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/afrotheria`.   
+
+**NOTE**: As explained
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree),
+when we proceeded with the tree topology checks, there were some taxa rearrangements in the 
+tree topology and one taxon, *Huetia leucorhinus*, was removed. The alignments output at this step can be
+found in the directory `before_removing_taxon` in the zip file which link is provided above.
+The alignments you will find in the main directory when you download the zip file have the latest 
+filtering (i.e., the sequence data for *Huetia leucorhinus* is removed).

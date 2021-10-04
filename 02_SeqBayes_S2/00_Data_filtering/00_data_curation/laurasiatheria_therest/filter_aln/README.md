@@ -23,7 +23,7 @@ laurasiatheria_therest
 		 
 The output files during the filtering step that is described below as well as the input 
 files needed have been zipped in a file as they are very large. You can download 
-this file [here]().
+this file [here](https://www.dropbox.com/s/n0r1pq16ygu7ddv/SeqBayesS2_filtaln_laurasiatheria_therest.zip?dl=0).
 To start the filtering step, you should have the following files arranged in the file 
 architecture detailed above (you can obtain the files once you unzip the file
 provided in the link above): 
@@ -361,8 +361,9 @@ phoca_largha,phoca_largha~
 sylvisorex_vulcanorum,sylvisorex_vulcanorum~
 mogera_insularis_latouchei,mogera_insularis_latouchei~
 ```
-
-**NOTE:**Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
+   
+   
+**NOTE:** Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
 these checks before 2018 (i.e., they had already been "cleaned", while the data subset for Lagomorpha 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
@@ -558,10 +559,10 @@ Instructions to follow:
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 
 
-The final alignments generated at the end of this step can be downloaded from 
-[here]().
-They should be saved here if the same file architecture as the one set in the R scripts 
-is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/laurasiatheria_therest`.
+The final alignments generated at the end of this step can be found in the directory 
+`before_adding_new_taxa` when downloading 
+[this zip file](https://www.dropbox.com/s/f5ppv0hn168xnoq/SeqBayesS2_Raln_laurasiatheria_therest_ALLFILTERS.zip?dl=0).
+Please continue reading how to generate the final alignments in the next section!
 
 # EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT
 When we first carried out the analysis with the tree topology as in step 1, we realised that 
@@ -575,31 +576,34 @@ for the "Chiroptera" subtree, otherwise you will not be able to proceed!
 The procedure followed was the following:
 
 ## 1. Generate data subsets
-The directory
-[`00_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/00_perl_parsing)
-has all the details about the scripts used to reformat the alignments for this data subset before we 
-added included the data for the new taxa. You can download all the reformatted alignments generated as well 
+[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
+in section `1. Generate fasta files to generate alignments with new taxa`, you will find 
+all the details about how to reformat the alignments for this data subset before we 
+included the data for the new taxa. You can download all the reformatted alignments generated as well 
 as the data needed to run MAFFT for the re-alignment
-[here]().
+[here](https://www.dropbox.com/s/6hvirfh37w8dw17/SeqBayesS2_filteraln2_ltherest_00_perl_parsing.zip?dl=0).
+The content of this zip file should be saved inside directory
+[`00_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/00_perl_parsing),
+where you can find all the scripts used in this filtering step.
 
 ## 2. Generate new alignments with new taxa 
+[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
+in section `2. Getting alignment with new taxa`, you will find 
+all the details to generate the final alignments. 
 The directory
 [`01_MAFFT`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
-contains all the data used to generate the alignment that includes the sequences for 
+contains the scripts used to generate the alignment that includes the sequences for 
 *Pteropus vampyrus*, *Myotis lucifugus*, *Vicugna pacos*, and *Capra hircus*.
 These are the species which sequence data were needed to include the calibrations for the nodes "Chiroptera", 
 "Euungulata", and "Artiodactyla".
-Please access this directory using the link provided above to go through the steps followed. You can download the 
-`maff_ltherest` directory
-[here](),
+You can download the `maff_ltherest` directory
+[here](https://www.dropbox.com/s/9kr87g1iddaqr8o/SeqBayesS2_filteraln2_ltherest_01_MAFFT.zip?dl=0),
 which should be saved inside the 
 [`01_MAFFT`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
-directory mentioned above to reproduce our results. 
+directory mentioned above when running the scripts and following the instructions detailed in the link 
+provided above. 
 
 ## 3. Final alignments
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns/laurasiatheria_therest),
-you can find the directory that contains the final alignments for each individual partition as well as the alignment with the five partitions 
-in separate blocks. The previous alignments have been moved to a directory called 
-[before_adding_new_taxa](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns/laurasiatheria_therest/before_adding_new_taxa).
-You can download the alignments that should be saved in this directory 
-[here]().
+[Here](https://www.dropbox.com/s/f5ppv0hn168xnoq/SeqBayesS2_Raln_laurasiatheria_therest_ALLFILTERS.zip?dl=0),
+you can download the final alignments for this data set. The previous alignments have been moved to a directory called 
+`before_adding_new_taxa`, which you can find inside this zip file too.

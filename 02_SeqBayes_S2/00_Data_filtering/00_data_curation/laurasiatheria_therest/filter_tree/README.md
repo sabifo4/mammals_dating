@@ -11,7 +11,8 @@ corresponding calibrations specified in the
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/laurasiatheria_therest).
+This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/laurasiatheria_therest)
+(now, you will find this file inside the directory `before_updating_topology`; see next section below).
 
 After running this script, you will have the following files:
 
@@ -19,12 +20,13 @@ After running this script, you will have the following files:
 00_Filter_trees
         |- RAxML_tree
         |         |- laurasiatheria_therest.tree              # File not used. Best-scoring ML tree obtained with RAxML
+        |- extra_analyses         
         |         
-        |- 208sp_laurasiatheria_therest_MCMCtree_calib.tree   # File output by the R script
-        |- 208sp_laurasiatheria_therest_spnameslist.txt       # File output by the R script
+        |- 655sp_laurasiatheria_therest_MCMCtree_calib.tree   # File output by the R script
+        |- 655sp_laurasiatheria_therest_spnameslist.txt       # File output by the R script
+        |- Calibrations_Ltherest.R                            # R script
         |- laurasiathera_therest_calibrations.txt             # Input file used by the R script. It matches the tag names
         |                                                     # in input tree with corresponding calibrations to be replaced
-        |- Calibrations_Ltherest.R                            # R script
         |- laurasiatheria_therest_rooted_baseml.tree          # File manually generated after running R script 
         |                                                     # to be used by BASEML (calibrations manually removed)
         |- laurasiatheria_therest_rooted_calibnames.tree      # Input file used by the R script
@@ -33,24 +35,25 @@ After running this script, you will have the following files:
 Note that we have manually generated the
 [`laurasiatheria_therest_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiatheria_therest_rooted_baseml.tree),
 which does 
-not contain the calibrations. This file will be used when running `BASEML` to compute 
+not contain the calibrations. This file was used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
-likelihood.
+likelihood before we had to add new taxa to the alignment (see below).
 
 ## 2. Tree topology change 
 After an extra data filtering when we added four extra taxa (i.e., *Pteropus vampyrus*,
 *Myotis lucifugus*, *Vicugna pacos*, and *Capra hircus*), the tree topology changed to include the placement of these 
 taxa (see the details in
 [this `README.md` file](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/README.md),
-section "`EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT`", if you did not go through the data filtering before,
+section `EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT`, if you did not go through the data filtering before,
 which explains why we added these four taxa 
 and how this was done).
 
 The updated file to be used by `BASEML` and the calibrated tree before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/extra_filtering). 
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/extra_analyses). 
 The "dummy" alignments have also been updated in their corresponding directory 
-[here](), where the previous version has been saved in a directory called "before_updating_topology".
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/laurasiatheria_therest),
+where the previous version has been saved in a directory called `before_updating_topology`.
 
 ## 3. Check if calibrations are in conflict
 The tree described above (659 taxa with *Pteropus vampyrus*,
@@ -58,7 +61,7 @@ The tree described above (659 taxa with *Pteropus vampyrus*,
 if there were any conflicts with the calibations used.
 You can download the directories 
 with the results obtained when running `MCMCtree` without the data
-[here]().
+[here](https://www.dropbox.com/s/9zo1p45mkfc4dwx/SeqBayesS2_check_conflict_laurasiatheria_therest.zip?dl=0).
 Once you download them, you should unzip its content and save them 
 inside the 
 [`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict)

@@ -3,10 +3,11 @@ We use the perl script
 [`phylip_to_fasta_and_extraseq.pl`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt2/01_perl_parsing/phylip_to_fasta_and_extraseq.pl)
 to convert the files for the second chiroptera subtree from phylip format to fasta format. In addition, this
 script appends the sequences from the taxa within the first chiroptera subtree specified in the file 
-[`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
+[`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt2/01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
-of the partitions:
+of the partitions (before running the code below, make sure you have generated the alignments 
+for this data subset in previous steps!):
 
 ```sh
 # Run from `01_perl_parsing`
@@ -63,6 +64,11 @@ mv chiroptera_subt2_4.txt chiroptera_subt2.txt
 # Now, add the species in fasta format
 perl ../concatenated_format.pl chiroptera_subt2.txt ../2/species.txt
 ```
+
+You can download
+[this zip file](https://www.dropbox.com/s/2xl617lms7t7qmo/SeqBayesS2_filteraln2_chiroptera_02_MAFFT_subt2_01.zip?dl=0), 
+which contains the data you should have generated with the code above. 
+
 
 # 2. Getting alignment with new taxa 
 We copied the files in the directories `01_perl_parsing/[2-6]/forMAFFT` to directories 
@@ -173,3 +179,9 @@ printf "\n\n" >> lchiroptera_subt2_5parts.aln
 done 
 ```
 
+[Here](https://www.dropbox.com/s/2zeqewdec97fxos/SeqBayesS2_filteraln2_chiroptera_02_MAFFT_subt2_02.zip?dl=0)
+you can download the directory `mafft_lchiro2` with the data generated after 
+all the steps detailed above.
+
+[Here](https://www.dropbox.com/s/5zwds5t26r5l29f/SeqBayesS2_Raln_chiroptera_subt2.zip?dl=0) 
+you can find the final alignments for this data subset.
