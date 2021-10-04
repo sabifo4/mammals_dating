@@ -1,11 +1,14 @@
 # 1. Generate fasta files to generate alignments with the squirrel
-We use the perl script `phylip_to_fasta_and_extraseq.pl` to convert 
+We use the perl script
+[`phylip_to_fasta_and_extraseq.pl`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/00_perl_parsing/phylip_to_fasta_and_extraseq.pl)
+to convert 
 the ctenohystrica files from phylip format to fasta format. In addition, it appends 
 the sequences from the taxa within the squirrel subtree specified in the file 
-`taxa_to_add.txt`.
+[`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/00_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to generate the corresponding alignments for each 
-of the partitions:
+of the partitions (please, make sure you have generated the alignments for this data subset 
+following the instructions from the previous steps!):
 
 ```sh
 # Ron from this directory, `00_perl_parsing`
@@ -62,3 +65,6 @@ mv rodentia_ctenohystrica4.txt rodentia_ctenohystrica.txt
 # Now, add the species in fasta format
 perl ../concatenated_format.pl rodentia_ctenohystrica.txt ../2/species.txt
 ```
+
+You can download the alignments generated following these filtering steps 
+[here](https://www.dropbox.com/s/fkwspa58qrvplyr/SeqBayesS2_filteraln2_ctenohystrica_00_perl_parsing.zip?dl=0).

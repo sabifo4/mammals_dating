@@ -80,7 +80,7 @@ by any of the other taxa. It should be deleted!```
 GENUS   Presbytis  has  15  taxa. Species  presbytis_senex  has  1  genes that are not shared by any of the other taxa.
 It should be deleted!
 ```
->> >> ACTION: presbytis_senex was removed.
+>> ACTION: presbytis_senex was removed.   
 
 
 **NOTE**
@@ -610,7 +610,7 @@ grep -o '[a-z].* ' alignment.phylip > names_3nt_filt.txt
 ## 4. Data partitioning 
 Now that we have the concatenated and filtered alignment ready, we need to generate the filtered
 partitioned alignments by running the R script 
-[`Partition_seqs_for_MCMCtree_after_filtering`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
+[`Partition_seqs_for_MCMCtree_after_filtering.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
 As we had already created partitioned alignments 
 before the subspecies check had been applied, we will need to rearrange the files output for
 this data subset in the

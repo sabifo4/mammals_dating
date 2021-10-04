@@ -6,20 +6,20 @@ second step).
 
 An explanation for each file can be found below:   
 
-  * [4705sp.tree](): this is the final mammal timetree in NEXUS format. It includes the confidence intervals (CIs) for the
+  * [4705sp.tree](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp.tree): this is the final mammal timetree in NEXUS format. It includes the confidence intervals (CIs) for the
   estimated mean divergence times.   
-  * [4705sp_mean.nwk](): this is the final mammal timetree in newick format. The CIs are not included here.     
-  * [4705sp_ci025.nexus](): this is a mammal timetree in NEXUS format which mean divergence times correspond to the minimum
+  * [4705sp_mean.nwk](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_mean.nwk): this is the final mammal timetree in newick format. The CIs are not included here.     
+  * [4705sp_ci025.nexus](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_ci025.nexus): this is a mammal timetree in NEXUS format which mean divergence times correspond to the minimum
   ages that were estimated in the 2.5% CIs included in the final mammal timetree. The CIs
   estimated with the final mammal timetree have also been included.   
-  * [4705sp_ci025.nwk](): this is a mammal timetree in newick format which mean divergence times correspond to the minimum
+  * [4705sp_ci025.nwk](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_ci025.nwk): this is a mammal timetree in newick format which mean divergence times correspond to the minimum
   ages that were estimated in the 2.5% CIs included in the final mammal timetree. CIs are not included.   
-  * [4705sp_ci975.nexus](): this is a mammal timetree in NEXUS format which mean divergence times correspond to the maximum
+  * [4705sp_ci975.nexus](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_ci975.nexus): this is a mammal timetree in NEXUS format which mean divergence times correspond to the maximum
   ages that were estimated in the 97.5% CIs included in the final mammal timetree. The CIs
   estimated with the final mammal timetree have also been included.   
-  * [4705sp_ci975.nwk](): this is a mammal timetree in newick format which mean divergence times correspond to the minimum
+  * [4705sp_ci975.nwk](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_ci975.nwk): this is a mammal timetree in newick format which mean divergence times correspond to the minimum
   ages that were estimated in the 97.5% CIs included in the final mammal timetree. The CIs
   estimated with the final mammal timetree have also been included.   
-  * [4705sp_names.txt](): this file contains a list of the 4,705 mammal species included in the final mammal timetree.   
+  * [4705sp_names.txt](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/03_Generate_final_mammal_tree/4705sp_names.txt): this file contains a list of the 4,705 mammal species included in the final mammal timetree.   
 
   

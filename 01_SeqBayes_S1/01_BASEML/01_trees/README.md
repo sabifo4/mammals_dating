@@ -99,7 +99,7 @@ and the one on the left the corresponding soft calibrations in `MCMCtree` format
 >> **NOTE**: You will see that there are four nodes in the text file that have different tag names if compared to the ones included
 >> in the table above: "HOMININAE" is "GORILLA-HUMAN", "STREPSIRRHINI" is "STREPSIRHINI (we had a typo found at the end of the study. 
 >> We have not changed it in the file as it might affect downstream analyses), "NONSQUIRREL RODENTS" is "ROD-NOSQUIRREL",
->> "DIPODIDAE-MUROIDEA" is "DIPOD-RATT", "MURINAE" is "MURIDAE" (another typo we found late), "CETRUMINANTIA" is "WHIP-RUM", and "BOVIDAE" is "BOV-ANTIL".
+>> "DIPODIDAE-MUROIDEA" is "DIPOD-RATT", "MURINAE" is "MURIDAE" (another typo we found later), "CETRUMINANTIA" is "WHIP-RUM", and "BOVIDAE" is "BOV-ANTIL".
 
 First, we manually included the names of the nodes to be calibrated in the newick trees for each of 
 the 7 hypotheses (files that end with `*_calibrated.tree` and are saved in each of the seven directories 

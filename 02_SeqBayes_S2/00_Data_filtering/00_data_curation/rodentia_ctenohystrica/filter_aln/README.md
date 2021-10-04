@@ -23,7 +23,7 @@ rodentia_ctenohystrica
 		 
 The output files during the filtering step that is described below as well as the input 
 files needed have been zipped in a file as they are very large. You can download 
-this file [here]().
+this file [here](https://www.dropbox.com/s/u3nhv7ra64wtv64/SeqBayesS2_filtaln_ctenohystrica.zip?dl=0).
 To start the filtering step, you should have the following files arranged in the file 
 architecture detailed above (you can obtain the files once you unzip the file
 provided in the link above): 
@@ -94,7 +94,7 @@ present in the other three data subsets.
 # 2. First checks before applying filtering
 First, we checked if there were any further species that should be removed:
 
-```{sh}
+```sh
 # Run from `checked_aln` directory 
 grep -o '[a-z]*_[a-z]*_[a-z]*' RAxML_bestTree.BS_ML_GTRCAT | sed 's/\_/\t/g' | awk '$2==$3{print $1,$2,$3}'  > subsp_check.txt
 
@@ -105,7 +105,7 @@ printf "There are $num subspecies with species\n"
 ```
 The output names have been saved in a file called `subsp_check.txt` to further explore it:
 
-```{sh}
+```sh
 # Run from `00_data_curation/rodentia_ctenohystrica/filter_aln/checked_aln` directory 
 input="subsp_check.txt"
 while IFS= read -r line 
@@ -205,7 +205,7 @@ This subspecies is already in the tree, but it has been flagged
 to be removed. Therefore, now we check which genes are in `trinomys_setosus_denigratus`
 because we had previously generated the R object `levels.checked.RData`:
 
-```{R}
+```R
 # Open Rscript `parse_lineage.R` and run from lines 1-15.
 # Then, uncomment line 67 and run it to load the R object 
 
@@ -236,8 +236,9 @@ trinomys_setosus
 fukomys_damarensis
 trinomys_setosus_denigratus
 ```
-
-**NOTE:**Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
+   
+   
+**NOTE:** Data subsets (both alignments, 12CP and 3CP) for Afrotheria, Xenarthra, Euarchonta, and Marsupialia had already undergone 
 these checks before 2018 (i.e., they had already been "cleaned", while the data subset for Lagomorpha 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
@@ -398,10 +399,11 @@ Instructions to follow:
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 
 
-The final alignments generated at the end of this step can be downloaded from 
-[here]().
-They should be saved here if the same file architecture as the one set in the R scripts 
-is to be used: `00_Data_filtering/01_alignments/00_mammals_alns/rodentia_ctenohystrica`.
+The final alignments generated at the end of this step can be found in the directory 
+`before_adding_new_taxa` when unzipping
+[this file](https://www.dropbox.com/s/9cjmclt4q2h9p3n/SeqBayesS2_Raln_ctenohystrica_ALLFILTERS.zip?dl=0).
+Please read the next section to understand how the final alignments (also present in the zip 
+file which link is provided above in the main directory) were generated!
 
 # EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT
 When we first carried out the analysis with the tree topology as in step 1, we realised that 
@@ -418,7 +420,7 @@ The directory
 has all the details about the scripts used to reformat the alignments for this data subset before we 
 added included the data for the new taxa. You can download all the reformatted alignments generated as well 
 as the data needed to run MAFFT for the re-alignment
-[here]().
+[here](https://www.dropbox.com/s/fkwspa58qrvplyr/SeqBayesS2_filteraln2_ctenohystrica_00_perl_parsing.zip?dl=0).
 
 ## 2. Generate new alignments with new taxon 
 The directory
@@ -426,16 +428,17 @@ The directory
 contains all the data used to generate the alignment that includes the *Ictidomys_tridecemlineatus* sequence.
 This is the species which sequence data was needed to include the calibration for the node "Rodentia".
 Please access this directory using the link provided above to go through the steps followed. You can download the 
-`aln` directory [here](), which should be saved inside the 
+`aln` directory [here](https://www.dropbox.com/s/seqc0qbwuxk8ev2/SeqBayesS2_filteraln2_ctenohystrica_01_mafft.zip?dl=0),
+which should be saved inside the 
 [`01_mafft`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/01_mafft) 
 directory mentioned above to reproduce our results. 
 
 ## 3. Tests with *Fukomys damarensis*
 We carried out several tests to decide which *Fukomys damarensis* sequence was going to be included 
 in this data subset for rodentia ctenohystrica. Please access 
-[`02_tests_fukomys](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys)
+[`02_tests_fukomys`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys)
 using the link provided to go through the steps followed. You can download the tests carried out 
-[here](). 
+[here](https://www.dropbox.com/s/dcgmy6syj4z87l6/SeqBayesS2_filteraln2_ctenohystrica_02_tests_fukomys.zip?dl=0). 
 You should unzip and save the content inside the
 [`02_tests_fukomys](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys)
 directory to reproduce the results. 
@@ -444,21 +447,22 @@ directory to reproduce the results.
 The directory
 [`03_mafft`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft) 
 contains all the data used to generate the alignment with both *Ictidomys_tridecemlineatus* and
-*Fukomys damarensis* sequences. The mitochondrial alignments can be found in the directory 
-[`04_mafft`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft). 
+*Fukomys damarensis* sequences. The information about how to proceed with the mitochondrial alignments can be found in the directory 
+[`04_mafft_mitaln`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln). 
 Please access the two directories using the links provided above to go through the steps followed to generate 
 the nuclear and mitochondrial alignments. You can download the `aln` directory 
-[here]() for the former and [here]() for the latter.
+[here](https://www.dropbox.com/s/h73spqokux4v230/SeqBayesS2_filteraln2_ctenohystrica_03_mafft.zip?dl=0)
+for the former and
+[here](https://www.dropbox.com/s/cw3vfm0uqdctbyq/SeqBayesS2_filteraln2_ctenohystrica_04_mafft.zip?dl=0)
+for the latter.
 You should unzip and save the content inside 
 [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft) 
 and 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft),
+[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln),
 respectively, so you can reproduce our results. 
 
 ## 5. Final alignments
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns/rodentia_ctenohystrica),
-you can find the directory that contains the final alignments for each individual partition as well as the alignment with the five partitions 
+[Here](https://www.dropbox.com/s/9cjmclt4q2h9p3n/SeqBayesS2_Raln_ctenohystrica_ALLFILTERS.zip?dl=0)
+you can download the final alignments for each individual partition as well as the alignment with the five partitions 
 in separate blocks. The previous alignments have been moved to a directory called 
-[before_adding_new_taxa](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns/rodentia_ctenohystrica/before_adding_new_taxa).
-You can download the alignments that should be saved in this directory 
-[here]().
+`before_adding_new_taxa`, also present in this zip file.

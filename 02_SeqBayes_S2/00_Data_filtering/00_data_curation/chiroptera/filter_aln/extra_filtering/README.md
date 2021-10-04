@@ -13,26 +13,26 @@ which is located in the
 [`00_R_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing)
 directory, is used to find out which taxa have to be allocated to each data subset.
 The input file is
-[`main_bats_uncalib.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/main_bats_uncalib.tree).
+[`main_bats_uncalib.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/main_bats_uncalib.tree)
 The output files are
-[`ChiroSubt1_megachiroptera.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/ChiroSubt1_megachiroptera.tree).
+[`ChiroSubt1_megachiroptera.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/ChiroSubt1_megachiroptera.tree)
 and
 [`ChiroSubt2_microchiroptera.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/ChiroSubt2_microchiroptera.tree).
-We inspected 
+We visually inspected 
 so we could then manually generate the two calibrated subtrees that are saved in this same directory.
 
 ## 2. Generating alignments 
 Two of the output files generated in the previous step by the R script, 
-[`255sp_Lchiro_megachiroptera_list.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/255sp_Lchiro_megachiroptera_list.txt).
+[`255sp_Lchiro_megachiroptera_list.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/255sp_Lchiro_megachiroptera_list.txt)
 and
-[`630sp_Lchiro_microchiroptera_list.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/630sp_Lchiro_microchiroptera_list.txt).
+[`633sp_Lchiro_microchiroptera_list.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/633sp_Lchiro_microchiroptera_list.txt)
 files, are used as input files in this step to generate the data alignments for these two 
 data subsets.
 
 We used the perl script
-[`Subset_alignments.pl`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing/Subset_alignments.pl).
+[`Subset_alignments.pl`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing/Subset_alignments.pl)
 saved in the
-[`01_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing).
+[`01_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing)
 directory, for that purpose. Specifically, it reads a text file with a list of taxa names (first arg) and 
 an alignment in PHYLIP format (second arg). The third argument is the number of taxa that 
 are included in this file. 
@@ -73,7 +73,7 @@ mv chiroptera_5parts.aln chiroptera_5parts_out.aln
 
 Then, we moved the alignment subsets to the corresponding directory:
 
-```{sh}
+```sh
 # Run this code from `01_perl_parsing` directory
 for i in *aln
 do
@@ -104,7 +104,7 @@ mv *txt *csv log_subt1/
 We repeated the same for the second subtree:
 
 ```sh
-# Run this code from `perl_parsing` directory
+# Run this code from `01_perl_parsing` directory
 # Get alignments 
 for i in ../../../../../01_alignments/00_mammal_alns/chiroptera/*aln
 do

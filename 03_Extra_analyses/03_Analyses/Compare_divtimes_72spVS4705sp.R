@@ -946,11 +946,10 @@ setwd( wd )
 wd5 <- gsub( pattern = "03_Analyses..*", replacement = "02_MCMCtree/", x = wd )
 
 # 1. Create lists/vectors needed to find matching nodes
-matching_nodes_D1_nuc12mit12 <- matrix( 0, ncol = 12, nrow = length( colnames(softbounds_72sp_sum$mean) ) )
+matching_nodes_D1_nuc12mit12 <- matrix( 0, ncol = 9, nrow = length( colnames(softbounds_72sp_sum$mean) ) )
 colnames( matching_nodes_D1_nuc12mit12 ) <- c( "mean.data1", "qdown.data1", "qup.data1", 
                                         "mean.nuc12", "qdown.nuc12", "qup.nuc12",
-                                        "mean.mit12", "qdown.mit12", "qup.mit12",
-                                        "mean.all3p", "qdown.all3p", "qup.all3p" )
+                                        "mean.mit12", "qdown.mit12", "qup.mit12" )
 names_nodes <- c( "MAMMALIA", "THERIA", "DIDELPHIMORPHIA-AUSTRALIDELPHIA",
                   "EOMETATHERIA", "PLACENTALIA", "XENARTHRA-AFROTHERIA (ATLANTOGENATA)", "XENARTHRA",
                   "AFROTHERIA", "PAENUNGULATA", "BOREOEUTHERIA", "LAURASIATHERIA (Lipotyphla-Carnivora)", 
@@ -1089,44 +1088,6 @@ matching_nodes_D1_nuc12mit12 <- sum_tableD1NM( inp_mat = matching_nodes_D1_nuc12
                                                subtree = "MIT-12CP",
                                                ready72 = TRUE, col_pos = c(7, 8, 9) )
 
-# ## 3. MitRNA -- NOT USED IN PLOTS OR SUMMARY
-# mitrna_f_sum        <- find_prob_MCMC( num_dirs = 16, num_chains = 1, delcol = 2,
-#                                        name_dir_subt = paste( wd5, "3", sep = "" ),
-#                                        num_divt = 71,
-#                                        node_calib = "Calibs_nodes_72sp.csv",
-#                                        perc = 0.975, clean = TRUE, new = FALSE, new_rev = TRUE )
-# mitrnaF_half1 <- apply( X = mitrna_f_sum$mean[1:8,], MARGIN = 2, FUN = mean )
-# mitrnaF_half2 <- apply( X = mitrna_f_sum$mean[9:16,], MARGIN = 2, FUN = mean )
-# 
-# pdf( "plots/03_convergence_plot_mitRNA.pdf", paper = "a4" )
-# plot_convergence( name_dir_subt = "72sp - mitRNA", mean_divt1 = mitrnaF_half1,
-#                   mean_divt2 = mitrnaF_half2, num_runs = 16 )
-# dev.off() 
-
-## 4. All 3 parts
-all3parts_f_sum        <- find_prob_MCMC( num_dirs = 16, num_chains = 1, delcol = 6,
-                                          name_dir_subt = paste( wd5, "4", sep = "" ),
-                                          num_divt = 71,
-                                          node_calib = "Calibs_nodes_72sp.csv",
-                                          perc = 0.975, clean = TRUE, new = FALSE, new_rev = TRUE )
-all3partsF_half1 <- apply( X = all3parts_f_sum$mean[1:8,], MARGIN = 2, FUN = mean )
-all3partsF_half2 <- apply( X = all3parts_f_sum$mean[9:16,], MARGIN = 2, FUN = mean )
-
-pdf( "plots/04_convergence_plot_all3parts.pdf", paper = "a4" )
-plot_convergence( name_dir_subt = "72sp - all 3 parts", mean_divt1 = all3partsF_half1,
-                  mean_divt2 = all3partsF_half2, num_runs = 16 )
-dev.off() 
-
-# Reuse function to generate new tsv
-matching_nodes_D1_nuc12mit12 <- sum_tableD1NM( inp_mat = matching_nodes_D1_nuc12mit12,
-                                               tmp_nodes = 73:143,
-                                               tmp_pos = tmp_pos,
-                                               sum_list = all3parts_f_sum,
-                                               tmp_nodes72 = tmp_nodes72,
-                                               sum_list72 = softbounds_72sp_sum,
-                                               subtree = "ALL 3 PARTS",
-                                               ready72 = TRUE, col_pos = c(10, 11, 12) )
-
 ## FINAL STEP: WRITE A TABLE WITH THE SUMMARY !
 write.table( x = matching_nodes_D1_nuc12mit12,
              file = "../../03_Extra_analyses/03_Analyses/Matching_table_72sp_NUC12CP_MIT12CP.tsv",
@@ -1147,14 +1108,6 @@ mean.qdown.72sp.NUC12CP  <- apply( X = nuc12cp_f_sum$qdown*100, MARGIN = 2, FUN 
 mean.divt.72sp.MIT12CP   <- apply( X = mit12cp_f_sum$mean*100, MARGIN = 2, FUN = mean )
 mean.qup.72sp.MIT12CP    <- apply( X = mit12cp_f_sum$qup*100, MARGIN = 2, FUN = mean )
 mean.qdown.72sp.MIT12CP  <- apply( X = mit12cp_f_sum$qdown*100, MARGIN = 2, FUN = mean )
-
-# mean.divt.72sp.MITRNA    <- apply( X = mitrna_f_sum$mean*100, MARGIN = 2, FUN = mean )
-# mean.qup.72sp.MITRNA     <- apply( X = mitrna_f_sum$qup*100, MARGIN = 2, FUN = mean )
-# mean.qdown.72sp.MITRNA   <- apply( X = mitrna_f_sum$qdown*100, MARGIN = 2, FUN = mean )
-
-mean.divt.72sp.3PARTS    <- apply( X = all3parts_f_sum$mean*100, MARGIN = 2, FUN = mean )
-mean.qup.72sp.3PARTS     <- apply( X = all3parts_f_sum$qup*100, MARGIN = 2, FUN = mean )
-mean.qdown.72sp.3PARTS   <- apply( X = all3parts_f_sum$qdown*100, MARGIN = 2, FUN = mean )
 
 # Do the same for those obtained with matching nodes
 #[1] "mean.data1"      "qdown.data1"     "qup.data1"       "mean.data2"      "qdown.data1"     "qup.data2"       "data2-nodenames"
@@ -1524,24 +1477,3 @@ min( ESS_mit12CPf$stats$Rhat )
 dim( mit12cp_f_sum$all_mcmc )
 #[1] 320016     71
 
-ESS_mitRNAf      <- sum_MCMC_ESS( x = mitrna_f_sum$all_mcmc, coda_fun = TRUE )
-ESS_mitRNAf
-# Tail-ESS Bulk-ESS coda-ESS
-# Med.   157586   156993 317029.7
-# Min.   147271   127928 253669.0
-# Max.   159595   160951 323374.0
-min( ESS_mitRNAf$stats$Rhat )
-#[1] 0.999994
-dim( mitrna_f_sum$all_mcmc )
-#[1] 320016     71
-
-ESS_all3partsf      <- sum_MCMC_ESS( x = all3parts_f_sum$all_mcmc, coda_fun = TRUE )
-ESS_all3partsf$tab
-# Tail-ESS Bulk-ESS  coda-ESS
-# Med.   125335   100993 202613.61
-# Min.    47743    17870  26419.67
-# Max.   156509   144865 290685.92
-min( ESS_all3partsf$stats$Rhat )
-#[1] 0.9999938
-dim( all3parts_f_sum$all_mcmc )
-#[1] 320016     71

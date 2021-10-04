@@ -3,7 +3,7 @@
 ## 1. Get tree topology and add calibrations
 We use the R script [`Calibrations_Lcetartiodactyla.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/Calibrations_Lcetartiodactyla.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`laurasiatheria_cetartiodactyla_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_rooted_calibnames.tree)
+[`laurasiatheria_cetartiodactyla_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
@@ -25,9 +25,9 @@ After running this script, you will have the following files:
      |- Calibrations_LaurCetart.txt                               # Input file used by the R script. It matches the tag names
      |                                                            # in input tree with corresponding calibrations to be replaced
      |- Calibrations_Lcetartiodactyla.R                           # R script
-     |- laurasiatheria_cetartiodactyla_rooted_baseml.tree         # File manually generated after running R script 
-     |                                                            # to be used by BASEML (calibrations manually removed)
      |- laurasiatheria_cetartiodactyla_rooted_calibnames.tree     # Input file used by the R script
+     |- laurasiatheria_cetartiodactyla_rooted_baseml.tree         # File manually generated after running R script 
+                                                                  # to be used by BASEML (calibrations manually removed)
 ```
 
 Note that we have manually generated the

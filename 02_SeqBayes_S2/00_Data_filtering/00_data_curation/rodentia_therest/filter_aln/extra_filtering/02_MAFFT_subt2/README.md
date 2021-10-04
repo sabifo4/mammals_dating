@@ -6,7 +6,8 @@ script appends the sequences from the taxa within the first rodentia subtree spe
 [`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2/01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
-of the partitions:
+of the partitions (before running the code below, make sure you have generated the alignments 
+for this data subset in previous steps!):
 
 ```sh
 # Run from `01_perl_parsing`
@@ -64,6 +65,10 @@ mv rod_subt2_4.txt rod_subt2.txt
 perl ../concatenated_format.pl rod_subt2.txt ../2/species.txt
 ```
 
+You can download
+[this zip file](https://www.dropbox.com/s/69706ei7iyx6fy6/SeqBayesS2_filteraln2_rodtherest_02_MAFFT_subt2_01.zip?dl=0), 
+which contains the data you should have generated with the code above. 
+
 # 2. Getting alignment with new taxa 
 We copied the files in the directories `01_perl_parsing/[2-6]/forMAFFT` to directories 
 labelled from 2 to 6 to run MAFFT in the Apocrita HPC.
@@ -76,7 +81,7 @@ mafft --add $new_seq $aln_name > $out_name
 
 To get the fasta sequences in one line, we ran the following code:
 
-```
+```sh
 # Run from the directory `02_mafft/mafft_rodsubt2`
 for i in `seq 2 6`
 do
@@ -126,7 +131,7 @@ done
 Now, we can concatenate the sequences in the same order that had been previously done 
 (i.e., mt12cp > mt3cp > mtrna > nt12cp > nt3cp):
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt2`
 mkdir 1
 cd 1
@@ -140,7 +145,7 @@ mv rod_subt2_4.fasta rod_subt2.fasta
 
 Now, the last step is to convert the FASTA files into PHYLIP format:
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt2`
 for i in `seq 1 6`
 do 
@@ -156,7 +161,7 @@ done
 
 Last, we generate the file with the five partitions concatenated:
 
-```
+```sh
 # Run `02_mafft/mafft_rodsubt2`
 mkdir 7 
 cd 7 
@@ -170,3 +175,9 @@ printf "\n\n" >> rod_subt1_5parts.aln
 done 
 ```
 
+[Here](https://www.dropbox.com/s/yy2eyh4myfueg69/SeqBayesS2_filteraln2_rodtherest_02_MAFFT_subt2_02.zip?dl=0)
+you can download the directory `mafft_rodsubt2` with the data generated after 
+all the steps detailed above.
+
+[Here](https://www.dropbox.com/s/7j0my2nq02al4g8/SeqBayesS2_Raln_rod_subt2.zip?dl=0) 
+you can find the final alignments for this data subset.

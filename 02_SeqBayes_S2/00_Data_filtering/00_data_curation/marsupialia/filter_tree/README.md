@@ -19,6 +19,7 @@ After running this script, you will have the following files:
 00_Filter_trees 
      |- RAxML_tree
      |         |- marsupialia.tree             # File not used. Best-scoring ML tree obtained with RAxML
+     |- extra_filtering         
      |         
      |- 307sp_Marsupialia_MCMCtree_calib.tree  # File output by the R script
      |- 307sp_Marsupialia_spnameslist.txt      # File output by the R script
@@ -30,12 +31,10 @@ After running this script, you will have the following files:
      |- marsupialia_rooted_calibnames.tree     # Input file used by the R script
 ```
 
-Note that we have manually generated the
+Note that we manually generated the
 [`marsupialia_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/marsupialia_rooted_baseml.tree),
-which does 
-not contain the calibrations. This file will be used when running `BASEML` to compute 
-the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
-likelihood.
+which does not contain the calibrations. This file is no longer used after the tree topology 
+was updated (see below).
 
 ## 2. Manual change due to conflict with literature
 The pyhlogeny in
@@ -62,7 +61,7 @@ The tree with the topology described above was used to check
 if there were any conflicts with the calibations used.
 You can download the directories 
 with the results obtained when running `MCMCtree` without the data
-[here]().
+[here](https://www.dropbox.com/s/ymylk5f7ecjp62k/SeqBayesS2_check_conflict_marsupialia.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 directories inside the 
 [`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict)

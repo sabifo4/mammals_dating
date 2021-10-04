@@ -86,10 +86,12 @@ of the other taxa. It should be deleted!
 
 ```
 GENUS   Phalanger  has  8  taxa. Species  phalanger_maculatus_duplicate  has  0  genes that are not shared by any
-of the other taxa. It should be deleted!```
->> >> ACTION: same finding as in order: phalanger_maculatus_duplicate already removed.
+of the other taxa. It should be deleted!
+```
+>> ACTION: same finding as in order: phalanger_maculatus_duplicate already removed.   
 
-**NOTE**
+
+**NOTE**   
 Log files will be found in this same directory with the name `log_taxaNOTIN_<level>.txt`,
 being `level` the one that has been checked (i.e., family, genus, order, or subfamily). In addition, 
 you can also generate the `levels.checked.RData`, which you can use to explore the taxonomical 
