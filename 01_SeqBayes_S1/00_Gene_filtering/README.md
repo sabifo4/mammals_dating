@@ -415,7 +415,7 @@ Make sure you have enough space as its size is ~2.6Gb.
 ### 6.1. Count missing data
 You might have seen that there is a perl script called `count_missingdat_72sp.pl` 
 saved in the `000_alignments` directory, as shown above.
-You can also find it in this GitHub repository [here](01_SeqBayes_S1/00_Gene_filtering/scripts/count_missingdat_72sp.pl).
+You can also find it in this GitHub repository [here](scripts/count_missingdat_72sp.pl).
 Note that, if you want to use it to reproduce our results, you will have to download the zip file with the
 [`000_alignments`](https://www.dropbox.com/s/mrvzzvd4o6qqyqk/000_alignments.zip?dl=0)
 as it uses the file architecture described above.
