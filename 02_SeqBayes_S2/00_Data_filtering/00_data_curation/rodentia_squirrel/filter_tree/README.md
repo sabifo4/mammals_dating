@@ -1,17 +1,17 @@
 # Rodentia squirrel (Sciuridae and related) - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Rsquirrel.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/00_Filter_trees/Calibrations_Rsquirrel.R)
+We use the R script [`Calibrations_Rsquirrel.R`](00_Filter_trees/Calibrations_Rsquirrel.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`rodentia_squirrel_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/00_Filter_trees/rodentia_squirrel_rooted_calibnames.tree)
+[`rodentia_squirrel_rooted_calibnames.tree`](00_Filter_trees/rodentia_squirrel_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_squirrel.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/00_Filter_trees/Calibrations_squirrel.txt)
+[`Calibrations_squirrel.txt`](00_Filter_trees/Calibrations_squirrel.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_squirrel).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/rodentia_squirrel).
 
 After running this script, you will have the following files:
 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`rodentia_squirrel_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/00_Filter_trees/rodentia_squirrel_rooted_baseml.tree),
+[`rodentia_squirrel_rooted_baseml.tree`](00_Filter_trees/rodentia_squirrel_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -45,7 +45,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/xnog10niawetap3/SeqBayesS2_check_conflict_sciuridae.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -59,7 +59,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -102,7 +102,7 @@ Calibrations used:
    * Mammalia: ST(1.642,0.425,12.652,1714.565)    
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict/00_Only_ST_RodSquirrel_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_RodSquirrel_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -113,16 +113,16 @@ Calibrations used:
    * Sciuromorpha: B(0.407,0.592)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict/01_SBnST_RodSquirrel_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_RodSquirrel_MCMCruns.png">
 </p>
 
 **NOTE**: There is only one ST calibration, so we do not have the plots with quantiles and deviations 
 that we provide with the other data subsets. Instead, we just provide the
-[`tsv` file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict/01_SBnST_RodSquirrel_sumstats.tsv)
+[`tsv` file](01_Check_conflict/01_SBnST_RodSquirrel_sumstats.tsv)
 with the corresponding values in the directory.
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 

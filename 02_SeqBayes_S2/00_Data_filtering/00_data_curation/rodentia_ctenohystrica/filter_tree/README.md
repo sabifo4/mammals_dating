@@ -1,17 +1,17 @@
 # Rodentia ctenohystrica - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Rctenohystrica.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/Calibrations_Rctenohystrica.R)
+We use the R script [`Calibrations_Rctenohystrica.R`](00_Filter_trees/Calibrations_Rctenohystrica.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`rodentia_ctenohystrica_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/rodentia_ctenohystrica_rooted_calibnames.tree)
+[`rodentia_ctenohystrica_rooted_calibnames.tree`](00_Filter_trees/rodentia_ctenohystrica_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_ctenohystrica.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/Calibrations_ctenohystrica.txt)
+[`Calibrations_ctenohystrica.txt`](00_Filter_trees/Calibrations_ctenohystrica.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica) 
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica) 
 (now saved inside `before_updating_topology` directory; see below).
 
 After running this script, you will have the following files:
@@ -33,7 +33,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`rodentia_ctenohystrica_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/rodentia_ctenohystrica_rooted_baseml.tree),
+[`rodentia_ctenohystrica_rooted_baseml.tree`](00_Filter_trees/rodentia_ctenohystrica_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file was used before new taxa were added in the tree topology (see below).
 
@@ -41,16 +41,16 @@ not contain the calibrations. This file was used before new taxa were added in t
 After an extra data filtering when we added two extra taxa (i.e., *Ictidomys tridecemlineatus* 
 and *Fukomys damarensis*), the tree topology changed to include the placement of these 
 two taxa (see the details in
-[this `README.md` file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/README.md),
+[this `README.md` file](../filter_aln/README.md),
 section `EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT`, if you did not go through the data filtering before,
 which explains why we added these two taxa 
 and how this was done).
 
 The updated file to be used by `BASEML` and the calibrated tree before the checks 
 shown in the next step can be found
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/extra_analyses). 
+[here](00_Filter_trees/extra_analyses). 
 The "dummy" alignments have also been updated in their corresponding directory 
-[here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica),
+[here](../../../01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica),
 where the previous version has been saved in a directory called `before_updating_topology`.
 
 
@@ -63,7 +63,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/hqr0dvcvmvxc5tn/SeqBayesS2_check_conflict_ctenohystrica.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -77,7 +77,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -126,7 +126,7 @@ Calibrations used:
    * *Chinchilla lanigera*-*Octodon degus*: ST(0.317,0.014,0.203,19.215)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict/00_Only_ST_RodCtenohystrica_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_RodCtenohystrica_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -143,16 +143,16 @@ Calibrations used:
    * Abrocomidae: B(0.01778,0.09112)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict/01_SBnST_RodCtenohystrica_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_RodCtenohystrica_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS rodentia_ctenohystrica data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict/01_SBnST_RodCtenohystrica_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_RodCtenohystrica_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 
