@@ -6,7 +6,7 @@ Muridae|'ST(0.174,0.035,3.117,381.97)'
 Mauratus-Cgriseus|'ST(0.088,0.022,3.756,209.065)'
 Peromyscys-Microtus|'ST(0.128,0.029,3.532,404.416)'
 Rattus-Mus|'ST(0.089,0.024,3.794,547.445)'
-Mpahari-rest|'ST(0.043,0.013,3.575,94.222)' # B(0.039,0.060)
+Mpahari-rest|'ST(0.043,0.013,3.575,94.222)'
 Mcaroli-rest|'ST(0.022,0.007,3.426,86.245)'
 Mspretus-Mmusculus|'ST(0.01,0.003,3.38,83.529)'
 Monotremata|'B(0.1289,1.345)'
