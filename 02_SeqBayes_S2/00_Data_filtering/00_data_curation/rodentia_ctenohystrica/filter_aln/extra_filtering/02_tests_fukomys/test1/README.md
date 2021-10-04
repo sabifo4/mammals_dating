@@ -1,6 +1,7 @@
 # 1. Get mit data
-We have extracted the sequences for all Fukomys species and _Heterocephalus glaber_ from the directory
-[`ctenohystrica/unfiltered`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/00_mammal_alns/ctenohystrica/unfiltered).
+We have extracted the sequences for all Fukomys species and _Heterocephalus glaber_ from the 
+sequences that are generated before applying any filtering step so we can identify 
+what the issue with the sequences are (download from [here](https://www.dropbox.com/s/2lh9kg8i1xhhds5/SeqBayesS2_Raln_ctenohystrica_unfiltered.zip?dl=0)).
 Now, we are going to run `RAxML` using all 14 species (using the mole rat as an outgroup).
 The command used for this purpose will be the following:
 

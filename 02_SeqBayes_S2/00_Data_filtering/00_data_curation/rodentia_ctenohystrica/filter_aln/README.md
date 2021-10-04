@@ -57,13 +57,13 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln)
+Within the `filter_aln`
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
-a function within the R script [`Filter_lineages.R`](src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
+a function within the R script [`Filter_lineages.R`](../../../../../src/Filter_lineages.R)
+in the `src` directory and the [`genes.txt`](../../genes.txt)
 file. There are several messages printed out by this script as all the rodents are 
 parsed at the same time. You might have seen that, due to the large number of rodent species, 
 we have had to divide them into different data subsets: "rodentia_squirrel",
@@ -174,7 +174,7 @@ This means that, even though this is the placement found in the ML tree, other r
 found they cluster elsewhere. Therefore, we flagged them for future and further analyses that might be carried out,
 but that are not part of the scope of this project. 
 The output files (`png` and `FigTree` files) have been saved in the
-[`checked_aln/taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_aln/checked_aln/taxonomical_check)
+[`checked_aln/taxonomical_check`](checked_aln/taxonomical_check)
 directory. 
 
 The taxa to be renamed and/or removed are the following:   
@@ -243,7 +243,7 @@ these checks before 2018 (i.e., they had already been "cleaned", while the data 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
 in the corresponding `README.md` files for these data subsets or the directory
-[`taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/checked_aln/taxonomical_check)
+[`taxonomical_check`](checked_aln/taxonomical_check)
 You will see that the `filter_aln` directory for these four data subsets
 contains a csv file with the details that were followed to filter the corresponding alignments (12CP and 3CP). 
 Note that this csv file is equivalent to the excel sheet you find in this directory for 
@@ -271,18 +271,18 @@ Now that we are sure that both files with the 12CP-alignment (`alignment.phylip`
 (`alignment_nt3cp.phylip`) are at the same "fitering stage"
 we can proceed to concatenate the alignment with the third 
 codon positions to the alignment with 12CPs using the R script
-[`Concatenate_seqs_for_MCMCtree_unfiltered.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R)
+[`Concatenate_seqs_for_MCMCtree_unfiltered.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R)
 so we can have the concatenated alignment. 
 
 Instructions to follow:   
 
-   * Open the RScript [`Concatenate_seqs_for_MCMCtree_unfiltered.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R) 
+   * Open the RScript [`Concatenate_seqs_for_MCMCtree_unfiltered.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R) 
    in RStudio and change line 25 so it is `subt    <- "rodentia_ctenohystrica"` and uncomment line 27.
    This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/rodentia_ctenohystrica/unfiltered/`
-   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](../../../01_alignments). 
    Log and RData files will be saved inside
-   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
+   [`00_Data_filtering/01_alignments/Rout`](../../../01_alignments/Rout/log_concatenation).   
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/rodentia_ctenohystrica/unfiltered/` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 
@@ -385,7 +385,7 @@ grep -o '[a-z].* ' alignment.phylip > names_filt.txt
 ## 4. Data partitioning 
 Now that we have the concatenated and filtered alignment ready, we need to generate the filtered
 partitioned alignments by running the R script 
-[`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
+[`Partition_seqs_for_MCMCtree_after_filtering.R`](../../../01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
 
 Instructions to follow: 
 
@@ -393,8 +393,8 @@ Instructions to follow:
    in RStudio and change line 24 so it is `subt    <- "rodentia_ctenohystrica"` and uncomment line 25.
    Now, we can run it from RStudio. This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions,
-   inside [`01_alignments`](/02_SeqBayes_S2/00_Data_filtering/01_alignments).
-   Log files and Rdata can be found [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   inside [`01_alignments`](../../../01_alignments).
+   Log files and Rdata can be found [here](../../../01_alignments/Rout/log_concatenation). 
       > NOTE: Updated `partitions.txt` file inside `00_mammal_alns/rodentia_ctenohystrica/` generated.   
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 
@@ -416,7 +416,7 @@ The procedure followed was the following:
 
 ## 1. Generate data subsets
 The directory
-[`00_perl_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/00_perl_parsing)
+[`00_perl_parsing`](extra_filtering/00_perl_parsing)
 has all the details about the scripts used to reformat the alignments for this data subset before we 
 added included the data for the new taxa. You can download all the reformatted alignments generated as well 
 as the data needed to run MAFFT for the re-alignment
@@ -424,31 +424,31 @@ as the data needed to run MAFFT for the re-alignment
 
 ## 2. Generate new alignments with new taxon 
 The directory
-[`01_mafft`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/01_mafft) 
+[`01_mafft`](extra_filtering/01_mafft) 
 contains all the data used to generate the alignment that includes the *Ictidomys_tridecemlineatus* sequence.
 This is the species which sequence data was needed to include the calibration for the node "Rodentia".
 Please access this directory using the link provided above to go through the steps followed. You can download the 
 `aln` directory [here](https://www.dropbox.com/s/seqc0qbwuxk8ev2/SeqBayesS2_filteraln2_ctenohystrica_01_mafft.zip?dl=0),
 which should be saved inside the 
-[`01_mafft`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/01_mafft) 
+[`01_mafft`](extra_filtering/01_mafft) 
 directory mentioned above to reproduce our results. 
 
 ## 3. Tests with *Fukomys damarensis*
 We carried out several tests to decide which *Fukomys damarensis* sequence was going to be included 
 in this data subset for rodentia ctenohystrica. Please access 
-[`02_tests_fukomys`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys)
+[`02_tests_fukomys`](extra_filtering/02_tests_fukomys)
 using the link provided to go through the steps followed. You can download the tests carried out 
 [here](https://www.dropbox.com/s/dcgmy6syj4z87l6/SeqBayesS2_filteraln2_ctenohystrica_02_tests_fukomys.zip?dl=0). 
 You should unzip and save the content inside the
-[`02_tests_fukomys](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys)
+[`02_tests_fukomys](extra_filtering/02_tests_fukomys)
 directory to reproduce the results. 
 
 ## 4. Generate new alignments with *Fukomys damarensis* 
 The directory
-[`03_mafft`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft) 
+[`03_mafft`](extra_filtering/03_mafft) 
 contains all the data used to generate the alignment with both *Ictidomys_tridecemlineatus* and
 *Fukomys damarensis* sequences. The information about how to proceed with the mitochondrial alignments can be found in the directory 
-[`04_mafft_mitaln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln). 
+[`04_mafft_mitaln`](extra_filtering/04_mafft_mitaln). 
 Please access the two directories using the links provided above to go through the steps followed to generate 
 the nuclear and mitochondrial alignments. You can download the `aln` directory 
 [here](https://www.dropbox.com/s/h73spqokux4v230/SeqBayesS2_filteraln2_ctenohystrica_03_mafft.zip?dl=0)
@@ -456,9 +456,9 @@ for the former and
 [here](https://www.dropbox.com/s/cw3vfm0uqdctbyq/SeqBayesS2_filteraln2_ctenohystrica_04_mafft.zip?dl=0)
 for the latter.
 You should unzip and save the content inside 
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/03_mafft) 
+[here](extra_filtering/03_mafft) 
 and 
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln),
+[here](extra_filtering/04_mafft_mitaln),
 respectively, so you can reproduce our results. 
 
 ## 5. Final alignments

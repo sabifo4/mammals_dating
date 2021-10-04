@@ -63,7 +63,7 @@ Specifically, the R script [`parse_lineage.R`](parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
 a function within the R script [`Filter_lineages.R`](../../../../../src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](../../00_data_curation/genes.txt)
+in the `src` directory and the [`genes.txt`](../../genes.txt)
 file. There are several messages printed out by this script as all the rodents are 
 parsed at the same time. You might have seen that, due to the large number of rodent species, 
 we have had to divide them into different data subsets: "rodentia_therest",
