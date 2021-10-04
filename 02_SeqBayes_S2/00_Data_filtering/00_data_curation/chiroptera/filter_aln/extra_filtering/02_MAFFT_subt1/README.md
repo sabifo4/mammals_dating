@@ -1,9 +1,9 @@
 # 1. Generate fasta files with new taxa
 We use the perl script
-[`phylip_to_fasta_and_extraseq.pl`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/phylip_to_fasta_and_extraseq.pl)
+[`phylip_to_fasta_and_extraseq.pl`](01_perl_parsing/phylip_to_fasta_and_extraseq.pl)
 to convert the files for the first chiroptera subtree from phylip format to fasta format. In addition, this
 script appends the sequences from the taxa within the second chiroptera subtree specified in the file 
-[`taxa_to_add.txt`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
+[`taxa_to_add.txt`](01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
 of the partitions (before running the code below, make sure you have generated the alignments 

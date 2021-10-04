@@ -42,13 +42,13 @@ make sure that you reproduce the same results that we show here.
 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_aln)
+Within the `filter_aln`
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
-a function within the R script [`Filter_lineages.R`](src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
+a function within the R script [`Filter_lineages.R`](../../../../../src/Filter_lineages.R)
+in the `src` directory and the [`genes.txt`](../../genes.txt)
 file. The messages printed out by this script are the following:
 
 ```
@@ -98,7 +98,7 @@ you unzip the file which link provided above, inside a directory called `checked
 
 The first manual checks suggest some species names have to be changed as well as some 
 sequences are to be removed. The justifications can be found in the file 
-[`euarchonta_taxonomy_check.csv`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_aln/euarchonta_taxonomy_check.csv). 
+[`euarchonta_taxonomy_check.csv`](euarchonta_taxonomy_check.csv). 
 The filtering you will see in the commands below was already 
 carried out for `alignment.phylip`, but has had to be done again for `alignment_nt3cp.phylip` so both 
 alignment files are at the same filtering level. The code is the following:
@@ -240,18 +240,18 @@ Now that both files with the 12CP-alignment (`alignment.phylip`) and 3CP-alignme
 have the same taxa names and have had the same filtering procedure carried out,
 we can proceed to concatenate the alignment with the third 
 codon positions to the alignment with 12CPs using the R script
-[`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R)
+[`Concatenate_seqs_for_MCMCtree.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree.R)
 so we can have the concatenated alignment. 
 
 Instructions to follow:    
 
-   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R),
+   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree.R),
    change line 24 so it is `subt    <- "euarchonta"`, and run it from RStudio. This script
    will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/euarchonta`
-   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](../../../01_alignments). 
    Log and RData files will be saved inside 
-   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   [`00_Data_filtering/01_alignments/Rout`](../../../01_alignments/Rout/log_concatenation). 
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/euarchonta` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 
@@ -610,11 +610,11 @@ grep -o '[a-z].* ' alignment.phylip > names_3nt_filt.txt
 ## 4. Data partitioning 
 Now that we have the concatenated and filtered alignment ready, we need to generate the filtered
 partitioned alignments by running the R script 
-[`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
+[`Partition_seqs_for_MCMCtree_after_filtering.R`](../../../01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
 As we had already created partitioned alignments 
 before the subspecies check had been applied, we will need to rearrange the files output for
 this data subset in the
-[`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments)
+[`00_Data_filtering/01_alignments/`](../../../01_alignments)
 subdirectories:
 
 ```sh
@@ -636,12 +636,12 @@ mv *euarchonta*txt *euarchonta*RData euarchonta_old
 
 Now, run the Rscript mentioned above following the next instructions:   
 
-   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
+   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](../../../01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
    in RStudio and change line 24 so it is `subt    <- "euarchonta"` and uncomment line 30. Now, we can run it from RStudio. 
    This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside the directory `00_mammal_alns/euarchonta/`
-   inside [`01_alignments`](/02_SeqBayes_S2/00_Data_filtering/01_alignments).
-   Log files and Rdata can be found [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   inside [`01_alignments`](../../../01_alignments).
+   Log files and Rdata can be found [here](../../../01_alignments/Rout/log_concatenation). 
       > NOTE: Updated `partitions.txt` file inside `00_mammal_alns/euarchonta/`.   
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 

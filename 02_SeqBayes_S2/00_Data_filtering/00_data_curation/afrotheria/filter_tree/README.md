@@ -1,17 +1,17 @@
 # Afrotheria - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Afrotheria.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/Calibrations_Afrotheria.R)
+We use the R script [`Calibrations_Afrotheria.R`](00_Filter_trees/Calibrations_Afrotheria.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`afrotheria_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/afrotheria_rooted_calibnames.tree)
+[`afrotheria_rooted_calibnames.tree`](00_Filter_trees/afrotheria_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Afrotheria.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/Calibrations_Afrotheria.txt)
+[`Calibrations_Afrotheria.txt`](00_Filter_trees/Calibrations_Afrotheria.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/afrotheria).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/afrotheria).
 
 >> **NOTE**: Now, this output "dummy" alignment is saved in the `before_updating_topology` directory   
 >> that you will find when you click the link above. The "dummy_aln.aln" file you will see in the   
@@ -35,7 +35,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`afrotheria_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/afrotheria_rooted_baseml.tree),
+[`afrotheria_rooted_baseml.tree`](00_Filter_trees/afrotheria_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -43,7 +43,7 @@ likelihood.
 
 ## 2. Manual change due to conflict with literature
 The pyhlogeny in
-[`61sp_Afrotheria_MCMCtree_calib.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/61sp_Afrotheria_MCMCtree_calib.tree)
+[`61sp_Afrotheria_MCMCtree_calib.tree`](00_Filter_trees/61sp_Afrotheria_MCMCtree_calib.tree)
 has an outdated 
 tree topology that does not correspond to the latest literature. In addition, 
 one species needs to be further removed as its sequence does not seem to correspond 
@@ -58,9 +58,10 @@ Esselstyn et al. 2017: fig. 1 (3700 UCEs).
 
 The updated file to be used by `BASEML` and the calibrated tree before the checks 
 shown in the next step can be found
-[here](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/00_Filter_trees/extra_filtering). 
+[here](00_Filter_trees/extra_filtering). 
 The "dummy" alignments have also been updated in their corresponding directory 
-[here](), where the previous version has been saved in a directory called `before_updating_topology`.
+[here](../../../01_alignments/01_mammal_dummy_alns/afrotheria), where the previous version has been saved
+in a directory called `before_updating_topology`.
 
 ## 3. Check if calibrations are in conflict
 The tree with the topology described above (60 taxa) was used to check 
@@ -70,7 +71,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/1qrhjwgqi1v0qez/SeqBayesS2_check_conflict_afrotheria.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -84,7 +85,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -129,7 +130,7 @@ Calibrations used:
    * Paenungulata: ST(0.55,0.028,1.247,14.653)    
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/00_Only_ST_Afrotheria_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_Afrotheria_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -146,16 +147,16 @@ Calibrations used:
    * Hyracoidea: B(0.05333,0.339)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/01_SBnST_Afrotheria_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Afrotheria_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS Afrotheria data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/01_Check_conflict/01_SBnST_Afrotheria_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Afrotheria_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 

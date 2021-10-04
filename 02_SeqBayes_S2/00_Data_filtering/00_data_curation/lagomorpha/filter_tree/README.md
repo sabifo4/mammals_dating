@@ -1,17 +1,17 @@
 # Lagomorpha - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Lagomorpha.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/00_Filter_trees/Calibrations_Lagomorpha.R)
+We use the R script [`Calibrations_Lagomorpha.R`](00_Filter_trees/Calibrations_Lagomorpha.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`lagomorpha_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/00_Filter_trees/lagomorpha_rooted_calibnames.tree)
+[`lagomorpha_rooted_calibnames.tree`](00_Filter_trees/lagomorpha_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Lagomorpha.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/00_Filter_trees/Calibrations_Lagomorpha.txt)
+[`Calibrations_Lagomorpha.txt`](00_Filter_trees/Calibrations_Lagomorpha.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/lagomorpha).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/lagomorpha).
 
 After running this script, you will have the following files:
 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`lagomorpha_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/00_Filter_trees/lagomorpha_rooted_baseml.tree),
+[`lagomorpha_rooted_baseml.tree`](00_Filter_trees/lagomorpha_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -44,7 +44,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/50lsxk3gw9b1gr8/SeqBayesS2_check_conflict_lagomorpha.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -58,7 +58,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -103,7 +103,7 @@ Calibrations used:
    * Lagomorpha: ST(0.474,0.008,0.293,5.274)   
 
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/01_Check_conflict/00_Only_ST_Lagomorpha_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_Lagomorpha_MCMCruns.png">
 </p>
 
 
@@ -115,16 +115,16 @@ Calibrations used:
    * Tachyglossidae: B(0.0258,1.345)      
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/01_Check_conflict/01_SBnST_Lagomorpha_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Lagomorpha_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS lagomorpha data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/01_Check_conflict/01_SBnST_Lagomorpha_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Lagomorpha_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 

@@ -1,13 +1,13 @@
 # Chiroptera - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Lchiroptera.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/Calibrations_Lchiroptera.R)
+We use the R script [`Calibrations_Lchiroptera.R`](00_Filter_trees/Calibrations_Lchiroptera.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`laurasiatheria_chiroptera_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/laurasiatheria_chiroptera_calibnames.tree)
+[`laurasiatheria_chiroptera_calibnames.tree`](00_Filter_trees/laurasiatheria_chiroptera_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_LaurChiroptera.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/Calibrations_LaurChiroptera.txt)
+[`Calibrations_LaurChiroptera.txt`](00_Filter_trees/Calibrations_LaurChiroptera.txt)
 file. 
 
 After running this script, you will have the following files:
@@ -29,7 +29,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we manually generated the
-[`laurasiatheria_chiroptera_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/laurasiatheria_chiroptera_rooted_baseml.tree),
+[`laurasiatheria_chiroptera_rooted_baseml.tree`](00_Filter_trees/laurasiatheria_chiroptera_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file was used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -39,19 +39,19 @@ into two.
 ## 2. Generating subtree -- splitting the main tree into two
 After partitioning the big data subset (885 bat species in "chiroptera" data subset) into two 
 data subsets (see the details in
-[this `README.md` file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/README.md),
+[this `README.md` file](../filter_aln/README.md),
 section `# EXTRA FILTERING -- DATA SUBSETTING`, if you did not go through the data filtering before,
 which explains why we further partition "chiroptera").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/extra_filtering).
+[here](00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
-(find [here](02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera_subt1)
+(find [here](../../../01_alignments/01_mammal_dummy_alns/chiroptera_subt1)
 the one for the first subtree and 
-[here](02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/chiroptera_subt2)
+[here](../../../01_alignments/01_mammal_dummy_alns/chiroptera_subt2)
 the one for the second subtree) and used them in the subsequent steps.
 
 ## 3. Check if calibrations are in conflict
@@ -64,7 +64,7 @@ for the first subtree and
 [here](https://www.dropbox.com/s/yv5uhhajg71ibr9/SeqBayesS2_check_conflict_chirosubt2.zip?dl=0)
 for the second subtree.
 Once you download them, you should unzip their content inside the corresponding
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory for each subtree:
 
 ```
@@ -116,7 +116,7 @@ Calibrations used:
    * Chiroptera: ST(0.596,0.016,-1.239,13.572)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree1/00_Only_ST_L.chiroptera_subt1_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree1/00_Only_ST_L.chiroptera_subt1_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -129,16 +129,16 @@ Calibrations used:
    * Craseonycteridae-Megadermatidae: B(0.339,0.478)   
   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree1/01_SBnST_L.chiroptera_subt1_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree1/01_SBnST_L.chiroptera_subt1_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS chiroptera_subt1 data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree1/01_SBnST_L.chiroptera_subt1_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree1/01_SBnST_L.chiroptera_subt1_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_Final_tree_topology)
 directory.
 
 ## Chiroptera subtree 2
@@ -149,7 +149,7 @@ Calibrations used:
    * Chiroptera: ST(0.596,0.016,-1.239,13.572)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree2/00_Only_ST_L.chiroptera_subt2_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree2/00_Only_ST_L.chiroptera_subt2_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -162,16 +162,16 @@ Calibrations used:
    * Molossidae-V-M-N: B(0.38,0.56)   
   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree2/01_SBnST_L.chiroptera_subt2_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree2/01_SBnST_L.chiroptera_subt2_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS chiroptera_subt2 data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict/01_Check_conflict_chiroptera_subtree2/01_SBnST_L.chiroptera_subt2_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_chiroptera_subtree2/01_SBnST_L.chiroptera_subt2_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 
