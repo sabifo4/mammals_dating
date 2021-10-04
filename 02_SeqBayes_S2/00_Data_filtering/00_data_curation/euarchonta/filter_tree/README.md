@@ -1,17 +1,17 @@
 # Euarchonta - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Euarchonta.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.R)
+We use the R script [`Calibrations_Euarchonta.R`](00_Filter_trees/Calibrations_Euarchonta.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`euarchonta_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_calibnames.tree)
+[`euarchonta_rooted_calibnames.tree`](00_Filter_trees/euarchonta_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Euarchonta.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.txt)
+[`Calibrations_Euarchonta.txt`](00_Filter_trees/Calibrations_Euarchonta.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/euarchonta).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/euarchonta).
 
 After running this script, you will have the following files:
 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`euarchonta_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_baseml.tree),
+[`euarchonta_rooted_baseml.tree`](00_Filter_trees/euarchonta_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -44,7 +44,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/0ug0nuemljaj863/SeqBayesS2_check_conflict_euarchonta.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -61,22 +61,22 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
 
 In a nutshell:   
 
-   * 1. First, we run `MCMCtree` without using the data (i.e., 
+   1. First, we run `MCMCtree` without using the data (i.e., 
    without using the alignment, hence the "dummy" alignment used here) and fixing the
    tree topology where only the skew-_t_ (ST) calibrations have been added.   
-   * 2. For each calibrated node, we plot the corresponding analytical ST distribution
+   2. For each calibrated node, we plot the corresponding analytical ST distribution
    (the one that we have told `MCMCtree` to use) against the corresponding posterior density
    inferred by `MCMCtree` when no data are used (data described in step 1). In addition,
    we add to this plot the posterior density of this node that was inferred by `MCMCtree`
    when using the first data set (72-taxon data set).   
-   * 3. To check for conflict, we do the following for each calibrated node with an 
+   3. To check for conflict, we do the following for each calibrated node with an 
    ST calibration:   
       * Estimate mean times and quantiles (2.5% and 97.5%) from the posterior density
 	  inferred by `MCMCtree` when the data are not used and the fixed tree topology has only
@@ -85,12 +85,12 @@ In a nutshell:
 	  data set 1 (72-taxon data set) for the same node.   
 	  * Check how much the former deviate from the latter.   
 	  * If deviation is <0.6%, proceed with step 4.   
-   * 4. If checks in step 3 are ok, we run `MCMCtree` without the data alignment but
+   4. If checks in step 3 are ok, we run `MCMCtree` without the data alignment but
    the tree topology now has both the ST calibrations and the calibrations with soft
    bounds (i.e., calibrations that have a minimum and a maximum bound with a 2.5% tail
    probability in each side).   
-   * 5. Then, we generate the same plot as described in step 2.    
-   * 4. Last, we check again for possible conflict as described in step 3. If deviation
+   5. Then, we generate the same plot as described in step 2.    
+   6. Last, we check again for possible conflict as described in step 3. If deviation
    is <0.6% for all calibrated nodes, this is the end of the checks. Otherwise, we need 
    to adjust the location and scale parameters of the ST calibrations until no conflict
    is observed by subtracting the corresponding deviation (more details in the R script
@@ -128,7 +128,7 @@ Calibrations used:
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)     
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Only_ST_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -167,7 +167,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/01_SBnST_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -205,7 +205,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/02_SBandSTtweak1_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/02_SBandSTtweak1_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -244,7 +244,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/03_SBandSTtweak2_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/03_SBandSTtweak2_Euarchonta_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 4th round**   
@@ -280,16 +280,16 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBandSTtweak3_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/04_SBandSTtweak3_Euarchonta_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS Euarchonta data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBnSTtweak3_Euarchonta_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/04_SBnSTtweak3_Euarchonta_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 
