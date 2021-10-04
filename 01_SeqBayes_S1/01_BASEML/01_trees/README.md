@@ -1,7 +1,7 @@
 # 1. Generate rooted trees for 7 tree hypothesis
 We used the best-scoring maximum-likelihood tree with 72 species 
 that was obtained with `RAxML` v8.2.12 ([Stamatakis 2014](https://github.com/stamatak/standard-RAxML)),
-see [here](/01_SeqBayes_S1/01_BASEML/01_trees/ML_tree_72sp/RAxML_bestTree.concatenated.rooted.tree),
+see [here](ML_tree_72sp/RAxML_bestTree.concatenated.rooted.tree),
 as a guide tree to generate the 7 tree hypotheses that have been most debated with regards to the placement of  
 taxa in the mammal tree of life. Note that we used *Ornithorhynchus anatinus* as an outgroup 
 to root the trees.
@@ -19,21 +19,21 @@ directories according to each tree hypothesis. The trees with 43 taxa for each h
 have been also included in the corresponding directories as they were used as backbones to add the new
 taxa:   
 
-   * [Tree 1 - T1](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/01_T1): tree hypothesis 1,
+   * [Tree 1 - T1](00_rooted_trees_72sp/01_T1): tree hypothesis 1,
    Atlantogenata rooting and *Tupaia belnageri* sister clade to Primates.   
-   * [Tree 2 - T2](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/02_T2): tree hypothesis 2,
+   * [Tree 2 - T2](00_rooted_trees_72sp/02_T2): tree hypothesis 2,
    Atlantogenata rooting and *Tupaia belnageri* sister clade to Glires.
    This is the tree hypothesis used in the subsequent downstream analyses and later referred to as "main tree".   
-   * [Tree 3 - T3](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/03_T3): tree hypothesis 3,
+   * [Tree 3 - T3](00_rooted_trees_72sp/03_T3): tree hypothesis 3,
    same as T1 but Chiroptera and *Equus caballus* are placed as sister clades to Carnivora.   
-   * [Tree 4 - T4](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/04_T4): tree hypothesis 4,
+   * [Tree 4 - T4](00_rooted_trees_72sp/04_T4): tree hypothesis 4,
    same as T3 but *Vicugna pacos* and *Sus scrofa* exchange their placement.   
-   * [Tree 5 - T5](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/05_T5): tree hypothesis 5,
+   * [Tree 5 - T5](00_rooted_trees_72sp/05_T5): tree hypothesis 5,
    topology arranged as in the [`Ensembl` species tree](http://www.ensembl.org/info/about/speciestree.html), that is, same as T4 but *Tupaia belangeri* is sister clade to
    Primates.   
-   * [Tree 6 - T6](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/06_T6): tree hypothesis 6,
+   * [Tree 6 - T6](00_rooted_trees_72sp/06_T6): tree hypothesis 6,
    Epitheria rooting and same placement for the other taxa as T2.   
-   * [Tree 7 - T7](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/07_T7): tree hypothesis 7,
+   * [Tree 7 - T7](00_rooted_trees_72sp/07_T7): tree hypothesis 7,
    Exafroplacentalia rooting and same placement for the other taxa as T2.   
 
 Note that only one tree hypothesis is going to be used during the second step of the 

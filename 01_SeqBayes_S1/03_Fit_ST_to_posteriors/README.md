@@ -47,23 +47,23 @@ The file architecture is organised as follows:
 
 When running the code to fit ST distributions to each posterior node age, the following takes place:   
 
-   * [`logs`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/logs):
+   * [`logs`](00_fitST/logs):
    the [`log_file_convergence_BFGS.txt`](00_fitST/logs/log_file_convergence_BFGS.txt)
    file is generated. It contains a record of the trials needed to fit a ST distribution to a given node.
    If only one iteration has been needed, as it has happened in this analysis, only the header
    `Working with node t_nXXX...` is printed out.   
-   * [`plots`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/plots):
+   * [`plots`](00_fitST/plots):
    we generate one plot per node in which the fitted ST distribution is drawn on top of the 
    posterior distribution. The resulting images are used to evaluate how good the ST fits the posterior
    distribution.   
-   * [`Rdata`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/Rdata):
+   * [`Rdata`](00_fitST/Rdata):
    we generate two R objects, [`ST.fitted.dists.RData`](00_fitST/Rdata/ST.fitted.dists.RData)
    and [`ST.fitted.objects.RData`](00_fitST/Rdata/ST.fitted.objects.RData)
    with the resulting ST distributions. This will allow us to later load
    them in other R scripts without the need to re-run the search. Objects
    `prior.divtimes.RData` and `post.divtimes.RData` can be generated if the script
    is re-run or downloading [this file](https://www.dropbox.com/s/fiyunh6puaro3kr/SeqBayesS1_FitST_old_Rdata_priorandpost.zip?dl=0).   
-   * [`Rout`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/Rout):
+   * [`Rout`](00_fitST/Rout):
    this directory contains a tab separated file with the values of the parameters of each ST 
    distribution, [`ST.fitted.dists.G2.40.tsv`](00_fitST/Rout/ST.fitted.dists.G2.40.tsv).
    The output file `ST.fitted.dists.G2.40.tsv` remains in that main directory as it is subsequently used by
