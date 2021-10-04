@@ -41,13 +41,13 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_aln)
+Within the [`filter_aln`](filter_aln)
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
-a function within the R script [`Filter_lineages.R`](src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
+a function within the R script [`Filter_lineages.R`](../../../../../src/Filter_lineages.R)
+in the `src` directory and the [`genes.txt`](../../genes.txt)
 file. There are no messages printed, which means that there are no taxa 
 to be removed.
 
@@ -82,18 +82,18 @@ Now that both files with the 12CP-alignment (`alignment.phylip`) and 3CP-alignme
 have the same taxa names and have had the same filtering procedure carried out,
 we can proceed to concatenate the alignment with the third 
 codon positions to the alignment with 12CPs using the R script
-[`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R)
+[`Concatenate_seqs_for_MCMCtree.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree.R)
 so we can have the concatenated alignment. 
 
 Instructions to follow:  
 
-   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R) 
+   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](../../../01_alignments/Concatenate_seqs_for_MCMCtree.R) 
    in RStudio and change line 24 so it is `subt    <- "xenarthra"`. Now, we can run it from RStudio. This script
    will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/xenarthra`
-   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](../../../01_alignments). 
    Log and RData files will be saved inside 
-   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   [`00_Data_filtering/01_alignments/Rout`](../../../01_alignments/Rout/log_concatenation). 
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/xenarthra` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 
