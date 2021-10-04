@@ -41,7 +41,7 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_aln)
+Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_aln)
 directory, you will find different files as detailed above. 
 Specifically, the R script [`parse_lineage.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria/filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
@@ -91,9 +91,9 @@ Instructions to follow:
    in RStudio and change line 24 so it is `subt    <- "xenarthra"`. Now, we can run it from RStudio. This script
    will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/xenarthra`
-   inside [`00_Data_filtering/01_alignments/`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
    Log and RData files will be saved inside 
-   [`00_Data_filtering/01_alignments/Rout`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/xenarthra` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 

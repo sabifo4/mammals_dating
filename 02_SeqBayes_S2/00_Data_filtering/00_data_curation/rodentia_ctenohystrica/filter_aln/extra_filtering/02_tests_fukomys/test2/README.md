@@ -31,7 +31,7 @@ Now, we need to re-align this sequence to the rest of fukomys and _Heterocephalu
 we will use MAFFT. 
 
 We got the FASTA file from
-[`01_mafft/aln/4/`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/01_mafft/4).
+[`01_mafft/aln/4/`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/01_mafft/4).
 Then, extracted only those sequences 
 for all the Fukomys taxa and the mole rat. This was the input alignment for MAFFT. The mitrna sequence downloaded 
 from the NCBI (see steps above) is the sequence that will be re-aligned to the input alignment.

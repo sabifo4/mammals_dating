@@ -1,9 +1,9 @@
 # 1. Generate fasta files with new taxa
 We use the perl script
-[`phylip_to_fasta_and_extraseq.pl`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/phylip_to_fasta_and_extraseq.pl)
+[`phylip_to_fasta_and_extraseq.pl`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/phylip_to_fasta_and_extraseq.pl)
 to convert the files for the first rodentia subtree from phylip format to fasta format. In addition, this
 script appends the sequences from the taxa within the second rodentia subtree specified in the file 
-[`taxa_to_add.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
+[`taxa_to_add.txt`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1/01_perl_parsing/taxa_to_add.txt).
 
 The following code can be run to format the corresponding alignments for each 
 of the partitions (before running the code below, make sure you have generated the alignments 

@@ -93,13 +93,13 @@ thus removed in this first filtering step. The 15,569 filtered genes that
 pass the filtering step are saved in a directory called `filtered_genes`
 (you can download the directory [here](https://www.dropbox.com/s/c0djydlrh2qipd8/filtered_genes.zip?dl=0) so you can check you get the same results we did).
 A log file recording the order in which they have been parsed is also
-output ([`log_01_copy_filtered_genes.txt`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_01_copy_filtered_genes.txt)).
+output ([`log_01_copy_filtered_genes.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_01_copy_filtered_genes.txt)).
 
 Additionally, this script finds only those genes present in the 72 
 mammal species that, at the same time, meet the three requirements stated 
 above. This results in 648 genes, which are saved in a directory called `filtered_genes_all72sp`
 (you can download the directory [here](https://www.dropbox.com/s/wsgfy58ufbjtvo5/filtered_genes_all72sp.zip?dl=0) so you can check you get the same results we did).
-A log file is also generated ([`log_01_copy_filtered_all72sp_genes.txt`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_01_copy_filtered_all72sp_genes.txt)).
+A log file is also generated ([`log_01_copy_filtered_all72sp_genes.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_01_copy_filtered_all72sp_genes.txt)).
 
 You can open the R script [`00_Get_filtered_genes_in_dir.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/00_Get_filtered_genes_in_dir.R)
 in RStudio to run all the steps detailed above. We have added extra information to this R script so it can be used 
@@ -129,7 +129,7 @@ In the end, each `baseml/n` directory has 4 files:
    3. *log.txt: a log file with the length of each sequence in the alignment.   
    4. *tree: the tree file in PAML format.   
    
-Also, a log file [`log_02_baseml_getdataformat.txt`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_02_baseml_getdataformat.txt)
+Also, a log file [`log_02_baseml_getdataformat.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_02_baseml_getdataformat.txt)
 is generated once this script finishes. This script can be called as it follows:
 
 ```sh
@@ -161,7 +161,7 @@ interested in using for the subsequent analyses).
 The script [`01.2_Get_mouse_human_aln.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01.2_Get_mouse_human_aln.sh)
 extracts human and mouse sequences from `partitions12_*aln` and generates a file
 readable by R called `*_mouse_human.aln` to later calculate the sequence distance.
-A log file ([`log_03_get_mouse_human.txt`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_03_get_mouse_human.txt))
+A log file ([`log_03_get_mouse_human.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_03_get_mouse_human.txt))
 is also generated.
 
 You can call this script as it follows: 
@@ -205,7 +205,7 @@ and leaves 15,436 genes.
 Then, we extract the human and mouse sequences from the alignments with 1st and 2nd CPs 
 (files generated in step 4). We read and convert them in R using the `ape::DNAbin`
 function. In order to avoid doing this every time the script is loaded in R, the RData
-file [`MHalns_DNAbin.RData`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/MHalns_DNAbin.RData)
+file [`MHalns_DNAbin.RData`](/01_SeqBayes_S1/00_Gene_filtering/out_RData/MHalns_DNAbin.RData)
 is created and can then be easily loaded, if needed.
 Note that the distance between the human and mouse sequences (H-M distance) is computed
 for all the genes using the function `ape::dist.dna` for all the gene alignments and using
@@ -227,11 +227,11 @@ larger than 0.75 for at least one of the models under which `ape::dist.dna` was 
 Therefore, for the subsequent filtering, we decided to remove the following genes: `ENSG00000132185`, `ENSG00000204544`,
 `ENSG00000120937`, and `ENSG00000236699`. Furthermore, when we plotted the tree length of
 each gene alignment VS the corresponding largest branch length, we found and outlier 
-(`ENSG00000176973`, see plot [here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_relblVStreelength.pdf)),
-which was additionally removed (see plot after removing outlier [here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_relblVStreelength_nooutlier.pdf)).
+(`ENSG00000176973`, see plot [here](/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_relblVStreelength.pdf)),
+which was additionally removed (see plot after removing outlier [here](/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_relblVStreelength_nooutlier.pdf)).
 We also log-transformed the x-axis (tree length) to ease its 
-visualisation and plotted the resulting data (see the plot with the outlier [here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_logtreelengthVSlargestbl.pdf) 
-and without the outlier [here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_logtree_relblVStreelength_nooutlier.pdf).
+visualisation and plotted the resulting data (see the plot with the outlier [here](/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_logtreelengthVSlargestbl.pdf) 
+and without the outlier [here](/01_SeqBayes_S1/00_Gene_filtering/out_RData/check_logtree_relblVStreelength_nooutlier.pdf).
 
 The resulting filtered and ordered genes from slow- to fast-evolving 
 are saved in a directory called `filtered_genes_step2` (you can also download this directory 
@@ -634,7 +634,7 @@ You can download the zip file with the final directories output by R and the ali
 [here](https://www.dropbox.com/s/9tjoavpk04ufzay/analyses_data_subsets.zip?dl=0).
 The plots comparing the mean time estimates for each partition and each data subset,
 together with the data and the scripts to plot this, can be found in
-[`data_subsets`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering/data_subsets),
+[`data_subsets`](/01_SeqBayes_S1/00_Gene_filtering/data_subsets),
 where you will have further details about how to download the results obtained with `MCMCtree` used 
 to generate those plots.
 

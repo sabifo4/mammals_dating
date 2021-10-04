@@ -1,10 +1,10 @@
 # Extra analyses
 
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/03_Extra_analyses/00_Data_filtering)
+[Here](/03_Extra_analyses/00_Data_filtering)
 you will find a detailed description of the steps we followed to generate the data alignments we 
 needed for these extra analyses. 
 
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/03_Extra_analyses/03_Analyses) 
+[Here](/03_Extra_analyses/03_Analyses) 
 you will find the R script
 [Compare_divtimes_72spVS4705sp.R](https://github.com/sabifo4/mammals_dating/blob/main/03_Extra_analyses/03_Analyses/Compare_divtimes_72spVS4705sp.R)
 and the output files this script generates, which summarise the divergence 

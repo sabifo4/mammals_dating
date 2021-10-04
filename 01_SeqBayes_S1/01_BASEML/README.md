@@ -12,9 +12,9 @@ This step is required because the gradient and the Hessian are used to approxima
 We have divided this step into two main tasks:  
 
    1. **Preparing the rooted and calibrated trees**   
-   The steps followed to generate the rooted and calibrated trees can be found in the [`01_trees`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees) directory.   
+   The steps followed to generate the rooted and calibrated trees can be found in the [`01_trees`](/01_SeqBayes_S1/01_BASEML/01_trees) directory.   
    2. **Obtaining the gradient and the Hessian**   
    The steps followed to obtain the gradient and Hessian for each of the four partitions under each of the seven tree
-   hypothesis can be found in the [`02_Hessian`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/02_Hessian) directory.
+   hypothesis can be found in the [`02_Hessian`](/01_SeqBayes_S1/01_BASEML/02_Hessian) directory.
 
 	 

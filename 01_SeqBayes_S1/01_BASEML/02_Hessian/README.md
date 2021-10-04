@@ -11,9 +11,9 @@ which you can download [here](http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz
 just click
 [here](http://abacus.gene.ucl.ac.uk/software/#phylogenetic-analysis-by-maximum-likelihood-paml)
 and download it from the PAML website). 
-Note that the latest version is `v4.9j`, although we have inclued `PAML` v4.9h in the [src](https://github.com/sabifo4/mammals_dating/tree/main/src) 
+Note that the latest version is `v4.9j`, although we have inclued `PAML` v4.9h in the [src](/src) 
 directory because this is the one that was used in this study. If you are to run `BASEML` and `MCMCtree` 
-to reproduce the results we have generated, make sure that you download and extract the [paml4.9h.zip](https://github.com/sabifo4/mammals_dating/tree/main/src/paml4.9h.zip) file,
+to reproduce the results we have generated, make sure that you download and extract the [paml4.9h.zip](/src/paml4.9h.zip) file,
 install it on your PC, and export the path to the executable files.
 
 All the tasks that are next described were carried out in the [Queen Mary's Apocrita HPC](https://zenodo.org/record/438045#.XhW1eUf7RPY).

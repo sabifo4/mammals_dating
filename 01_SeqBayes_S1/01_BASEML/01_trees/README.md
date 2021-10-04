@@ -1,7 +1,7 @@
 # 1. Generate rooted trees for 7 tree hypothesis
 We used the best-scoring maximum-likelihood tree with 72 species 
 that was obtained with `RAxML` v8.2.12 ([Stamatakis 2014](https://github.com/stamatak/standard-RAxML)),
-see [here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/ML_tree_72sp/RAxML_bestTree.concatenated.rooted.tree),
+see [here](/01_SeqBayes_S1/01_BASEML/01_trees/ML_tree_72sp/RAxML_bestTree.concatenated.rooted.tree),
 as a guide tree to generate the 7 tree hypotheses that have been most debated with regards to the placement of  
 taxa in the mammal tree of life. Note that we used *Ornithorhynchus anatinus* as an outgroup 
 to root the trees.
@@ -19,27 +19,27 @@ directories according to each tree hypothesis. The trees with 43 taxa for each h
 have been also included in the corresponding directories as they were used as backbones to add the new
 taxa:   
 
-   * [Tree 1 - T1](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/01_T1): tree hypothesis 1,
+   * [Tree 1 - T1](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/01_T1): tree hypothesis 1,
    Atlantogenata rooting and *Tupaia belnageri* sister clade to Primates.   
-   * [Tree 2 - T2](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/02_T2): tree hypothesis 2,
+   * [Tree 2 - T2](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/02_T2): tree hypothesis 2,
    Atlantogenata rooting and *Tupaia belnageri* sister clade to Glires.
    This is the tree hypothesis used in the subsequent downstream analyses and later referred to as "main tree".   
-   * [Tree 3 - T3](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/03_T3): tree hypothesis 3,
+   * [Tree 3 - T3](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/03_T3): tree hypothesis 3,
    same as T1 but Chiroptera and *Equus caballus* are placed as sister clades to Carnivora.   
-   * [Tree 4 - T4](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/04_T4): tree hypothesis 4,
+   * [Tree 4 - T4](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/04_T4): tree hypothesis 4,
    same as T3 but *Vicugna pacos* and *Sus scrofa* exchange their placement.   
-   * [Tree 5 - T5](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/05_T5): tree hypothesis 5,
+   * [Tree 5 - T5](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/05_T5): tree hypothesis 5,
    topology arranged as in the [`Ensembl` species tree](http://www.ensembl.org/info/about/speciestree.html), that is, same as T4 but *Tupaia belangeri* is sister clade to
    Primates.   
-   * [Tree 6 - T6](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/06_T6): tree hypothesis 6,
+   * [Tree 6 - T6](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/06_T6): tree hypothesis 6,
    Epitheria rooting and same placement for the other taxa as T2.   
-   * [Tree 7 - T7](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/07_T7): tree hypothesis 7,
+   * [Tree 7 - T7](/01_SeqBayes_S1/01_BASEML/01_trees/00_rooted_trees_72sp/07_T7): tree hypothesis 7,
    Exafroplacentalia rooting and same placement for the other taxa as T2.   
 
 Note that only one tree hypothesis is going to be used during the second step of the 
 sequential Bayesian dating: **T2**. To easily track which taxa are differently placed in each of the 
 seven tree hypotheses, you can check the PDF and the SVG files generated for each of tree hypothesis 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/02_tree_hypotheses_figures/). 
+[here](/01_SeqBayes_S1/01_BASEML/01_trees/02_tree_hypotheses_figures/). 
 These taxa/clades have been identified with different colours: (1, blue) Xenarthra, (2, orange) Afrotheria,
 (3, green) Chiroptera, (4, blue) *Equus caballus*, (5, yellow) *Vicugna pacos*, (6, purple) *Sus scrofa*,
 (7, red) *Tupaia belangeri*. 
@@ -103,7 +103,7 @@ and the one on the left the corresponding soft calibrations in `MCMCtree` format
 
 First, we manually included the names of the nodes to be calibrated in the newick trees for each of 
 the 7 hypotheses (files that end with `*_calibrated.tree` and are saved in each of the seven directories 
-inside the [`01_calibtrees_72sp`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp)
+inside the [`01_calibtrees_72sp`](/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp)
 directory). Then, we used the [`Include_calibrations.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Include_calibrations.R)
 R script to replace them with the soft calibrations in `MCMCtree` format detailed in the 
 [`Calibrations_mammalia.txt`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Calibrations_mammalia.txt)
@@ -113,7 +113,7 @@ To ease the visualization of the final calibrated trees and manually check the c
 in the correct nodes, we generated two files:    
 
    * `FIGTREE_72sp_<name_tree_hypothesis>_calibrated.pdf`: PDF file with the final tree hypothesis (cladogram format) with the names 
-   of the calibrations added to the corresponding nodes. Each directory within the [`01_calibtrees_72sp`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp)
+   of the calibrations added to the corresponding nodes. Each directory within the [`01_calibtrees_72sp`](/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp)
    contains this specific file.   
    * `FIGTREE_72sp_<name_tree_hypothesis>_calibrated`: File to be opened with [`FigTree`](http://tree.bio.ed.ac.uk/software/figtree/).
    The user can then zoom in and out and change the display of the tree.   

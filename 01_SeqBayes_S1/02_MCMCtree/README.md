@@ -148,17 +148,17 @@ Thanks to the plots output by this modified function, we can visually explore if
 have had convergence problems.
 You can find the results in the following directories:   
 
-   * [Main tree - T2](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR): As mentioned above, we have the results for the analyses using the alignment
+   * [Main tree - T2](/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR): As mentioned above, we have the results for the analyses using the alignment
    with and without the 11 genes that are also found in the second data set. In the `plots` directory,
    you can find the graphics plotted with the R scripts within the directory provided in the link
    above. The R scripts have all the details needed to understand the different steps carried out,
    so you may want to check them if you want more details about how these plots were generated.
-   In addition, [this directory](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes) contains the plots generated
+   In addition, [this directory](/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes) contains the plots generated
    with the results obtained with both data sets to evaluate the impact that removing these 11
    genes from the data set had on the posterior divergence times: the estimates were almost
    identical. You may want to read the details in the R script provided in this
    directory for further details.   
-   * [Alternative tree hypotheses](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR): In this directory, you will see one script for each tree
+   * [Alternative tree hypotheses](/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR): In this directory, you will see one script for each tree
    hypothesis, which were used to generate the plots you fill find the link provided above.
 
 Even though you can find the plots for all the hypotheses in the directories mentioned above,
@@ -181,7 +181,7 @@ to calculate the ESS for bulk and tail quantiles and the potential scale reducti
 rank normalised split chains (Rhat). Values over 100 for the former are considered good, while Rhat
 values need to be either smaller than or equal to 1.05 to show chain convergence.  
 
-In the [`01_ESS_and_chain_convergence`](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence)
+In the [`01_ESS_and_chain_convergence`](/01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence)
 directory, you will find the [`Calculate_ESS.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence/Calculate_ESS.R)
 R script, which was used to generate the convergence plots for each tree hypothesis as well as to
 calculate the ESS for each `MCMCtree` analysis that was 
@@ -246,4 +246,4 @@ for $\approx 5,000$ mammal species and 182 genes:
    * 9 mitochondrial protein-coding genes obtained from ENA/HMM-profile (range of taxa: 1,047 - 4,131).   
    * 2 mitochondrial non-coding rRNA genes obtained from ENA/HMM-profile (range of taxa: 1,573 - 2,175).   
    
->> _More details about this second data set can be found [here](https://github.com/sabifo4/mammals_dating/tree/main/00_Data_collection), in Table S3._
+>> _More details about this second data set can be found [here](/00_Data_collection), in Table S3._

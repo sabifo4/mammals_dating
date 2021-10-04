@@ -11,7 +11,7 @@ corresponding calibrations specified in the
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_therest).
+This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_therest).
 
 After running this script, you will have the following files:
 
@@ -46,7 +46,7 @@ which explains why we further partition "rodentia the rest").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/extra_filtering).
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
@@ -66,7 +66,7 @@ for the first subtree and
 for the second subtree.
 Once you download them, you should unzip its content and save the 
 directories inside the corresponding
-[`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict)
 directory for each subtree:
 
 ```
@@ -143,7 +143,7 @@ previous analyses with the whole data set against the ST calibrations without ad
  
 The differences are not large and should not be affecting downstream analyses.
 The final tree topology used in the subsequent analyses can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
 directory.
 
 ## Rodentia subtree 2
@@ -200,7 +200,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
 directory.
 
 --- 

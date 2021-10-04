@@ -11,7 +11,7 @@ corresponding calibrations specified in the
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_squirrel).
+This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_squirrel).
 
 After running this script, you will have the following files:
 
@@ -45,7 +45,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/xnog10niawetap3/SeqBayesS2_check_conflict_sciuridae.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
-[`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -122,7 +122,7 @@ that we provide with the other data subsets. Instead, we just provide the
 with the corresponding values in the directory.
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel/filter_tree/02_Final_tree_topology)
 directory.
 
 --- 

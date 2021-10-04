@@ -200,7 +200,7 @@ sed -i 's/saimiri\_boliviensis\_boliviensis/saimiri\_boliviensis/' $i
 done
 ```
 
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/03_Extra_analyses/00_Data_filtering/trees)
+[Here](/03_Extra_analyses/00_Data_filtering/trees)
 you can find the tree files that will be used to run `MCMCtree` and `BASEML`.
 
 Now, we are ready to run `BASEML` to compute the Hessian and the gradient needed to use the 

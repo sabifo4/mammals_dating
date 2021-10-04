@@ -57,7 +57,7 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln)
+Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln)
 directory, you will find different files as detailed above. 
 Specifically, the R script [`parse_lineage.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
@@ -664,7 +664,7 @@ This means that, even though this is the placement found in the ML tree, other r
 found they cluster elsewhere. Therefore, we flagged them for future and further analyses that might be carried out,
 but that are not part of the scope of this project. 
 The output files (`png` and `FigTree` files) have been saved in the
-[`checked_aln/taxonomical_check`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/checked_aln/taxonomical_check)
+[`checked_aln/taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/checked_aln/taxonomical_check)
 directory. 
 
 The taxa to be renamed and/or removed are the following:
@@ -727,7 +727,7 @@ these checks before 2018 (i.e., they had already been "cleaned", while the data 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
 in the corresponding `README.md` files for these data subsets or the directory
-[`taxonomical_check`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/checked_aln/taxonomical_check)
+[`taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/checked_aln/taxonomical_check)
 You will see that the `filter_aln` directory for these four data subsets
 contains a csv file with the details that were followed to filter the corresponding alignments (12CP and 3CP). 
 Note that this csv file is equivalent to the excel sheet you find in this directory for 
@@ -765,9 +765,9 @@ Instructions to follow:
    in RStudio and change line 25 so it is `subt    <- "rodentia_therest"` and uncomment line 27.
    This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/rodentia_therest/unfiltered/`
-   inside [`00_Data_filtering/01_alignments/`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
    Log and RData files will be saved inside
-   [`00_Data_filtering/01_alignments/Rout`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
+   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/rodentia_therest/unfiltered/` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 
@@ -971,8 +971,8 @@ Instructions to follow:
    in RStudio and change line 24 so it is `subt    <- "rodentia_therest"` and uncomment line 25.
    Now, we can run it from RStudio. This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions,
-   inside [`01_alignments`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments).
-   Log files and Rdata can be found [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   inside [`01_alignments`](/02_SeqBayes_S2/00_Data_filtering/01_alignments).
+   Log files and Rdata can be found [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
       > NOTE: Updated `partitions.txt` file inside `00_mammal_alns/rodentia_therest/` generated.   
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 
@@ -993,21 +993,21 @@ The procedure followed was the following:
 
 ## 1. Explore partitioning the data set
 The directory
-[`00_R_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
+[`00_R_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
 has the input/output files used to explore how to partition the data set into two data subsets. Please access this directory using the link 
 provided to go through the steps followed. More details about this step can be found 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering),
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering),
 in the first section `1. Obtain subtrees`.
 
 ## 2. Generate alignments 
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering), 
+[Here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering), 
 in section `2. Generating alignments`, 
 you will read about all the steps we followed to extract the sequences of the taxa that need to be allocated to each data 
 subset. The data can be downloaded 
 [here](https://www.dropbox.com/s/h99ciuwwrvcbfep/SeqBayesS2_filteraln2_rodtherest_01_perl_parsing.zip?dl=0)
 if you want to check you have reproduced our results, which should be saved 
 in the directory
-[`01_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing).
+[`01_perl_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing).
 In this GitHub repository, due to limited space for big files, you will see only the Perl script we use 
 to generate the alignments.
 
@@ -1016,9 +1016,9 @@ In order to avoid issues when grafting the subtrees to the backbone tree, we dec
 extra taxa to each subtree (two taxa from data subset 1 are included in data subset 2, and 
 viceversa). The steps followed to add taxa to the first subtree can be 
 found
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1),
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1),
 while those followed to generate the one for the second subtree can be found 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2).
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2).
 
 ## 4. Final alignments 
 [Here](https://www.dropbox.com/s/5cxvn2fvqdevti8/SeqBayesS2_Raln_rod_subt1.zip?dl=0)

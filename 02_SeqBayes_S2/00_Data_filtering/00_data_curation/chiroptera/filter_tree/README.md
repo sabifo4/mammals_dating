@@ -45,7 +45,7 @@ which explains why we further partition "chiroptera").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/extra_filtering).
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
@@ -64,7 +64,7 @@ for the first subtree and
 [here](https://www.dropbox.com/s/yv5uhhajg71ibr9/SeqBayesS2_check_conflict_chirosubt2.zip?dl=0)
 for the second subtree.
 Once you download them, you should unzip their content inside the corresponding
-[`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/01_Check_conflict)
 directory for each subtree:
 
 ```
@@ -138,7 +138,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
 directory.
 
 ## Chiroptera subtree 2
@@ -171,7 +171,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree/02_Final_tree_topology)
 directory.
 
 --- 
