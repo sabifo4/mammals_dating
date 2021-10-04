@@ -3,11 +3,11 @@ Here, you can find the final mammal Tree of Life after we grafted the different
 data subsets onto the backbone tree (i.e., combining the results from the first step 
 of the sequential Bayesian dating approach with the those obtained during the 
 second step). The scripts that we have used for that purpose can be found
-[here](). The tasks they perform are the following:   
+[here](scripts). The tasks they perform are the following:   
 
    * [4705sp_node_ages.py](scripts/4705sp_node_ages.py): this script builds the 4,705-sp tree by grafting the subtrees onto
    the backbone tree.   
-   * [72sp_subtree_fragt.py](scripts/): this script creates the additional teres with node ages from CI.   
+   * [72sp_subtree_graft.py](scripts/72sp_subtree_graft.py): this script creates the additional teres with node ages from CI.   
 
 An explanation for each output file can be found below:   
 
