@@ -1,4 +1,4 @@
-# Euarchonta
+# Xenarthra
 
 ## Curated alignment 
 All the details about the procedure followed to generate the final alignments 

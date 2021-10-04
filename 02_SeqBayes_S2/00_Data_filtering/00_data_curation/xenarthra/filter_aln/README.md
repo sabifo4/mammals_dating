@@ -41,9 +41,9 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](filter_aln)
+Within the `filter_aln`
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
 a function within the R script [`Filter_lineages.R`](../../../../../src/Filter_lineages.R)
