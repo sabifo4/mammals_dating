@@ -389,7 +389,7 @@ partitioned alignments by running the R script
 
 Instructions to follow: 
 
-   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
+   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](../../../01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
    in RStudio and change line 24 so it is `subt    <- "rodentia_ctenohystrica"` and uncomment line 25.
    Now, we can run it from RStudio. This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions,
@@ -440,7 +440,7 @@ in this data subset for rodentia ctenohystrica. Please access
 using the link provided to go through the steps followed. You can download the tests carried out 
 [here](https://www.dropbox.com/s/dcgmy6syj4z87l6/SeqBayesS2_filteraln2_ctenohystrica_02_tests_fukomys.zip?dl=0). 
 You should unzip and save the content inside the
-[`02_tests_fukomys](extra_filtering/02_tests_fukomys)
+[`02_tests_fukomys`](extra_filtering/02_tests_fukomys)
 directory to reproduce the results. 
 
 ## 4. Generate new alignments with *Fukomys damarensis* 

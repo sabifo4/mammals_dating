@@ -5,7 +5,7 @@ what the issue with the sequences are (download from [here](https://www.dropbox.
 Now, we are going to run `RAxML` using all 14 species (using the mole rat as an outgroup).
 The command used for this purpose will be the following:
 
-```
+```sh
 # Run from `02_tests_fukomys` in both directories `mt3cp` and `mt12cp`
 # HPC Apocrita used for this purpose
 cd <dir>

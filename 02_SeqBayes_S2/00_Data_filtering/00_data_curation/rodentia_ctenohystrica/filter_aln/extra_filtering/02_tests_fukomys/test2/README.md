@@ -1,6 +1,6 @@
 # 1. Get mit data
 We downloaded the mit-tRNA sequences from the NCBI (click [here](https://www.ncbi.nlm.nih.gov/nuccore/NC_027742.1)). The NCBI reference sequence 
-was retrieved from the main site for the Fukomys damarensis genome (see [here](https://www.ncbi.nlm.nih.gov/genome/?term=fukomys)).
+was retrieved from the main site for the *Fukomys damarensis* genome (see [here](https://www.ncbi.nlm.nih.gov/genome/?term=fukomys)).
 
 These sequences have been saved in separate files and are saved in the directory `NCBI_mtrna_fukomys_damarensis`.
 
@@ -38,7 +38,7 @@ from the NCBI (see steps above) is the sequence that will be re-aligned to the i
 
 Then, we need to reformat the output alignment by MAFFT. We can do this by running the following commands:
 
-```
+```sh
 # Run from test2/MAFFT
 # 1. Get everything in one line 
 cd 4
@@ -61,7 +61,7 @@ perl ../../../../01_mafft/FASTAtoPHYL.pl *fasta $num $len
 # 4. Run RAxML 
 Now, we can use this alignment to infer the best-scoring ML tree with RAxML:
 
-```
+```sh
 cd <dir>
 seq=$( ls *aln )
 # Note: `-x` turns on rapid bootstrapping (I set it for `-# 500` iterations)
