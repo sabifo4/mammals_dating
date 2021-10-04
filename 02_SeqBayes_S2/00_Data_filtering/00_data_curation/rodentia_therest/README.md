@@ -9,10 +9,10 @@ download the alignments for data subset 1
 [here](https://www.dropbox.com/s/5cxvn2fvqdevti8/SeqBayesS2_Raln_rod_subt1.zip?dl=0),
 and download the alignments data subset 2 
 [here](https://www.dropbox.com/s/7j0my2nq02al4g8/SeqBayesS2_Raln_rod_subt2.zip?dl=0))
-have been explained [here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln).
+have been explained [here](filter_aln).
 Just follow the steps in the order given and you will be able to reproduce our results. You will also find all 
 the details about the need of further partitioning this data set into two data subsets.
 
 ## Curated tree 
 All the details about the procedure followed to generate the final tree alignments 
-can be found [here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree).
+can be found [here](filter_tree).

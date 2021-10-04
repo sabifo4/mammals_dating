@@ -1,17 +1,17 @@
 # Rodentia the rest - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Rtherest.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/Calibrations_Rtherest.R)
+We use the R script [`Calibrations_Rtherest.R`](00_Filter_trees/Calibrations_Rtherest.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`rodentia_therest_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/rodentia_therest_rooted_calibnames.tree)
+[`rodentia_therest_rooted_calibnames.tree`](00_Filter_trees/rodentia_therest_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_rodtherest.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/Calibrations_rodtherest.txt)
+[`Calibrations_rodtherest.txt`](00_Filter_trees/Calibrations_rodtherest.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_therest).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/rodentia_therest).
 
 After running this script, you will have the following files:
 
@@ -32,7 +32,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we manually generated the
-[`rodentia_therest_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/rodentia_therest_rooted_baseml.tree),
+[`rodentia_therest_rooted_baseml.tree`](00_Filter_trees/rodentia_therest_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file was used before we further split this data set into 
 two data subsets (see below).
@@ -40,19 +40,19 @@ two data subsets (see below).
 ## 2. Generating subtree -- splitting the main tree into two
 After partitioning the big data subset (1314 rodent species in "rodentia the rest") into two 
 data subsets (see the details in
-[this `README.md` file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/README.md),
+[this `README.md` file](../filter_aln/README.md),
 section `# EXTRA FILTERING -- DATA SUBSETTING`, if you did not go through the data filtering before,
 which explains why we further partition "rodentia the rest").
 
 The updated files to be used by `BASEML` and the calibrated trees before the checks 
 shown in the next step can be found
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/00_Filter_trees/extra_filtering).
+[here](00_Filter_trees/extra_filtering).
 
 We manually generated the "dummy alignments" by including the extra taxa added in each subtree. 
 Then, we saved them in the corresponding directories
-([here](02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_subt1),
+([here](../../../01_alignments/01_mammal_dummy_alns/rodentia_subt1),
 for the first subtree and 
-[here](02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_subt2)
+[here](../../../01_alignments/01_mammal_dummy_alns/rodentia_subt2)
 for the second subtree) and used them in the subsequent steps.
 
 ## 3. Check if calibrations are in conflict
@@ -66,7 +66,7 @@ for the first subtree and
 for the second subtree.
 Once you download them, you should unzip its content and save the 
 directories inside the corresponding
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory for each subtree:
 
 ```
@@ -120,13 +120,13 @@ It was only *a posterior* that we realised that, if we followed the procedure yo
 tutorials with other data subsets, we could adjust them but we do not really need to do this as the deviation 
 is ~5% from the mean in Murinae and 5.5% in the low quantile for the other ST calibration (i.e., they 
 are lower than our ~6% threshold, see 
-[tsv file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/01_SBnST_Rod_subtree1_sumstats.tsv)). 
+[tsv file](01_Check_conflict/01_Check_conflict_rodsubtree1/01_SBnST_Rod_subtree1_sumstats.tsv)). 
 
 We plotted both our manually adjusted calibrations based on 
 previous analyses with the whole data set against the ST calibrations without adjustments:
 
 <p align="center">
-  <img width="700" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_1.png">
+  <img width="700" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_1.png">
 </p>   
 
 >>Manually adjusted ST calibration (black) against ST calibration (red) for node   
@@ -134,7 +134,7 @@ previous analyses with the whole data set against the ST calibrations without ad
 >>`P. maniculatus - M. ochrogaster` and `Muridae`; respectively. All densities are adjusted to 1.   
 
 <p align="center">
-  <img width="700" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_2.png">
+  <img width="700" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree1/fig_comp_2.png">
 </p>   
 
 >> Manually adjusted ST calibration (black) against ST calibration (red) for node   
@@ -143,7 +143,7 @@ previous analyses with the whole data set against the ST calibrations without ad
  
 The differences are not large and should not be affecting downstream analyses.
 The final tree topology used in the subsequent analyses can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 ## Rodentia subtree 2
@@ -159,7 +159,7 @@ Calibrations used:
    * _Mus spretus_-_Mus musculus_: ST(0.0104,0.0033,3.3802,83.5293)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/00_Only_ST_Rod_subtree2_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree2/00_Only_ST_Rod_subtree2_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -176,7 +176,7 @@ Calibrations used:
    
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/01_SBnST_Rod_subtree2_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree2/01_SBnST_Rod_subtree2_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 2nd round**   
@@ -190,17 +190,17 @@ Calibrations used:
    * _Mus spretus_-_Mus musculus_: ST(0.0101,0.003,3.38,83.529)   
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBandSTtweak1_Rod_subtree2_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBandSTtweak1_Rod_subtree2_MCMCruns.png">
 </p>
 
 
 **Deviations (main 72-taxa VS rodentia_therest data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBnSTtweak1_Rod_subtree2_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_Check_conflict_rodsubtree2/02_SBnSTtweak1_Rod_subtree2_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 
