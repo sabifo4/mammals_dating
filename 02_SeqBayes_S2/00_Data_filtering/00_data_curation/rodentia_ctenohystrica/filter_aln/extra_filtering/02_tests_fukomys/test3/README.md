@@ -1,7 +1,7 @@
 # 1. Run RAxML
 Command used to test coding mitochondrial sequences from PC:
 
-```
+```sh
 # 1. First, fix tag names for RAxML to run
 sed -i 's/\.1\_..*\;\_mitochondrial//g' fukomys_spp_cytb.phy
 
@@ -12,7 +12,7 @@ raxmlHPC.exe -f a -m GTRGAMMA -p 12345 -# 100 -x 12345 -# 500 -s fukomys_spp_cyt
 # 2. Check phylogeny inferred
 Then, to match the sequence names with the tags we had to use, we ran the following:
 
-```
+```sh
 # 1. First, keep a copy of the tree output by RAxML 
 #    with the fixed tag names and generate a file 
 #    to go over with the long names 
@@ -46,7 +46,7 @@ We decided to include in the alignment the sequence tagged as `AY425857.1_Crypto
 We extracted the sequence and generated a FASTA file. To partition this sequence into 12CP and 3CP,
 we ran the follwing commands:
 
-```
+```sh
 # Run from test3
 perl partition12CPand3CP_v2.pl Cryptomis_damarensis_CYTB.fasta
 ```
