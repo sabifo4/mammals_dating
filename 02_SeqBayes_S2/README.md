@@ -1,7 +1,7 @@
 # 1. Quick summary of tasks accomplished in step 1
 
 ## 1.1 Generating alignment with 72 species and 15K loci (genomic data)
-[`Here`](/01_SeqBayes_S1/00_Gene_filtering),
+[`Here`](../01_SeqBayes_S1/00_Gene_filtering),
 you will find the steps followed to obtain 
 the final partitioned genomic alignment for the 72 mammal taxa used in the first step of the sequential 
 Bayesian dating analysis:   
@@ -170,7 +170,7 @@ Once `MCMCtree` finished, we used the results obtained under the
 main tree hypothesis 
 and fitted a skew-_t_ (ST) distribution to each of the estimated posterior
 distributions for each node. The whole procedure is detailed
-[here](/01_SeqBayes_S1/03_Fit_ST_to_posteriors)).
+[here](../01_SeqBayes_S1/03_Fit_ST_to_posteriors)).
 
 # 2. Second part of the sequential Bayesian dating approach 
 
@@ -199,20 +199,20 @@ subset, the data subset with the rest of rodentia had too many taxa for `MCMCtre
 further subset it into two: "rodentia subtree 1" and "rodentia subtree 2" data subsets. In total, we had 
 4 data subsets for Rodentia. The directories where all the steps followed to curate each of these data subsets
 are explained (see 
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation))
+[here](00_Data_filtering/00_data_curation))
 are the following:   
 
-   * [Afrotheria](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/afrotheria)   
-   * [Chiroptera](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera)   
-   * [Euarchonta](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta)   
-   * [Lagomorpha](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/lagomorpha)   
-   * [Laurasiatheria_cetartiodactyla](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla)   
-   * [Laurasiatheria_therest](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest)   
-   * [Marsupialia](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia)   
-   * [Rodentia_ctenohystrica](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica)   
-   * [Rodentia_squirrel](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_squirrel)   
-   * [Rodentia_therest](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest)   
-   * [Xenarthra](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra)   
+   * [Afrotheria](00_Data_filtering/00_data_curation/afrotheria)   
+   * [Chiroptera](00_Data_filtering/00_data_curation/chiroptera)   
+   * [Euarchonta](00_Data_filtering/00_data_curation/euarchonta)   
+   * [Lagomorpha](00_Data_filtering/00_data_curation/lagomorpha)   
+   * [Laurasiatheria_cetartiodactyla](00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla)   
+   * [Laurasiatheria_therest](00_Data_filtering/00_data_curation/laurasiatheria_therest)   
+   * [Marsupialia](00_Data_filtering/00_data_curation/marsupialia)   
+   * [Rodentia_ctenohystrica](00_Data_filtering/00_data_curation/rodentia_ctenohystrica)   
+   * [Rodentia_squirrel](00_Data_filtering/00_data_curation/rodentia_squirrel)   
+   * [Rodentia_therest](00_Data_filtering/00_data_curation/rodentia_therest)   
+   * [Xenarthra](00_Data_filtering/00_data_curation/xenarthra)   
 
 Note that all these data subsets (the steps followed to further subset Laurasiatheria and Rodentia data subsets 
 as mentioned above is included in the corresponding directories listed above) had the corresponding inferred 
@@ -248,7 +248,7 @@ placing tags in the nodes to be calibrated and then using and R script to replac
 the corresponding calibrations (see the `filter_tree/00_Filter_trees` content inside the directories for 
 each data subset for more information).
 
-[Here](/02_SeqBayes_S2/00_Data_filtering/01_alignments) 
+[Here](00_Data_filtering/01_alignments) 
 you will find the instructions to run a perl script that will count the missing data for each 
 individual partition of each data subset. 
 
@@ -256,10 +256,10 @@ individual partition of each data subset.
 Once the data subsets are filtered and the corresponding calibrated phylogenies are obtained,
 we can run `BASEML` to estimate the Hessian and the gradient needed to run `MCMCtree` with the 
 approximate likelihood. You may check the tutorial used in the first step
-[here](/01_SeqBayes_S1/01_BASEML/02_Hessian)
+[here](../01_SeqBayes_S1/01_BASEML/02_Hessian)
 to remember how we carry out this analysis. 
 
-[`Here`](/02_SeqBayes_S2/01_BASEML),
+[`Here`](01_BASEML),
 you will find a description of how we ran `BASEML` with the data subsets for this second step 
 of the sequential Bayesian dating approach. We also provide you with the links to download the data 
 you will need to reproduce our results as well as the results we obtained. 
@@ -272,13 +272,13 @@ calculation ([dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7
 Before running `MCMCtree`, however, we ran safety checks to make sure that the calibrations that we 
 were using were not in conflict. For each of the directories with the information to filter each 
 data subset that you can find 
-[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation),
+[here](00_Data_filtering/00_data_curation),
 you will find a description of these checks inside the `filter_tree` directory. The R script and the 
 output plots will be inside `filter_tree/01_Check_conflict` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
 obtained [here](https://www.dropbox.com/s/1vjkggr4ujrnfha/SeqBayesS2_MCMCtree.zip?dl=0),
 while you can find 
-[here](/02_SeqBayes_S2/02_MCMCtree) 
+[here](02_MCMCtree) 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
 estimated divergence times.

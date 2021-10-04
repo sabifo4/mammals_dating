@@ -10,7 +10,7 @@ can be used to save disk memory when running `MCMCtree` with the approximate lik
 Last, you have another directory with different files that summarise the missing data in each 
 partition of each data subset. Below, you will find the code you need to run in order to calculate 
 the missing data in each data subset, which uses the perl script
-[`count_missingdat.pl`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/count_missingdat.pl). 
+[`count_missingdat.pl`](count_missingdat.pl). 
 Note this code will go through each individual partition of each data subset to generate the 
 summary files with missing data:
 

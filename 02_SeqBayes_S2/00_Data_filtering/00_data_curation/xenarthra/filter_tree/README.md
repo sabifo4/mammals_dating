@@ -1,17 +1,17 @@
 # Xenarthra - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Xenarthra.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/00_Filter_trees/Calibrations_Xenarthra.R)
+We use the R script [`Calibrations_Xenarthra.R`](00_Filter_trees/Calibrations_Xenarthra.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`xenarthra_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/00_Filter_trees/xenarthra_rooted_calibnames.tree)
+[`xenarthra_rooted_calibnames.tree`](00_Filter_trees/xenarthra_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Xenarthra.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/00_Filter_trees/Calibrations_Xenarthra.txt)
+[`Calibrations_Xenarthra.txt`](00_Filter_trees/Calibrations_Xenarthra.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/xenarthra).
+This "dummy" alignment is saved [here](../../../01_alignments/01_mammal_dummy_alns/xenarthra).
 
 After running this script, you will have the following files:
 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`xenarthra_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/00_Filter_trees/xenarthra_rooted_baseml.tree),
+[`xenarthra_rooted_baseml.tree`](00_Filter_trees/xenarthra_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -44,7 +44,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/lru4pzpcwz99w2l/SeqBayesS2_check_conflict_xenarthra.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 directories inside the 
-[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -58,7 +58,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -103,7 +103,7 @@ Calibrations used:
    * Xenarthra: ST(0.628,0.019,-0.389,4.88)   
 
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/01_Check_conflict/00_Only_ST_Xenarthra_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/00_Only_ST_Xenarthra_MCMCruns.png">
 </p>
 
 
@@ -121,16 +121,16 @@ Calibrations used:
     
    
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/01_Check_conflict/01_SBnST_Xenarthra_MCMCruns.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Xenarthra_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS Xenarthra data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/01_Check_conflict/01_SBnST_Xenarthra_meanquant.png">
+  <img width="1000" height="600" src="01_Check_conflict/01_SBnST_Xenarthra_meanquant.png">
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/xenarthra/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](02_Final_tree_topology)
 directory.
 
 --- 
