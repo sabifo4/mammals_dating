@@ -2,8 +2,8 @@
 A summary of the process followed to collect the data for this analysis is given below. 
 We also describe the steps followed to filter these data. Please note that further details 
 to filter the first data set can be found 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/01_SeqBayes_S1/00_Gene_filtering),
-while additional filterings for the second data set can be found [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation)
+[here](/01_SeqBayes_S1/00_Gene_filtering),
+while additional filterings for the second data set can be found [here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation)
 (you will need to access each directory that you will find when clicking the link above 
 to go through the details followed to filter each data subset).
 

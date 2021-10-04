@@ -11,7 +11,7 @@ corresponding calibrations specified in the
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica) 
+This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica) 
 (now saved inside `before_updating_topology` directory; see below).
 
 After running this script, you will have the following files:
@@ -48,9 +48,9 @@ and how this was done).
 
 The updated file to be used by `BASEML` and the calibrated tree before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/extra_analyses). 
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/00_Filter_trees/extra_analyses). 
 The "dummy" alignments have also been updated in their corresponding directory 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica),
+[here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/rodentia_ctenohystrica),
 where the previous version has been saved in a directory called `before_updating_topology`.
 
 
@@ -63,7 +63,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/hqr0dvcvmvxc5tn/SeqBayesS2_check_conflict_ctenohystrica.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 two directories inside the 
-[`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -152,7 +152,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_tree/02_Final_tree_topology)
 directory.
 
 --- 

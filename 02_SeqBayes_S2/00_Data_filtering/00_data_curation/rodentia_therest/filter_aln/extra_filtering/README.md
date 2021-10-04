@@ -2,7 +2,7 @@
 
 ## 1. Obtain subtrees
 First, we used a copy of the 1314sp rodents tree, which is saved under the 
-[`00_R_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
+[`00_R_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
 directory as `main_rodents_uncalib.tree`, to find out how we had to divide it into two data subsets.
 The first tree subset will contain family Muridae, while the second subset 
 will contain the rest of Eumoroida (families: Calomysicidae, Nesomyidae,
@@ -10,31 +10,31 @@ Cricetidae), families Platacanthomyidae and Spalacidae, Dipodidae,
 Castoroidea, Geomyidae, and Heteromyidae. 
 
 The R script 
-[`Generate_subtrees_rodents.R`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Generate_subtrees_rodents.R), 
+[`Generate_subtrees_rodents.R`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Generate_subtrees_rodents.R), 
 which is located in the
-[`00_R_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
+[`00_R_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing)
 directory, is used to find out which taxa have to be allocated to each data subset.
 The input file is
-[`main_rodents_uncalib.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/main_rodents.tree).
+[`main_rodents_uncalib.tree`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/main_rodents.tree).
 The output files are
-[`Muridae.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Muridae.tree).
+[`Muridae.tree`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Muridae.tree).
 and
-[`Eumoroida_rest.tree`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Eumoroida_rest.tree).
+[`Eumoroida_rest.tree`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/Eumoroida_rest.tree).
 We inspected 
 so we could then manually generate the two calibrated subtrees that are saved in this same directory.
 
 ## 2. Generating alignments 
 Two of the output files generated in the previous step by the R script, 
-[`632sp_muridae_list.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/632sp_muridae_list.txt).
+[`632sp_muridae_list.txt`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/632sp_muridae_list.txt).
 and
-[`689sp_eumoroidarest_list.txt`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/689sp_eumoroidarest_list.txt).
+[`689sp_eumoroidarest_list.txt`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/00_R_parsing/689sp_eumoroidarest_list.txt).
 files, are used as input files in this step to generate the data alignments for these two 
 data subsets.
 
 We used the perl script
-[`Subset_alignments.pl`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing/Subset_alignments.pl).
+[`Subset_alignments.pl`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing/Subset_alignments.pl).
 saved in the
-[`01_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing).
+[`01_perl_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/01_perl_parsing).
 directory, for that purpose. Specifically, it reads a text file with a list of taxa names (first arg) and 
 an alignment in PHYLIP format (second arg). The third argument is the number of taxa that 
 are included in this file. 
@@ -158,6 +158,6 @@ mv *txt *csv log_subt2/
 Now, we need to add extra taxa to both subtrees so we can include extra calibrations that will later 
 ease grafting the subtrees to the backbone tree. The steps followed for the first rodentia subtree 
 can be found 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1),
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt1),
 while those to generate the second data subset are 
-[here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2).
+[here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/extra_filtering/02_MAFFT_subt2).

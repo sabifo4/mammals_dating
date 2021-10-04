@@ -95,10 +95,10 @@ printf "\n\n" >> ctenohystrica_5parts.aln
 done 
 ```
 
-**NOTE**: [Test 3](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys/test3)
+**NOTE**: [Test 3](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/02_tests_fukomys/test3)
 shows that there are issues with the CYTB sequence with *F. damarensis*. Therefore, the mitochondrial
 alignments (mit-12CP and mit-3CP) generated at this stage are not going to be used. We need an extra 
 filtering step, which we detail in
-[`04_mafft_mitaln`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln) 
+[`04_mafft_mitaln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_ctenohystrica/filter_aln/extra_filtering/04_mafft_mitaln) 
 
 At this stage, we keep the nuclear and the mit-rna alignments only.

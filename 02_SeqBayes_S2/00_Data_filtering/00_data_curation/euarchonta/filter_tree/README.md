@@ -11,7 +11,7 @@ corresponding calibrations specified in the
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
-This "dummy" alignment is saved [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/euarchonta).
+This "dummy" alignment is saved [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/01_mammal_dummy_alns/euarchonta).
 
 After running this script, you will have the following files:
 
@@ -44,7 +44,7 @@ with the results obtained when running `MCMCtree` without the data
 [here](https://www.dropbox.com/s/0ug0nuemljaj863/SeqBayesS2_check_conflict_euarchonta.zip?dl=0).
 Once you download them, you should unzip its content and save the 
 directories inside the 
-[`01_Check_conflict`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict)
+[`01_Check_conflict`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict)
 directory so the file architecture is the following:
 
 ```
@@ -289,7 +289,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/02_Final_tree_topology)
+[`final_tree_topology`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/02_Final_tree_topology)
 directory.
 
 --- 

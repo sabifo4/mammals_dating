@@ -57,7 +57,7 @@ files that you will generate if you follow all the steps below. Feel free to kee
 make sure that you reproduce the same results that we show here. 
 
 ## 1. Taxonomic filtering 
-Within the [`filter_aln`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln)
+Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln)
 directory, you will find different files as detailed above. 
 Specifically, the R script [`parse_lineage.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
@@ -320,7 +320,7 @@ This means that, even though this is the placement found in the ML tree, other r
 found they cluster elsewhere. Therefore, we flagged them for future and further analyses that might be carried out,
 but that are not part of the scope of this project. 
 The output files (`png` and `FigTree` files) have been saved in the
-[`checked_aln/taxonomical_check`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/checked_aln/taxonomical_check)
+[`checked_aln/taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/checked_aln/taxonomical_check)
 directory. 
 
 The taxa to be renamed and/or removed are the following:
@@ -368,7 +368,7 @@ these checks before 2018 (i.e., they had already been "cleaned", while the data 
 had not yet).
 Therefore, you do not see the last part of the filtering described in this section 
 in the corresponding `README.md` files for these data subsets or the directory
-[`taxonomical_check`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/checked_aln/taxonomical_check)
+[`taxonomical_check`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/checked_aln/taxonomical_check)
 You will see that the `filter_aln` directory for these four data subsets
 contains a csv file with the details that were followed to filter the corresponding alignments (12CP and 3CP). 
 Note that this csv file is equivalent to the excel sheet you find in this directory for 
@@ -404,9 +404,9 @@ Instructions to follow:
    in RStudio and change line 25 so it is `subt    <- "laurasiatheria_therest"` and uncomment line 27. Now, we
    can run it from RStudio. This script will generate a concatenated alignment file with all
    partitions, as well as one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/laurasiatheria_therest/unfiltered/`
-   inside [`00_Data_filtering/01_alignments/`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
+   inside [`00_Data_filtering/01_alignments/`](/02_SeqBayes_S2/00_Data_filtering/01_alignments). 
    Log and RData files will be saved inside
-   [`00_Data_filtering/01_alignments/Rout`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
+   [`00_Data_filtering/01_alignments/Rout`](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation).   
       > NOTE 1: Updated `partitions.txt` file inside `00_mammal_alns/laurasiatheria_therest/unfiltered/` generated.   
 	  > NOTE 2: Output file called `check_appends.txt` to check that 3nt partition has been appended
 	    to the right line of the alignment can be found in `Rout/Rdata". 
@@ -553,8 +553,8 @@ Instructions to follow:
    Now, we can run it from RStudio. 
    This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions,
-   inside [`01_alignments`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments).
-   Log files and Rdata can be found [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
+   inside [`01_alignments`](/02_SeqBayes_S2/00_Data_filtering/01_alignments).
+   Log files and Rdata can be found [here](/02_SeqBayes_S2/00_Data_filtering/01_alignments/Rout/log_concatenation). 
       > NOTE: Updated `partitions.txt` file inside `00_mammal_alns/laurasiatheria_therest/`.   
    * Paths have been automatically set according to current file architecture in `mammals` dir, 
    do not change paths in the Rscript! 
@@ -576,22 +576,22 @@ for the "Chiroptera" subtree, otherwise you will not be able to proceed!
 The procedure followed was the following:
 
 ## 1. Generate data subsets
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
+[Here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
 in section `1. Generate fasta files to generate alignments with new taxa`, you will find 
 all the details about how to reformat the alignments for this data subset before we 
 included the data for the new taxa. You can download all the reformatted alignments generated as well 
 as the data needed to run MAFFT for the re-alignment
 [here](https://www.dropbox.com/s/6hvirfh37w8dw17/SeqBayesS2_filteraln2_ltherest_00_perl_parsing.zip?dl=0).
 The content of this zip file should be saved inside directory
-[`00_perl_parsing`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/00_perl_parsing),
+[`00_perl_parsing`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/00_perl_parsing),
 where you can find all the scripts used in this filtering step.
 
 ## 2. Generate new alignments with new taxa 
-[Here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
+[Here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering),
 in section `2. Getting alignment with new taxa`, you will find 
 all the details to generate the final alignments. 
 The directory
-[`01_MAFFT`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
+[`01_MAFFT`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
 contains the scripts used to generate the alignment that includes the sequences for 
 *Pteropus vampyrus*, *Myotis lucifugus*, *Vicugna pacos*, and *Capra hircus*.
 These are the species which sequence data were needed to include the calibrations for the nodes "Chiroptera", 
@@ -599,7 +599,7 @@ These are the species which sequence data were needed to include the calibration
 You can download the `maff_ltherest` directory
 [here](https://www.dropbox.com/s/9kr87g1iddaqr8o/SeqBayesS2_filteraln2_ltherest_01_MAFFT.zip?dl=0),
 which should be saved inside the 
-[`01_MAFFT`](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
+[`01_MAFFT`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/extra_filtering/01_MAFFT) 
 directory mentioned above when running the scripts and following the instructions detailed in the link 
 provided above. 
 

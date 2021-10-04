@@ -9,10 +9,10 @@ download the alignments for data subset 1
 [here](https://www.dropbox.com/s/2u0ad87tmtvq143/SeqBayesS2_Raln_chiroptera.zip?dl=0),
 and download the alignments data subset 2 
 [here](https://www.dropbox.com/s/5zwds5t26r5l29f/SeqBayesS2_Raln_chiroptera_subt2.zip?dl=0))
-have been explained [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln).
+have been explained [here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln).
 Just follow the steps in the order given and you will be able to reproduce our results. You will also find all 
 the details about the need of further partitioning this data set into two data subsets.
 
 ## Curated tree 
 All the details about the procedure followed to generate the final tree alignments 
-can be found [here](https://github.com/sabifo4/mammals_dating/tree/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree).
+can be found [here](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_tree).
