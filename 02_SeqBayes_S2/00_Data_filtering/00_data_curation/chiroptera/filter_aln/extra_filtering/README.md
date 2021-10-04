@@ -25,7 +25,7 @@ so we could then manually generate the two calibrated subtrees that are saved in
 Two of the output files generated in the previous step by the R script, 
 [`255sp_Lchiro_megachiroptera_list.txt`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/255sp_Lchiro_megachiroptera_list.txt)
 and
-[`633sp_Lchiro_microchiroptera_list.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/633sp_Lchiro_microchiroptera_list.txt)
+[`633sp_Lchiro_microchiroptera_list.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/00_R_parsing/633sp_Lchiro_microchiroptera_list.txt)
 files, are used as input files in this step to generate the data alignments for these two 
 data subsets.
 

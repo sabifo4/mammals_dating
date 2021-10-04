@@ -44,11 +44,11 @@ make sure that you reproduce the same results that we show here.
 ## 1. Taxonomic filtering 
 Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_aln)
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
-a function within the R script [`Filter_lineages.R`](https://github.com/sabifo4/mammals_dating/blob/main/src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
+a function within the R script [`Filter_lineages.R`](src/Filter_lineages.R)
+in the `src` directory and the [`genes.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
 file. The messages printed out by this script are the following:
 
 ```
@@ -106,7 +106,7 @@ you unzip the file which link provided above, inside a directory called `checked
 
 The first manual checks suggest some species names have to be changed as well as some 
 sequences are to be removed. The justifications can be found in the file 
-[`marsupialia_taxonomy_check.csv`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_aln/marsupialia_taxonomy_check.csv). 
+[`marsupialia_taxonomy_check.csv`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_aln/marsupialia_taxonomy_check.csv). 
 The filtering you will see in the commands below was already 
 carried out for `alignment.phylip`, but has had to be done again for `alignment_nt3cp.phylip` so both 
 alignment files are at the same filtering level. The code is the following:
@@ -211,12 +211,12 @@ Now that both files with the 12CP-alignment (`alignment.phylip`) and 3CP-alignme
 have the same taxa names and have had the same filtering procedure carried out,
 we can proceed to concatenate the alignment with the third 
 codon positions to the alignment with 12CPs using the R script
-[`Concatenate_seqs_for_MCMCtree.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R)
+[`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R)
 so we can have the concatenated alignment. 
 
 Instructions to follow:      
 
-   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R) 
+   * Open the RScript [`Concatenate_seqs_for_MCMCtree.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree.R) 
    in RStudio and change line 24 so it is `subt    <- "marsupialia"`. Now, we can run it from RStudio. This script
    will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/marsupialia`

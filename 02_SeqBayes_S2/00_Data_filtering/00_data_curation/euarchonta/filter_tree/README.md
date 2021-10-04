@@ -1,13 +1,13 @@
 # Euarchonta - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Euarchonta.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.R)
+We use the R script [`Calibrations_Euarchonta.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`euarchonta_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_calibnames.tree)
+[`euarchonta_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Euarchonta.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.txt)
+[`Calibrations_Euarchonta.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/Calibrations_Euarchonta.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`euarchonta_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_baseml.tree),
+[`euarchonta_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/00_Filter_trees/euarchonta_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -61,7 +61,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -128,7 +128,7 @@ Calibrations used:
    * *P. paniscus*-*P. troglodites*: ST(0.039,0.003,-0.337,47.276)     
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Only_ST_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/00_Only_ST_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -167,7 +167,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/01_SBnST_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/01_SBnST_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -205,7 +205,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/02_SBandSTtweak1_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/02_SBandSTtweak1_Euarchonta_MCMCruns.png">
 </p>
 
 
@@ -244,7 +244,7 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/03_SBandSTtweak2_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/03_SBandSTtweak2_Euarchonta_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 4th round**   
@@ -280,12 +280,12 @@ Calibrations used:
    * Scandentia: B(0.34,0.66)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBandSTtweak3_Euarchonta_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBandSTtweak3_Euarchonta_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS Euarchonta data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBnSTtweak3_Euarchonta_meanquant.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/euarchonta/filter_tree/01_Check_conflict/04_SBnSTtweak3_Euarchonta_meanquant.png">
 </p>
 
 The final tree topology can be found in the

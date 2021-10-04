@@ -59,7 +59,7 @@ mv out_* copy_outfiles/
 mkdir out_data out_logs out_Rdata
 ```
 
-Once everything is ready, you can run the script [`00_Filtering_genes.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/00_Filtering_genes.sh) 
+Once everything is ready, you can run the script [`00_Filtering_genes.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/00_Filtering_genes.sh) 
 to obtain a comma separated file, `genes.csv`, which will be saved inside the `out_data` 
 directory to which the following information is appended:   
 
@@ -81,7 +81,7 @@ changes you need so you can run the next command accordingly:
 ```
 
 ## 2. Use summary statistics to filter genes 
-The script [`00_Get_filtered_genes_in_dir.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/00_Get_filtered_genes_in_dir.R)
+The script [`00_Get_filtered_genes_in_dir.R`](01_SeqBayes_S1/00_Gene_filtering/scripts/00_Get_filtered_genes_in_dir.R)
 finds the genes that meet the requirements needed to proceed with the Bayesian inference:   
 
    1. There must be at least 10 sequences in the alignments (18 genes out).   
@@ -101,12 +101,12 @@ above. This results in 648 genes, which are saved in a directory called `filtere
 (you can download the directory [here](https://www.dropbox.com/s/wsgfy58ufbjtvo5/filtered_genes_all72sp.zip?dl=0) so you can check you get the same results we did).
 A log file is also generated ([`log_01_copy_filtered_all72sp_genes.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_01_copy_filtered_all72sp_genes.txt)).
 
-You can open the R script [`00_Get_filtered_genes_in_dir.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/00_Get_filtered_genes_in_dir.R)
+You can open the R script [`00_Get_filtered_genes_in_dir.R`](01_SeqBayes_S1/00_Gene_filtering/scripts/00_Get_filtered_genes_in_dir.R)
 in RStudio to run all the steps detailed above. We have added extra information to this R script so it can be used 
 as a tutorial.
 
 ## 3. Getting the alignments and trees in PAML format
-The script [`01.1_Get_data_for_baseml.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01.1_Get_data_for_baseml.sh)
+The script [`01.1_Get_data_for_baseml.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/01.1_Get_data_for_baseml.sh)
 is used to get the alignments and trees in the format required to be read by
 `MCMCtree` and `BASEML` (`PAML v4.9h`, [Yang 2007](https://academic.oup.com/mbe/article/24/8/1586/1103731)).
 It does the following:   
@@ -114,10 +114,10 @@ It does the following:
    as `1`, `2`, `n`; where `n` equals to the number of directories 
    with filtered genes. There, the corresponding gene and tree files will be saved.     
    2. It gets the gene name and number of sequences and saves them in a variable.   
-   3. It gets the fasta alignments in one line format using the [`one_line_fasta.pl`](https://github.com/sabifo4/mammals_dating/blob/main/src/00_get_seq_next_to_header.pl) script available in the `src` directory.   
-   4. It uses the script [`00_get_seq_next_to_header.pl`](https://github.com/sabifo4/mammals_dating/blob/main/src/00_get_seq_next_to_header.pl) to format the output from step 3 
+   3. It gets the fasta alignments in one line format using the [`one_line_fasta.pl`](src/00_get_seq_next_to_header.pl) script available in the `src` directory.   
+   4. It uses the script [`00_get_seq_next_to_header.pl`](src/00_get_seq_next_to_header.pl) to format the output from step 3 
    so the sequences are next to the species name tab separated (script available in the `src` directory).   
-   5. It uses the script [`01_concatenate_genes.pl`](https://github.com/sabifo4/mammals_dating/blob/main/src/01_concatenate_genes.pl) to now generate an alignment in PHYLIP format.   
+   5. It uses the script [`01_concatenate_genes.pl`](src/01_concatenate_genes.pl) to now generate an alignment in PHYLIP format.   
    6. It removes unnecessary files generated during steps 3-5 (script available in the `src` directory).   
    7. It gets the file containing the RAxML best-scoring ML tree and saves it in the corresponding `baseml/$num` 
    directory in PAML format.   
@@ -140,9 +140,9 @@ is generated once this script finishes. This script can be called as it follows:
 You can download the zip file `baseml.zip` [here](https://www.dropbox.com/s/9ogr853wara72la/baseml.zip?dl=0)
 so you can check that you have been able to reproduce these filtering steps. 
 
-After that, the script [`partition_alignments.pl`](https://github.com/sabifo4/mammals_dating/blob/main/src/partition_alignments.pl)
+After that, the script [`partition_alignments.pl`](src/partition_alignments.pl)
 (script available in the `src` directory) needs to be run for each of the gene 
-alignments. The script [`01.1_Get_data_for_baseml_partitioned.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01.1_Get_data_for_baseml_partitioned.sh)
+alignments. The script [`01.1_Get_data_for_baseml_partitioned.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/01.1_Get_data_for_baseml_partitioned.sh)
 can do this in a `for` loop. You can run it like this:
 
 ```sh
@@ -158,7 +158,7 @@ contain the 1st and 2nd codon positions (12CP) partition (partition that we are
 interested in using for the subsequent analyses).
 
 ## 4. Get distance between mouse and human
-The script [`01.2_Get_mouse_human_aln.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01.2_Get_mouse_human_aln.sh)
+The script [`01.2_Get_mouse_human_aln.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/01.2_Get_mouse_human_aln.sh)
 extracts human and mouse sequences from `partitions12_*aln` and generates a file
 readable by R called `*_mouse_human.aln` to later calculate the sequence distance.
 A log file ([`log_03_get_mouse_human.txt`](/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_03_get_mouse_human.txt))
@@ -181,11 +181,11 @@ used to order the genes from slow- to fast-evolving.
 ## 5. Second filtering step 
 
 ### 5.1. Use relative branch lengths for second filtering step
-The script [`01_Analysis_filtered_genes.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01_Analysis_filtered_genes.R)
+The script [`01_Analysis_filtered_genes.R`](01_SeqBayes_S1/00_Gene_filtering/scripts/01_Analysis_filtered_genes.R)
 is used to save the best-scoring ML gene trees of each 
 alignment in a list. The trees are input in R using the `ape` package ([Paradis et al., 2004](https://academic.oup.com/bioinformatics/article/20/2/289/204981)) and are 
 saved as class `phylo`. In order to avoid doing this every time the script 
-is loaded in R, the RData file [`mammal.trees.RData`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/mammal.trees.RData) 
+is loaded in R, the RData file [`mammal.trees.RData`](01_SeqBayes_S1/00_Gene_filtering/out_RData/mammal.trees.RData) 
 is created and saved in the `out_RData` directory.
 
 Afterwards, the tree lengths are used to obtain the relative branch lengths, respectively 
@@ -193,8 +193,8 @@ for each alignment. If the largest branch length of any of the sequences of the 
 is larger than 60% of the total tree length, then the gene is removed. 
 
 A matrix with this information (genes have not been removed yet) is created at this 
-stage and saved as [`mammals_summary_matrix_filtstep1.RData`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/mammals_summary_matrix_filtstep1.RData). 
-Also, a log file, [`log_04_R_genes_blength_longer_60pc.txt`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_04_R_genes_blenghth_longer_60pc.txt),
+stage and saved as [`mammals_summary_matrix_filtstep1.RData`](01_SeqBayes_S1/00_Gene_filtering/out_RData/mammals_summary_matrix_filtstep1.RData). 
+Also, a log file, [`log_04_R_genes_blength_longer_60pc.txt`](01_SeqBayes_S1/00_Gene_filtering/out_logs/log_04_R_genes_blenghth_longer_60pc.txt),
 is created to keep track of the genes deleted.
 
 After this step, 133 genes have at least one branch length that is 
@@ -239,7 +239,7 @@ are saved in a directory called `filtered_genes_step2` (you can also download th
 in phylip format (only alignment with 1st+2nd CP) together
 with the corresponding tree file. In total, there are 15,431 filtered genes. We also 
 generate a table with the summary statistics for these filtered genes,
-[`filtering_sum_stats.csv`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/filtering_sum_stats.csv).
+[`filtering_sum_stats.csv`](01_SeqBayes_S1/00_Gene_filtering/out_RData/filtering_sum_stats.csv).
 
 After that, those genes that have been filtered in this step are matched against
 the genes that were found to be present in all 72 species (i.e., 645 genes)
@@ -272,11 +272,11 @@ done
 ```
 
 A log file with the list of genes that are excluded can be found in 
-[`log_10_removed_genes.txt`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_logs/log_10_removed_genes.txt).
+[`log_10_removed_genes.txt`](01_SeqBayes_S1/00_Gene_filtering/out_logs/log_10_removed_genes.txt).
 
 A total of 15,268 genes pass the filter (you can download the `filtered_genes_step3` directory [here](https://www.dropbox.com/s/677ip3hliybe9v1/filtered_genes_step3.zip?dl=0)). 
 We also generated a table with the summary statistics for these filtered genes,
-[`filtering_sum_stats_nonucgenes.csv`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/out_RData/filtering_sum_stats_nonucgenes.csv).
+[`filtering_sum_stats_nonucgenes.csv`](01_SeqBayes_S1/00_Gene_filtering/out_RData/filtering_sum_stats_nonucgenes.csv).
  
 Now, we do the same for the 645 genes that are shared across all 72 taxa:
 
@@ -312,7 +312,7 @@ Once the ordered genes have been filtered in the directory `filtered_genes_step3
 the alignments with 1st+2nd CPs of each gene until we get 4 partitions ranging from slow- to 
 fast-evolving genes.
 
-We first need to run the script [`03_Concatenate_genes_separated_for_partition.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/03_Concatenate_genes_separated_for_partition.sh)
+We first need to run the script [`03_Concatenate_genes_separated_for_partition.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/03_Concatenate_genes_separated_for_partition.sh)
 so we can get renamed individual files from slow- to fast-evolving (i.e., `geneX_ENSG..*.fasta`, where 
 `x` is the number of the gene and the rest of the file name corresponds to the name 
 of the gene), separated in four different folders to later run the partitioning 
@@ -415,7 +415,7 @@ Make sure you have enough space as its size is ~2.6Gb.
 ### 6.1. Count missing data
 You might have seen that there is a perl script called `count_missingdat_72sp.pl` 
 saved in the `000_alignments` directory, as shown above.
-You can also find it in this GitHub repository [here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/count_missingdat_72sp.pl).
+You can also find it in this GitHub repository [here](01_SeqBayes_S1/00_Gene_filtering/scripts/count_missingdat_72sp.pl).
 Note that, if you want to use it to reproduce our results, you will have to download the zip file with the
 [`000_alignments`](https://www.dropbox.com/s/mrvzzvd4o6qqyqk/000_alignments.zip?dl=0)
 as it uses the file architecture described above.
@@ -460,7 +460,7 @@ you will see that there is a directory called `prepare_baseml`. There, you will 
 to see a file called `out.txt`, which we have used to extract the information regarding the alignment 
 length and the site patter counts for each partition (note that we explain in more detail how we ran `BASEML` 
 to get this information in the section `2. Generate BASEML files` in the `BASEML` tutorial
-[here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/02_Hessian/README.md)).
+[here](01_SeqBayes_S1/01_BASEML/02_Hessian/README.md)).
 
 We have summarised the content of each partition here:
 
@@ -494,7 +494,7 @@ nuclear genes that are also found in the data set that we use in the second step
 Bayesian dating analysis. This does not affect the results we get in this analysis because it is a complete
 independent analysis from the clock-dating analysis.   
 
-**NOTE 2**: The code for this purpose has been appended to the R script [`01_Analysis_filtered_genes.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/01_Analysis_filtered_genes.R),
+**NOTE 2**: The code for this purpose has been appended to the R script [`01_Analysis_filtered_genes.R`](01_SeqBayes_S1/00_Gene_filtering/scripts/01_Analysis_filtered_genes.R),
 please check step 11 from line 717. If you run the code from this line, you will see that, in your working directory,
 the following directories will be generated: 
 
@@ -517,9 +517,9 @@ the following directories will be generated:
 ```
 
 After that, we decided to partition the alignments into 2 or 4 blocks from slow- to fast- evolving. We rewrote the 
-bash script [`03_Concatenate_genes_separated_for_partition.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/03_Concatenate_genes_separated_for_partition.sh) 
+bash script [`03_Concatenate_genes_separated_for_partition.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/03_Concatenate_genes_separated_for_partition.sh) 
 so we could generate the number of partitions required. The code for this purpose can be found in the script 
-[`04.1_Concatenate_genes_separated_for_partition_subsamples.sh`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/00_Gene_filtering/scripts/04.1_Concatenate_genes_separated_for_partition_subsamples.sh)
+[`04.1_Concatenate_genes_separated_for_partition_subsamples.sh`](01_SeqBayes_S1/00_Gene_filtering/scripts/04.1_Concatenate_genes_separated_for_partition_subsamples.sh)
 and can be run as it follows:
 
 ```sh 
