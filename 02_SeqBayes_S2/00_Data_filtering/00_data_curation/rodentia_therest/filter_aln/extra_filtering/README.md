@@ -3,7 +3,9 @@
 ## 1. Obtain subtrees
 First, we used a copy of the 1314sp rodents tree, which is saved under the 
 [`00_R_parsing`](00_R_parsing)
-directory as `main_rodents_uncalib.tree`, to find out how we had to divide it into two data subsets.
+directory as
+[`main_rodents_uncalib.tree`](00_R_parsing/main_rodents_uncalib.tree),
+to find out how we had to divide it into two data subsets.
 The first tree subset will contain family Muridae, while the second subset 
 will contain the rest of Eumoroida (families: Calomysicidae, Nesomyidae,
 Cricetidae), families Platacanthomyidae and Spalacidae, Dipodidae,
@@ -15,7 +17,7 @@ which is located in the
 [`00_R_parsing`](00_R_parsing)
 directory, is used to find out which taxa have to be allocated to each data subset.
 The input file is
-[`main_rodents_uncalib.tree`](00_R_parsing/main_rodents.tree).
+[`main_rodents_uncalib.tree`](00_R_parsing/main_rodents_uncalib.tree).
 The output files are
 [`Muridae.tree`](00_R_parsing/Muridae.tree).
 and
@@ -25,7 +27,7 @@ so we could then manually generate the two calibrated subtrees that are saved in
 
 ## 2. Generating alignments 
 Two of the output files generated in the previous step by the R script, 
-[`632sp_muridae_list.txt`](00_R_parsing/632sp_muridae_list.txt).
+[`628sp_muridae_list.txt`](00_R_parsing/628sp_muridae_list.txt).
 and
 [`689sp_eumoroidarest_list.txt`](00_R_parsing/689sp_eumoroidarest_list.txt).
 files, are used as input files in this step to generate the data alignments for these two 
