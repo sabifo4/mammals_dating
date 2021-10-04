@@ -1,13 +1,13 @@
 # Laurasiatheria cetartiodactyla - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Lcetartiodactyla.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/Calibrations_Lcetartiodactyla.R)
+We use the R script [`Calibrations_Lcetartiodactyla.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/Calibrations_Lcetartiodactyla.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`laurasiatheria_cetartiodactyla_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_calibnames.tree)
+[`laurasiatheria_cetartiodactyla_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_LaurCetart.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/Calibrations_LaurCetart.txt)
+[`Calibrations_LaurCetart.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/Calibrations_LaurCetart.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`laurasiatheria_cetartiodactyla_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_rooted_baseml.tree),
+[`laurasiatheria_cetartiodactyla_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/00_Filter_trees/laurasiatheria_cetartiodactyla_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -64,7 +64,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -111,7 +111,7 @@ Calibrations used:
    * *Ovis aries*-*Capra hircus*: ST(0.0686,0.0172,3.2247,169.6716 )   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/00_Only_ST_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/00_Only_ST_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -149,7 +149,7 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/01_SBnST_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/01_SBnST_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 2nd round**   
@@ -187,7 +187,7 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/02_SBnST_tweak1_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/02_SBnST_tweak1_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 3rd round**   
@@ -224,7 +224,7 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/03_SBandSTtweak2_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/03_SBandSTtweak2_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 
@@ -263,7 +263,7 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/04_SBandSTtweak3_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/04_SBandSTtweak3_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 
@@ -301,7 +301,7 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/05_SBandSTtweak4_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/05_SBandSTtweak4_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 6th round**   
@@ -337,13 +337,13 @@ Calibrations used:
    * Physeteroidea: B(0.1382,0.2903)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/06_SBandSTtweak5_L.cetartiodactyla_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/06_SBandSTtweak5_L.cetartiodactyla_MCMCruns.png">
 </p>
 
 
 **Deviations (main 72-taxa VS laurasiatheria_cetartiodactyla data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/06_SBnST_tweak5_L.cetartiodactyla_meanquant.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_cetartiodactyla/filter_tree/01_Check_conflict/06_SBnST_tweak5_L.cetartiodactyla_meanquant.png">
 </p>
 
 The final tree topology can be found in the

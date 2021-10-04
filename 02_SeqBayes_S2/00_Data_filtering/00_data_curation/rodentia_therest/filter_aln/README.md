@@ -59,11 +59,11 @@ make sure that you reproduce the same results that we show here.
 ## 1. Taxonomic filtering 
 Within the [`filter_aln`](/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln)
 directory, you will find different files as detailed above. 
-Specifically, the R script [`parse_lineage.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/parse_lineage.R)
+Specifically, the R script [`parse_lineage.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/rodentia_therest/filter_aln/parse_lineage.R)
 was written to carry out a first taxonomic filtering. Note that this 
 R script will run if you have the same file architecture in this GitHub repository (i.e., it uses 
-a function within the R script [`Filter_lineages.R`](https://github.com/sabifo4/mammals_dating/blob/main/src/Filter_lineages.R)
-in the `src` directory and the [`genes.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
+a function within the R script [`Filter_lineages.R`](src/Filter_lineages.R)
+in the `src` directory and the [`genes.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/genes.txt)
 file. There are several messages printed out by this script as all the rodents are 
 parsed at the same time. You might have seen that, due to the large number of rodent species, 
 we have had to divide them into different data subsets: "rodentia_therest",
@@ -756,12 +756,12 @@ Now that we are sure that both files with the 12CP-alignment (`alignment.phylip`
 (`alignment_nt3cp.phylip`) are at the same "fitering stage"
 we can proceed to concatenate the alignment with the third 
 codon positions to the alignment with 12CPs using the R script
-[`Concatenate_seqs_for_MCMCtree_unfiltered.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R)
+[`Concatenate_seqs_for_MCMCtree_unfiltered.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R)
 so we can have the concatenated alignment. 
 
 Instructions to follow:   
 
-   * Open the RScript [`Concatenate_seqs_for_MCMCtree_unfiltered.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R) 
+   * Open the RScript [`Concatenate_seqs_for_MCMCtree_unfiltered.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Concatenate_seqs_for_MCMCtree_unfiltered.R) 
    in RStudio and change line 25 so it is `subt    <- "rodentia_therest"` and uncomment line 27.
    This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions, inside a new dir called `00_mammal_alns/rodentia_therest/unfiltered/`
@@ -963,11 +963,11 @@ grep -o '[a-z].* ' alignment.phylip > names_filt.txt
 ## 4. Data partitioning 
 Now that we have the concatenated and filtered alignment ready, we need to generate the filtered
 partitioned alignments by running the R script 
-[`Partition_seqs_for_MCMCtree_after_filtering.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
+[`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R).
 
 Instructions to follow: 
 
-   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
+   * Open the RScript [`Partition_seqs_for_MCMCtree_after_filtering.R`](02_SeqBayes_S2/00_Data_filtering/01_alignments/Partition_seqs_for_MCMCtree_after_filtering.R) 
    in RStudio and change line 24 so it is `subt    <- "rodentia_therest"` and uncomment line 25.
    Now, we can run it from RStudio. This script will generate a concatenated alignment file with all partitions, as well as 
    one alignment file for each individual partitions,

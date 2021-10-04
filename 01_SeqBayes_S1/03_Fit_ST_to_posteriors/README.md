@@ -104,7 +104,7 @@ All analyses regarding this step can be found in the directory [`02_MCMCtree_pri
    The resulting phylogeny and the samples collected for the two chains ran can be found here too. Note that there are other files output by `MCMCtree` but,
    due to the limited size a file can have in a repository, they have not been included here.   
    * [**`plots`**](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST/plots)   
-   The R script [`02_Eval_skewT.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_Eval_skewT.R) is then used to generate several plots in which we add the fitted 
+   The R script [`02_Eval_skewT.R`](01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_Eval_skewT.R) is then used to generate several plots in which we add the fitted 
    ST distributions previously calculated (i.e., "analytical ST", which were saved in `RData` files [here](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/Rdata) and are now loaded
    in this step) against the estimated distributions that result from averaging across all the collected samples gathered by `MCMCtree` when sampling from the prior (i.e., the estimates on prior times
    when calibrating the tree with the analytical ST distributions) and from the posterior (i.e., the posterior estimates inferred during the Bayesian dating analysis described [here](/01_SeqBayes_S1/02_MCMCtree)).   
@@ -120,14 +120,14 @@ All analyses regarding this step can be found in the directory [`02_MCMCtree_pri
 **this directory when you use the data in [`00_main_tree_T2/01_MCMCtree_posterior_old`](https://www.dropbox.com/s/qxsgfe0gbwxro9p/SeqBayesS1_MCMCtree_mainT2_posterior_old.zip?dl=0).**
 **Note that removing 11 genes out of the final filtered genes in the alignment did not have an impact on the**
 **estimated posterior divergence times as we show** 
-**[here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-I.pdf)** 
-**and [here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-II.pdf)**
+**[here](01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-I.pdf)** 
+**and [here](01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-II.pdf)**
 **(see also further comments [here](/01_SeqBayes_S1/02_MCMCtree)).**
 **Consequently, we did not repeat all the steps described above to fit the ST distributions again to the alignment without**
 **the 11 genes because we would not get any significant differences. You can also find in directory**
 **[`00_fitST_new`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST_new)**
 **the results with the generated fitted ST distributions to the posterior densities obtained when using the alignment**
-**without these 11 genes -- you can see that there are no significant differences [here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST_new/plots/Compare_OLDvsNEW_ST.png)**
+**without these 11 genes -- you can see that there are no significant differences [here](01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST_new/plots/Compare_OLDvsNEW_ST.png)**
 **and in individual plots [here](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST_new/plots/ST_comparison)**
 **(found within [`02_MCMCtree_prior_ST_new/plots`](/01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST_new/plots) directory)**
 **between the ST distributions.**
@@ -138,7 +138,7 @@ Bayesian dating analysis. The ST distributions estimated with the `sn::st.mple` 
 sampling from the prior with `MCMCtree` in light green, and when sampling from the posterior with `MCMCtree` in black:
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/sabifo4/mammals_dating/blob/main/figs/FigS6.png">
+  <img width="500" height="500" src="figs/FigS6.png">
 </p>
 
 >>**Fig S6. Assessment of the skew-_t_ (ST) distributions fitted to the internal nodes of the 72-species mammal tree.**

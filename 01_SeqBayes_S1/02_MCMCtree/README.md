@@ -141,9 +141,9 @@ to this file architecture). They should be saved as it follows:
 ## 2.1. Visual checks - `MCMCtreeR`
 First, we ran a modified version of the `MCMCtreeR::mcmc.tree.plot` function of the `MCMCtreeR` R package ([Puttick 2019](https://academic.oup.com/bioinformatics/article/35/24/5321/5530964?login=true),
 see [the corresponding GitHub repository](https://github.com/PuttickMacroevolution/MCMCtreeR)), which we 
-have added in the `Functions_plots_MCMCtreeR.R` (see [here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/Functions_plots_MCMCtreeR.R),
+have added in the `Functions_plots_MCMCtreeR.R` (see [here](01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/Functions_plots_MCMCtreeR.R),
 although the same file can be found 
-[here](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR/Functions_plots_MCMCtreeR.R)).
+[here](01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR/Functions_plots_MCMCtreeR.R)).
 Thanks to the plots output by this modified function, we can visually explore if there were any chains that might
 have had convergence problems.
 You can find the results in the following directories:   
@@ -162,7 +162,7 @@ You can find the results in the following directories:
    hypothesis, which were used to generate the plots you fill find the link provided above.
 
 Even though you can find the plots for all the hypotheses in the directories mentioned above,
-[here](https://github.com/sabifo4/mammals_dating/blob/main/figs/FigS4.pdf) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
+[here](figs/FigS4.pdf) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
 that did not show any visual problems.
 
 >>**_Notes for the figure provided in the link above:_**   
@@ -182,7 +182,7 @@ rank normalised split chains (Rhat). Values over 100 for the former are consider
 values need to be either smaller than or equal to 1.05 to show chain convergence.  
 
 In the [`01_ESS_and_chain_convergence`](/01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence)
-directory, you will find the [`Calculate_ESS.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence/Calculate_ESS.R)
+directory, you will find the [`Calculate_ESS.R`](01_SeqBayes_S1/02_MCMCtree/01_ESS_and_chain_convergence/Calculate_ESS.R)
 R script, which was used to generate the convergence plots for each tree hypothesis as well as to
 calculate the ESS for each `MCMCtree` analysis that was 
 run under each tree hypothesis.
@@ -218,7 +218,7 @@ In addition, you can find below the scatterplot of the estimated posterior mean 
 runs under the autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis.
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/sabifo4/mammals_dating/blob/main/figs/FigS5.png">
+  <img width="500" height="500" src="figs/FigS5.png">
 </p>
 
 >>**Fig S5: Scatterplot of the estimated posterior mean times for the MCMC runs under the**

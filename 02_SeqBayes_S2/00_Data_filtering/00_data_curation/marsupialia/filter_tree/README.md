@@ -1,13 +1,13 @@
 # Marsupialia - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Marsupialia.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/Calibrations_Marsupialia.R)
+We use the R script [`Calibrations_Marsupialia.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/Calibrations_Marsupialia.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`marsupialia_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/marsupialia_rooted_calibnames.tree)
+[`marsupialia_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/marsupialia_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Marsupialia.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/Calibrations_Marsupialia.txt)
+[`Calibrations_Marsupialia.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/Calibrations_Marsupialia.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
@@ -32,13 +32,13 @@ After running this script, you will have the following files:
 ```
 
 Note that we manually generated the
-[`marsupialia_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/marsupialia_rooted_baseml.tree),
+[`marsupialia_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/marsupialia_rooted_baseml.tree),
 which does not contain the calibrations. This file is no longer used after the tree topology 
 was updated (see below).
 
 ## 2. Manual change due to conflict with literature
 The pyhlogeny in
-[`307sp_Marsupialia_MCMCtree_calib.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/307sp_Marsupialia_MCMCtree_calib.tree)
+[`307sp_Marsupialia_MCMCtree_calib.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/307sp_Marsupialia_MCMCtree_calib.tree)
 has an outdated 
 tree topology that does not correspond to the latest literature.
 The new tree topology has the following clustering:
@@ -53,7 +53,7 @@ https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Facademic.oup.c
 
 The updated file to be used by `BASEML` and the calibrated tree before the checks 
 shown in the next step can be found
-[here](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/extra_filtering). 
+[here](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/00_Filter_trees/extra_filtering). 
 
 
 ## 3. Check if calibrations are in conflict
@@ -79,7 +79,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -124,7 +124,7 @@ Calibrations used:
    * Eometatheria: ST(0.459,0.068,0.025,623.433)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/00_Only_ST_Marsupialia_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/00_Only_ST_Marsupialia_MCMCruns.png">
 </p>
 
 
@@ -151,7 +151,7 @@ Calibrations used:
    **to B(0.2470,0.3) for next round**   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/01_SBnST_Marsupialia_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/01_SBnST_Marsupialia_MCMCruns.png">
 </p>
 
 
@@ -173,13 +173,13 @@ Calibrations used:
    * Macropodoidea: B(0.2470,0.3)    
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/02_SBnST_max0.3_pU0.025_Marsupialia_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/02_SBnST_max0.3_pU0.025_Marsupialia_MCMCruns.png">
 </p>
 
 
 **Deviations (main 72-taxa VS Marsupialia data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/02_SBnST_max0.3_pU0.025_Marsupialia_meanquant.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/marsupialia/filter_tree/01_Check_conflict/02_SBnST_max0.3_pU0.025_Marsupialia_meanquant.png">
 </p>
 
 The final tree topology can be found in the

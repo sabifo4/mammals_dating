@@ -1,13 +1,13 @@
 # Laurasiatheria the rest - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Ltherest.R`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/Calibrations_Ltherest.R)
+We use the R script [`Calibrations_Ltherest.R`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/Calibrations_Ltherest.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`laurasiatheria_therest_rooted_calibnames.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiatheria_therest_rooted_calibnames.tree)
+[`laurasiatheria_therest_rooted_calibnames.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiatheria_therest_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`laurasiathera_therest_calibrations.txt`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiathera_therest_calibrations.txt)
+[`laurasiathera_therest_calibrations.txt`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiathera_therest_calibrations.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
@@ -33,7 +33,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`laurasiatheria_therest_rooted_baseml.tree`](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiatheria_therest_rooted_baseml.tree),
+[`laurasiatheria_therest_rooted_baseml.tree`](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/00_Filter_trees/laurasiatheria_therest_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file was used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -43,7 +43,7 @@ likelihood before we had to add new taxa to the alignment (see below).
 After an extra data filtering when we added four extra taxa (i.e., *Pteropus vampyrus*,
 *Myotis lucifugus*, *Vicugna pacos*, and *Capra hircus*), the tree topology changed to include the placement of these 
 taxa (see the details in
-[this `README.md` file](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/README.md),
+[this `README.md` file](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_aln/README.md),
 section `EXTRA FILTERING -- ADDING TAXA TO THE ALIGNMENT`, if you did not go through the data filtering before,
 which explains why we added these four taxa 
 and how this was done).
@@ -80,7 +80,7 @@ directory so the file architecture is the following:
 ```
 
 Please read all the comments and explanations in
-[the R script provided in this directory](https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
+[the R script provided in this directory](02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/00_Check_STanalitycalVSprior.R) 
 to understand each step that we followed to avoid having conflicting calibrations in
 the tree topology. Sometimes, we might need to adjust the ST calibrations and/or maximum
 bounds if the neighbouring calibrations are in conflict (e.g., there are truncation issues). 
@@ -135,7 +135,7 @@ Calibrations used:
    * Artiodactyla: ST(0.577,0.007,-0.634,7.509)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/00_Only_ST_L.therest_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/00_Only_ST_L.therest_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations**   
@@ -170,7 +170,7 @@ Calibrations used:
    * Pinnipedia: B(0.2044,0.284)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/01_SBnST_L.therest_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/01_SBnST_L.therest_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 1st round**   
@@ -204,7 +204,7 @@ Calibrations used:
    * Pinnipedia: B(0.2044,0.284)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/02_SBandSTtweak1_L.therest_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/02_SBandSTtweak1_L.therest_MCMCruns.png">
 </p>
 
 **When using both ST and soft bound calibrations - 2nd round**   
@@ -237,12 +237,12 @@ Calibrations used:
    * Pinnipedia: B(0.2044,0.284)   
    
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/03_SBandSTtweak2_L.therest_MCMCruns.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/03_SBandSTtweak2_L.therest_MCMCruns.png">
 </p>
 
 **Deviations (main 72-taxa VS laurasiatheria_therest data sets)**   
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/sabifo4/mammals_dating/blob/main/02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/03_SBnST_tweak2_L.therest_meanquant.png">
+  <img width="1000" height="600" src="02_SeqBayes_S2/00_Data_filtering/00_data_curation/laurasiatheria_therest/filter_tree/01_Check_conflict/03_SBnST_tweak2_L.therest_meanquant.png">
 </p>
 
 The final tree topology can be found in the

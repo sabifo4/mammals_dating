@@ -113,7 +113,7 @@ too). The file architecture is the following:
 
 Now, we need to prepare the FASTA files in the correct format 
 so the script
-[`FASTAtoPHYL.pl`](https://github.com/sabifo4/mammals_dating/blob/main/03_Extra_analyses/00_Data_filtering/scripts/FASTAtoPHYL.pl)
+[`FASTAtoPHYL.pl`](03_Extra_analyses/00_Data_filtering/scripts/FASTAtoPHYL.pl)
 can be used to convert them into 
 PHYLIP format. For that purpose, we do the following:
 
@@ -229,7 +229,7 @@ Once the `in.BV` files are generated, we can run `MCMCtree`.
 [Here](https://www.dropbox.com/s/x94pfido86eilx4/ExtraAnalysesS3_02_MCMCtree.zip?dl=0) 
 you can download the results generated after running `MCMCtree`, together 
 with the summary files generated when running the 
-[`Compare_divtimes_72spVS4705sp.R`](https://github.com/sabifo4/mammals_dating/blob/main/03_Extra_analyses/03_Analyses/Compare_divtimes_72spVS4705sp.R)
+[`Compare_divtimes_72spVS4705sp.R`](03_Extra_analyses/03_Analyses/Compare_divtimes_72spVS4705sp.R)
 R script. If you want to generate these output files, you will have to save the zip file 
 with the output files by `MCMCtree` in this directory and save the unzipped content in a directory 
 called `02_MCMCtree`. Once this is done, just follow the detailed comments in the R script as it is 

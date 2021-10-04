@@ -9,7 +9,7 @@ to root the trees.
 To easily visualize the new taxa that we added to each clade in comparison to the study carried out by 
 [dos Reis et al. 2012](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2012.0683?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed)
 with 43 mammal taxa, we generated the nexus 
-file [`Coloured_diffs_43spVS72sp_nexus`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/ML_tree_72sp/Coloured_diffs_43spVS72sp_nexus.tree).
+file [`Coloured_diffs_43spVS72sp_nexus`](01_SeqBayes_S1/01_BASEML/01_trees/ML_tree_72sp/Coloured_diffs_43spVS72sp_nexus.tree).
 If loaded in [`FigTree`](http://tree.bio.ed.ac.uk/software/figtree/), 
 you can see in red the names of the new taxa. In addition, we coloured the branch lengths leading to their 
 sister taxa so it is easier to find the common node in the 7 tree hypotheses.
@@ -93,7 +93,7 @@ that the true age is beyond the bound.
 | MARSUPIALIA           | 'B(0.4760,1.313)'      |
 | EOMETATHERIA          | 'B(0.2303,0.56)'       |
 
-These calibrations can also be found in the [`Calibrations_mammalia.txt`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Calibrations_mammalia.txt) text file, which 
+These calibrations can also be found in the [`Calibrations_mammalia.txt`](01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Calibrations_mammalia.txt) text file, which 
 has two columns delimited by a `|`. The column on the right has the names of the nodes that are to be calibrated 
 and the one on the left the corresponding soft calibrations in `MCMCtree` format (time unit = 100 Mya).
 >> **NOTE**: You will see that there are four nodes in the text file that have different tag names if compared to the ones included
@@ -104,9 +104,9 @@ and the one on the left the corresponding soft calibrations in `MCMCtree` format
 First, we manually included the names of the nodes to be calibrated in the newick trees for each of 
 the 7 hypotheses (files that end with `*_calibrated.tree` and are saved in each of the seven directories 
 inside the [`01_calibtrees_72sp`](/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp)
-directory). Then, we used the [`Include_calibrations.R`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Include_calibrations.R)
+directory). Then, we used the [`Include_calibrations.R`](01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Include_calibrations.R)
 R script to replace them with the soft calibrations in `MCMCtree` format detailed in the 
-[`Calibrations_mammalia.txt`](https://github.com/sabifo4/mammals_dating/blob/main/01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Calibrations_mammalia.txt)
+[`Calibrations_mammalia.txt`](01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Calibrations_mammalia.txt)
 text file.
 
 To ease the visualization of the final calibrated trees and manually check the calibrations were placed 
