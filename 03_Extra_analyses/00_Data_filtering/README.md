@@ -113,7 +113,7 @@ too). The file architecture is the following:
 
 Now, we need to prepare the FASTA files in the correct format 
 so the script
-[`FASTAtoPHYL.pl`](03_Extra_analyses/00_Data_filtering/scripts/FASTAtoPHYL.pl)
+[`FASTAtoPHYL.pl`](scripts/FASTAtoPHYL.pl)
 can be used to convert them into 
 PHYLIP format. For that purpose, we do the following:
 
@@ -200,7 +200,7 @@ sed -i 's/saimiri\_boliviensis\_boliviensis/saimiri\_boliviensis/' $i
 done
 ```
 
-[Here](/03_Extra_analyses/00_Data_filtering/trees)
+[Here](trees)
 you can find the tree files that will be used to run `MCMCtree` and `BASEML`.
 
 Now, we are ready to run `BASEML` to compute the Hessian and the gradient needed to use the 
@@ -229,7 +229,7 @@ Once the `in.BV` files are generated, we can run `MCMCtree`.
 [Here](https://www.dropbox.com/s/x94pfido86eilx4/ExtraAnalysesS3_02_MCMCtree.zip?dl=0) 
 you can download the results generated after running `MCMCtree`, together 
 with the summary files generated when running the 
-[`Compare_divtimes_72spVS4705sp.R`](03_Extra_analyses/03_Analyses/Compare_divtimes_72spVS4705sp.R)
+[`Compare_divtimes_72spVS4705sp.R`](../03_Analyses/Compare_divtimes_72spVS4705sp.R)
 R script. If you want to generate these output files, you will have to save the zip file 
 with the output files by `MCMCtree` in this directory and save the unzipped content in a directory 
 called `02_MCMCtree`. Once this is done, just follow the detailed comments in the R script as it is 
