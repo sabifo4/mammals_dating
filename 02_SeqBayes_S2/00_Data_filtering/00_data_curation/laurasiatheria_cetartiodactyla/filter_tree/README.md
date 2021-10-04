@@ -71,15 +71,15 @@ bounds if the neighbouring calibrations are in conflict (e.g., there are truncat
 
 In a nutshell:   
 
-   * 1. First, we run `MCMCtree` without using the data (i.e., 
+   1. First, we run `MCMCtree` without using the data (i.e., 
    without using the alignment, hence the "dummy" alignment used here) and fixing the
    tree topology where only the skew-_t_ (ST) calibrations have been added.   
-   * 2. For each calibrated node, we plot the corresponding analytical ST distribution
+   2. For each calibrated node, we plot the corresponding analytical ST distribution
    (the one that we have told `MCMCtree` to use) against the corresponding posterior density
    inferred by `MCMCtree` when no data are used (data described in step 1). In addition,
    we add to this plot the posterior density of this node that was inferred by `MCMCtree`
    when using the first data set (72-taxon data set).   
-   * 3. To check for conflict, we do the following for each calibrated node with an 
+   3. To check for conflict, we do the following for each calibrated node with an 
    ST calibration:   
       * Estimate mean times and quantiles (2.5% and 97.5%) from the posterior density
 	  inferred by `MCMCtree` when the data are not used and the fixed tree topology has only
@@ -88,12 +88,12 @@ In a nutshell:
 	  data set 1 (72-taxon data set) for the same node.   
 	  * Check how much the former deviate from the latter.   
 	  * If deviation is <0.6%, proceed with step 4.   
-   * 4. If checks in step 3 are ok, we run `MCMCtree` without the data alignment but
+   4. If checks in step 3 are ok, we run `MCMCtree` without the data alignment but
    the tree topology now has both the ST calibrations and the calibrations with soft
    bounds (i.e., calibrations that have a minimum and a maximum bound with a 2.5% tail
    probability in each side).   
-   * 5. Then, we generate the same plot as described in step 2.    
-   * 4. Last, we check again for possible conflict as described in step 3. If deviation
+   5. Then, we generate the same plot as described in step 2.    
+   6. Last, we check again for possible conflict as described in step 3. If deviation
    is <0.6% for all calibrated nodes, this is the end of the checks. Otherwise, we need 
    to adjust the location and scale parameters of the ST calibrations until no conflict
    is observed by subtracting the corresponding deviation (more details in the R script
