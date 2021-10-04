@@ -1,12 +1,12 @@
 # Directory with calibrated trees 
 This directory is structured as it follows:   
 
-   * One directory for each tree topology ($7$ directories)   
+   * One directory for each tree topology (7 directories)   
    * `README.md` (this file)   
 
 Within each directory, you will find the following:   
 
-   * Tree file used to include calibrations with the R script [`Include_calibrations.R`](01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/Include_calibrations.R),
+   * Tree file used to include calibrations with the R script [`Include_calibrations.R`](Include_calibrations.R),
    e.g., `72sp_atlantogenata_tarver2016_calibrated.tree`.   
    * Calibrated tree file in newick format, e.g., `72sp_MCMCtree_atlantogenata_tarver2016_calibrated.tree`.   
    * `FigTree` file, e.g., `FIGTREE_72sp_atlantogenata_tarver2016_calibrated`; in which the calibrated tree has already been loaded with the calibration labels
@@ -14,7 +14,7 @@ Within each directory, you will find the following:
    * Tree with the calibrated labels in pdf format. This is the output you get if
      you load the `FigTree` file in [`FigTree`](http://tree.bio.ed.ac.uk/software/figtree/).   
 
-The main tree topology is T2 ([here](01_SeqBayes_S1/01_BASEML/01_trees/01_calibtrees_72sp/02_T2/72sp_atlantogenata_tarver2016_MCMCtree_calib.tree)). 
+The main tree topology is T2 ([here](02_T2/72sp_atlantogenata_tarver2016_MCMCtree_calib.tree)). 
 
 # Notes 
 Some of the calibrations could not be included in the following
