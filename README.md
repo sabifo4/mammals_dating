@@ -45,7 +45,8 @@ All the details about our study is structured as it follows:
    72 taxa when using (i) the 182 loci for these taxa, (ii) only the nuclear (1st+2nd CPs) for these taxa, and (iii) only mitochondrial
    (1st+ 2nd CPs) for these taxa (everything extracted from data 2).   
    5. [**calibrations**](calibrations)   
-   This directory contains an excel file with a summary of the calibration priors used in both Bayesian dating analyses.   
+   This directory contains an excel file with a summary of the calibration priors used in both Bayesian dating analyses and
+   a pdf file with the justification for the calibrations used.   
    6. [**figs**](figs)   
    This directory contains figures that are embedded in some of the `README.md` files in this GitHub repository.   
    7. [**src**](src)   
