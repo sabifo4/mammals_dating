@@ -1,5 +1,6 @@
 01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/00_MCMCtree_prior
 01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior
+01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_newchrono
 01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old
 01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/figs
 01_SeqBayes_S1/02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/R_objects
@@ -8,6 +9,8 @@
 01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/Rdata/post.divtimes.RData
 01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST/Rdata/prior.divtimes.RData
 01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST_new/Rdata/post.divtimes.RData
+01_SeqBayes_S1/03_Fit_ST_to_posteriors/00_fitST_newchr/Rdata/post.divtimes.RData
+01_SeqBayes_S1/03_Fit_ST_to_posteriors/02_MCMCtree_prior_ST_newchr/plots/ST_comparison_OLDvsNEW.zip
 
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing/aln*
 02_SeqBayes_S2/00_Data_filtering/00_data_curation/chiroptera/filter_aln/extra_filtering/01_perl_parsing/fasta*
@@ -82,11 +85,12 @@
 
 02_SeqBayes_S2/02_MCMCtree/*/7
 
+02_SeqBayes_S2/02_MCMCtree_updcrh/*/7
+
 03_Extra_analyses/00_Data_filtering/00_partition_alignments
 03_Extra_analyses/00_Data_filtering/alignments
-
 03_Extra_analyses/01_BASEML
-
 03_Extra_analyses/02_MCMCtree
-
 03_Extra_analyses/03_Analyses/z_old/
+
+calibrations/old_versions
