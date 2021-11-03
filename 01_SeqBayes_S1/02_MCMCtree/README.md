@@ -134,7 +134,24 @@ to this file architecture). They should be saved as it follows:
    here, you will find the results obtained with `MCMCtree` when using the
    other 6 alternative tree hypotheses. Note that, in this directory, each `mcmc_tracer.txt`
    file contains the samples collected during the 10 MCMCs and the corresponding `FigTree.tre`
-   files were generated with this information for each tree hypothesis.
+   files were generated with this information for each tree hypothesis, unless some of these chains 
+   have not converged (e.g., chain 2 in T1, chain 10 in T5, and chains 1 and 4 in T7; see R script 
+   [`Calculate_ESS.R`](01_ESS_and_chain_convergence/Calculate_ESS.R) for more information).   
+
+In addition, we repeated the analyses in `MCMCtree` with the updated 
+geochronology (i.e., updated set of prior calibrations as of September 2021) which you can download from 
+[here](https://www.dropbox.com/s/53mdfyc47hukkrh/SeqBayesS1_MCMCtree_mainT2_posterior_newchrono.zip?dl=0).
+Once you unzip this file, you should save the unzipped directory inside `00_main_tree_T2`. You will then be 
+able to see the summarised results for all the chains that converged here:   
+
+   * `00_main_tree_T2/02_MCMCtree_posterior_newchrono/mcmc_files`:   
+   here, you will find the results obtained with `MCMCtree` when using the main tree 
+   hypothesis (T2) calibrated with the updated set of priors as of September 2021 and the alignment
+   **without** the 11 genes also found in data set 2. The `mcmc_tracer.txt` file contains the samples 
+   collected during the chains rain in `MCMCtree` that had successfully converged (3; see R script 
+   [`Calculate_ESS.R`](01_ESS_and_chain_convergence/Calculate_ESS.R) for more information). The phylogeny 
+   in the `FigTree.tre` file has been generated with this file.   
+
 
 # 2. Checks
 
@@ -154,10 +171,11 @@ You can find the results in the following directories:
    above. The R scripts have all the details needed to understand the different steps carried out,
    so you may want to check them if you want more details about how these plots were generated.
    In addition, [this directory](00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes) contains the plots generated
-   with the results obtained with both data sets to evaluate the impact that removing these 11
+   with the results obtained with both data sets to evaluate the (almost null) impact that removing these 11
    genes from the data set had on the posterior divergence times: the estimates were almost
    identical. You may want to read the details in the R script provided in this
-   directory for further details.   
+   directory for further details. You also have a plot with the mean ages for the filtered chains for both analyses
+   [here](00_MCMCtree_analyses/00_main_tree_T2/plots/02_NEW-mean_filtered_postVSmean_filtered_oldpost).
    * [Alternative tree hypotheses](00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR): In this directory, you will see one script for each tree
    hypothesis, which were used to generate the plots you fill find the link provided above.
 
@@ -171,6 +189,26 @@ that did not show any visual problems.
 >>*(b) does not include the results for chains 1, 2, 5, 6, 10, 12, 14, 15 as they seem to have have*
 >>*had convergence issues if compared to the mean time estimates obtained with the other chains*
 >>*Abbreviations: Qua. = Quaternary.*
+
+Apart from these analyses, we also visually evaluated the chains ran with
+the alignment without the 11 genes that can be found in the second data set and with the updated prior calibrations 
+according to the geochronology established as of September 2021. In the `plots` directory,
+you can find the graphics plotted with the R script 
+[`01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`)
+As in the other R scripts used before, this one has all the details needed to understand the different steps carried out,
+so you may want to check them if you want more details about how these plots were generated.
+In addition, [this directory](00_MCMCtree_analyses/00_main_tree_T2/plot_newchrVSoldchr) contains the comparison 
+plots generated for each calibrated node with the results obtained with this data set (updated geochronology) against 
+those that were obtained with the prior calibrations used before September 2021. These plots show how changing 
+the prior calibrations based on the updated geochronology has no effect on the posterior time estimates as the 
+posterior time estimates are almost identical. You may want to read the details in the R script provided in this directory,
+[`02_Plot_oldgeochVSnewgeoch.R`](00_MCMCtree_analyses/00_main_tree_T2/plot_newchrVSoldchr/02_Plot_oldgeochVSnewgeoch.R),
+for further details.   
+
+>> **NOTE**: Note that the next check to evaluate chain convergence (check conflict in quantiles) detected some 
+>> issues in some chains (e.g., chain 2 in T1, chain 10 in T5, chains 1 and 4 in T7, and chain 2 in the main tree
+>> hypothesis T2 when using the updated prior calibrations) which visually did not seem to have any problem.
+>> You will read more about this in the next section!
 
 ## 2.2. Calculate ESS and evaluate chain convergence
 To ensure MCMC convergence and increase effective sample size (ESS), we ran several MCMCs
@@ -195,28 +233,28 @@ A summary of these checks for the analyses ran for each tree hypothesis can be f
 below. A summary of the measures of effective sample size (ESS) for each tree hypothesis (T1-T7) 
 can be found in the table below . The ESS for bulk and tail quantiles together with the Rhat were
 measured for each parameter with the R package `rstan::monitor`. In addition, the ESS calculated
-with the `coda::effectiveSampleSize` has been included for comparison. The number of samples
-collected for the main hypothesis is 140,007; while it is 200,010 for the rest of the tree
-hypotheses.
+with the `coda::effectiveSampleSize` has been included for comparison.
 
 >>**Table S7**. Measures of effective sample size (ESS).   
 
-|                          | MAIN     | T1        | T3       | T4         | T5         | T6        | T7         |
-|--------------------------|----------|-----------|----------|------------|------------|-----------|------------|
-| tail-ESS times (median)  | 929      | 2243      | 1839     | 2007       | 1085       | 2721      | 1725       |
-| tail-ESS times (min)     | 216      | 530       | 503      | 451        | 330        | 442       | 259        |
-| tail-ESS times (max)     | 11669    | 25359     | 28525    | 27303      | 10119      | 29174     | 27271      |
-| bulk-ESS times (median)  | 374      | 1149      | 949      | 968        | 745        | 1295      | 962        |
-| bulk-ESS times (min)     | 56       | 160       | 98       | 177        | 142        | 193       | 132        |
-| bulk-ESS times (max)     | 8358     | 18028     | 18054    | 19469      | 6628       | 19324     | 18096      |
-| Rhat (min)               | 1.000024 | 0.9999984 | 0.999998 | 0.9999954  | 1.000006   | 0.9999919 | 1.000016   |
-| coda-ESS times  (median) | 1255.28  | 2410.37   | 2141.28  | 2301.39    | 1857.67    | 2633.67   | 2505.25    |
-| coda-ESS times  (min)    | 179.14   | 249.17    | 352.60   | 373.21     | 367.56     | 354.59    | 313.65     |
-| coda-ESS times  (max)    |  9868    | 34733.40  | 34458.98 | 39685.68   | 9738.52    | 16135.74  | 10359.66   |
+|                          | MAIN     | MAIN-updated geochronology  |T1         | T3       | T4         | T5         | T6        | T7-filt    |   
+|--------------------------|----------|-----------------------------|-----------|----------|------------|------------|-----------|------------|
+| tail-ESS times (median)  | 929      | 271                         | 2074      | 1839     | 2007       | 1118       | 2721      | 1362       |
+| tail-ESS times (min)     | 216      | 91                          | 507       | 503      | 451        | 361        | 442       | 196        |
+| tail-ESS times (max)     | 11669    | 5377                        | 22442     | 28525    | 27303      | 15411      | 29174     | 21129      |
+| bulk-ESS times (median)  | 374      | 210                         | 1062      | 949      | 968        | 709        | 1295      | 751        |
+| bulk-ESS times (min)     | 56       | 31                          | 142       | 98       | 177        | 125        | 193       | 103        |
+| bulk-ESS times (max)     | 8358     | 3801                        | 16211     | 18054    | 19469      | 11241      | 19324     | 14015      |
+| Rhat (min)               | 1.000024 | 0.9999882                   | 0.9999901 | 0.999998 | 0.9999954  | 0.9999916  | 0.9999919 | 1.000035   |
+| coda-ESS times  (median) | 1255     | 508                         | 2495      | 2141     | 2301.39    | 1765       | 2634      | 2147       |
+| coda-ESS times  (min)    | 179      | 81                          | 285       | 353      | 373.21     | 330        | 355       | 266        |
+| coda-ESS times  (max)    | 9868     | 7694                        | 31305     | 34459    | 39685.68   | 21647      | 16136     | 28988      |
+| Number of samples        | 160008   | 80004                       | 180009    | 200010   | 200010     | 180009     | 200010    | 160008     |
 
 In addition, you can find below the scatterplot of the estimated posterior mean times for the MCMC
 runs under the autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis.
 
+>> _Main tree T2 here uses calibrations before September 2021_ 
 <p align="center">
   <img width="500" height="500" src="../../figs/FigS5.png">
 </p>
@@ -227,7 +265,21 @@ runs under the autocorrelated-rates relaxed-clock model (GBM) model for each tre
 >>almost in a straight line (i.e., $x\approx y$), thus visually showing that the chains have
 >>converged. Note that there are 10 MCMCs for each tree hypothesis except for the main tree hypothesis,
 >>in which case there are 8 MCMCs as the rest of the chains were discarded (see details in the 
->>section above and in Fig S4).
+>>section above and in Fig S4), 9 for T1 and T5, and 8 for T7 (see details in the section above and
+>>in the comments in the R script).
+
+>> _Main tree T2 here uses calibrations with updated geochronology as of September 2021_ 
+<p align="center">
+  <img width="500" height="500" src="../../figs/FigS5_v2.png">
+</p>
+
+>>**Fig S5 (v2): Scatterplot of the estimated posterior mean times for the MCMC runs under the**
+>>**autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis**. When comparing
+>>the mean estimates for half of the chains against the other half, they fall
+>>almost in a straight line (i.e., $x\approx y$), thus visually showing that the chains have
+>>converged. There are 3 MCMCs for the main tree hypothesis (which used the calibrations generated with
+>>the updated geochronology as of September 2021), 9 for T1 and T5, 8 for T7, and the rest of hypotheses
+>>have 10 MCMCs (see details in the section above and in the comments in the R script).
 
 ---
 
