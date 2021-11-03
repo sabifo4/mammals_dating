@@ -22,12 +22,12 @@ The file architecture is organised as follows:
 
 ```
 03_Fit_ST_to_posteriors/ 
-           |- 00_fitST/
+           |- 00_fitST*/       <-- Directories "00_fitST", "00_fitST_new", and "00_fitST_newchr"
            |       |- logs/
            |       |- plots/ 
-           |       |- Rdata/   <-- Only 2 out of the 4 objects are provided in the 
-           |       |               repository (lack of space). Objects `prior.divtimes.RData` 
-           |       |               and `post.divtimes.RData` can be generated if the script 
+           |       |- Rdata/   <-- Only 2 out objects are provided in the 
+           |       |               repository (lack of space). The other 
+           |       |               objects can be generated if the script 
            |       |               is re-run or downloading this file: https://www.dropbox.com/s/fiyunh6puaro3kr/SeqBayesS1_FitST_old_Rdata_priorandpost.zip?dl=0	   
            |       |- Rout/     			   
            |
@@ -35,8 +35,8 @@ The file architecture is organised as follows:
            |       |- Rinp/
            |       |- Rout/ 
            |
-           |- 02_MCMCtree_prior_ST/
-           |       |- MCMCtree/
+           |- 02_MCMCtree_prior_ST*/ <-- Directories "02_MCMCtree_prior_ST", "02_MCMCtree_prior_ST_new", and "02_MCMCtree_prior_ST_newchr"
+           |       |- MCMCtree/      <-- only under "02_MCMCtree_prior_ST"
            |       |- plots/ 
            |
            |- 00_Fit_skewT.R
@@ -109,36 +109,57 @@ All analyses regarding this step can be found in the directory [`02_MCMCtree_pri
    in this step) against the estimated distributions that result from averaging across all the collected samples gathered by `MCMCtree` when sampling from the prior (i.e., the estimates on prior times
    when calibrating the tree with the analytical ST distributions) and from the posterior (i.e., the posterior estimates inferred during the Bayesian dating analysis described [here](../02_MCMCtree)).   
 
-## [[IMPORTANT NOTES]] 
-**NOTE 1: Unfortunately, we did not keep track of the R version with which we ran the scripts here, so you** 
-**might not get exactly the same results that you see here if you re-run the scripts with the R**
-**function `sn::st.mple`.**   
+# IMPORTANT NOTES -- extra analyses
 
-**NOTE 2: If you re-run the scripts with the results obtained with `MCMCtree` (see [here](../02_MCMCtree)**
-**to find the link to download the data) with the same R version we did (we are unsure about which one this was,**
-**but it was one of the released R versions between 2018 and 2020), you will get the results we provide in**
-**this directory when you use the data in [`00_main_tree_T2/01_MCMCtree_posterior_old`](https://www.dropbox.com/s/qxsgfe0gbwxro9p/SeqBayesS1_MCMCtree_mainT2_posterior_old.zip?dl=0).**
-**Note that removing 11 genes out of the final filtered genes in the alignment did not have an impact on the**
-**estimated posterior divergence times as we show** 
-**[here](../02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-I.pdf)** 
-**and [here](../02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-II.pdf)**
-**(see also further comments [here](../02_MCMCtree)).**
-**Consequently, we did not repeat all the steps described above to fit the ST distributions again to the alignment without**
-**the 11 genes because we would not get any significant differences. You can also find in directory**
-**[`00_fitST_new`](00_fitST_new)**
-**the results with the generated fitted ST distributions to the posterior densities obtained when using the alignment**
-**without these 11 genes -- you can see that there are no significant differences [here](02_MCMCtree_prior_ST_new/plots/Compare_OLDvsNEW_ST.png)**
-**and in individual plots [here](02_MCMCtree_prior_ST_new/plots/ST_comparison)**
-**(found within [`02_MCMCtree_prior_ST_new/plots`](02_MCMCtree_prior_ST_new/plots) directory)**
-**between the ST distributions.**
+## NOTE 1
+Unfortunately, we did not keep track of the R version with which we ran the scripts here, so you
+might not get exactly the same results that you see here if you re-run the scripts with the R
+function `sn::st.mple`.
+
+## NOTE 2
+If you re-run the scripts with the results obtained with `MCMCtree` (see [here](../02_MCMCtree)
+to find the link to download the data) with the same R version we did (we are unsure about which one this was,
+but it was one of the released R versions between 2018 and 2020), you will get the results we provide in
+this directory when you use the data in [`00_main_tree_T2/01_MCMCtree_posterior_old`](https://www.dropbox.com/s/qxsgfe0gbwxro9p/SeqBayesS1_MCMCtree_mainT2_posterior_old.zip?dl=0).
+Note that removing 11 genes out of the final filtered genes in the alignment did not have an impact on the
+estimated posterior divergence times as we show
+[here](../02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-I.pdf)
+and [here](../02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_oldtimesVSnewtimes/00_Check_oldpostVSnewpost-II.pdf)
+(see also further comments [here](../02_MCMCtree)).
+Consequently, we did not repeat all the steps described above to fit the ST distributions again to the alignment without
+the 11 genes because we would not get any significant differences. You can also find in directory
+[`00_fitST_new`](00_fitST_new)
+the results with the generated fitted ST distributions to the posterior densities obtained when using the alignment
+without these 11 genes -- you can see that there are no significant differences [here](02_MCMCtree_prior_ST_new/plots/Compare_OLDvsNEW_ST.png)
+and in individual plots [here](02_MCMCtree_prior_ST_new/plots/ST_comparison)
+(found within [`02_MCMCtree_prior_ST_new/plots`](02_MCMCtree_prior_ST_new/plots) directory)
+between the ST distributions.
+
+## NOTE 3 
+We also re-run the analyses with calibrations updated following the updated geochronology as of September 2021. 
+Note that the estimated posterior divergence times do not considerably change when using this set of updated calibrations 
+if compared with the ones we had used before (see plots [here](../02_MCMCtree/00_MCMCtree_analyses/00_main_tree_T2/plot_newchrVSoldchr)).
+You can find in directory [`00_fitST_newchr`](00_fitST_newchr)
+the results with the generated fitted ST distribution to the posterior densities using this set of updated calibartions. In addition,
+you can see that there are no significant differences between this fitted ST distributions to the ones fitted to the 
+previous analysis with old calibrations (see [here](02_MCMCtree_prior_ST_newchr/plots/Compare_OLDvsNEW_ST.png) and in individual plots
+[here](02_MCMCtree_prior_ST_newchr/plots/ST_comparison)). 
+Therefore, considering that fitting ST distributions is done using a heuristics approach and that there are also 
+biases during the MCMC sampling, we decide to keep using the same ST distributions we have used in the previous 
+analysis.
+
+**Note**: Calibration "Dipodidae-Muroidea" was placed in node 110 when using the old set of calibrations. This calibration 
+is place in node 111 when using the updated set of calibrations.
 
 ---
 The plots show that the ST distributions are sensible (see image below), and so they can be used to continue with the sequential
 Bayesian dating analysis. The ST distributions estimated with the `sn::st.mple` R function are plotted in red, those estimated when
-sampling from the prior with `MCMCtree` in light green, and when sampling from the posterior with `MCMCtree` in black:
+sampling from the posterior with `MCMCtree` when using the old calibrations in light green, and when sampling from the posterior
+with `MCMCtree` when using the calibrations that follow the updated geochronology as of September 2021 in black:
 
 <p align="center">
   <img width="500" height="500" src="../../figs/FigS6.png">
 </p>
 
 >>**Fig S6. Assessment of the skew-_t_ (ST) distributions fitted to the internal nodes of the 72-species mammal tree.**
+
