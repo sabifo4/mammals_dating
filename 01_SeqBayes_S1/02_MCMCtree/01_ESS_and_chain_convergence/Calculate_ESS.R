@@ -270,8 +270,12 @@ plot_convergence <- function ( name_dir_subt, mean_divt1, mean_divt2, num_runs )
 #-----------#
 # LOAD DATA #
 #-----------#
+
 #-- MAIN TREE (T2) --#
-# 72sp tree - NEW
+
+#\\\\\\\\\\\\\\\\\#
+# 72sp tree - NEW #
+#-----------------#
 if( ! dir.exists( paste( wd, "out_data/00_post_72sp_new", sep = "" ) ) ){
   dir.create( paste( wd, "out_data/00_post_72sp_new", sep = "" ) )
 }
@@ -305,7 +309,9 @@ plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_filt_half1,
                   mean_divt2 = sp72_filt_half2, num_runs = 8 )
 dev.off()
 
-# 72sp tree - OLD
+#\\\\\\\\\\\\\\\\\#
+# 72sp tree - OLD #
+#-----------------#
 if( ! dir.exists( paste( wd, "out_data/00_post_72sp_old", sep = "" ) ) ){
   dir.create( paste( wd, "out_data/00_post_72sp_old", sep = "" ) )
 }
@@ -338,7 +344,9 @@ plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_OLD_filt_half1,
                   mean_divt2 = sp72_OLD_filt_half2, num_runs = 7 )
 dev.off()
 
-# 72sp tree - Updated geochronology (Sep 2021)
+#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# 72sp tree - Updated geochronology (Sep 2021) #
+#----------------------------------------------#
 if( ! dir.exists( paste( wd, "out_data/00_post_72sp_updated_geochron", sep = "" ) ) ){
   dir.create( paste( wd, "out_data/00_post_72sp_updated_geochron", sep = "" ) )
 }
@@ -371,9 +379,17 @@ plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_UPDGC_filt_half1,
                   mean_divt2 = sp72_UPDGC_filt_half2, num_runs = 3 )
 dev.off()
 
-
+softbounds_72sp_UPDGC_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(1,3:4), delcol = 8, name_dir_subt = "72sp",
+                                                         num_divt = 71, node_calib = "Calibs_nodes_72sp_UPGC.csv", 
+                                                         tree_hyp = "02_atlantogenata_tarver2016", maintt = TRUE,
+                                                         clock = "GBM", out = "out_data/00_post_72sp_updated_geochron_FILT/",
+                                                         path_72sp = paste( wd2, "00_MCMCtree_analyses/00_main_tree_T2/02_MCMCtree_posterior_newchrono/",
+                                                                            sep = "" ) )
 #-- OTHER 6 TREE HYPOTHESES FOR 72sp --#
-## T1
+
+#\\\\#
+# T1 #
+#----#
 T1_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree1",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -415,7 +431,9 @@ T1_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(1,3:10), delcol = 8, name
                                           tree_hyp = "01_atlantogenata_scandentia_primates_tarver2016",
                                           clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_1/tree1_filt_", perc = 0.975 )
 
-## T3
+#\\\\#
+# T3 #
+#----#
 T3_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree3",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -445,7 +463,9 @@ plot_convergence( name_dir_subt = "T3-72sp", mean_divt1 = T3_filt_half1,
                   mean_divt2 = T3_filt_half2, num_runs = 10 )
 dev.off()
 
-## T4
+#\\\\#
+# T4 #
+#----#
 T4_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree4",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -475,7 +495,9 @@ plot_convergence( name_dir_subt = "T4-72sp", mean_divt1 = T4_filt_half1,
                   mean_divt2 = T4_filt_half2, num_runs = 10 )
 dev.off()
 
-## T5
+#\\\\#
+# T5 #
+#----#
 T5_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree5",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -517,7 +539,9 @@ T5_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = 1:9, delcol = 8, name_dir_s
                                           tree_hyp = "05_ensembl",
                                           clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_5/tree5_filt_", perc = 0.975 )
 
-## T6
+#\\\\#
+# T6 #
+#----#
 T6_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree6",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -547,7 +571,9 @@ plot_convergence( name_dir_subt = "T6-72sp", mean_divt1 = T6_filt_half1,
                   mean_divt2 = T6_filt_half2, num_runs = 10 )
 dev.off()
 
-## T7
+#\\\\#
+# T7 #
+#----#
 T7_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree7",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
@@ -589,7 +615,7 @@ T7_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(2:3,5:10), delcol = 8, na
                                      tree_hyp = "07_afrotheria_tarver2016",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_7/tree7_filt_", perc = 0.975 )
 
-## ALL 72SP HYPOTHESES !
+## ALL 72SP HYPOTHESES ##
 pdf( "plots/Convergence_plot_all_72sp_hypotheses.pdf", paper = "a4" )
 par( mfrow = c(4,2) )
 plot_convergence( name_dir_subt = "main_72sp", mean_divt1 = sp72_filt_half1,
@@ -663,16 +689,16 @@ ESS_s72sp$tab
 # Min.      216       56  179.1359
 # Max.    11669     8358 9867.9955
 
-ESS_s72sp_UPDGC  <- sum_MCMC_ESS( x = softbounds_72sp_updgeochron_sum$all_mcmc, coda_fun = TRUE )
-dim(softbounds_72sp_updgeochron_sum$all_mcmc)[1]
-# length = 80004
+ESS_s72sp_UPDGC  <- sum_MCMC_ESS( x = softbounds_72sp_UPDGC_FILT_sum$all_mcmc, coda_fun = TRUE )
+dim(softbounds_72sp_UPDGC_FILT_sum$all_mcmc)[1]
+# length = 60003
 min(ESS_s72sp_UPDGC$stats$Rhat)
-# min(Rhat) 0.9999882
+# min(Rhat) 0.9999884
 ESS_s72sp_UPDGC$tab
 # Tail-ESS Bulk-ESS   coda-ESS
-# Med.      271      210  508.18333
-# Min.       91       31   81.36824
-# Max.     5377     3801 7693.93093
+# Med.      232      180  426.27264
+# Min.       61       22   62.43852
+# Max.     3884     2888 5721.54846
 
 ESS_s72sp_OLD    <- sum_MCMC_ESS( x = softbounds_72sp_OLD_sum$all_mcmc, coda_fun = TRUE )
 # length = 140007
