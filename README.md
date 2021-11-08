@@ -35,7 +35,7 @@ All the details about our study is structured as it follows:
       * [01_BASEML](02_SeqBayes_S2/01_BASEML)   
       Once the alignments and trees are ready, we can then compute the Hessian and the gradient for the subsequent Bayesian inference of divergence times.
 	  Click the link above to be redirected to the steps and results for this step.    
-      * [02_MCMCtree](02_SeqBayes_S2/02_MCMCtree)   
+      * [02_MCMCtree_updcrh](02_SeqBayes_S2/02_MCMCtree_updcrh)   
       Here you will find the final results regarding the inferred posterior times for the mammal phylogeny with 4,705 taxa.   
       * [03_Generate_final_mammal_tree](02_SeqBayes_S2/03_Generate_final_mammal_tree)   
       Here you will find the final mammal Tree of Life that we generated at the end of our Bayesian sequential-subtree dating approach.   
