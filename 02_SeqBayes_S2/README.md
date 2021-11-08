@@ -245,7 +245,7 @@ In addition, for each data subset, we had the best-scoring maximum-likelihood (M
 This ML tree was then pruned according to the filtering steps mentioned in the tutorials which link is 
 provided above for each data subset. The pruned ML tree was then calibrated by first manually
 placing tags in the nodes to be calibrated and then using and R script to replace these tags with 
-the corresponding calibrations (see the `filter_tree/00_Filter_trees` content inside the directories for 
+the corresponding calibrations (see the `filter_tree_updcrh/00_Filter_trees` content inside the directories for 
 each data subset for more information).
 
 [Here](00_Data_filtering/01_alignments) 
@@ -273,12 +273,12 @@ Before running `MCMCtree`, however, we ran safety checks to make sure that the c
 were using were not in conflict. For each of the directories with the information to filter each 
 data subset that you can find 
 [here](00_Data_filtering/00_data_curation),
-you will find a description of these checks inside the `filter_tree` directory. The R script and the 
-output plots will be inside `filter_tree/01_Check_conflict` dirctories for each data subset.
+you will find a description of these checks inside the `filter_tree_updcrh` directory. The R script and the 
+output plots will be inside `filter_tree_updcrh/01_Check_conflict` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
 obtained [here](https://www.dropbox.com/s/1vjkggr4ujrnfha/SeqBayesS2_MCMCtree.zip?dl=0),
 while you can find 
-[here](02_MCMCtree) 
+[here](02_MCMCtree_updcrh) 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
 estimated divergence times.
