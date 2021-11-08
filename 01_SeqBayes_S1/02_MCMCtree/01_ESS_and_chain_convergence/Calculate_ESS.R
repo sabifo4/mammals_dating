@@ -270,8 +270,15 @@ plot_convergence <- function ( name_dir_subt, mean_divt1, mean_divt2, num_runs )
 #-----------#
 # LOAD DATA #
 #-----------#
+
 #-- MAIN TREE (T2) --#
-# 72sp tree - NEW
+
+#\\\\\\\\\\\\\\\\\#
+# 72sp tree - NEW #
+#-----------------#
+if( ! dir.exists( paste( wd, "out_data/00_post_72sp_new", sep = "" ) ) ){
+  dir.create( paste( wd, "out_data/00_post_72sp_new", sep = "" ) )
+}
 softbounds_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = c(3,4,7,8,9,11,13,16), delcol = 8, name_dir_subt = "72sp",
                                              num_divt = 71, node_calib = "Calibs_nodes_72sp.csv", 
                                              tree_hyp = "02_atlantogenata_tarver2016", maintt = TRUE,
@@ -279,49 +286,176 @@ softbounds_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = c(3,4,7,8,9,11,13,16), d
                                              path_72sp = paste( wd2, "00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior/02_atlantogenata_tarver2016/",
                                                                 sep = "" ),
                                              perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:8 ){
+  tmp.qup     <- softbounds_72sp_sum$qup[1,] - softbounds_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- softbounds_72sp_sum$qdown[1,] - softbounds_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- No issues!
 sp72_filt_half1 <- apply( X = softbounds_72sp_sum$mean[1:4,], MARGIN = 2, FUN = mean )
 sp72_filt_half2 <- apply( X = softbounds_72sp_sum$mean[5:8,], MARGIN = 2, FUN = mean )
-
 pdf( "plots/Convergence_plot_72sp_NEW.pdf", paper = "a4" )
 plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_filt_half1,
                   mean_divt2 = sp72_filt_half2, num_runs = 8 )
 dev.off()
 
-# 72sp tree - OLD
+#\\\\\\\\\\\\\\\\\#
+# 72sp tree - OLD #
+#-----------------#
+if( ! dir.exists( paste( wd, "out_data/00_post_72sp_old", sep = "" ) ) ){
+  dir.create( paste( wd, "out_data/00_post_72sp_old", sep = "" ) )
+}
 softbounds_72sp_OLD_sum  <- find_prob_MCMC_72sp( num_dirs = c(1,2,3,5,6,9,10), delcol = 8, name_dir_subt = "72sp",
                                                  num_divt = 71, node_calib = "Calibs_nodes_72sp.csv", 
                                                  tree_hyp = "02_atlantogenata_tarver2016", maintt = FALSE,
                                                  clock = "GBM", out = "out_data/00_post_72sp_old/",
                                                  path_72sp = paste( wd2, "00_MCMCtree_analyses/00_main_tree_T2/01_MCMCtree_posterior_old/", sep = "" ),
                                                  perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:7 ){
+  tmp.qup     <- softbounds_72sp_OLD_sum$qup[1,] - softbounds_72sp_OLD_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- softbounds_72sp_OLD_sum$qdown[1,] - softbounds_72sp_OLD_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- No issues!
 sp72_OLD_filt_half1 <- apply( X = softbounds_72sp_OLD_sum$mean[1:4,], MARGIN = 2, FUN = mean )
 sp72_OLD_filt_half2 <- apply( X = softbounds_72sp_OLD_sum$mean[5:7,], MARGIN = 2, FUN = mean )
-
 pdf( "plots/Convergence_plot_72sp_OLD.pdf", paper = "a4" )
 plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_OLD_filt_half1,
                   mean_divt2 = sp72_OLD_filt_half2, num_runs = 7 )
 dev.off()
 
+#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# 72sp tree - Updated geochronology (Sep 2021) #
+#----------------------------------------------#
+if( ! dir.exists( paste( wd, "out_data/00_post_72sp_updated_geochron", sep = "" ) ) ){
+  dir.create( paste( wd, "out_data/00_post_72sp_updated_geochron", sep = "" ) )
+}
+softbounds_72sp_updgeochron_sum  <- find_prob_MCMC_72sp( num_dirs = c(1:4), delcol = 8, name_dir_subt = "72sp",
+                                                         num_divt = 71, node_calib = "Calibs_nodes_72sp_UPGC.csv", 
+                                                         tree_hyp = "02_atlantogenata_tarver2016", maintt = TRUE,
+                                                         clock = "GBM", out = "out_data/00_post_72sp_updated_geochron/",
+                                                         path_72sp = paste( wd2, "00_MCMCtree_analyses/00_main_tree_T2/02_MCMCtree_posterior_newchrono/",
+                                                                    sep = "" ) )
+#> CHECK: Issues with quantiles
+for ( j in 2:4 ){
+    tmp.qup     <- softbounds_72sp_updgeochron_sum$qup[1,] - softbounds_72sp_updgeochron_sum$qup[j,]
+    tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+    if( length( tmp.ind.qup ) > 0 ){
+      cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+      cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+    }
+    tmp.qdown    <- softbounds_72sp_updgeochron_sum$qdown[1,] - softbounds_72sp_updgeochron_sum$qdown[j,]
+    tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+    if( length( tmp.ind.qdown ) > 0 ){
+      cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+      cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+    }
+}
+#>END CHECK -- Issues with chain 2, so we do not use it!
+sp72_UPDGC_filt_half1 <- apply( X = softbounds_72sp_updgeochron_sum$mean[c(1,3),], MARGIN = 2, FUN = mean )
+sp72_UPDGC_filt_half2 <- softbounds_72sp_updgeochron_sum$mean[4,]
+pdf( "plots/Convergence_plot_72sp_UPDGC.pdf", paper = "a4" )
+plot_convergence( name_dir_subt = "72sp", mean_divt1 = sp72_UPDGC_filt_half1,
+                  mean_divt2 = sp72_UPDGC_filt_half2, num_runs = 3 )
+dev.off()
+
+softbounds_72sp_UPDGC_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(1,3:4), delcol = 8, name_dir_subt = "72sp",
+                                                         num_divt = 71, node_calib = "Calibs_nodes_72sp_UPGC.csv", 
+                                                         tree_hyp = "02_atlantogenata_tarver2016", maintt = TRUE,
+                                                         clock = "GBM", out = "out_data/00_post_72sp_updated_geochron_FILT/",
+                                                         path_72sp = paste( wd2, "00_MCMCtree_analyses/00_main_tree_T2/02_MCMCtree_posterior_newchrono/",
+                                                                            sep = "" ) )
 #-- OTHER 6 TREE HYPOTHESES FOR 72sp --#
+
+#\\\\#
+# T1 #
+#----#
 T1_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree1",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "01_atlantogenata_scandentia_primates_tarver2016",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_1/tree1_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:10 ){
+  tmp.qup     <- T1_72sp_sum$qup[1,] - T1_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T1_72sp_sum$qdown[1,] - T1_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- Issues with chain 2
 T1_filt_half1 <- apply( X = T1_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T1_filt_half2 <- apply( X = T1_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T1.pdf", paper = "a4" )
 plot_convergence( name_dir_subt = "T1-72sp", mean_divt1 = T1_filt_half1,
                   mean_divt2 = T1_filt_half2, num_runs = 10 )
 dev.off()
+T1_filt_half1_filt <- apply( X = T1_72sp_sum$mean[c(1,3:6),], MARGIN = 2, FUN = mean )
+T1_filt_half2_filt <- apply( X = T1_72sp_sum$mean[7:10,], MARGIN = 2, FUN = mean )
+pdf( "plots/Convergence_plot_T1_filtered.pdf", paper = "a4" )
+plot_convergence( name_dir_subt = "T1-72sp", mean_divt1 = T1_filt_half1_filt,
+                  mean_divt2 = T1_filt_half2_filt, num_runs = 9 )
+dev.off()
+T1_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(1,3:10), delcol = 8, name_dir_subt = "72sp_tree1",
+                                          num_divt = 71, node_calib = NULL, 
+                                          path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
+                                          maintt = FALSE,
+                                          tree_hyp = "01_atlantogenata_scandentia_primates_tarver2016",
+                                          clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_1/tree1_filt_", perc = 0.975 )
 
+#\\\\#
+# T3 #
+#----#
 T3_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree3",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "03_atlantogenata_tarver2016_laurasiatheria_dR2012",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_3/tree3_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:10 ){
+  tmp.qup     <- T3_72sp_sum$qup[1,] - T3_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T3_72sp_sum$qdown[1,] - T3_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- No issues!
 T3_filt_half1 <- apply( X = T3_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T3_filt_half2 <- apply( X = T3_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T3.pdf", paper = "a4" )
@@ -329,12 +463,31 @@ plot_convergence( name_dir_subt = "T3-72sp", mean_divt1 = T3_filt_half1,
                   mean_divt2 = T3_filt_half2, num_runs = 10 )
 dev.off()
 
+#\\\\#
+# T4 #
+#----#
 T4_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree4",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "04_atlantogenata_tarver2016_laurasiatheriaensembl",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_4/tree4_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:10 ){
+  tmp.qup     <- T4_72sp_sum$qup[1,] - T4_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T4_72sp_sum$qdown[1,] - T4_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- No issues!
 T4_filt_half1 <- apply( X = T4_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T4_filt_half2 <- apply( X = T4_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T4.pdf", paper = "a4" )
@@ -342,25 +495,75 @@ plot_convergence( name_dir_subt = "T4-72sp", mean_divt1 = T4_filt_half1,
                   mean_divt2 = T4_filt_half2, num_runs = 10 )
 dev.off()
 
+#\\\\#
+# T5 #
+#----#
 T5_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree5",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "05_ensembl",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_5/tree5_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:10 ){
+  tmp.qup     <- T5_72sp_sum$qup[1,] - T5_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T5_72sp_sum$qdown[1,] - T5_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- Issues with chain 10!
 T5_filt_half1 <- apply( X = T5_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T5_filt_half2 <- apply( X = T5_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T5.pdf", paper = "a4" )
 plot_convergence( name_dir_subt = "T5-72sp", mean_divt1 = T5_filt_half1,
                   mean_divt2 = T5_filt_half2, num_runs = 10 )
 dev.off()
+T5_filt_half1_filt <- apply( X = T5_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
+T5_filt_half2_filt <- apply( X = T5_72sp_sum$mean[6:9,], MARGIN = 2, FUN = mean )
+pdf( "plots/Convergence_plot_T5_filtered.pdf", paper = "a4" )
+plot_convergence( name_dir_subt = "T5-72sp", mean_divt1 = T5_filt_half1_filt,
+                  mean_divt2 = T5_filt_half2_filt, num_runs = 9 )
+dev.off()
+T5_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = 1:9, delcol = 8, name_dir_subt = "72sp_tree5",
+                                          num_divt = 71, node_calib = NULL, 
+                                          path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
+                                          maintt = FALSE,
+                                          tree_hyp = "05_ensembl",
+                                          clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_5/tree5_filt_", perc = 0.975 )
 
+#\\\\#
+# T6 #
+#----#
 T6_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree6",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "06_xenarthra_tarver2016",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_6/tree6_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in 2:10 ){
+  tmp.qup     <- T6_72sp_sum$qup[1,] - T6_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T6_72sp_sum$qdown[1,] - T6_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- No issues!
 T6_filt_half1 <- apply( X = T6_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T6_filt_half2 <- apply( X = T6_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T6.pdf", paper = "a4" )
@@ -368,35 +571,98 @@ plot_convergence( name_dir_subt = "T6-72sp", mean_divt1 = T6_filt_half1,
                   mean_divt2 = T6_filt_half2, num_runs = 10 )
 dev.off()
 
+#\\\\#
+# T7 #
+#----#
 T7_72sp_sum  <- find_prob_MCMC_72sp( num_dirs = 1:10, delcol = 8, name_dir_subt = "72sp_tree7",
                                      num_divt = 71, node_calib = NULL, 
                                      path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
                                      maintt = FALSE,
                                      tree_hyp = "07_afrotheria_tarver2016",
                                      clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_7/tree7_", perc = 0.975 )
+#> CHECK: Issues with quantiles
+for ( j in c(1,3:10) ){
+  tmp.qup     <- T7_72sp_sum$qup[2,] - T7_72sp_sum$qup[j,]
+  tmp.ind.qup <- which( abs( tmp.qup ) > 0.1 )
+  if( length( tmp.ind.qup ) > 0 ){
+    cat( "q97.5%: Check the following nodes in chain ", j, ":", names( tmp.qup[tmp.ind.qup] ), "\n" )
+    cat(  "Difference: ", tmp.qup[tmp.ind.qup], "\n")
+  }
+  tmp.qdown    <- T7_72sp_sum$qdown[2,] - T7_72sp_sum$qdown[j,]
+  tmp.ind.qdown<- which( abs( tmp.qdown ) > 0.1 )
+  if( length( tmp.ind.qdown ) > 0 ){
+    cat( "q2.5%: Check the following nodes in chain ", j, ":", names( tmp.qdown[tmp.ind.qdown] ), "\n" )
+    cat(  "Difference: ", tmp.qdown[tmp.ind.qdown], "\n")
+  }
+}
+#>END CHECK -- Issues with chains 1 and 4!
 T7_filt_half1 <- apply( X = T7_72sp_sum$mean[1:5,], MARGIN = 2, FUN = mean )
 T7_filt_half2 <- apply( X = T7_72sp_sum$mean[6:10,], MARGIN = 2, FUN = mean )
 pdf( "plots/Convergence_plot_T7.pdf", paper = "a4" )
-plot_convergence( name_dir_subt = "T7-72sp", mean_divt1 = T6_filt_half1,
-                  mean_divt2 = T6_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T7-72sp", mean_divt1 = T7_filt_half1,
+                  mean_divt2 = T7_filt_half2, num_runs = 10 )
 dev.off()
+T7_filt_half1_filt <- apply( X = T7_72sp_sum$mean[c(2:3,5:6),], MARGIN = 2, FUN = mean )
+T7_filt_half2_filt <- apply( X = T7_72sp_sum$mean[7:10,], MARGIN = 2, FUN = mean )
+pdf( "plots/Convergence_plot_T7_filtered.pdf", paper = "a4" )
+plot_convergence( name_dir_subt = "T7-72sp", mean_divt1 = T7_filt_half1_filt,
+                  mean_divt2 = T7_filt_half2_filt, num_runs = 8 )
+dev.off()
+T7_72sp_FILT_sum  <- find_prob_MCMC_72sp( num_dirs = c(2:3,5:10), delcol = 8, name_dir_subt = "72sp_tree7",
+                                     num_divt = 71, node_calib = NULL, 
+                                     path_72sp = paste( wd2, "00_MCMCtree_analyses/01_alternative_tree_hypotheses/00_MCMCtree/", sep = "" ),
+                                     maintt = FALSE,
+                                     tree_hyp = "07_afrotheria_tarver2016",
+                                     clock = "GBM", out = "out_data/01_post_alt_treehyp/tree_7/tree7_filt_", perc = 0.975 )
 
+## ALL 72SP HYPOTHESES ##
 pdf( "plots/Convergence_plot_all_72sp_hypotheses.pdf", paper = "a4" )
 par( mfrow = c(4,2) )
 plot_convergence( name_dir_subt = "main_72sp", mean_divt1 = sp72_filt_half1,
-                  mean_divt2 = sp72_filt_half2, num_runs = 7 )
-plot_convergence( name_dir_subt = "T1_72sp", mean_divt1 = T1_filt_half1,
-                  mean_divt2 = T1_filt_half2, num_runs = 10 )
+                  mean_divt2 = sp72_filt_half2, num_runs = 8 )
+# plot_convergence( name_dir_subt = "T1_72sp", mean_divt1 = T1_filt_half1,
+#                   mean_divt2 = T1_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T1_72sp", mean_divt1 = T1_filt_half1_filt,
+                  mean_divt2 = T1_filt_half2_filt, num_runs = 9 )
 plot_convergence( name_dir_subt = "T3_72sp", mean_divt1 = T3_filt_half1,
                   mean_divt2 = T3_filt_half2, num_runs = 10 )
 plot_convergence( name_dir_subt = "T4_72sp", mean_divt1 = T4_filt_half1,
                   mean_divt2 = T4_filt_half2, num_runs = 10 )
-plot_convergence( name_dir_subt = "T5_72sp", mean_divt1 = T5_filt_half1,
-                  mean_divt2 = T5_filt_half2, num_runs = 10 )
+# plot_convergence( name_dir_subt = "T5_72sp", mean_divt1 = T5_filt_half1,
+#                   mean_divt2 = T5_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T5_72sp", mean_divt1 = T5_filt_half1_filt,
+                  mean_divt2 = T5_filt_half2_filt, num_runs = 9 )
 plot_convergence( name_dir_subt = "T6_72sp", mean_divt1 = T6_filt_half1,
                   mean_divt2 = T6_filt_half2, num_runs = 10 )
-plot_convergence( name_dir_subt = "T7_72sp", mean_divt1 = T7_filt_half1,
-                  mean_divt2 = T7_filt_half2, num_runs = 10 )
+# plot_convergence( name_dir_subt = "T7_72sp", mean_divt1 = T7_filt_half1,
+#                   mean_divt2 = T7_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T7_72sp", mean_divt1 = T7_filt_half1_filt,
+                  mean_divt2 = T7_filt_half2_filt, num_runs = 8 )
+dev.off()
+
+
+pdf( "plots/Convergence_plot_all_72sp_hypotheses_UPDGC.pdf", paper = "a4" )
+par( mfrow = c(4,2) )
+plot_convergence( name_dir_subt = "main_72sp_UPDGC", mean_divt1 = sp72_UPDGC_filt_half1,
+                  mean_divt2 = sp72_UPDGC_filt_half2, num_runs = 3 )
+# plot_convergence( name_dir_subt = "T1_72sp", mean_divt1 = T1_filt_half1,
+#                   mean_divt2 = T1_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T1_72sp", mean_divt1 = T1_filt_half1_filt,
+                  mean_divt2 = T1_filt_half2_filt, num_runs = 9 )
+plot_convergence( name_dir_subt = "T3_72sp", mean_divt1 = T3_filt_half1,
+                  mean_divt2 = T3_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T4_72sp", mean_divt1 = T4_filt_half1,
+                  mean_divt2 = T4_filt_half2, num_runs = 10 )
+# plot_convergence( name_dir_subt = "T5_72sp", mean_divt1 = T5_filt_half1,
+#                   mean_divt2 = T5_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T5_72sp", mean_divt1 = T5_filt_half1_filt,
+                  mean_divt2 = T5_filt_half2_filt, num_runs = 9 )
+plot_convergence( name_dir_subt = "T6_72sp", mean_divt1 = T6_filt_half1,
+                  mean_divt2 = T6_filt_half2, num_runs = 10 )
+# plot_convergence( name_dir_subt = "T7_72sp", mean_divt1 = T7_filt_half1,
+#                   mean_divt2 = T7_filt_half2, num_runs = 10 )
+plot_convergence( name_dir_subt = "T7_72sp", mean_divt1 = T7_filt_half1_filt,
+                  mean_divt2 = T7_filt_half2_filt, num_runs = 8 )
 dev.off()
 
 
@@ -408,52 +674,153 @@ dev.off()
 # Each column is assumed to be an MCMC. Rows are iterations for parameter X
 # Source explaining why it is preferable than the function in coda:
 # https://nature.berkeley.edu/~pdevalpine/MCMC_comparisons/nimble_MCMC_comparisons.html
-ESS_s72sp      <- sum_MCMC_ESS( x = softbounds_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+#\\\\\\\\\#
+# MAIN T2 #
+#---------#
+ESS_s72sp        <- sum_MCMC_ESS( x = softbounds_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim(softbounds_72sp_sum$all_mcmc)[1]
+# length = 160008
+min(ESS_s72sp$stats$Rhat)
 # min(Rhat) 1.000024
+ESS_s72sp$tab
 #      Tail-ESS Bulk-ESS   coda-ESS
 # Med.      929      374 1255.2725
 # Min.      216       56  179.1359
 # Max.    11669     8358 9867.9955
-ESS_s72sp_OLD   <- sum_MCMC_ESS( x = softbounds_72sp_OLD_sum$all_mcmc, coda_fun = TRUE )
+
+ESS_s72sp_UPDGC  <- sum_MCMC_ESS( x = softbounds_72sp_UPDGC_FILT_sum$all_mcmc, coda_fun = TRUE )
+dim(softbounds_72sp_UPDGC_FILT_sum$all_mcmc)[1]
+# length = 60003
+min(ESS_s72sp_UPDGC$stats$Rhat)
+# min(Rhat) 0.9999884
+ESS_s72sp_UPDGC$tab
+# Tail-ESS Bulk-ESS   coda-ESS
+# Med.      232      180  426.27264
+# Min.       61       22   62.43852
+# Max.     3884     2888 5721.54846
+
+ESS_s72sp_OLD    <- sum_MCMC_ESS( x = softbounds_72sp_OLD_sum$all_mcmc, coda_fun = TRUE )
+# length = 140007
 # min(Rhat) 0.999986
 # Tail-ESS Bulk-ESS   coda-ESS
 # Med.     1727      796  1898.5583
 # Min.      223      130   268.2216
 # Max.    17543    11285 24970.0482
-ESS_T1_72sp    <- sum_MCMC_ESS( x = T1_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+#\\\\#
+# T1 #
+#----#
+ESS_T1_72sp      <- sum_MCMC_ESS( x = T1_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T1_72sp_sum$all_mcmc )[1]
+# length = 200010
+min( ESS_T1_72sp$stats$Rhat )
 # min( Rhat ) = 0.9999984
+ESS_T1_72sp$tab
 # Tail-ESS Bulk-ESS   coda-ESS
 # Med.     2243     1149  2410.3653
 # Min.      530      160   249.1687
 # Max.    25359    18028 34733.4022
-ESS_T3_72sp    <- sum_MCMC_ESS( x = T3_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+ESS_T1_filt_72sp <- sum_MCMC_ESS( x = T1_72sp_FILT_sum$all_mcmc, coda_fun = TRUE )
+dim( T1_72sp_FILT_sum$all_mcmc )[1]
+# length = 180009
+min( ESS_T1_filt_72sp$stats$Rhat )
+# min( Rhat ) = 0.9999901
+ESS_T1_filt_72sp$tab
+# Tail-ESS Bulk-ESS   coda-ESS
+# Med.     2074     1062  2494.8053
+# Min.      507      142   284.6633
+# Max.    22442    16211 31304.7031
+
+#\\\\#
+# T3 #
+#----#
+ESS_T3_72sp      <- sum_MCMC_ESS( x = T3_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T3_72sp_sum$all_mcmc )[1]
+# length = 200010
+min( ESS_T3_72sp$stats$Rhat )
 # min( Rhat ) = 0.999998
+ESS_T3_72sp$tab
 # Tail-ESS Bulk-ESS   coda-ESS
 # Med.     1839      949  2141.2830
 # Min.      503       98   352.6019
 # Max.    28525    18054 34458.9801
-ESS_T4_72sp    <- sum_MCMC_ESS( x = T4_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+#\\\\#
+# T4 #
+#----#
+ESS_T4_72sp      <- sum_MCMC_ESS( x = T4_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T4_72sp_sum$all_mcmc )[1]
+# length = 200010
+min( ESS_T4_72sp$stats$Rhat )
 # min( Rhat ) = 0.9999954
+ESS_T4_72sp$tab
 # Tail-ESS Bulk-ESS  coda-ESS
 # Med.     2007      968  2301.386
 # Min.      451      177   373.214
 # Max.    27303    19469 39685.681
-ESS_T5_72sp    <- sum_MCMC_ESS( x = T5_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+#\\\\#
+# T5 #
+#----#
+ESS_T5_72sp      <- sum_MCMC_ESS( x = T5_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T5_72sp_sum$all_mcmc )[1]
+# length = 200010
+min( ESS_T5_72sp$stats$Rhat )
 # min( Rhat ) = 1.000006
+ESS_T5_72sp$tab
 # Tail-ESS Bulk-ESS  coda-ESS
 # Med.     1085      745 1857.6749
 # Min.      330      142  367.5558
 # Max.    10119     6628 9738.5197
-ESS_T6_72sp    <- sum_MCMC_ESS( x = T6_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+ESS_T5_filt_72sp <- sum_MCMC_ESS( x = T5_72sp_FILT_sum$all_mcmc, coda_fun = TRUE )
+dim( T5_72sp_FILT_sum$all_mcmc )[1]
+# length = 180009
+min( ESS_T5_filt_72sp$stats$Rhat )
+# min( Rhat ) = 0.9999916
+ESS_T5_filt_72sp$tab
+# Tail-ESS Bulk-ESS  coda-ESS
+# Med.     1118      709  1765.0908
+# Min.      361      125   330.1042
+# Max.    15411    11241 21647.0629
+
+#\\\\#
+# T6 #
+#----#
+ESS_T6_72sp      <- sum_MCMC_ESS( x = T6_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T6_72sp_sum$all_mcmc )[1]
+# length = 200010
+min( ESS_T6_72sp$stats$Rhat )
 # min( Rhat ) = 0.9999919
+ESS_T6_72sp$tab
 # Tail-ESS Bulk-ESS   coda-ESS
 # Med.     2721     1295  2633.6739
 # Min.      442      193   354.5854
 # Max.    29174    19324 16135.7356
-ESS_T7_72sp    <- sum_MCMC_ESS( x = T7_72sp_sum$all_mcmc, coda_fun = TRUE )
+
+#\\\\#
+# T7 #
+#----#
+ESS_T7_72sp      <- sum_MCMC_ESS( x = T7_72sp_sum$all_mcmc, coda_fun = TRUE )
+dim( T7_72sp_sum$all_mcmc )[1]
 # length = 200010
+min( ESS_T7_72sp$stats$Rhat )
 # min( Rhat ) = 1.000016
+ESS_T7_72sp$tab
 # Tail-ESS Bulk-ESS   coda-ESS
 # Med.     1725      962  2505.2485
 # Min.      259      132   313.6458
 # Max.    27271    18096 10359.6552
+
+ESS_T7_filt_72sp <- sum_MCMC_ESS( x = T7_72sp_FILT_sum$all_mcmc, coda_fun = TRUE )
+dim( T7_72sp_FILT_sum$all_mcmc )[1]
+# length = 160008
+min( ESS_T7_filt_72sp$stats$Rhat )
+# min( Rhat ) = 1.000035
+ESS_T7_filt_72sp$tab
+# Tail-ESS Bulk-ESS   coda-ESS
+# Med.     1362      751  2147.1282
+# Min.      196      103   265.7601
+# Max.    21129    14015 28987.7681

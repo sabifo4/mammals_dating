@@ -16,7 +16,7 @@ library( rstudioapi )
 path_to_file <- getActiveDocumentContext()$path
 wd <- paste( dirname( path_to_file ), "/", sep = "" )
 setwd( wd )
-wd_trees <- gsub( pattern = "02_visual_checks_MCMCtreeR/", replacement = "", x = wd )
+wd_trees <- gsub( pattern = "visual_checks_MCMCtreeR/", replacement = "", x = wd )
 source( "Functions_plots_MCMCtreeR.R" )
 
 #-------------#
@@ -324,6 +324,9 @@ node.mean.dist.ages.oldpost.GBM <- get_mean_dist_ages( len = length( node.ages.o
 #====================================#
 # 0. PLOT: Evaluate posterior chains #
 #====================================#
+# Saved as:
+#   plots/02_NEW-Explore_GBM_posterior_runs.pdf
+#
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
 last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.all$GBM.post.1, xlim.scale = c(-20,300),
@@ -371,7 +374,7 @@ abline( v = 179, col = "black", lty = 2 )
 #=============================#
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "02_NEW-Filtered_chains-3.4.7.8.9.11.13.16.pdf"
+##    "plots/02_NEW-Filtered_chains-3.4.7.8.9.11.13.16.pdf"
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
 last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.all$GBM.post.3, xlim.scale = c(-20,300),
@@ -424,7 +427,7 @@ abline( v = 181.5, col = "black", lty = 2 )
 #=======================================#
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "02_NEW-mean_filtered_postVSmean_prior.pdf"
+##    "plots/02_NEW-mean_filtered_postVSmean_prior.pdf"
 # NOTE: We will use the mean ages of the GBM chains that passed the filter above,
 # i.e., 3, 4, 7, 8, 9, 11, 13, 16.
 # Set transparent colour
@@ -455,6 +458,47 @@ add.extra.dists( phy = phy.mean.prior.GBM, num.models = 1, last.plot = last.plot
 
 # Add legend
 legend( locator(1), legend = c( "mean.post", "mean.prior" ),
+        col = c( "blue", "darkgreen" ),
+        lty = 1,
+        bty = "n"
+)
+abline( v = 180.9, col = "black", lty = 2 )
+
+
+#=======================================#
+# 3. PLOT: Plot old post VS new post    #
+#=======================================#
+## THE NEXT LINES CAN BE RUN AT ONCE
+## THE OUTPUT FILE IS SAVED AS 
+##    "plots/02_NEW-mean_filtered_postVSmean_filtered_oldpost.pdf"
+# NOTE: We will use the mean ages of the GBM chains that passed the filter above,
+# i.e., 3, 4, 7, 8, 9, 11, 13, 16.
+# Set transparent colour
+transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
+last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.mean.post.GBM.filt, xlim.scale = c(-20,300),
+                                      node.ages = node.mean.dist.ages.post.GBM.filt, 
+                                      show.tip.label = TRUE,
+                                      analysis.type = "user", cex.tips = 0.8,
+                                      time.correction = 100, 
+                                      scale.res = c( "Eon", "Period" ), plot.type = "distributions",
+                                      cex.age = 0.6, cex.labels = 0.8, relative.height = 0.08, 
+                                      col.tree = "grey40", no.margin = TRUE,
+                                      density.col = transp.col, add.time.scale = TRUE, grey.bars = FALSE
+)
+
+# Add now the prior distribution
+col.mod = "grey"
+transparency = 0.3 
+col.plot <- c( "darkgreen" )
+add.extra.dists( phy = phy.mean.oldpost.GBM, num.models = 1, last.plot = last.plot,
+                 node.ages =  node.mean.dist.ages.oldpost.GBM, plot.type = "distributions",
+                 time.correction = 100,
+                 density.col = "white", density.border.col = col.plot,
+                 distribution.height = 0.8, transparency = transparency
+)
+
+# Add legend
+legend( locator(1), legend = c( "mean.post", "mean.post.old" ),
         col = c( "blue", "darkgreen" ),
         lty = 1,
         bty = "n"

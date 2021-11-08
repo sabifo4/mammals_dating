@@ -118,3 +118,46 @@ in the correct nodes, we generated two files:
    * `FIGTREE_72sp_<name_tree_hypothesis>_calibrated`: File to be opened with [`FigTree`](http://tree.bio.ed.ac.uk/software/figtree/).
    The user can then zoom in and out and change the display of the tree.   
    
+# 2. Updated geochronology as of September 2021 
+We updated the prior calibrations following the updated geochronology as of September 2021. 
+The updated calibrations are detailed in the table below:
+
+| Calibration name      | Updated calibration    |
+|-----------------------|------------------------|
+| MAMMALIA              | 'B(1.641,2.522)'       |
+| THERIA                | 'B(1.2156,1.694)'      |
+| PLACENTALIA           | 'B(0.6166,1.625)'      |
+| EUARCHONTOGLIRES      | 'B(0.6166,1.625)'      |
+| PRIMATES              | 'B(0.56,0.6609)'       |
+| ANTHROPOIDEA          | 'B(0.339,0.6609)'      |
+| CATARRHINI            | 'B(0.2444,0.339)'      |
+| HOMINIDAE             | 'B(0.1165,0.339)'      |
+| HOMININAE             | 'B(0.0533,0.339)'      |
+| HOMININI              | 'B(0.065,0.1)'         |
+| CERCOPITHECINAE       | 'B(0.0533,0.339)'      |
+| PAPIONINI             | 'B(0.0533,0.339)'      |
+| STREPSIRRHINI         | 'B(0.339,0.6609)'      |
+| GLIRES                | 'B(0.56,1.625)'        |
+| RODENTIA              | 'B(0.56,0.6609)'       |
+| NONSQUIRREL RODENTS   | 'B(0.4807,0.5924)'     |
+| DIPODIDAE-MUROIDEA    | 'B(0.4103,0.5924)'     |
+| MURINAE               | 'B(0.0725,0.1599)'     |
+| LAGOMORPHA            | 'B(0.4807,0.6609)'     |
+| EUUNGULATA            | 'B(0.507,0.6609)'      |
+| ARTIODACTYLA          | 'B(0.507,0.6609)'      |
+| CETRUMINANTIA         | 'B(0.507,0.6609)'      |
+| BOVIDAE               | 'B(0.1599,0.2729)'     |
+| CARNIVORA             | 'B(0.3771,0.6609)'     |
+| CANIFORMIA            | 'B(0.3771,0.6609)'     |
+| CHIROPTERA            | 'B(0.4807,0.6609)'     |
+| LIPOTYPHLA            | 'B(0.6166,1.625)'      |
+| XENARTHRA             | 'B(0.4807,1.625)'      |
+| AFROTHERIA            | 'B(0.56,1.625)'        |
+| PAENUNGULATA          | 'B(0.56,1.625)'        |
+| MARSUPIALIA           | 'B(0.4807,1.272)'      |
+| EOMETATHERIA          | 'B(0.2304,0.56)'       |
+
+The rooted tree with the main tree hypothesis (T2) with the updated calibrations can be found in the
+directory [`03_updated_calibtree`](03_updated_calibtree). Note that we only repeated the analysis with the main 
+tree as this is later used as a backbone at the end of the sequential Bayesian approach to obtain the final 
+mammal timetree.

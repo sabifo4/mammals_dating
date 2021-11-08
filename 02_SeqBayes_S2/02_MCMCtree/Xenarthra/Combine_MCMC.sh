@@ -3,7 +3,7 @@
 curr_dir=$( pwd )
 
 
-for dat in `seq 1 7`
+for dat in 7
 do
 
 	mkdir -p $dat/mcmc_files 
@@ -21,16 +21,8 @@ do
 			else 
 				begin=2 
 			fi
-			# Apparently incomplete lines are not counted in "wc -l " ! So no need for that
-			# if [[ $end -lt 20002 ]]
-			# then 
-				# stop=$(( end - 1 ))
-				# sed -n ''${begin}','${stop}'p' $dat/run$i/mcmc$j/mcmctree_GBM/mcmc.txt >> $dat/mcmc_files/mcmc_tracer.txt
-			# else 
-				# sed -n ''${begin}','${end}'p' $dat/run$i/mcmc$j/mcmctree_GBM/mcmc.txt >> $dat/mcmc_files/mcmc_tracer.txt
-			# fi
 			sed -n ''${begin}','${end}'p' $dat/run$i/mcmc$j/mcmctree_GBM/mcmc.txt >> $dat/mcmc_files/mcmc_tracer.txt
-					
+			# sed -n '1,'${end}'p' $dat/run$i/mcmc$j/mcmctree_GBM/mcmc.txt >>  $dat/run$i/mcmc$j/mcmctree_GBM/mcmc_clean.txt
 		done 
 
 	done 

@@ -16,7 +16,7 @@ library( rstudioapi )
 path_to_file <- getActiveDocumentContext()$path
 wd <- paste( dirname( path_to_file ), "/", sep = "" )
 setwd( wd )
-wd_trees <- gsub( pattern = "02_visual_checks_MCMCtreeR/", replacement = "", x = wd )
+wd_trees <- gsub( pattern = "visual_checks_MCMCtreeR/", replacement = "", x = wd )
 source( "Functions_plots_MCMCtreeR.R" )
 
 #-------------#
@@ -325,7 +325,7 @@ save( node.mean.dist.ages.prior.GBM, file = "R_objects/node.mean.dist.ages.prior
 #================================#
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "00_Explore_prior_runs.pdf"
+##    "plots/00_Explore_prior_runs.pdf"
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
 last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.all$GBM.prior.1, xlim.scale = c(-20,300),
@@ -371,7 +371,7 @@ abline( v = 185.5, col = "black", lty = 2 )
 #====================================#
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "01_Explore_GBM_posterior_runs.pdf"
+##    "plots/01_OLD-Explore_GBM_posterior_runs.pdf"
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
 last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.all$GBM.post.1, xlim.scale = c(-20,300),
@@ -413,7 +413,7 @@ abline( v = 180, col = "black", lty = 2 )
 
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "01_Explore_GBM_posterior_runs_without4.7.8.pdf"
+##    "plots/01_OLD-Explore_GBM_posterior_runs_without4.7.8.pdf"
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
 last.plot  <- mcmc.tree.plot.RETPLOT( phy = phy.all$GBM.post.1, xlim.scale = c(-20,300),
@@ -456,7 +456,7 @@ abline( v = 180, col = "black", lty = 2 )
 #=======================================#
 ## THE NEXT LINES CAN BE RUN AT ONCE
 ## THE OUTPUT FILE IS SAVED AS 
-##    "01_OLD-mean_filtered_postVSmean_prior.pdf"
+##    "plots/01_OLD-mean_filtered_postVSmean_prior.pdf"
 # NOTE: We will use the mean ages of the GBM chains without 4, 7, 8 for that
 # Set transparent colour
 transp.col <- adjustcolor( col = "blue", alpha.f = 0.3 )
@@ -495,12 +495,14 @@ abline( v = 179.5, col = "black", lty = 2 )
 #--------------------#
 # 1. Generate list object that can be used to plot with 
 #    both posterior and prior data 
-phy.all.OLD             <- phy.all
-node.ages.post.GBM.OLD  <- node.ages.post.GBM
-node.ages.prior.GBM.OLD <- node.ages.prior.GBM
+phy.all.OLD                           <- phy.all
+node.ages.post.GBM.OLD                <- node.ages.post.GBM
+node.ages.prior.GBM.OLD               <- node.ages.prior.GBM
+node.mean.dist.ages.post.GBM.filt.OLD <- node.mean.dist.ages.post.GBM.filt
 save( phy.all.OLD, file = "R_objects/phy.all.OLD.Rdata" )
 save( node.ages.post.GBM.OLD, file = "R_objects/node.ages.post.GBM.OLD.Rdata" )
 save( node.ages.prior.GBM.OLD, file = "R_objects/node.ages.prior.GBM.OLD.Rdata" )
+save( node.mean.dist.ages.post.GBM.filt.OLD, file = "R_objects/node.mean.dist.ages.post.GBM.filt.OLD.RData" )
 
 # 2. Generate list object with the mean ages of the prior
 save( phy.mean.prior.GBM, file = "R_objects/phy.mean.prior.GBM.RData" )

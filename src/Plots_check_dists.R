@@ -29,7 +29,7 @@ define_ST_vsharpmin <- function( log_ST, ST.fitted.dists.RData, ST.calib.nodes.n
   # 2. Extract lines with the ST calibrations
   cat( "Generating objects with ST calibrations... ...\n")
   ST.text <- grep( pattern = "Node ..* ST ..*", x = outMCMCtree, value = TRUE )
-  # 3. Extract the position of the calirbated nodes
+  # 3. Extract the position of the calibrated nodes
   ST.calib.nodes <- as.numeric( unlist( stringr::str_split( string = gsub( pattern = 
                                                                              "Node  |Node |: ..*", 
                                                                            replacement = "",
@@ -106,7 +106,8 @@ define_ST_vsharpmin <- function( log_ST, ST.fitted.dists.RData, ST.calib.nodes.n
 #                            calibrations, previously created in the 
 #                            script, with the names of each calibrated node
 #
-define_ST <- function( log_ST, ST.fitted.dists.RData, ST.calib.nodes.names ){
+define_ST <- function( log_ST, ST.fitted.dists.RData, ST.calib.nodes.names,
+                       SN = FALSE, SN.calibs.nodes.names = FALSE ){
   
   # 1. Read out.txt of one of the runs and extract info pasted above
   cat( "Loading log screen file saved when running MCMCtree... ...\n")
@@ -169,9 +170,95 @@ define_ST <- function( log_ST, ST.fitted.dists.RData, ST.calib.nodes.names ){
   # 8. Delete ST.fitted.dists obj
   remove( ST.fitted.dists )
   
+  # Check if SN available !
+  if ( SN == TRUE ){
+    # 1. Extract lines with the SN calibrations
+    cat( "Generating objects with SN calibrations... ...\n")
+    SN.text <- grep( pattern = "Node ..* SN ..*", x = outMCMCtree, value = TRUE )
+    # 3. Extract the position of the calibrated nodes
+    SN.calib.nodes <- as.numeric( unlist( stringr::str_split( string = gsub( pattern = 
+                                                                               "Node  |Node |: ..*", 
+                                                                             replacement = "",
+                                                                             x = SN.text ),
+                                                              pattern = " " ) ) )
+    # 4. Extract the parameters for the SN distributions
+    SN.calibs <- lapply( X = stringr::str_split( gsub( pattern = "Node.*SN.*\\( | \\)|,",
+                                                       replacement = "",
+                                                       x = SN.text ),
+                                                 pattern = " " ),
+                         FUN = as.numeric )
+    names( SN.calibs ) <- paste( "t_n", SN.calib.nodes, sep = "" )
+    # 5. Name each node accordingly                          
+    names( SN.calib.nodes ) <- SN.calibs.nodes.names
+    # 6. Add SN calibrations used for these nodes 
+    for( i in 1:length( SN.calib.nodes ) ){
+      
+      names( SN.calibs[[ i ]] )[1] <- "xi"    #position ~ approx. to mean age
+      names( SN.calibs[[ i ]] )[2] <- "omega" #scale ~ variance (small number narrow, large wider)
+      names( SN.calibs[[ i ]] )[3] <- "alpha" #shape (slanding, going left or right)
+      
+    }
+    # 7. Load RData object with ST calibrations fitted to the post calibrations of 
+    #    72sp mammals to find the equivalent node position. The SN calibration has
+    #    the same 3 first values
+    cat( "Load RData object with ST calibrations fitted to posterior time estimates
+       when using the 72sp mammals phylogeny... ...\n")
+    load( ST.fitted.dists.RData )
+    tmp <- FALSE
+    nodes.SN.72sp <- rep( "", length( SN.calibs ) )
+    cat( "Finding matching node positions with nodes calibrated with SN distributions... ...\n")
+    for( i in 1:length( SN.calibs ) ){
+      
+      for( j in 1:length( ST.fitted.dists ) ){
+        tmp.ndec <- nchar( gsub( pattern = "..*\\.", x = SN.calibs[[i]], replacement = "" ) )
+        if( any( tmp.ndec == 4 ) ){
+          tmp <- all.equal( round( ST.fitted.dists[[ j ]][1:3], 4 ), round( SN.calibs[[ i ]], 4 ) )
+        }else{
+          tmp <- all.equal( round( ST.fitted.dists[[ j ]][1:3], 3 ), round( SN.calibs[[ i ]], 3 ) )
+        }
+        
+        if( tmp == TRUE ){
+          break
+        }
+      }
+      
+      # Add index label and set tmp to FALSE
+      nodes.SN.72sp[ i ] <- names( ST.fitted.dists )[j]
+      tmp <- FALSE
+      
+    }
+  }
   # 9. Return list with objects
-  cat( "\nTasks done! Return objects with ST info\n")
-  return( list( ST.calibs = ST.calibs, nodes.72sp = nodes.72sp, ST.calib.nodes = ST.calib.nodes ))
+  if( SN == TRUE ){
+    cat( "\nTasks done! Return objects with ST and SN info\n")
+    tmp.len.ST   <- length( ST.calibs )
+    tmp.len.SN   <- length( ST.calibs )
+    total.calibs <- tmp.len.ST + tmp.len.SN 
+    ST.SN.calibs     <- ST.SN.calib.nodes <- vector( mode = "list", length = total.calibs )
+    nodes.all.72sp   <- vector( mode = "character", length = total.calibs )
+    for( i in 1:tmp.len.ST ){
+      ST.SN.calibs[[ i ]]      <- ST.calibs[[ i ]]
+      nodes.all.72sp[i]        <- nodes.72sp[i]
+      ST.SN.calib.nodes[[ i ]] <- ST.calib.nodes[[ i ]]
+    }
+    names( ST.SN.calibs )[1:tmp.len.ST]      <- names( ST.calibs )
+    names( ST.SN.calib.nodes )[1:tmp.len.ST] <- names( ST.calib.nodes )
+    count <- 0
+    for( i in (tmp.len.ST+1):total.calibs ){
+      count <- count + 1
+      ST.SN.calibs[[ i ]]      <- SN.calibs[[ count ]]
+      nodes.all.72sp[i]        <- nodes.SN.72sp[count]
+      ST.SN.calib.nodes[[ i ]] <- SN.calib.nodes[[ count ]]
+    }
+    names( ST.SN.calibs )[(tmp.len.ST+1):total.calibs]      <- names( SN.calibs )
+    names( ST.SN.calib.nodes )[(tmp.len.ST+1):total.calibs] <- names( SN.calib.nodes )
+    return( list( ST.SN.calibs = ST.SN.calibs, nodes.72sp = nodes.all.72sp, ST.SN.calib.nodes = ST.SN.calib.nodes
+                  ) )
+  }else{
+    cat( "\nTasks done! Return objects with ST info\n")
+    return( list( ST.calibs = ST.calibs, nodes.72sp = nodes.72sp, ST.calib.nodes = ST.calib.nodes ))
+  }
+  
   
 }
 
@@ -304,6 +391,8 @@ load_data <- function( mcmc1, mcmc2 ){
 #=======================================================================#
 # FUNCTION: Plotting the posterior dists, ST analytical, and post. 72sp #
 #-----------------------------------------------------------------------#
+## 211019 -- Now it checks if objects passed with calibrations have 3 or 
+##           4 elements (ST or SN)
 # Arguments: 
 #    post.cal       data.frame, posterior divergence times with the data of Seq.Bayes.S2.
 #    ind.post.cal   numeric, vector of length number of node calibrations used in the study.
@@ -350,22 +439,38 @@ plot_func <- function( post.cal = divtimes, ind.post.cal = ind.post.cal,
   }else{
     par( mfrow = c( p.nrow,p.ncol ), mai = c(0,0,0,0) )
   }
+  flag <- rep( 0 , length( ind.post.cal ) )
   for( i in 1:length( ind.post.cal ) ){
     
     plot( density(  post.cal[,ind.post.cal[i]], adj = 1 ), 
           main = paste( ST.cal.nodes[i], " = ", names.calibs[i], sep = "" ),
           xlab = '', ylab = '' )
-    curve( dst( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
-                alpha =  ST.cal[[ i ]][3], nu =  ST.cal[[ i ]][4] ),
-           from = 0, to = 5,
-           n = 1e4, add = TRUE, col = "red" ) 
+    if( length( ST.cal[[ i ]] ) == 3 ){
+      curve( dsn( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
+                  alpha =  ST.cal[[ i ]][3] ),
+             from = 0, to = 5,
+             n = 1e4, add = TRUE, col = "red" ) 
+      flag[i] <- 1
+    }else{
+      curve( dst( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
+                  alpha =  ST.cal[[ i ]][3], nu =  ST.cal[[ i ]][4] ),
+             from = 0, to = 5,
+             n = 1e4, add = TRUE, col = "red" ) 
+      flag[i] <- 0
+    }
     lines ( density(  post.72sp[,ind.post.72sp[i]], adj = 1 ),
             col = "darkgrey" )
     if( i == 1 ){
       if( legend == TRUE ){
         # Add legend
-        info.legend <- c( "Post.", "Analyt. ST, 72sp",
-                          "Post., 72sp")
+        if( 1 %in% flag ){
+          info.legend <- c( "Post.", "Analyt. ST/SN, 72sp",
+                            "Post., 72sp")
+        }else{
+          info.legend <- c( "Post.", "Analyt. ST, 72sp",
+                            "Post., 72sp")
+        }
+        
         col.legend  <- c( "black", "red", "grey" )
         legend( x=2.2, y = 1.5, legend = info.legend, col = col.legend,
                 lty = 1, bty = 'n' )
@@ -582,6 +687,8 @@ plot_func_SN_ST <- function( post.cal = divtimes, ind.post.cal = ind.post.cal,
 #=======================================================================#
 # FUNCTION: Plotting the posterior dists, ST analytical, and post. 72sp #
 #-----------------------------------------------------------------------#
+## 211019 -- Now it checks if objects passed with calibrations have 3 or 
+##           4 elements (ST or SN)
 # Arguments: 
 #    post.cal.1     data.frame, posterior divergence times with the data of Seq.Bayes.S2, r1.
 #    post.cal.2     data.frame, posterior divergence times with the data of Seq.Bayes.S2, r2.
@@ -629,6 +736,7 @@ plot_func_mcmc <- function( post.cal.1, post.cal.2,
   }else{
     par( mfrow = c( p.nrow,p.ncol ), mai = c(0,0,0,0) )
   }
+  flag <- rep( 0 , length( ind.post.cal ) )
   for( i in 1:length( ind.post.cal ) ){
     
     plot( density( post.cal.1[,ind.post.cal[i]], adj = 1 ), 
@@ -636,16 +744,31 @@ plot_func_mcmc <- function( post.cal.1, post.cal.2,
           lty = 3, xlab = '', ylab = '' )
     lines ( density( post.cal.2[,ind.post.cal[i]], adj = 1 ),
             lty = 5, col = "purple" )
-    curve( dst( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
-                alpha =  ST.cal[[ i ]][3], nu =  ST.cal[[ i ]][4] ),
-           from = 0, to = 5,
-           n = 1e4, add = TRUE, col = "darkgray" ) 
+    if( length( ST.cal[[ i ]] == 3 ) ){
+      curve( dsn( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
+                  alpha =  ST.cal[[ i ]][3] ),
+             from = 0, to = 5,
+             n = 1e4, add = TRUE, col = "darkgray" ) 
+      flag[i] <- 1
+    }else{
+      curve( dst( x, xi =  ST.cal[[ i ]][1], omega =  ST.cal[[ i ]][2],
+                  alpha =  ST.cal[[ i ]][3], nu =  ST.cal[[ i ]][4] ),
+             from = 0, to = 5,
+             n = 1e4, add = TRUE, col = "darkgray" ) 
+      flag[i] <- 0
+    }
+    
     
     if( i == 1 ){
       if( legend == TRUE ){
         # Add legend
-        info.legend <- c( "post. r1", "post. r2",
-                          "Analy. ST, 72sp")
+        if( 1 %in% flag ){
+          info.legend <- c( "post. r1", "post. r2",
+                            "Analy. ST/SN, 72sp")
+        }else{
+          info.legend <- c( "post. r1", "post. r2",
+                            "Analy. ST, 72sp")
+        }
         col.legend  <- c( "black", "purple", "darkgrey" )
         legend( x=2.2, y = 1.5, legend = info.legend, col = col.legend,
                 lty = 1, bty = 'n' )

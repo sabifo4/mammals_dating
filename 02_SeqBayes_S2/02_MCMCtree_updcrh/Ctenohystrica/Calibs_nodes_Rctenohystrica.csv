@@ -1,0 +1,12 @@
+Calib;node;Prior
+Mammalia;211;ST(1.642,0.425,12.652,1714.565)
+Rodentia;212;ST(0.606,0.005,0.178,5.22)
+Caviomorpha-Phiomorpha;214;ST(0.414,0.014,-0.164,18.225)
+Caviomorpha;215;ST(0.356,0.014,0.022,18.214)
+C.lanigera-O.degus;217;ST(0.317,0.014,0.203,19.215)
+Abrocomidae;340;B(0.01778,0.1382)
+C.porcellus-C.aperea;360;ST(0.086,0.01,0.671,36.22)
+Phiomorpha;385;ST(0.324,0.016,-0.255,17.835)
+Monotremata;418;B(0.24459,1.332)
+Tachyglossidae;419;B(0.0258,1.332)
+

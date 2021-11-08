@@ -1,0 +1,7 @@
+Calib;node;Prior
+Mammalia;635;ST(1.642,0.425,12.652,1714.565)
+Chiroptera;636;ST(0.596,0.016,-1.239,13.572)
+Natalidae-Vespertilionidae+Miniopteridae+Molossidae;638;B(0.38,0.56)
+Molossidae-Vespertilionidae+Miniopteridae;639;B(0.38,0.56)
+Monotremata;1266;B(0.24459,1.332)
+Tachyglossidae;1267;B(0.0258,1.332)
