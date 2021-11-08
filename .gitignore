@@ -102,6 +102,8 @@
 02_SeqBayes_S2/02_MCMCtree/
 
 02_SeqBayes_S2/02_MCMCtree_updcrh/*/7
+02_SeqBayes_S2/02_MCMCtree_updcrh/00_ESS_and_chain_convergence/out_data_old
+02_SeqBayes_S2/02_MCMCtree_updcrh/00_ESS_and_chain_convergence/Calculate_ESS_with_outdataold.R
 
 03_Extra_analyses/00_Data_filtering/00_partition_alignments
 03_Extra_analyses/00_Data_filtering/alignments
