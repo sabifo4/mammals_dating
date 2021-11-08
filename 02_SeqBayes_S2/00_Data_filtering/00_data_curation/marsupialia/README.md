@@ -9,4 +9,4 @@ Just follow the steps in the order given and you will be able to reproduce our r
 
 ## Curated tree 
 All the details about the procedure followed to generate the final tree alignments 
-can be found [here](filter_tree).
+can be found [here](filter_tree_updcrh).

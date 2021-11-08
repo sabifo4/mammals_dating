@@ -12,4 +12,4 @@ to reproduce our results.
 
 ## Curated tree 
 All the details about the procedure followed to generate the final tree alignments 
-can be found [here](filter_tree).
+can be found [here](filter_tree_updcrh).
