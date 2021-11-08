@@ -1,4 +1,4 @@
-# Dense Phylogenomic Dating Provides a High-Resolution Timeline of Mammal Evolution
+# A Species-Level Timeline of Mammal Evolution Integrating Phylogenomic Data
 
 ## What will you find here?
 In this repository, you can find a description of the several steps we have carried out to infer the divergence times of a phylogeny with 
