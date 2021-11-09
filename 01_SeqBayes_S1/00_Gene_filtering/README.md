@@ -1,4 +1,4 @@
-# Filtering: data set 1
+# Filtering: dataset 1
 
 ## 1. Download and get a summary of mammal genes
 In order to start the filtering step, you will need to download the 
@@ -248,9 +248,9 @@ The resulting ordered genes from slow- to fast-evolving - and common in all 72 s
 are saved in a directory called `filtered_genes_step2_all72sp` (you can also download this 
 directory [here](https://www.dropbox.com/s/4btyr36rwcjtcto/filtered_genes_step2_all72sp.zip?dl=0)).
 
-### 5.4. Remove common nuclear genes that might be present in data set 2
-There is a chance that some nuclear genes present in this data set 1 might overlap with the nuclear genes  
-present in the data set used in the second step of the sequential Bayesian dating analysis.
+### 5.4. Remove common nuclear genes that might be present in dataset 2
+There is a chance that some nuclear genes present in this dataset 1 might overlap with the nuclear genes  
+present in the dataset used in the second step of the sequential Bayesian dating analysis.
 We need to remove them so there is no overlap between them.
 For that purpose, we run the following commands: 
 
@@ -298,7 +298,7 @@ done
 ```
 
 In total, 634 genes are present in all the 72 mammal taxa that are not present 
-in the second data set that will be used in the second step of the sequential 
+in the second dataset that will be used in the second step of the sequential 
 Bayesian dating analysis (you can download the `filtered_genes_step3_all72sp` directory [here](https://www.dropbox.com/s/u9boyowl9djuvxx/filtered_genes_step3_all72sp.zip?dl=0)).
 
 >>**NOTE: There are additional output files generated during the steps detailed above that might not have been extensively described here.**
@@ -490,7 +490,7 @@ After that, we randomly subsampled 10, 30, 100, 500, and 1,000 genes out of all 
 across all the 72 mammal taxa). This should provide us with a more randomised sample than the one described above.
 
 **NOTE 1**: We used the genes filtered in step 2 even though there were chances we picked any of the 11
-nuclear genes that are also found in the data set that we use in the second step of the sequential
+nuclear genes that are also found in the dataset that we use in the second step of the sequential
 Bayesian dating analysis. This does not affect the results we get in this analysis because it is a complete
 independent analysis from the clock-dating analysis.   
 
@@ -516,7 +516,7 @@ the following directories will be generated:
           |- <other_dirs>
 ```
 
-After that, we decided to partition the alignments into 2 or 4 blocks from slow- to fast- evolving. We rewrote the 
+After that, we decided to partition the alignments into 2 or 4 blocks from slow- to fast-evolving. We rewrote the 
 bash script [`03_Concatenate_genes_separated_for_partition.sh`](scripts/03_Concatenate_genes_separated_for_partition.sh) 
 so we could generate the number of partitions required. The code for this purpose can be found in the script 
 [`04.1_Concatenate_genes_separated_for_partition_subsamples.sh`](scripts/04.1_Concatenate_genes_separated_for_partition_subsamples.sh)
@@ -555,7 +555,7 @@ and can be run as it follows:
 ./scripts/04.1_Concatenate_genes_separated_for_partition_subsamples.sh 5000 sample10000sp 2
 
 ## Now do the same for those folders that contain the subsampled genes 
-## from the whole data set 
+## from the whole dataset 
 
 # Subsample 10sp
 ./scripts/04.1_Concatenate_genes_separated_for_partition_subsamples.sh 2 sample10sp_all 4
@@ -608,7 +608,7 @@ Now, we can use another script to generate the alignments in PHYLIP format.
 ./scripts/04.2_Generate_partitions_alignments_subsamples.sh sample1000sp
 
 ## Now do the same for those folders that contain the subsampled genes 
-## from the whole data set 
+## from the whole dataset 
 
 # Subsample 10sp
 ./scripts/04.2_Generate_partitions_alignments_subsamples.sh sample10sp_all
@@ -710,7 +710,7 @@ general file architecture under the `01_SeqBayes_S1` directory:
                   |       |- partitions12_ENS..*.aln    * "X" directory, you can find the 2 files detailed here.    
                   |         					  
                   |- filtered_genes_step3_all72sp/    
-                  |     |- X/                           * There are 633 directories here. The name of the directories,    
+                  |     |- X/                           * There are 634 directories here. The name of the directories,    
                   |       |- ENSG..*.tree               * "X" here, goes from 1 to 645. Inside each "X"directory,     
                   |       |- partitions12_ENS..*.aln    * "X" directory, you can find the 2 files detailed here.  
                   |         	              
@@ -728,15 +728,16 @@ general file architecture under the `01_SeqBayes_S1` directory:
                   |       |- genes.csv				  
                   |         	              
                   |- out_logs/ 
-                  |       |- log_0..*txt     * There are 15 log files.	
+                  |       |- log_*txt        * There are 15 log files.	
                   |         	              
                   |- out_RData/
-                  |       |- check..*pdf     * There are 3 pdf files.	
+                  |       |- check..*pdf     * There are 4 pdf files.	
                   |       |- *csv            * There are 4 csv files.	
                   |       |- ..*RData        * There are 5 RData files.	
                   |         		          
                   |- scripts/ 
-                  |       |- 0..*sh   * There are 10 bash scripts.	
+                  |       |- 0..*sh   * There are 9 bash scripts.	
+                  |       |- 0..*pl   * There is 1 perl script.	
                   |       |- 0..*R    * There are 2 R scripts.	
                   |       |- *txt     * There are 3 text files.
                   | 
