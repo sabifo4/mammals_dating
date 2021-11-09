@@ -20,12 +20,12 @@ have been also included in the corresponding directories as they were used as ba
 taxa:   
 
    * [Tree 1 - T1](00_rooted_trees_72sp/01_T1): tree hypothesis 1,
-   Atlantogenata rooting and *Tupaia belnageri* sister clade to Primates.   
+   Atlantogenata rooting and *Tupaia belangeri* sister clade to Primates.   
    * [Tree 2 - T2](00_rooted_trees_72sp/02_T2): tree hypothesis 2,
-   Atlantogenata rooting and *Tupaia belnageri* sister clade to Glires.
+   Atlantogenata rooting and *Tupaia belangeri* sister clade to Glires.
    This is the tree hypothesis used in the subsequent downstream analyses and later referred to as "main tree".   
    * [Tree 3 - T3](00_rooted_trees_72sp/03_T3): tree hypothesis 3,
-   same as T1 but Chiroptera and *Equus caballus* are placed as sister clades to Carnivora.   
+   same as T1 but clade Chiroptera and *Equus caballus* are placed as sister clades to Carnivora.   
    * [Tree 4 - T4](00_rooted_trees_72sp/04_T4): tree hypothesis 4,
    same as T3 but *Vicugna pacos* and *Sus scrofa* exchange their placement.   
    * [Tree 5 - T5](00_rooted_trees_72sp/05_T5): tree hypothesis 5,
@@ -37,8 +37,8 @@ taxa:
    Exafroplacentalia rooting and same placement for the other taxa as T2.   
 
 Note that only one tree hypothesis is going to be used during the second step of the 
-sequential Bayesian dating: **T2**. To easily track which taxa are differently placed in each of the 
-seven tree hypotheses, you can check the PDF and the SVG files generated for each of tree hypothesis 
+sequential Bayesian dating analysis: **T2**. To easily track which taxa are differently placed in each of the 
+seven tree hypotheses, you can check the PDF and the SVG files generated for each tree hypothesis 
 [here](02_tree_hypotheses_figures/). 
 These taxa/clades have been identified with different colours: (1, blue) Xenarthra, (2, orange) Afrotheria,
 (3, green) Chiroptera, (4, blue) *Equus caballus*, (5, yellow) *Vicugna pacos*, (6, purple) *Sus scrofa*,
@@ -50,7 +50,7 @@ These taxa/clades have been identified with different colours: (1, blue) Xenarth
 
 # 2. Calibrate rooted trees for 7 tree hypotheses
 Once the 7 rooted trees with 72 mammal species are generated, we need to calibrate the nodes for which
-we have fossil information. We calibrated the root of the tree and 31 internal nodes; 32 calibrations 
+we have fossil information. We calibrated the root of the tree and 31 internal nodes: 32 calibrations 
 in total. These are included as "soft bounds", that is, uniform distributions defined by a 
 maximum and a minimum age (based on the fossil record) between which the true age is expected to lie.
 Besides, the `MCMCtree` user defines left and right tail probabilities to the maximum and minimum bounds
@@ -97,9 +97,10 @@ These calibrations can also be found in the [`Calibrations_mammalia.txt`](01_cal
 has two columns delimited by a `|`. The column on the right has the names of the nodes that are to be calibrated 
 and the one on the left the corresponding soft calibrations in `MCMCtree` format (time unit = 100 Mya).
 >> **NOTE**: You will see that there are four nodes in the text file that have different tag names if compared to the ones included
->> in the table above: "HOMININAE" is "GORILLA-HUMAN", "STREPSIRRHINI" is "STREPSIRHINI (we had a typo found at the end of the study. 
->> We have not changed it in the file as it might affect downstream analyses), "NONSQUIRREL RODENTS" is "ROD-NOSQUIRREL",
+>> in the table above: "HOMININAE" is "GORILLA-HUMAN", "STREPSIRRHINI" is "STREPSIRHINI (we had a typo found at the end of the study),"NONSQUIRREL RODENTS" is "ROD-NOSQUIRREL",
 >> "DIPODIDAE-MUROIDEA" is "DIPOD-RATT", "MURINAE" is "MURIDAE" (another typo we found later), "CETRUMINANTIA" is "WHIP-RUM", and "BOVIDAE" is "BOV-ANTIL".
+>> We have not changed these names in the text file as it might affect downstream analyses that use these 
+>> tag identifiers.   
 
 First, we manually included the names of the nodes to be calibrated in the newick trees for each of 
 the 7 hypotheses (files that end with `*_calibrated.tree` and are saved in each of the seven directories 
@@ -116,13 +117,13 @@ in the correct nodes, we generated two files:
    of the calibrations added to the corresponding nodes. Each directory within the [`01_calibtrees_72sp`](01_calibtrees_72sp)
    contains this specific file.   
    * `FIGTREE_72sp_<name_tree_hypothesis>_calibrated`: File to be opened with [`FigTree`](http://tree.bio.ed.ac.uk/software/figtree/).
-   The user can then zoom in and out and change the display of the tree.   
+   The user can then zoom in and out to better display different parts of the tree.   
    
 # 2. Updated geochronology as of September 2021 
 We updated the prior calibrations following the updated geochronology as of September 2021. 
 The updated calibrations are detailed in the table below:
 
-| Calibration name      | Updated calibration    |
+| Calibration name      | Updated calibrations   |
 |-----------------------|------------------------|
 | MAMMALIA              | 'B(1.641,2.522)'       |
 | THERIA                | 'B(1.2156,1.694)'      |

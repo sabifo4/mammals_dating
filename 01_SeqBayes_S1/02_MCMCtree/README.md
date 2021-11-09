@@ -27,7 +27,7 @@ when deciding the maximum and minimum bounds when constructing fossil calibratio
 phylogeny.   
 	  
 Once we are sure that there are no conflicts, we can then evaluate the Bayesian inference of 
-posterior times for the 72 mammal phylogeny.
+posterior times for the 72-taxon mammal phylogeny.
 
 Below, you will find the links to the files that contain the results obtained when running
 `MCMCtree` for all the tree hypotheses. In this GitHub repository, you will be able to find the
@@ -42,7 +42,7 @@ main tree hypothesis (T2) [here](https://www.dropbox.com/s/bum031cge8qp8sb/SeqBa
 We ran five independent MCMC with the aim to increase ESS and improve MCMC convergence. When 
 running `MCMCtree`, we used a dummy alignment because, when sampling from the prior,
 the molecular data are not used.
-This can help to reduce the amount of disk space used as there is no need to have the  
+This can help to reduce the amount of disk space used as there is no need to have the
 alignment file (large size) when sampling from the prior.
 The important options that need to be used in the control file are the following:   
    
@@ -87,16 +87,16 @@ needs to be changed according to each tree hypothesis:
 When the 5 independent MCMC runs finished, we summarised the inferred trees for each independent
 chain using the script `Combine_MCMC.sh`. This script generates the `mcmc_files` directory and the 
 `mcmc_tracer.txt` file, which concatenates the results sampled in each of the five chains. Then,
-we change set `print = -1` in the control file to run `MCMCtree` with the `mcmc_tracer.txt` so we
+we set `print = -1` in the control file to run `MCMCtree` with the `mcmc_tracer.txt` so we
 can obtain the tree file with branch lengths when using all the samples collected (`FigTree.tre`). 
 
 If you have downloaded the zip file provided above with the `MCMCtree` output files, you will find these 
 files inside `00_MCMCtree_prior`.
 
 ## Posterior
-Inferring posterior divergence times for the 72 mammal phylogeny was done under the 
+Inferring posterior divergence times for the 72-taxon mammal phylogeny was done under the 
 7 tree hypotheses described in the previous steps and under the best-fitting relaxed-clock model:
-the autocorrelated-rates model (we use `GBM` in directories in this GitHub repository to identify
+the autocorrelated-rates model (we use `GBM` in the directories saved in this GitHub repository to identify
 analyses under this clock).
 
 At the same time, in order to increase ESS and ensure MCMC convergence, we ran several independent
@@ -144,7 +144,7 @@ geochronology (i.e., updated set of prior calibrations as of September 2021) whi
 Once you unzip this file, you should save the unzipped directory inside `00_main_tree_T2`. You will then be 
 able to see the summarised results for all the chains that converged here:   
 
-   * `00_main_tree_T2/02_MCMCtree_posterior_newchrono/mcmc_files`:   
+   * `00_main_tree_T2/02_MCMCtree_posterior_newchrono/mcmc_files`: 
    here, you will find the results obtained with `MCMCtree` when using the main tree 
    hypothesis (T2) calibrated with the updated set of priors as of September 2021 and the alignment
    **without** the 11 genes also found in data set 2. The `mcmc_tracer.txt` file contains the samples 
@@ -180,10 +180,10 @@ You can find the results in the following directories:
    hypothesis, which were used to generate the plots you fill find the link provided above.
 
 Even though you can find the plots for all the hypotheses in the directories mentioned above,
-[here](../../figs/FigS4.pdf) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
+[here](../../figs/FigS5.pdf) (Figure S5) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
 that did not show any visual problems.
 
->>**_Notes for the figure provided in the link above:_**   
+>>**_Caption for the figure provided in the link above:_**   
 >>*The posterior distributions for the mean*
 >>*divergence times estimated in runs 1 to 16 are shown for the corresponding nodes in (a), while*
 >>*(b) does not include the results for chains 1, 2, 5, 6, 10, 12, 14, 15 as they seem to have have*
@@ -237,29 +237,29 @@ with the `coda::effectiveSampleSize` has been included for comparison.
 
 >>**Table S7**. Measures of effective sample size (ESS).   
 
-|                          | MAIN     | MAIN-updated geochronology  |T1         | T3       | T4         | T5         | T6        | T7-filt    |   
-|--------------------------|----------|-----------------------------|-----------|----------|------------|------------|-----------|------------|
-| tail-ESS times (median)  | 929      | 271                         | 2074      | 1839     | 2007       | 1118       | 2721      | 1362       |
-| tail-ESS times (min)     | 216      | 91                          | 507       | 503      | 451        | 361        | 442       | 196        |
-| tail-ESS times (max)     | 11669    | 5377                        | 22442     | 28525    | 27303      | 15411      | 29174     | 21129      |
-| bulk-ESS times (median)  | 374      | 210                         | 1062      | 949      | 968        | 709        | 1295      | 751        |
-| bulk-ESS times (min)     | 56       | 31                          | 142       | 98       | 177        | 125        | 193       | 103        |
-| bulk-ESS times (max)     | 8358     | 3801                        | 16211     | 18054    | 19469      | 11241      | 19324     | 14015      |
-| Rhat (min)               | 1.000024 | 0.9999882                   | 0.9999901 | 0.999998 | 0.9999954  | 0.9999916  | 0.9999919 | 1.000035   |
-| coda-ESS times  (median) | 1255     | 508                         | 2495      | 2141     | 2301.39    | 1765       | 2634      | 2147       |
-| coda-ESS times  (min)    | 179      | 81                          | 285       | 353      | 373.21     | 330        | 355       | 266        |
-| coda-ESS times  (max)    | 9868     | 7694                        | 31305     | 34459    | 39685.68   | 21647      | 16136     | 28988      |
-| Number of samples        | 160008   | 80004                       | 180009    | 200010   | 200010     | 180009     | 200010    | 160008     |
+|                          | MAIN (UPD)| MAIN (OLD) |T1         | T3       | T4         | T5         | T6        | T7         |   
+|--------------------------|-----------|------------|-----------|----------|------------|------------|-----------|------------|
+| tail-ESS times (median)  | 232       | 929        | 2074      | 1839     | 2007       | 1118       | 2721      | 1362       |
+| tail-ESS times (min)     | 61        | 216        | 507       | 503      | 451        | 361        | 442       | 196        |
+| tail-ESS times (max)     | 3884      | 11669      | 22442     | 28525    | 27303      | 15411      | 29174     | 21129      |
+| bulk-ESS times (median)  | 180       | 374        | 1062      | 949      | 968        | 709        | 1295      | 751        |
+| bulk-ESS times (min)     | 22        | 56         | 142       | 98       | 177        | 125        | 193       | 103        |
+| bulk-ESS times (max)     | 2888      | 8358       | 16211     | 18054    | 19469      | 11241      | 19324     | 14015      |
+| Rhat (min)               | 0.9999884 | 1.000024   | 0.9999901 | 0.999998 | 0.9999954  | 0.9999916  | 0.9999919 | 1.000035   |
+| coda-ESS times  (median) | 426       | 1255       | 2495      | 2141     | 2301       | 1765       | 2634      | 2147       |
+| coda-ESS times  (min)    | 62        | 179        | 285       | 353      | 373        | 330        | 355       | 266        |
+| coda-ESS times  (max)    | 5722      | 9868       | 31305     | 34459    | 39686      | 21647      | 16136     | 28988      |
+| Number of samples        | 60003     | 160008     | 180009    | 200010   | 200010     | 180009     | 200010    | 160008     |
 
 In addition, you can find below the scatterplot of the estimated posterior mean times for the MCMC
 runs under the autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis.
 
 >> _Main tree T2 here uses calibrations before September 2021_ 
 <p align="center">
-  <img width="500" height="500" src="../../figs/FigS5.png">
+  <img width="500" height="500" src="../../figs/FigS6.png">
 </p>
 
->>**Fig S5: Scatterplot of the estimated posterior mean times for the MCMC runs under the**
+>>**Fig S6: Scatterplot of the estimated posterior mean times for the MCMC runs under the**
 >>**autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis**. When comparing
 >>the mean estimates for half of the chains against the other half, they fall
 >>almost in a straight line (i.e., $x\approx y$), thus visually showing that the chains have
@@ -270,10 +270,10 @@ runs under the autocorrelated-rates relaxed-clock model (GBM) model for each tre
 
 >> _Main tree T2 here uses calibrations with updated geochronology as of September 2021_ 
 <p align="center">
-  <img width="500" height="500" src="../../figs/FigS5_v2.png">
+  <img width="500" height="500" src="../../figs/FigS6_v2.png">
 </p>
 
->>**Fig S5 (v2): Scatterplot of the estimated posterior mean times for the MCMC runs under the**
+>>**Fig S6 (v2): Scatterplot of the estimated posterior mean times for the MCMC runs under the**
 >>**autocorrelated-rates relaxed-clock model (GBM) model for each tree hypothesis**. When comparing
 >>the mean estimates for half of the chains against the other half, they fall
 >>almost in a straight line (i.e., $x\approx y$), thus visually showing that the chains have
@@ -293,9 +293,9 @@ The next step will be to fit skew-_t_ distributions to the estimated posterior n
 72 mammals phylogeny. These will be then used when dealing with the curated molecular data set
 for $\approx 5,000$ mammal species and 182 genes:   
 
-   * 168 nuclear protein-coding genes obtained from ENA/HMM-profile RefSeq (range of taxa: 50 - 1,266).   
-   * 3 mitochondrial protein-coding genes from RefSeq (range of taxa: 818).   
-   * 9 mitochondrial protein-coding genes obtained from ENA/HMM-profile (range of taxa: 1,047 - 4,131).   
-   * 2 mitochondrial non-coding rRNA genes obtained from ENA/HMM-profile (range of taxa: 1,573 - 2,175).   
+   * 168 nuclear protein-coding genes obtained from ENA/HMM-profile RefSeq.   
+   * 3 mitochondrial protein-coding genes from RefSeq.   
+   * 9 mitochondrial protein-coding genes obtained from ENA/HMM-profile.   
+   * 2 mitochondrial non-coding rRNA genes obtained from ENA/HMM-profile.   
    
 >> _More details about this second data set can be found [here](../../00_Data_collection), in Table S3._

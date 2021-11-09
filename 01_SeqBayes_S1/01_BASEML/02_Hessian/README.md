@@ -65,12 +65,12 @@ zipped file and go through each directory and pipelines used in this project. We
 
 ### IMPORTANT NOTE
 The results for the main tree hypothesis (T2) were repeated as we found out that 11 nuclear genes out of the final 
-filtered genes included in data set 1 were also present in data set 2 (the data set that we were going to use in
+filtered genes included in dataset 1 were also present in dataset 2 (the dataset that we were going to use in
 the second step of the sequential Bayesian dating analysis).
 While this does not affect the other 6 tree hypotheses, we had to make sure that there were no overlapping 
-genes between the two data sets that are going to be used in the sequential Bayesian dating approach to
+genes between the two datasets that are going to be used in the sequential Bayesian dating approach to
 infer the divergence times, which affects the main tree hypothesis (T2) because this is the tree topology
-used in this analysis. Consequently, we repeated the `BASEML` analysis with the alignment of data set 1 
+used in this analysis. Consequently, we repeated the `BASEML` analysis with the alignment of dataset 1 
 without these 11 nuclear genes for the main tree because the posterior estimated times
 obtained with the main tree were going to be then used to fit the skew-*t* distributions used as a prior
 distributios in the second step of the sequential Bayesian approach. Note that:   
@@ -82,8 +82,8 @@ distributios in the second step of the sequential Bayesian approach. Note that:
    step), they were only used to infer the divergence times when using the other 6 tree hypotheses -- note that
    there is no conflict with these 6 tree hypotheses because they are not used in the subsequent steps and there is no need 
    to avoid overlapping genes.   
-   * Last, please note that these alignments are not the ones provided in the `000_alignments` directory as describe above.
-   The alignments in the `000_alignments` we describe in the gene filtering step and that can be downloaded [here](https://www.dropbox.com/s/mrvzzvd4o6qqyqk/000_alignments.zip?dl=0) are only
+   * Last, please note that the alignments in the [`000_alignments`](https://www.dropbox.com/s/mrvzzvd4o6qqyqk/000_alignments.zip?dl=0) we describe in the gene filtering step, which we have extracted 
+   from the corresponding directories and can easily be downloaded from [here](https://www.dropbox.com/s/twp5uligudl46po/SeqBayesS1_mainT2hyp_alignments.zip?dl=0), are only
    used to infer the divergence times with the main tree hypothesis (T2).   
    
 The zip file with the `BASEML` results with the main tree hytpohesis (T2) can be downloaded from
@@ -94,7 +94,7 @@ Below, we give you a detailed summary of how we carried out this analysis in the
 
 ## 1. Loading data to the HPC and set working environment
 First, we loaded both the concatenated and partitioned alignments to the HPC and saved them in the `alignments`
-directory (or `00_alignments` when carrying out the analysis when using the T2 main tree). We have provided the 
+directory (or `000_alignments` when carrying out the analysis when using the T2 main tree). We have provided the 
 links above to download these directories with the files you need to reproduce the analyses.
 
 Then, we created one directory for each tree hypothesis where `BASEML` was going to be run 
@@ -133,10 +133,10 @@ and `p04` for fourth partition) in each of the seven directories for each tree h
 as well as the corresponding file with the tree hypothesis and the control file to run 
 `MCMCtree`.
 
-We used the next bash code for that purpose: 
+We used the next code for that purpose: 
 
 ```sh
-# Bash code to be run in Apocrita HPC once you have logged in 
+# Run in Apocrita HPC once you have logged in 
 # an interactive session
 
 # 1. Start interactive session 
@@ -207,7 +207,7 @@ mcmctree *ctl
 ```
 
 Then, you might want to remove output files we will not be using in the subsequent steps. In total, 
-there are 8 output files that are not needed, which can be removed with the command below.
+there are 8 output files that are not needed, which can be removed with the commands below.
 Note that the `SeedUsed` file should not be removed if you want to reproduce the exact same run again.
 There are two ways of doing this, just pick the option you prefer from the ones given below: 
 
@@ -262,11 +262,11 @@ done
 **NOTE**: In case this job could not be run in your HPC because of running out of memory, just increase 
 the memory requirements of the interactive session, if allowed. Otherwise, you can always copy the 
 `baseml_method1` directory to your desktop PC and follow the same instructions provided above.
-Note that we assume that you have installed the PAML suite in your PC (as well as in your HPC!) as well as
-exported the path to the executable files. Otherwise, change the commands to 
+Note that we assume that you have PAML installed on your PC (as well as in your HPC!) as well as
+exported the path to the executable files (e.g., `BASEML`, `MCMCtree`, etc.). Otherwise, change the commands to 
 run `MCMCtree` in your PC accordingly. Note that you might need to wait ~2-5 minutes, depending on your RAM.
-When these jobs were run on a desktop PC with i7-8750H, CPU 2.20GHz, 16GB RAM (OS: Windows 10, Linux subsystem used);
-it took between 5-35 minutes, depending on the partition and alternative processes that were running on the PC 
+When these jobs were run on a desktop PC (i7-8750H, CPU 2.20GHz, 16GB RAM | OS: Windows 10, Linux subsystem used);
+it took between 5-35 minutes for them to finish, depending on the partition and alternative processes that were running on the PC 
 at the same time. 
 
 ## 3. Preparing bash scripts to run `BASEML` 
@@ -443,7 +443,7 @@ refers to the `in.BV` file.
 
 To generate the `in.BV` file required by `MCMCtree`, we will concatenate the `rst2` files generated for each 
 partition in a unique file. It is **very important** that we concatenate them in the correct order, i.e., from 
-`p01` to `p04`, so each chunk of gradient and Hessian corresponds to the correct alignment that was used by `BASEML`
+`p01` to `p04`, so each block of information with the gradient and Hessian corresponds to the correct alignment that was used by `BASEML`
 when they were calculated. 
 
 The code that we have used is the following: 
