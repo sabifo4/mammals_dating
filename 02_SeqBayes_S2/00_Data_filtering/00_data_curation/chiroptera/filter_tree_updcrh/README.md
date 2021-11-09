@@ -2,12 +2,12 @@
 
 ## 1. Get tree topology and add calibrations
 We use the R scripts [`Calibrations_Lchiroptera_I.R`](00_Filter_trees/Chiroptera_I/Calibrations_Lchiroptera_I.R)
-and [`Calibrations_Lchiroptera_II.R`](00_Filter_trees/Chiroptera_I/Calibrations_Lchiroptera_II.R)
+and [`Calibrations_Lchiroptera_II.R`](00_Filter_trees/Chiroptera_II/Calibrations_Lchiroptera_II.R)
 to generate the phylogeny for this data subset. The tag names and the corresponding calibrations 
 for the nodes that are to be calibrated have been included in the corresponding tree topologies 
 for each subtree (i.e., see
-[here](00_Filter_trees/Chiroptera_I/laurasiatheria_chiroptera_calibnames.tree)for subtree 1 and 
-[here](00_Filter_trees/Chiroptera_II/laurasiatheria_chiroptera_calibnames.tree)for subtree 2).
+[here](00_Filter_trees/Chiroptera_I/laurasiatheria_chiropteraI_calibnames.tree) for subtree 1 and 
+[here](00_Filter_trees/Chiroptera_II/laurasiatheria_chiropteraII_calibnames.tree) for subtree 2).
 These tag names are later replaced with the
 corresponding calibrations specified in the calibations text file (i.e., see
 [here](00_Filter_trees/Chiroptera_I/Calibrations_LaurChiroptera.txt) for the calibrations used in the first 

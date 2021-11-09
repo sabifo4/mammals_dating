@@ -91,7 +91,9 @@ we set `print = -1` in the control file to run `MCMCtree` with the `mcmc_tracer.
 can obtain the tree file with branch lengths when using all the samples collected (`FigTree.tre`). 
 
 If you have downloaded the zip file provided above with the `MCMCtree` output files, you will find these 
-files inside `00_MCMCtree_prior`.
+files inside `00_MCMCtree_prior`. Note that you can also download the results obtained with `MCMCtree` when 
+sampling from the prior and fixing the topology of the alternative tree hypotheses (T1, T3, T4, T5, T6, T7) 
+[here](https://www.dropbox.com/s/jb3ppzpw543eg72/SeqBayesS1_MCMCtree_6treehyp_MCMCtree_prior.zip?dl=0).
 
 ## Posterior
 Inferring posterior divergence times for the 72-taxon mammal phylogeny was done under the 
@@ -140,10 +142,18 @@ to this file architecture). They should be saved as it follows:
 
 In addition, we repeated the analyses in `MCMCtree` with the updated 
 geochronology (i.e., updated set of prior calibrations as of September 2021) which you can download from 
-[here](https://www.dropbox.com/s/53mdfyc47hukkrh/SeqBayesS1_MCMCtree_mainT2_posterior_newchrono.zip?dl=0).
-Once you unzip this file, you should save the unzipped directory inside `00_main_tree_T2`. You will then be 
+[here](https://www.dropbox.com/s/53mdfyc47hukkrh/SeqBayesS1_MCMCtree_mainT2_posterior_newchrono.zip?dl=0)
+when sampling from the posterior and 
+[here](https://www.dropbox.com/s/fgiscfj2h3i7jq5/SeqBayesS1_MCMCtree_mainT2_prior_newchronozip.zip?dl=0)
+when sampling from the prior.
+Once you unzip these files, you should save the unzipped directories inside `00_main_tree_T2`. You will then be 
 able to see the summarised results for all the chains that converged here:   
 
+   * `00_main_tree_T2/00_MCMCtree_prior_newchrono/mcmc_files`: 
+   here, you will find the results obtained with `MCMCtree` when using the main tree 
+   hypothesis (T2) calibrated with the updated set of priors as of September 2021 and the alignment
+   **without** the 11 genes also found in data set 2 - and sampling from the prior! The `mcmc_tracer.txt` file contains the samples 
+   collected during the chains rain in `MCMCtree` when sampling from the prior.   
    * `00_main_tree_T2/02_MCMCtree_posterior_newchrono/mcmc_files`: 
    here, you will find the results obtained with `MCMCtree` when using the main tree 
    hypothesis (T2) calibrated with the updated set of priors as of September 2021 and the alignment

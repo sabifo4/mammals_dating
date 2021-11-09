@@ -3,7 +3,7 @@ All the details given below refer to the contents zipped in
 [this file](https://www.dropbox.com/s/ajzlkhdnqdclgrh/SeqBayesS2_BASEML.zip?dl=0).
 You may download it so you can go through all the steps easier.
 
-## 1. Prepare architecture and prepare baseml files
+## 1. Prepare architecture and prepare `BASEML` files
 The initial main architecture of the directories in the Apocrita HPC looks like this:
 
 ```
@@ -15,7 +15,7 @@ The initial main architecture of the directories in the Apocrita HPC looks like 
 ```
 
 The control file is edited for each data subset so the correct paths for the directories where 
-the alignment and tree files were saved is set. This procedure avoids linking file or copying files,
+the alignment and tree files were saved is set. This procedure avoids linking fileS or copying files,
 thus saving memory and file space in the cluster.
 Directories from 1 to 6 will contain the gradient and Hessian for the following alignments:   
 
@@ -30,7 +30,7 @@ Directories from 1 to 6 will contain the gradient and Hessian for the following 
 Once `BASEML` has run for all the data subsets (you will find the corresponding control files in each 
 directory in the zip file provided above), we want to concatenate the `rst2` (i.e., the output 
 files by `BASEML` that contain the gradient and the Hessian information for each data subset) generated 
-for each data subset so we can generate the alignment with 5 individual partitions (5 blocks), the one that 
+for each data subset so we can generate the `in.BV` file with 5 individual partitions (5 blocks), the one that 
 we will use for the Bayesian dating analysis with `MCMCtree`.
 This is the content you will find for each data subset under directory `7` for each data subset.
 

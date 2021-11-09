@@ -7,7 +7,7 @@ to generate the corresponding phylogeny (see
 subtree and 
 [here](00_Filter_trees/Rodentia_therest_II/Calibrations_Rtherest.R) for the second). We have generated 
 tree files with the calibrations for each subtree (see
-[here](00_Filter_trees/Rodentia_therest_II/rodentia_therestI_rooted_calibnames.tree) for the first subtree and 
+[here](00_Filter_trees/Rodentia_therest_I/rodentia_therestI_rooted_calibnames.tree) for the first subtree and 
 [here](00_Filter_trees/Rodentia_therest_II/rodentia_therestII_rooted_calibnames.tree) for the second),
 where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the

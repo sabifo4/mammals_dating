@@ -1,7 +1,7 @@
 import ete3
 from Bio import Phylo
 
-BASE_TREE = 'FigTree.tree'  # NOTE: you need to name the backbone tree!
+BASE_TREE = '00_main_tree_T2-time.tree'  # NOTE: you need to name the backbone tree!
 
 # the base 72sp reference tree
 # t72sp = Phylo.read(BASE_TREE, 'nexus')
@@ -16,19 +16,19 @@ outgroup = {'ornithorhynchus_anatinus', 'zaglossus_bruijni', 'tachyglossus_acule
 # - 'target' specifies taxa whose common ancestor will be replace in 72sp tree with 'source'
 # - 'placeholder' if True (default is False) will treat 'source' as a placeholder tip to insert as sibling of 'target'
 on_laurasiatheria_therest = {
-    'Laurasiatheria_chiro_subt1': [
+    'Chiroptera_subt1-time': [
         {
             'source': ['rhinopoma_hardwickii', 'myonycteris_angolensis'],
             'target': ['pteropus_vampyrus']
         }
     ],
-    'Laurasiatheria_chiro_subt2': [
+    'Chiroptera_subt2-time': [
         {
             'source': ['nycteris_javanica', 'laephotis_wintoni'],
             'target': ['myotis_lucifugus']
         }
     ],
-    'Laurasiatheria_cetartiodactyla': [
+    'Artiodactyla-time': [
         {
             'source': ['vicugna_pacos', 'sus_scrofa', 'tursiops_truncatus', 'bos_taurus', 'ovis_aries', 'capra_hircus'],
             'target': ['vicugna_pacos', 'capra_hircus']
@@ -37,13 +37,13 @@ on_laurasiatheria_therest = {
 }
 
 direct_on_72sp = {
-    'Afrotheria': [
+    'Afrotheria-time': [
         {
             'source': ['procavia_capensis', 'loxodonta_africana', 'echinops_telfairi'],
             'target': ['procavia_capensis', 'loxodonta_africana', 'echinops_telfairi']
         }
     ],
-    'Euarchonta': [
+    'Euarchonta-time': [
         {
             'source': ['otolemur_garnettii', 'homo_sapiens', 'cynocephalus_volans'],  # cynocephalus_volans
             'target': ['otolemur_garnettii', 'homo_sapiens']
@@ -53,13 +53,13 @@ direct_on_72sp = {
             'target': ['tupaia_belangeri']
         },
     ],
-    'Lagomorpha': [
+    'Lagomorpha-time': [
         {
             'source': ['oryctolagus_cuniculus', 'ochotona_princeps'],
             'target': ['oryctolagus_cuniculus', 'ochotona_princeps']
         }
     ],
-    'Marsupialia': [
+    'Marsupialia-time': [
         {
             'source': ['sarcophilus_harrisii', 'macropus_eugenii', 'monodelphis_domestica', 'lestoros_inca'],
             'target': ['monodelphis_domestica', 'notamacropus_eugenii', 'sarcophilus_harrisii'],
@@ -69,31 +69,31 @@ direct_on_72sp = {
             'target': ['ornithorhynchus_anatinus']
         }
     ],
-    'Xenarthra': [
+    'Xenarthra-time': [
         {
             'source': ['choloepus_hoffmanni', 'dasypus_novemcinctus'],
             'target': ['choloepus_hoffmanni', 'dasypus_novemcinctus']
         }
     ],
-    'Rodentia_squirrel': [
+    'Sciuridae_and_related-time': [
         {
             'source': ['eliomys_quercinus', 'urocitellus_parryii_ablusus'],
             'target': ['ictidomys_tridecemlineatus']
         }
     ],
-    'Rodentia_ctenohystrica_3': [
+    'Ctenohystrica-time': [
         {
             'source': ['laonastes_aenigmamus', 'phyllomys_aff_dasythrix'],
             'target': ['fukomys_damarensis', 'octodon_degus']
         }
     ],
-    'Rodentia_subtree1': [
+    'Rodentia_therest_subt1-time': [
         {
             'source': ['pedetes_capensis_surdaster', 'peromyscus_boylii_rowleyi'],
             'target': ['rattus_norvegicus', 'dipodomys_ordii']
         }
     ],
-    'Rodentia_subtree2': [
+    'Rodentia_therest_subt2-time': [
         {
             'source': ['rheomys_raptor', 'praomys_petteri'],
             'target': ['rattus_norvegicus', 'mus_musculus']
@@ -224,10 +224,10 @@ def do_all_rules_for_one_tree(backbone_tree_file, tree_file, graft_rules, gather
     return backbone_tree_file
 
 
-all_laurasiatheria = do_all_rules_on_tree('Laurasiatheria_therest', on_laurasiatheria_therest, gather=True)
+all_laurasiatheria = do_all_rules_on_tree('Laurasiatheria_therest-time', on_laurasiatheria_therest, gather=True)
 Phylo.write(all_laurasiatheria, 'All_Laurasiatheria.tree', 'nexus')
 
-all_mammals = do_all_rules_on_tree('Figtree', direct_on_72sp, gather=True)
+all_mammals = do_all_rules_on_tree('00_main_tree_T2-time', direct_on_72sp, gather=True)
 Phylo.write(all_mammals, '4705sp.tree', 'nexus')
 
 # taxa_in_1 = {t.name for t in Phylo.read('Rodentia_squirrel.tree', 'nexus').get_terminals()}

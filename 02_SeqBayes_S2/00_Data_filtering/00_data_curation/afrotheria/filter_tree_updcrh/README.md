@@ -1,13 +1,13 @@
 # Afrotheria - phylogeny
 
 ## 1. Get tree topology and add calibrations
-We use the R script [`Calibrations_Afrotheria.R`](00_Filter_trees_updcrh/Calibrations_Afrotheria.R)
+We use the R script [`Calibrations_Afrotheria.R`](00_Filter_trees/Calibrations_Afrotheria.R)
 to generate the phylogeny for this data subset. Note that we use the
-[`afrotheria_rooted_calibnames.tree`](00_Filter_trees_updcrh/afrotheria_rooted_calibnames.tree)
+[`afrotheria_rooted_calibnames.tree`](00_Filter_trees/afrotheria_rooted_calibnames.tree)
 file, where tag names have been manually added in the 
 nodes that are to be calibrated. These tag names are later replaced with the
 corresponding calibrations specified in the 
-[`Calibrations_Afrotheria.txt`](00_Filter_trees_updcrh/Calibrations_Afrotheria.txt)
+[`Calibrations_Afrotheria.txt`](00_Filter_trees/Calibrations_Afrotheria.txt)
 file. 
 In addition, this R script generates dummy alignments that can be used 
 when running `MCMCtree` without the data to reduce disk space (see next section 3). 
@@ -31,7 +31,7 @@ After running this script, you will have the following files:
 ```
 
 Note that we have manually generated the
-[`afrotheria_rooted_baseml.tree`](00_Filter_trees_updcrh/afrotheria_rooted_baseml.tree),
+[`afrotheria_rooted_baseml.tree`](00_Filter_trees/afrotheria_rooted_baseml.tree),
 which does 
 not contain the calibrations. This file will be used when running `BASEML` to compute 
 the Hessian and the gradient that are needed by `MCMCtree` to run the approximate 
@@ -39,7 +39,7 @@ likelihood.
 
 ## 2. Manual changes due to conflict with literature
 The pyhlogeny in
-[`RAxML_tree/afrotheria.tree`](00_Filter_trees_updcrh/RAxML_tree/afrotheria.tree)
+[`RAxML_tree/afrotheria.tree`](00_Filter_trees/RAxML_tree/afrotheria.tree)
 has an outdated 
 tree topology that does not correspond to the latest literature. In addition, 
 we had to remove one species, *Huetia leucorhinus*, as its sequence does not seem
