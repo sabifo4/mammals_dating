@@ -1,8 +1,8 @@
 # Directory with calibrated trees 
 This directory is structured as it follows:   
 
-   * One directory for each tree topology (7 directories)   
-   * `README.md` (this file)   
+   * One directory for each tree topology (7 directories).   
+   * `README.md` (this file).   
 
 Within each directory, you will find the following:   
 

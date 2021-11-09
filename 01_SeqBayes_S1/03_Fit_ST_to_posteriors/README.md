@@ -45,7 +45,8 @@ The file architecture is organised as follows:
            |- README.md
 ```
 
-When running the code to fit ST distributions to each posterior node age, the following takes place:   
+When running the code to fit ST distributions to each posterior node age, the following takes place
+(note that the links provided refer to directory `00_fitST`):   
 
    * [`logs`](00_fitST/logs):
    the [`log_file_convergence_BFGS.txt`](00_fitST/logs/log_file_convergence_BFGS.txt)
@@ -158,8 +159,11 @@ sampling from the posterior with `MCMCtree` when using the old calibrations in l
 with `MCMCtree` when using the calibrations that follow the updated geochronology as of September 2021 in black:
 
 <p align="center">
-  <img width="500" height="500" src="../../figs/FigS6.png">
+  <img width="500" height="500" src="../../figs/FigS7.png">
 </p>
 
->>**Fig S6. Assessment of the skew-_t_ (ST) distributions fitted to the internal nodes of the 72-species mammal tree.**
-
+>>**Fig S7. Assessment of the skew-_t_ (ST) distributions fitted to the internal nodes of the 72-species mammal tree.**
+>>The ST distributions estimated with the sn::st.mple R function are plotted in red,
+>>those estimated when sampling from the posterior with MCMCtree when using the old set of
+>>calibrations in light green, and when sampling from the posterior with MCMCtree when using
+>>the calibrations with geochronology updates (as of September 2021) in black.
