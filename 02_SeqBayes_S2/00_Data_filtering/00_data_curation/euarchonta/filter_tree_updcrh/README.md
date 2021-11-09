@@ -126,7 +126,7 @@ Calibrations used:
    * Haplorrhini: ST(0.622,0.011,-1.196,166.803)    
    * Anthropoidea: ST(0.415,0.021,-1.14,156.796)    
    * Aotidae-Callitrichidae: ST(0.1996,0.0266,-1.8564,48.1352)    
-   * Cebidae: ST(0.1754,0.0237,-1.7218,40.5053)**    
+   * Cebidae: ST(0.1754,0.0237,-1.7218,40.5053)    
    * Catarrhini: ST(0.314,0.018,-1.23,314.095)    
    * Cercopithecoidea: ST(0.182,0.012,-0.054,88.157)    
    * Cercopithecinae: ST(0.1363,0.0093,-0.0000,10.0000)    

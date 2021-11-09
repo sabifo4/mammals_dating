@@ -314,7 +314,7 @@ Calibrations used:
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](02_Final_tree_topology)
+[`final_tree_topologies`](02_Final_tree_topologies)
 directory.
 
 
@@ -460,7 +460,7 @@ we proceed with timetree inference with the prior calibrations detailed above.
 </p>
 
 The final tree topology can be found in the
-[`final_tree_topology`](02_Final_tree_topology)
+[`final_tree_topologies`](02_Final_tree_topologies)
 directory.
 
 --- 

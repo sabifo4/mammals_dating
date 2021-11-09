@@ -46,9 +46,9 @@ We remind you of the proceudre we followed to run `BASEML`:
 	        |- tree.tree
 	  ```
    2) Now, make sure that you set the option `usedata = 3` in the control files.   
-   3) You can execute `MCMCtree` within each directory or use bash script as in a pipeline. Note, however, that we will not let 
+   3) You can execute `MCMCtree` within each directory or use a bash script. Note, however, that we will not let 
       `MCMCtree` run until it finishes its job. We can kill each run once the files `tmp0001*` have been 
-	  generated. We will be interested in keeping `tmp0001.ctl`, `tmp0001.trees`, and `tmp0001.txt` files; which are the control file 
+	  generated. We will be interested in keeping `tmp0001.ctl`, `tmp0001.trees`, and `tmp0001.txt` files; which are the control file, 
 	  the tree file, and the alignment file, respectively. These files are needed to run `BASEML`. The 
 	  following file architecture should be the one you should then have for the analyses carried out under each tree hypothesis:   
 	  
@@ -98,10 +98,9 @@ We remind you of the proceudre we followed to run `BASEML`:
       the gradient computed, which can be found in one of the output files: `rst2`. You will need 
       to generate an `in.BV` file for each tree hypothesis with the content of each of the `rst2` files output for each partition.
       **IMPORTANT**:  The alignment that will be used in `MCMCtree` will have the partitions
-      ordered as `p01>p02>p03>p04` (i.e., genes ordered from slow- to fast-evolving in these partitions).  
-      Therefore, make sure that you concatenate the `rst2` files in the correct order, that is, `p01>p02>p03>p04`. We want that the Hessian and the gradients are properly matched 
+      ordered as `p01>p02>p03>p04` (i.e., genes ordered from slow- to fast-evolving in these partitions). Therefore, make sure that you concatenate the `rst2` files in the correct order, that is, `p01>p02>p03>p04`. We want that the Hessian and the gradients are properly matched 
       to the corresponding partition when `MCMCtree` uses the order found in both the `in.BV` and the alignment files.
-      For instance, you could use a bash code like the following:
+      For instance, you could use the following code:
 	  
 	  ```sh
 	  for i in `seq 1 4`
@@ -116,7 +115,6 @@ We remind you of the proceudre we followed to run `BASEML`:
 	  
 	  ```
 	  TreeX
-	     |
 	     |- GBM_model
 	     	 |- mcmctree.ctl 
 	     	 |- alignment_4partitions.aln 
@@ -125,13 +123,13 @@ We remind you of the proceudre we followed to run `BASEML`:
 	     
 	  ```
 	  
-	  The `alignment_4partitions.aln` file should have the alignments with the 4 partitions in the correct 
+	  The `alignment_4partitions.aln` file should have the alignments for each of the 4 partitions (i.e., 4 blocks) in the correct 
 	  order (`p01>p02>p03>p04`) and the header for each partition should be in phylip format.
 	  The `72sp_calibrated.tree` should contain the calibrated tree topology (Newick format) evaluated at the moment (which is fixed 
 	  in `MCMCtree`). 
 	  The `mcmctree.ctl` should look like the following:   
 	  ```
-	     seed = -1
+	         seed = -1
           seqfile = alignment_4partitions.aln
          treefile = 72sp_calibrated.tree
          mcmcfile = mcmc.txt
@@ -140,9 +138,9 @@ We remind you of the proceudre we followed to run `BASEML`:
           seqtype = 0    * 0: nucleotides; 1:codons; 2:AAs
           usedata = 2    * 0: no data (prior); 1:exact likelihood;
                          * 2:approximate likelihood; 3:out.BV (in.BV)
-            clock = 3    * 1: global clock; 2: independent rates; 3: correlated rates
-            model = 4    * 0:JC69, 1:K80, 2:F81, 3:F84, 4:HKY85
-            alpha = 0.5  * alpha for gamma rates at sites
+             clock = 3    * 1: global clock; 2: independent rates; 3: correlated rates
+             model = 4    * 0:JC69, 1:K80, 2:F81, 3:F84, 4:HKY85
+             alpha = 0.5  * alpha for gamma rates at sites
              ncatG = 5    * No. categories in discrete gamma
          cleandata = 0    * remove sites with ambiguity data (1:yes, 0:no)?
            BDparas = 1 1 0.1    * birth, death, sampling
@@ -150,19 +148,24 @@ We remind you of the proceudre we followed to run `BASEML`:
       sigma2_gamma = 1 10    *s gammaDir prior for sigma^2     (for clock=2 or 3)
              print = 1   * 0: no mcmc sample; 1: everything except branch rates 2: everything
             burnin = 100000
-            sampfreq = 1000 
+          sampfreq = 1000 
            nsample = 20000
 	   ```   
 	   
-	   Note that, in order to be able to gather enough samples and ensuring convergence, `MCMCtree` was run twice.
 	   The `seqfile` and `treefile` used here match the example given above. Make sure that you use the names
 	   you have for your alignment and tree files. Note that the `burnin`, `sampfreq`, and `nsample` options 
 	   vary when running `MCMCtree` when sampling from the prior and when sampling from the posterior. You can 
-	   find the analyses under the prior 
-	   [here](https://www.dropbox.com/s/09u8l81dgw166do/SeqBayesS1_MCMCtree_6treehyp_MCMCtree.zip?dl=0),
-	   under the posterior with the main tree hypothesis 
-	   [here](https://www.dropbox.com/s/kh73rbu9cnxts3r/SeqBayesS1_MCMCtree_mainT2_posterior.zip?dl=0),
-	   and under the posterior with the rest of tree hypotheses 
+	   find the results when fixing the main tree hypothesis and when using the old set of calibrations and sampling from the prior
+	   [here](https://www.dropbox.com/s/bum031cge8qp8sb/SeqBayesS1_MCMCtree_mainT2_prior.zip?dl=0),
+	   and under the posterior 
+	   [here](https://www.dropbox.com/s/kh73rbu9cnxts3r/SeqBayesS1_MCMCtree_mainT2_posterior.zip?dl=0).
+	   The results when using the updated set of calibrations as of September 2021 and sampling from the prior can be downloaded from
+	   [here](https://www.dropbox.com/s/fgiscfj2h3i7jq5/SeqBayesS1_MCMCtree_mainT2_prior_newchronozip.zip?dl=0),
+	   and when sampling from the posterior
+	   [here](https://www.dropbox.com/s/53mdfyc47hukkrh/SeqBayesS1_MCMCtree_mainT2_posterior_newchrono.zip?dl=0).
+	   The results obtained when fixing the other 6 alternative hypotheses and sampling from the prior 
+	   can be found [here](https://www.dropbox.com/s/jb3ppzpw543eg72/SeqBayesS1_MCMCtree_6treehyp_MCMCtree_prior.zip?dl=0) 
+	   and when sampling under the posterior 
 	   [here](https://www.dropbox.com/s/09u8l81dgw166do/SeqBayesS1_MCMCtree_6treehyp_MCMCtree.zip?dl=0).
 	  
 ## 1.3. Fitting skew-_t_ distributions to resulting posterior densities
@@ -183,23 +186,23 @@ For that purpose, taxa were separated according to the following taxonomical
 groups: Afrotheria, Xenarthra, Marsupialia, Euarchonta, Lagomorpha, Laurasiatheria, Rodentia, and Monotremata.
 The number of taxa within Laurasiatheria and Rodentia,
 however, was still too large to run a Bayesian clock-dating analysis in `MCMCtree` within a reasonable
-amount of time despite using the approximate likelihood. Therefore, these data sets were further divided
+amount of time despite using the approximate likelihood. Therefore, these datasets were further divided
 into other data subsets. For Laurasiatheria, we generated data subsets with Artiodactyla (which you might find 
-as "laurasiatheria cetartiodactyla" in other tutorials and data sets provided in this GitHub repository), Chiroptera
+as "laurasiatheria cetartiodactyla" in other tutorials and datasets provided in this GitHub repository), Chiroptera
 (which you might find 
-as "laurasiatheria chiroptera" in other tutorials and data sets provided in this GitHub repository),
+as "laurasiatheria chiroptera" in other tutorials and datasets provided in this GitHub repository),
 and a third data subset with the rest of the taxa belonging to Laurasiatheria that were not included in the 
-previous data subsets. Note that, however, after running the analyses with 
+previous data subsets (sometimes labelled as "laurasiatheria the rest" in this GitHub repository). Note that, however, after running the analyses with 
 the Chiroptera data subset, we realised that it had to be further subset: we generated "chiroptera subtree 1" and 
-"chiroptera subtree 2" data subsets. In total, we had four data subsets for Laurasiatheria.
-When it comes to the Rodentia data set, we first generated 3 data subsets: Sciuridae and related (which you might find 
-as "rodentia squirrel" or "squirrel" in other tutorials and data sets provided in this GitHub repository),
-Ctenohystrica, and a third data subset with the rest of rodents. As it happened with the Chiroptera data
+"chiroptera subtree 2" data subsets. 
+When it comes to the Rodentia dataset, we first generated 3 data subsets: Sciuridae and related (which you might find 
+as "rodentia squirrel" or "squirrel" in other tutorials and datasets provided in this GitHub repository),
+Ctenohystrica (or also labelled as "rodentia ctenohystrica"), and a third data subset with the rest of rodents.
+As it happened with the Chiroptera data
 subset, the data subset with the rest of rodentia had too many taxa for `MCMCtree` to run. Therefore, we 
-further subset it into two: "rodentia subtree 1" and "rodentia subtree 2" data subsets. In total, we had 
-4 data subsets for Rodentia. The directories where all the steps followed to curate each of these data subsets
-are explained (see 
-[here](00_Data_filtering/00_data_curation))
+further subset it into two: "rodentia subtree 1" and "rodentia subtree 2" data subsets. The directories
+where all the steps followed to curate each of these data subsets
+are explained (see [here](00_Data_filtering/00_data_curation))
 are the following:   
 
    * [Afrotheria](00_Data_filtering/00_data_curation/afrotheria)   
@@ -264,21 +267,19 @@ you will find a description of how we ran `BASEML` with the data subsets for thi
 of the sequential Bayesian dating approach. We also provide you with the links to download the data 
 you will need to reproduce our results as well as the results we obtained. 
 
-# 2.3. Run `MCMCtree` to infer species divergence times for each data subset
+## 2.3. Run `MCMCtree` to infer species divergence times for each data subset
 Once the Hessian and the gradient have been estimated for each data subset, we can run `MCMCtree`
 with the approximate likelihood 
 calculation ([dos Reis and Yang, 2011](https://academic.oup.com/mbe/article/28/7/2161/1051613)). 
 
 Before running `MCMCtree`, however, we ran safety checks to make sure that the calibrations that we 
 were using were not in conflict. For each of the directories with the information to filter each 
-data subset that you can find 
-[here](00_Data_filtering/00_data_curation),
-you will find a description of these checks inside the `filter_tree_updcrh` directory. The R script and the 
-output plots will be inside `filter_tree_updcrh/01_Check_conflict` dirctories for each data subset.
+data subset (see [here](00_Data_filtering/00_data_curation)),
+you will also find a description of these checks inside the `filter_tree_updcrh` directory. The R script and the 
+output plots will be inside `filter_tree_updcrh/01_Check_conflict*` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
 obtained [here](https://www.dropbox.com/s/1vjkggr4ujrnfha/SeqBayesS2_MCMCtree.zip?dl=0),
-while you can find 
-[here](02_MCMCtree_updcrh) 
+while [here](02_MCMCtree_updcrh) you can find 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
 estimated divergence times.
