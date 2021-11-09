@@ -8,7 +8,7 @@ Make sure you have enough space in your disk as its size is around 760 Mb.
 Once the download is complete, please unzip it and save it in a directory 
 called `genes`. You can manually unzip this by using software such as [`7-Zip`](https://www.7-zip.org/) or, 
 if you prefer the command line, you can open a terminal within the `01_SeqBayes_S1` directory in the 
-`mammals` GitHub repository you have cloned and run the following:   
+`mammals_dating` GitHub repository you have cloned and run the following:   
 
 ```sh
 unzip genes.zip 
