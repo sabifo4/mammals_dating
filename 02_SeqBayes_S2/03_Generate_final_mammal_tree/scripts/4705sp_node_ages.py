@@ -21,12 +21,15 @@ import re
 comment_match = re.compile(r'{([.\dEe\-]+),\s?([\d.Ee\-]+)}')
 
 
-def update_branch_length_from_comment(clade: Clade):
+def update_branch_length_from_comment(clade: Clade, low):
     comment = getattr(clade, 'comment')
     print(comment)
     c025, c975 = comment_match.findall(comment)[0]
     c025, c975 = float(c025), float(c975)
-    desired_node_age = c975  # todo: change this! make option
+    if low:
+        desired_node_age = c025
+    else:
+        desired_node_age = c975
     for child in clade.clades:
         if child.is_terminal():
             # update the height based on comment
@@ -43,7 +46,16 @@ def update_branch_length_from_comment(clade: Clade):
 
 # for the 2.5% ci
 all5000sp = Phylo.read(filename, format='nexus')
-update_branch_length_from_comment(all5000sp.clade)
+update_branch_length_from_comment(all5000sp.clade, True)
+Phylo.write(all5000sp, '4705sp_ci025.nexus', format='nexus')
+remove_comments(all5000sp.clade)
+Phylo.write(all5000sp, '4705sp_ci025.nwk', format='newick')
+
+# for the 97.5% ci
+all5000sp = Phylo.read(filename, format='nexus')
+update_branch_length_from_comment(all5000sp.clade, False)
 Phylo.write(all5000sp, '4705sp_ci975.nexus', format='nexus')
 remove_comments(all5000sp.clade)
 Phylo.write(all5000sp, '4705sp_ci975.nwk', format='newick')
+
+
