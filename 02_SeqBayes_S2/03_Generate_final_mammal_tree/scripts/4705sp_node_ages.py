@@ -36,7 +36,7 @@ def update_branch_length_from_comment(clade: Clade, low):
             child.branch_length = desired_node_age
             print(child.name, 'is now', child.branch_length)
         else:
-            update_branch_length_from_comment(child)
+            update_branch_length_from_comment(child, low)
             distance_to_terminal_through_child = all5000sp.distance(child, child.get_terminals()[0])
             new_branch_length = desired_node_age - distance_to_terminal_through_child
             print(distance_to_terminal_through_child, desired_node_age, '->', child.branch_length, new_branch_length)
