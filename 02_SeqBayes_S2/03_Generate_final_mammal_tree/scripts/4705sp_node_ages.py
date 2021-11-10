@@ -1,5 +1,3 @@
-
-
 filename = '4705sp.tree'
 
 from Bio import Phylo
@@ -48,6 +46,20 @@ def update_branch_length_from_comment(clade: Clade, low):
 all5000sp = Phylo.read(filename, format='nexus')
 update_branch_length_from_comment(all5000sp.clade, True)
 Phylo.write(all5000sp, '4705sp_ci025.nexus', format='nexus')
+#---------------------------------------------------------------#
+# SAC-211110 | Read file and, in case "\[" or "\]"
+# are found, then remove them.
+# E.g., [\[&95%={0.0694354, 0.280382},from="Marsupialia-time"\]]
+# This seems to happen when using the WLS
+with open('4705sp_ci025.nexus', 'r') as file :
+  inp_file = file.read()
+
+inp_file = inp_file.replace('\[', '')
+inp_file = inp_file.replace('\]', '')
+
+with open('4705sp_ci025.nexus', 'w') as file:
+  file.write(inp_file)
+#---------------------------------------------------------------#
 remove_comments(all5000sp.clade)
 Phylo.write(all5000sp, '4705sp_ci025.nwk', format='newick')
 
@@ -55,6 +67,20 @@ Phylo.write(all5000sp, '4705sp_ci025.nwk', format='newick')
 all5000sp = Phylo.read(filename, format='nexus')
 update_branch_length_from_comment(all5000sp.clade, False)
 Phylo.write(all5000sp, '4705sp_ci975.nexus', format='nexus')
+#---------------------------------------------------------------#
+# SAC-211110 | Read file and, in case "\[" or "\]"
+# are found, then remove them.
+# E.g., [\[&95%={0.0694354, 0.280382},from="Marsupialia-time"\]]
+# This seems to happen when using the WLS
+with open('4705sp_ci975.nexus', 'r') as file :
+  inp_file = file.read()
+
+inp_file = inp_file.replace('\[', '')
+inp_file = inp_file.replace('\]', '')
+
+with open('4705sp_ci975.nexus', 'w') as file:
+  file.write(inp_file)
+#---------------------------------------------------------------#
 remove_comments(all5000sp.clade)
 Phylo.write(all5000sp, '4705sp_ci975.nwk', format='newick')
 

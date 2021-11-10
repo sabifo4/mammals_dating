@@ -1,7 +1,7 @@
 import ete3
 from Bio import Phylo
 
-BASE_TREE = '00_main_tree_T2-time.tree'  # NOTE: you need to name the backbone tree!
+BASE_TREE = '00_main_tree_T2-updated-geochronology-time.tree'  # NOTE: you need to name the backbone tree!
 
 # the base 72sp reference tree
 # t72sp = Phylo.read(BASE_TREE, 'nexus')
@@ -226,9 +226,37 @@ def do_all_rules_for_one_tree(backbone_tree_file, tree_file, graft_rules, gather
 
 all_laurasiatheria = do_all_rules_on_tree('Laurasiatheria_therest-time', on_laurasiatheria_therest, gather=True)
 Phylo.write(all_laurasiatheria, 'All_Laurasiatheria.tree', 'nexus')
+#---------------------------------------------------#
+# SAC-211110 | Read file and, in case "\[" or "\]"
+# are found, then remove them.
+# E.g., [\[&95%={0.0694354, 0.280382},from="Marsupialia-time"\]]
+# This seems to happen when using the WLS
+with open('All_Laurasiatheria.tree', 'r') as file :
+  inp_file = file.read()
 
-all_mammals = do_all_rules_on_tree('00_main_tree_T2-time', direct_on_72sp, gather=True)
+inp_file = inp_file.replace('\[', '')
+inp_file = inp_file.replace('\]', '')
+
+with open('All_Laurasiatheria.tree', 'w') as file:
+  file.write(inp_file)
+#----------------------------------------------------#
+  
+all_mammals = do_all_rules_on_tree('00_main_tree_T2-updated-geochronology-time', direct_on_72sp, gather=True)
 Phylo.write(all_mammals, '4705sp.tree', 'nexus')
+#---------------------------------------------------#
+# SAC-211110 | Read file and, in case "\[" or "\]"
+# are found, then remove them.
+# E.g., [\[&95%={0.0694354, 0.280382},from="Marsupialia-time"\]]
+# This seems to happen when using the WLS
+with open('4705sp.tree', 'r') as file :
+  inp_file = file.read()
+
+inp_file = inp_file.replace('\[', '')
+inp_file = inp_file.replace('\]', '')
+
+with open('4705sp.tree', 'w') as file:
+  file.write(inp_file)
+#----------------------------------------------------#
 
 # taxa_in_1 = {t.name for t in Phylo.read('Rodentia_squirrel.tree', 'nexus').get_terminals()}
 # taxa_in_2 = {t.name for t in Phylo.read('Rodentia_ctenohystrica_3.tree', 'nexus').get_terminals()}
