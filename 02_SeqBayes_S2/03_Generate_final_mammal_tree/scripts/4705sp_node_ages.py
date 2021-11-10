@@ -83,3 +83,5 @@ with open('4705sp_ci975.nexus', 'w') as file:
 #---------------------------------------------------------------#
 remove_comments(all5000sp.clade)
 Phylo.write(all5000sp, '4705sp_ci975.nwk', format='newick')
+
+
