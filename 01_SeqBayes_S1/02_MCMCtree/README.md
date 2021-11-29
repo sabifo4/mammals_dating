@@ -202,9 +202,10 @@ that did not show any visual problems.
 
 Apart from these analyses, we also visually evaluated the chains ran with
 the alignment without the 11 genes that can be found in the second data set and with the updated prior calibrations 
-according to the geochronology established as of September 2021. In the `plots` directory,
+according to the geochronology established as of September 2021. In the
+[`plots`](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/plots) directory,
 you can find the graphics plotted with the R script 
-[`01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R)
+[`01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R).
 As in the other R scripts used before, this one has all the details needed to understand the different steps carried out,
 so you may want to check them if you want more details about how these plots were generated.
 [Here](../../figs/FigS5.pdf), you can also see the posterior distributions for the mean divergence times estimated in 
