@@ -114,7 +114,7 @@ It does the following:
    as `1`, `2`, `n`; where `n` equals to the number of directories 
    with filtered genes. There, the corresponding gene and tree files will be saved.     
    2. It gets the gene name and number of sequences and saves them in a variable.   
-   3. It gets the fasta alignments in one line format using the [`one_line_fasta.pl`](../../src/00_get_seq_next_to_header.pl) script available in the `src` directory.   
+   3. It gets the fasta alignments in one line format using the [`one_line_fasta.pl`](../../src/one_line_fasta.pl) script available in the `src` directory.   
    4. It uses the script [`00_get_seq_next_to_header.pl`](../../src/00_get_seq_next_to_header.pl) to format the output from step 3 
    so the sequences are next to the species name tab separated (script available in the `src` directory).   
    5. It uses the script [`01_concatenate_genes.pl`](../../src/01_concatenate_genes.pl) to now generate an alignment in PHYLIP format.   
