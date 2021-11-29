@@ -185,18 +185,18 @@ You can find the results in the following directories:
    genes from the data set had on the posterior divergence times: the estimates were almost
    identical. You may want to read the details in the R script provided in this
    directory for further details. You also have a plot with the mean ages for the filtered chains for both analyses
-   [here](00_MCMCtree_analyses/00_main_tree_T2/plots/02_NEW-mean_filtered_postVSmean_filtered_oldpost).
+   [here](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/plots/02_NEW-mean_filtered_postVSmean_filtered_oldpost.pdf).
    * [Alternative tree hypotheses](00_MCMCtree_analyses/01_alternative_tree_hypotheses/visual_checks_MCMCtreeR): In this directory, you will see one script for each tree
    hypothesis, which were used to generate the plots you fill find the link provided above.
 
 Even though you can find the plots for all the hypotheses in the directories mentioned above,
-[here](../../figs/FigS5.pdf) (Figure S5) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
+[here](../../figs/FigS5_old.pdf) you can see the plot for the main tree hypothesis (T2) before and after keeping the chains 
 that did not show any visual problems.
 
 >>**_Caption for the figure provided in the link above:_**   
 >>*The posterior distributions for the mean*
->>*divergence times estimated in runs 1 to 16 are shown for the corresponding nodes in (a), while*
->>*(b) does not include the results for chains 1, 2, 5, 6, 10, 12, 14, 15 as they seem to have have*
+>>*divergence times estimated in runs 1 to 16 are shown for the corresponding nodes in (a, top), while*
+>>*(b, bottom) does not include the results for chains 1, 2, 5, 6, 10, 12, 14, 15 as they seem to have have*
 >>*had convergence issues if compared to the mean time estimates obtained with the other chains*
 >>*Abbreviations: Qua. = Quaternary.*
 
@@ -207,6 +207,9 @@ you can find the graphics plotted with the R script
 [`01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`](00_MCMCtree_analyses/00_main_tree_T2/visual_checks_MCMCtreeR/01_Check_MCMCs_MCMCtreeR_newpost_newgeochron.R`)
 As in the other R scripts used before, this one has all the details needed to understand the different steps carried out,
 so you may want to check them if you want more details about how these plots were generated.
+[Here](../../figs/FigS5.pdf), you can also see the posterior distributions for the mean divergence times estimated in 
+the four independent chains we ran with this dataset for the corresponding nodes in (a, top), while (b, bottom) 
+does not include the results for chain 2 as they did not converge.
 In addition, [this directory](00_MCMCtree_analyses/00_main_tree_T2/plot_newchrVSoldchr) contains the comparison 
 plots generated for each calibrated node with the results obtained with this data set (updated geochronology) against 
 those that were obtained with the prior calibrations used before September 2021. These plots show how changing 
@@ -245,7 +248,7 @@ can be found in the table below . The ESS for bulk and tail quantiles together w
 measured for each parameter with the R package `rstan::monitor`. In addition, the ESS calculated
 with the `coda::effectiveSampleSize` has been included for comparison.
 
->>**Table S7**. Measures of effective sample size (ESS).   
+>>**Table S9**. Measures of effective sample size (ESS).   
 
 |                          | MAIN (UPD)| MAIN (OLD) |T1         | T3       | T4         | T5         | T6        | T7         |   
 |--------------------------|-----------|------------|-----------|----------|------------|------------|-----------|------------|

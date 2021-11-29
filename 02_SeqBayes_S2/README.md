@@ -279,7 +279,7 @@ you will also find a description of these checks inside the `filter_tree_updcrh`
 output plots will be inside `filter_tree_updcrh/01_Check_conflict*` dirctories for each data subset.
 
 Once all the checks were finished, we ran `MCMCtree` with each data subset. You can download the results 
-obtained [here](https://www.dropbox.com/s/1vjkggr4ujrnfha/SeqBayesS2_MCMCtree.zip?dl=0),
+obtained [here](https://www.dropbox.com/s/6gb746s7usitmcl/SeqBayesS2_MCMCtree.zip?dl=0),
 while [here](02_MCMCtree_updcrh) you can find 
 the output files that we generated for each data subset to assess chain convergence and summarise the 
 estimated divergence times.

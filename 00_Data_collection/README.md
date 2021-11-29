@@ -190,7 +190,7 @@ final dataset has 4,705 taxa and 182 loci divided into 13 subtree alignments. Ea
 was divided into five-partitions: (i) mitochondrial 12CP, (ii) mitochondrial 3CP,
 (iii) mitochondrial RNA, (iv) nuclear 12CP, (v) nuclear 3CP (Tables S4 I-III, and S5).
 
->>**Table S4-I**. Number of taxa (alignment length | site pattern counts) for
+>>**Table S4**. Number of taxa (alignment length | site pattern counts) for
 >>mitochondrial subtrees and partitions. Monotremata is an outgroup in all subtrees.
 
 | Data subset            | mit-12CP             | mit-3CP              | mit-RNA              |
@@ -210,7 +210,7 @@ was divided into five-partitions: (i) mitochondrial 12CP, (ii) mitochondrial 3CP
 | Xenarthra              | 32 (7,210 \| 1,980)  | 32 (3,605 \| 3,404)  | 33 (2,655 \| 1,190)  |
 
 
->>**Table S4-II**. Number of taxa (alignment length | site pattern counts) for
+>>**Table S5**. Number of taxa (alignment length | site pattern counts) for
 >>nuclear subtrees and partitions. Monotremata is an outgroup in all subtrees.
 
 | Data subset            | nuc-12CP                | nuc-3CP                 |
@@ -230,7 +230,7 @@ was divided into five-partitions: (i) mitochondrial 12CP, (ii) mitochondrial 3CP
 | Xenarthra              | 20 (102,226 \| 2,513)   | 20 (51,113 \| 2,487)    |
 
 
->>**Table S4-III**. Total number taxa and alignment length (across all partitions) for each subtree.
+>>**Table S6**. Total number of taxa and alignment length (across all partitions) for each subtree.
 >>Monotremata is an outgroup in all subtrees.
 
 | Data subset            | Number of taxa | Total alignment length |
@@ -250,7 +250,7 @@ was divided into five-partitions: (i) mitochondrial 12CP, (ii) mitochondrial 3CP
 | Xenarthra              | 33             | 166,809                |
 
 
->>**Table S5**. Missing data (%) for each subtree partition before (top) and after (bottom) removing
+>>**Table S7**. Missing data (%) for each subtree partition before (top) and after (bottom) removing
 >>missing taxa. The percentage of missing data is calculated by dividing the number of gaps in
 >>the alignment by the number of taxa times the alignment length. The number of taxa is shown within
 >>brackets. We note missing taxa are not used by `MCMCtree` during likelihood calculation.
