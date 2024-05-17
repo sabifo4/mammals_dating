@@ -1,0 +1,1065 @@
+MCMCTREE (paml version 4.9h, March 2018) dummy.txt
+
+
+*** Locus 1 ***
+     72      2
+
+ailuropoda_melanoleuca          AA
+aotus_nancymaae                 AA
+bos_taurus                      AA
+callithrix_jacchus              AA
+canis_familiaris                AA
+capra_hircus                    AA
+carlito_syrichta                AA
+cavia_aperea                    AA
+cavia_porcellus                 AA
+cebus_capucinus                 AA
+cercocebus_atys                 AA
+chinchilla_lanigera             AA
+chlorocebus_sabaeus             AA
+choloepus_hoffmanni             AA
+colobus_angolensis_palliatus    AA
+cricetulus_griseus_chok1gshd    AA
+dasypus_novemcinctus            AA
+dipodomys_ordii                 AA
+echinops_telfairi               AA
+equus_caballus                  AA
+erinaceus_europaeus             AA
+felis_catus                     AA
+fukomys_damarensis              AA
+gorilla_gorilla                 AA
+heterocephalus_glaber_female    AA
+homo_sapiens                    AA
+ictidomys_tridecemlineatus      AA
+jaculus_jaculus                 AA
+loxodonta_africana              AA
+macaca_fascicularis             AA
+macaca_mulatta                  AA
+macaca_nemestrina               AA
+mandrillus_leucophaeus          AA
+mesocricetus_auratus            AA
+microcebus_murinus              AA
+microtus_ochrogaster            AA
+monodelphis_domestica           AA
+mus_caroli                      AA
+mus_musculus                    AA
+mus_pahari                      AA
+mus_spretus                     AA
+mustela_putorius_furo           AA
+myotis_lucifugus                AA
+nannospalax_galili              AA
+nomascus_leucogenys             AA
+notamacropus_eugenii            AA
+ochotona_princeps               AA
+octodon_degus                   AA
+ornithorhynchus_anatinus        AA
+oryctolagus_cuniculus           AA
+otolemur_garnettii              AA
+ovis_aries                      AA
+pan_paniscus                    AA
+pan_troglodytes                 AA
+panthera_pardus                 AA
+panthera_tigris_altaica         AA
+papio_anubis                    AA
+peromyscus_maniculatus_bairdii  AA
+pongo_abelii                    AA
+procavia_capensis               AA
+propithecus_coquereli           AA
+pteropus_vampyrus               AA
+rattus_norvegicus               AA
+rhinopithecus_bieti             AA
+rhinopithecus_roxellana         AA
+saimiri_boliviensis_boliviensis  AA
+sarcophilus_harrisii            AA
+sorex_araneus                   AA
+sus_scrofa                      AA
+tupaia_belangeri                AA
+tursiops_truncatus              AA
+vicugna_pacos                   AA
+
+
+
+Printing out site pattern counts
+
+
+        72          1  P
+
+ailuropoda_melanoleuca          A
+aotus_nancymaae                 A
+bos_taurus                      A
+callithrix_jacchus              A
+canis_familiaris                A
+capra_hircus                    A
+carlito_syrichta                A
+cavia_aperea                    A
+cavia_porcellus                 A
+cebus_capucinus                 A
+cercocebus_atys                 A
+chinchilla_lanigera             A
+chlorocebus_sabaeus             A
+choloepus_hoffmanni             A
+colobus_angolensis_palliatus    A
+cricetulus_griseus_chok1gshd    A
+dasypus_novemcinctus            A
+dipodomys_ordii                 A
+echinops_telfairi               A
+equus_caballus                  A
+erinaceus_europaeus             A
+felis_catus                     A
+fukomys_damarensis              A
+gorilla_gorilla                 A
+heterocephalus_glaber_female    A
+homo_sapiens                    A
+ictidomys_tridecemlineatus      A
+jaculus_jaculus                 A
+loxodonta_africana              A
+macaca_fascicularis             A
+macaca_mulatta                  A
+macaca_nemestrina               A
+mandrillus_leucophaeus          A
+mesocricetus_auratus            A
+microcebus_murinus              A
+microtus_ochrogaster            A
+monodelphis_domestica           A
+mus_caroli                      A
+mus_musculus                    A
+mus_pahari                      A
+mus_spretus                     A
+mustela_putorius_furo           A
+myotis_lucifugus                A
+nannospalax_galili              A
+nomascus_leucogenys             A
+notamacropus_eugenii            A
+ochotona_princeps               A
+octodon_degus                   A
+ornithorhynchus_anatinus        A
+oryctolagus_cuniculus           A
+otolemur_garnettii              A
+ovis_aries                      A
+pan_paniscus                    A
+pan_troglodytes                 A
+panthera_pardus                 A
+panthera_tigris_altaica         A
+papio_anubis                    A
+peromyscus_maniculatus_bairdii  A
+pongo_abelii                    A
+procavia_capensis               A
+propithecus_coquereli           A
+pteropus_vampyrus               A
+rattus_norvegicus               A
+rhinopithecus_bieti             A
+rhinopithecus_roxellana         A
+saimiri_boliviensis_boliviensis  A
+sarcophilus_harrisii            A
+sorex_araneus                   A
+sus_scrofa                      A
+tupaia_belangeri                A
+tursiops_truncatus              A
+vicugna_pacos                   A
+
+
+
+    2
+
+
+Frequencies..
+                                    T      C      A      G
+ailuropoda_melanoleuca         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+aotus_nancymaae                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+bos_taurus                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+callithrix_jacchus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+canis_familiaris               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+capra_hircus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+carlito_syrichta               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_aperea                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_porcellus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cebus_capucinus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cercocebus_atys                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chinchilla_lanigera            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chlorocebus_sabaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+choloepus_hoffmanni            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+colobus_angolensis_palliatus   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cricetulus_griseus_chok1gshd   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dasypus_novemcinctus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dipodomys_ordii                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+echinops_telfairi              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+equus_caballus                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+erinaceus_europaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+felis_catus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+fukomys_damarensis             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+gorilla_gorilla                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+heterocephalus_glaber_female   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+homo_sapiens                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ictidomys_tridecemlineatus     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+jaculus_jaculus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+loxodonta_africana             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_fascicularis            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_mulatta                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_nemestrina              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mandrillus_leucophaeus         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mesocricetus_auratus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microcebus_murinus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microtus_ochrogaster           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+monodelphis_domestica          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_caroli                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_musculus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_pahari                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_spretus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mustela_putorius_furo          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+myotis_lucifugus               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nannospalax_galili             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nomascus_leucogenys            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+notamacropus_eugenii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ochotona_princeps              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+octodon_degus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ornithorhynchus_anatinus       0.00000 0.00000 1.00000 0.00000 GC = 0.000
+oryctolagus_cuniculus          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+otolemur_garnettii             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ovis_aries                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_paniscus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_troglodytes                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_pardus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_tigris_altaica        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+papio_anubis                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+peromyscus_maniculatus_bairdii 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pongo_abelii                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+procavia_capensis              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+propithecus_coquereli          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pteropus_vampyrus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rattus_norvegicus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_bieti            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_roxellana        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+saimiri_boliviensis_boliviensis 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sarcophilus_harrisii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sorex_araneus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sus_scrofa                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tupaia_belangeri               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tursiops_truncatus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+vicugna_pacos                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+
+Homogeneity statistic: X2 = 0.00000 G = 0.00000 
+
+Average                        0.00000 0.00000 1.00000 0.00000
+
+# constant sites:      2 (100.00%)
+
+*** Locus 2 ***
+     72      2
+
+ailuropoda_melanoleuca          AA
+aotus_nancymaae                 AA
+bos_taurus                      AA
+callithrix_jacchus              AA
+canis_familiaris                AA
+capra_hircus                    AA
+carlito_syrichta                AA
+cavia_aperea                    AA
+cavia_porcellus                 AA
+cebus_capucinus                 AA
+cercocebus_atys                 AA
+chinchilla_lanigera             AA
+chlorocebus_sabaeus             AA
+choloepus_hoffmanni             AA
+colobus_angolensis_palliatus    AA
+cricetulus_griseus_chok1gshd    AA
+dasypus_novemcinctus            AA
+dipodomys_ordii                 AA
+echinops_telfairi               AA
+equus_caballus                  AA
+erinaceus_europaeus             AA
+felis_catus                     AA
+fukomys_damarensis              AA
+gorilla_gorilla                 AA
+heterocephalus_glaber_female    AA
+homo_sapiens                    AA
+ictidomys_tridecemlineatus      AA
+jaculus_jaculus                 AA
+loxodonta_africana              AA
+macaca_fascicularis             AA
+macaca_mulatta                  AA
+macaca_nemestrina               AA
+mandrillus_leucophaeus          AA
+mesocricetus_auratus            AA
+microcebus_murinus              AA
+microtus_ochrogaster            AA
+monodelphis_domestica           AA
+mus_caroli                      AA
+mus_musculus                    AA
+mus_pahari                      AA
+mus_spretus                     AA
+mustela_putorius_furo           AA
+myotis_lucifugus                AA
+nannospalax_galili              AA
+nomascus_leucogenys             AA
+notamacropus_eugenii            AA
+ochotona_princeps               AA
+octodon_degus                   AA
+ornithorhynchus_anatinus        AA
+oryctolagus_cuniculus           AA
+otolemur_garnettii              AA
+ovis_aries                      AA
+pan_paniscus                    AA
+pan_troglodytes                 AA
+panthera_pardus                 AA
+panthera_tigris_altaica         AA
+papio_anubis                    AA
+peromyscus_maniculatus_bairdii  AA
+pongo_abelii                    AA
+procavia_capensis               AA
+propithecus_coquereli           AA
+pteropus_vampyrus               AA
+rattus_norvegicus               AA
+rhinopithecus_bieti             AA
+rhinopithecus_roxellana         AA
+saimiri_boliviensis_boliviensis  AA
+sarcophilus_harrisii            AA
+sorex_araneus                   AA
+sus_scrofa                      AA
+tupaia_belangeri                AA
+tursiops_truncatus              AA
+vicugna_pacos                   AA
+
+
+
+Printing out site pattern counts
+
+
+        72          1  P
+
+ailuropoda_melanoleuca          A
+aotus_nancymaae                 A
+bos_taurus                      A
+callithrix_jacchus              A
+canis_familiaris                A
+capra_hircus                    A
+carlito_syrichta                A
+cavia_aperea                    A
+cavia_porcellus                 A
+cebus_capucinus                 A
+cercocebus_atys                 A
+chinchilla_lanigera             A
+chlorocebus_sabaeus             A
+choloepus_hoffmanni             A
+colobus_angolensis_palliatus    A
+cricetulus_griseus_chok1gshd    A
+dasypus_novemcinctus            A
+dipodomys_ordii                 A
+echinops_telfairi               A
+equus_caballus                  A
+erinaceus_europaeus             A
+felis_catus                     A
+fukomys_damarensis              A
+gorilla_gorilla                 A
+heterocephalus_glaber_female    A
+homo_sapiens                    A
+ictidomys_tridecemlineatus      A
+jaculus_jaculus                 A
+loxodonta_africana              A
+macaca_fascicularis             A
+macaca_mulatta                  A
+macaca_nemestrina               A
+mandrillus_leucophaeus          A
+mesocricetus_auratus            A
+microcebus_murinus              A
+microtus_ochrogaster            A
+monodelphis_domestica           A
+mus_caroli                      A
+mus_musculus                    A
+mus_pahari                      A
+mus_spretus                     A
+mustela_putorius_furo           A
+myotis_lucifugus                A
+nannospalax_galili              A
+nomascus_leucogenys             A
+notamacropus_eugenii            A
+ochotona_princeps               A
+octodon_degus                   A
+ornithorhynchus_anatinus        A
+oryctolagus_cuniculus           A
+otolemur_garnettii              A
+ovis_aries                      A
+pan_paniscus                    A
+pan_troglodytes                 A
+panthera_pardus                 A
+panthera_tigris_altaica         A
+papio_anubis                    A
+peromyscus_maniculatus_bairdii  A
+pongo_abelii                    A
+procavia_capensis               A
+propithecus_coquereli           A
+pteropus_vampyrus               A
+rattus_norvegicus               A
+rhinopithecus_bieti             A
+rhinopithecus_roxellana         A
+saimiri_boliviensis_boliviensis  A
+sarcophilus_harrisii            A
+sorex_araneus                   A
+sus_scrofa                      A
+tupaia_belangeri                A
+tursiops_truncatus              A
+vicugna_pacos                   A
+
+
+
+    2
+
+
+Frequencies..
+                                    T      C      A      G
+ailuropoda_melanoleuca         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+aotus_nancymaae                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+bos_taurus                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+callithrix_jacchus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+canis_familiaris               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+capra_hircus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+carlito_syrichta               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_aperea                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_porcellus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cebus_capucinus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cercocebus_atys                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chinchilla_lanigera            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chlorocebus_sabaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+choloepus_hoffmanni            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+colobus_angolensis_palliatus   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cricetulus_griseus_chok1gshd   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dasypus_novemcinctus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dipodomys_ordii                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+echinops_telfairi              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+equus_caballus                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+erinaceus_europaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+felis_catus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+fukomys_damarensis             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+gorilla_gorilla                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+heterocephalus_glaber_female   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+homo_sapiens                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ictidomys_tridecemlineatus     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+jaculus_jaculus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+loxodonta_africana             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_fascicularis            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_mulatta                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_nemestrina              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mandrillus_leucophaeus         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mesocricetus_auratus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microcebus_murinus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microtus_ochrogaster           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+monodelphis_domestica          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_caroli                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_musculus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_pahari                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_spretus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mustela_putorius_furo          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+myotis_lucifugus               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nannospalax_galili             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nomascus_leucogenys            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+notamacropus_eugenii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ochotona_princeps              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+octodon_degus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ornithorhynchus_anatinus       0.00000 0.00000 1.00000 0.00000 GC = 0.000
+oryctolagus_cuniculus          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+otolemur_garnettii             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ovis_aries                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_paniscus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_troglodytes                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_pardus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_tigris_altaica        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+papio_anubis                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+peromyscus_maniculatus_bairdii 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pongo_abelii                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+procavia_capensis              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+propithecus_coquereli          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pteropus_vampyrus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rattus_norvegicus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_bieti            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_roxellana        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+saimiri_boliviensis_boliviensis 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sarcophilus_harrisii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sorex_araneus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sus_scrofa                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tupaia_belangeri               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tursiops_truncatus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+vicugna_pacos                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+
+Homogeneity statistic: X2 = 0.00000 G = 0.00000 
+
+Average                        0.00000 0.00000 1.00000 0.00000
+
+# constant sites:      2 (100.00%)
+
+*** Locus 3 ***
+     72      2
+
+ailuropoda_melanoleuca          AA
+aotus_nancymaae                 AA
+bos_taurus                      AA
+callithrix_jacchus              AA
+canis_familiaris                AA
+capra_hircus                    AA
+carlito_syrichta                AA
+cavia_aperea                    AA
+cavia_porcellus                 AA
+cebus_capucinus                 AA
+cercocebus_atys                 AA
+chinchilla_lanigera             AA
+chlorocebus_sabaeus             AA
+choloepus_hoffmanni             AA
+colobus_angolensis_palliatus    AA
+cricetulus_griseus_chok1gshd    AA
+dasypus_novemcinctus            AA
+dipodomys_ordii                 AA
+echinops_telfairi               AA
+equus_caballus                  AA
+erinaceus_europaeus             AA
+felis_catus                     AA
+fukomys_damarensis              AA
+gorilla_gorilla                 AA
+heterocephalus_glaber_female    AA
+homo_sapiens                    AA
+ictidomys_tridecemlineatus      AA
+jaculus_jaculus                 AA
+loxodonta_africana              AA
+macaca_fascicularis             AA
+macaca_mulatta                  AA
+macaca_nemestrina               AA
+mandrillus_leucophaeus          AA
+mesocricetus_auratus            AA
+microcebus_murinus              AA
+microtus_ochrogaster            AA
+monodelphis_domestica           AA
+mus_caroli                      AA
+mus_musculus                    AA
+mus_pahari                      AA
+mus_spretus                     AA
+mustela_putorius_furo           AA
+myotis_lucifugus                AA
+nannospalax_galili              AA
+nomascus_leucogenys             AA
+notamacropus_eugenii            AA
+ochotona_princeps               AA
+octodon_degus                   AA
+ornithorhynchus_anatinus        AA
+oryctolagus_cuniculus           AA
+otolemur_garnettii              AA
+ovis_aries                      AA
+pan_paniscus                    AA
+pan_troglodytes                 AA
+panthera_pardus                 AA
+panthera_tigris_altaica         AA
+papio_anubis                    AA
+peromyscus_maniculatus_bairdii  AA
+pongo_abelii                    AA
+procavia_capensis               AA
+propithecus_coquereli           AA
+pteropus_vampyrus               AA
+rattus_norvegicus               AA
+rhinopithecus_bieti             AA
+rhinopithecus_roxellana         AA
+saimiri_boliviensis_boliviensis  AA
+sarcophilus_harrisii            AA
+sorex_araneus                   AA
+sus_scrofa                      AA
+tupaia_belangeri                AA
+tursiops_truncatus              AA
+vicugna_pacos                   AA
+
+
+
+Printing out site pattern counts
+
+
+        72          1  P
+
+ailuropoda_melanoleuca          A
+aotus_nancymaae                 A
+bos_taurus                      A
+callithrix_jacchus              A
+canis_familiaris                A
+capra_hircus                    A
+carlito_syrichta                A
+cavia_aperea                    A
+cavia_porcellus                 A
+cebus_capucinus                 A
+cercocebus_atys                 A
+chinchilla_lanigera             A
+chlorocebus_sabaeus             A
+choloepus_hoffmanni             A
+colobus_angolensis_palliatus    A
+cricetulus_griseus_chok1gshd    A
+dasypus_novemcinctus            A
+dipodomys_ordii                 A
+echinops_telfairi               A
+equus_caballus                  A
+erinaceus_europaeus             A
+felis_catus                     A
+fukomys_damarensis              A
+gorilla_gorilla                 A
+heterocephalus_glaber_female    A
+homo_sapiens                    A
+ictidomys_tridecemlineatus      A
+jaculus_jaculus                 A
+loxodonta_africana              A
+macaca_fascicularis             A
+macaca_mulatta                  A
+macaca_nemestrina               A
+mandrillus_leucophaeus          A
+mesocricetus_auratus            A
+microcebus_murinus              A
+microtus_ochrogaster            A
+monodelphis_domestica           A
+mus_caroli                      A
+mus_musculus                    A
+mus_pahari                      A
+mus_spretus                     A
+mustela_putorius_furo           A
+myotis_lucifugus                A
+nannospalax_galili              A
+nomascus_leucogenys             A
+notamacropus_eugenii            A
+ochotona_princeps               A
+octodon_degus                   A
+ornithorhynchus_anatinus        A
+oryctolagus_cuniculus           A
+otolemur_garnettii              A
+ovis_aries                      A
+pan_paniscus                    A
+pan_troglodytes                 A
+panthera_pardus                 A
+panthera_tigris_altaica         A
+papio_anubis                    A
+peromyscus_maniculatus_bairdii  A
+pongo_abelii                    A
+procavia_capensis               A
+propithecus_coquereli           A
+pteropus_vampyrus               A
+rattus_norvegicus               A
+rhinopithecus_bieti             A
+rhinopithecus_roxellana         A
+saimiri_boliviensis_boliviensis  A
+sarcophilus_harrisii            A
+sorex_araneus                   A
+sus_scrofa                      A
+tupaia_belangeri                A
+tursiops_truncatus              A
+vicugna_pacos                   A
+
+
+
+    2
+
+
+Frequencies..
+                                    T      C      A      G
+ailuropoda_melanoleuca         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+aotus_nancymaae                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+bos_taurus                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+callithrix_jacchus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+canis_familiaris               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+capra_hircus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+carlito_syrichta               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_aperea                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_porcellus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cebus_capucinus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cercocebus_atys                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chinchilla_lanigera            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chlorocebus_sabaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+choloepus_hoffmanni            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+colobus_angolensis_palliatus   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cricetulus_griseus_chok1gshd   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dasypus_novemcinctus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dipodomys_ordii                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+echinops_telfairi              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+equus_caballus                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+erinaceus_europaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+felis_catus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+fukomys_damarensis             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+gorilla_gorilla                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+heterocephalus_glaber_female   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+homo_sapiens                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ictidomys_tridecemlineatus     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+jaculus_jaculus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+loxodonta_africana             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_fascicularis            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_mulatta                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_nemestrina              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mandrillus_leucophaeus         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mesocricetus_auratus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microcebus_murinus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microtus_ochrogaster           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+monodelphis_domestica          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_caroli                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_musculus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_pahari                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_spretus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mustela_putorius_furo          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+myotis_lucifugus               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nannospalax_galili             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nomascus_leucogenys            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+notamacropus_eugenii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ochotona_princeps              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+octodon_degus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ornithorhynchus_anatinus       0.00000 0.00000 1.00000 0.00000 GC = 0.000
+oryctolagus_cuniculus          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+otolemur_garnettii             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ovis_aries                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_paniscus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_troglodytes                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_pardus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_tigris_altaica        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+papio_anubis                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+peromyscus_maniculatus_bairdii 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pongo_abelii                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+procavia_capensis              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+propithecus_coquereli          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pteropus_vampyrus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rattus_norvegicus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_bieti            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_roxellana        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+saimiri_boliviensis_boliviensis 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sarcophilus_harrisii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sorex_araneus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sus_scrofa                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tupaia_belangeri               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tursiops_truncatus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+vicugna_pacos                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+
+Homogeneity statistic: X2 = 0.00000 G = 0.00000 
+
+Average                        0.00000 0.00000 1.00000 0.00000
+
+# constant sites:      2 (100.00%)
+
+*** Locus 4 ***
+     72      2
+
+ailuropoda_melanoleuca          AA
+aotus_nancymaae                 AA
+bos_taurus                      AA
+callithrix_jacchus              AA
+canis_familiaris                AA
+capra_hircus                    AA
+carlito_syrichta                AA
+cavia_aperea                    AA
+cavia_porcellus                 AA
+cebus_capucinus                 AA
+cercocebus_atys                 AA
+chinchilla_lanigera             AA
+chlorocebus_sabaeus             AA
+choloepus_hoffmanni             AA
+colobus_angolensis_palliatus    AA
+cricetulus_griseus_chok1gshd    AA
+dasypus_novemcinctus            AA
+dipodomys_ordii                 AA
+echinops_telfairi               AA
+equus_caballus                  AA
+erinaceus_europaeus             AA
+felis_catus                     AA
+fukomys_damarensis              AA
+gorilla_gorilla                 AA
+heterocephalus_glaber_female    AA
+homo_sapiens                    AA
+ictidomys_tridecemlineatus      AA
+jaculus_jaculus                 AA
+loxodonta_africana              AA
+macaca_fascicularis             AA
+macaca_mulatta                  AA
+macaca_nemestrina               AA
+mandrillus_leucophaeus          AA
+mesocricetus_auratus            AA
+microcebus_murinus              AA
+microtus_ochrogaster            AA
+monodelphis_domestica           AA
+mus_caroli                      AA
+mus_musculus                    AA
+mus_pahari                      AA
+mus_spretus                     AA
+mustela_putorius_furo           AA
+myotis_lucifugus                AA
+nannospalax_galili              AA
+nomascus_leucogenys             AA
+notamacropus_eugenii            AA
+ochotona_princeps               AA
+octodon_degus                   AA
+ornithorhynchus_anatinus        AA
+oryctolagus_cuniculus           AA
+otolemur_garnettii              AA
+ovis_aries                      AA
+pan_paniscus                    AA
+pan_troglodytes                 AA
+panthera_pardus                 AA
+panthera_tigris_altaica         AA
+papio_anubis                    AA
+peromyscus_maniculatus_bairdii  AA
+pongo_abelii                    AA
+procavia_capensis               AA
+propithecus_coquereli           AA
+pteropus_vampyrus               AA
+rattus_norvegicus               AA
+rhinopithecus_bieti             AA
+rhinopithecus_roxellana         AA
+saimiri_boliviensis_boliviensis  AA
+sarcophilus_harrisii            AA
+sorex_araneus                   AA
+sus_scrofa                      AA
+tupaia_belangeri                AA
+tursiops_truncatus              AA
+vicugna_pacos                   AA
+
+
+
+Printing out site pattern counts
+
+
+        72          1  P
+
+ailuropoda_melanoleuca          A
+aotus_nancymaae                 A
+bos_taurus                      A
+callithrix_jacchus              A
+canis_familiaris                A
+capra_hircus                    A
+carlito_syrichta                A
+cavia_aperea                    A
+cavia_porcellus                 A
+cebus_capucinus                 A
+cercocebus_atys                 A
+chinchilla_lanigera             A
+chlorocebus_sabaeus             A
+choloepus_hoffmanni             A
+colobus_angolensis_palliatus    A
+cricetulus_griseus_chok1gshd    A
+dasypus_novemcinctus            A
+dipodomys_ordii                 A
+echinops_telfairi               A
+equus_caballus                  A
+erinaceus_europaeus             A
+felis_catus                     A
+fukomys_damarensis              A
+gorilla_gorilla                 A
+heterocephalus_glaber_female    A
+homo_sapiens                    A
+ictidomys_tridecemlineatus      A
+jaculus_jaculus                 A
+loxodonta_africana              A
+macaca_fascicularis             A
+macaca_mulatta                  A
+macaca_nemestrina               A
+mandrillus_leucophaeus          A
+mesocricetus_auratus            A
+microcebus_murinus              A
+microtus_ochrogaster            A
+monodelphis_domestica           A
+mus_caroli                      A
+mus_musculus                    A
+mus_pahari                      A
+mus_spretus                     A
+mustela_putorius_furo           A
+myotis_lucifugus                A
+nannospalax_galili              A
+nomascus_leucogenys             A
+notamacropus_eugenii            A
+ochotona_princeps               A
+octodon_degus                   A
+ornithorhynchus_anatinus        A
+oryctolagus_cuniculus           A
+otolemur_garnettii              A
+ovis_aries                      A
+pan_paniscus                    A
+pan_troglodytes                 A
+panthera_pardus                 A
+panthera_tigris_altaica         A
+papio_anubis                    A
+peromyscus_maniculatus_bairdii  A
+pongo_abelii                    A
+procavia_capensis               A
+propithecus_coquereli           A
+pteropus_vampyrus               A
+rattus_norvegicus               A
+rhinopithecus_bieti             A
+rhinopithecus_roxellana         A
+saimiri_boliviensis_boliviensis  A
+sarcophilus_harrisii            A
+sorex_araneus                   A
+sus_scrofa                      A
+tupaia_belangeri                A
+tursiops_truncatus              A
+vicugna_pacos                   A
+
+
+
+    2
+
+
+Frequencies..
+                                    T      C      A      G
+ailuropoda_melanoleuca         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+aotus_nancymaae                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+bos_taurus                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+callithrix_jacchus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+canis_familiaris               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+capra_hircus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+carlito_syrichta               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_aperea                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cavia_porcellus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cebus_capucinus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cercocebus_atys                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chinchilla_lanigera            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+chlorocebus_sabaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+choloepus_hoffmanni            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+colobus_angolensis_palliatus   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+cricetulus_griseus_chok1gshd   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dasypus_novemcinctus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+dipodomys_ordii                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+echinops_telfairi              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+equus_caballus                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+erinaceus_europaeus            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+felis_catus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+fukomys_damarensis             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+gorilla_gorilla                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+heterocephalus_glaber_female   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+homo_sapiens                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ictidomys_tridecemlineatus     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+jaculus_jaculus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+loxodonta_africana             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_fascicularis            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_mulatta                 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+macaca_nemestrina              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mandrillus_leucophaeus         0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mesocricetus_auratus           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microcebus_murinus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+microtus_ochrogaster           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+monodelphis_domestica          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_caroli                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_musculus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_pahari                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mus_spretus                    0.00000 0.00000 1.00000 0.00000 GC = 0.000
+mustela_putorius_furo          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+myotis_lucifugus               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nannospalax_galili             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+nomascus_leucogenys            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+notamacropus_eugenii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ochotona_princeps              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+octodon_degus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ornithorhynchus_anatinus       0.00000 0.00000 1.00000 0.00000 GC = 0.000
+oryctolagus_cuniculus          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+otolemur_garnettii             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+ovis_aries                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_paniscus                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pan_troglodytes                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_pardus                0.00000 0.00000 1.00000 0.00000 GC = 0.000
+panthera_tigris_altaica        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+papio_anubis                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+peromyscus_maniculatus_bairdii 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pongo_abelii                   0.00000 0.00000 1.00000 0.00000 GC = 0.000
+procavia_capensis              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+propithecus_coquereli          0.00000 0.00000 1.00000 0.00000 GC = 0.000
+pteropus_vampyrus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rattus_norvegicus              0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_bieti            0.00000 0.00000 1.00000 0.00000 GC = 0.000
+rhinopithecus_roxellana        0.00000 0.00000 1.00000 0.00000 GC = 0.000
+saimiri_boliviensis_boliviensis 0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sarcophilus_harrisii           0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sorex_araneus                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+sus_scrofa                     0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tupaia_belangeri               0.00000 0.00000 1.00000 0.00000 GC = 0.000
+tursiops_truncatus             0.00000 0.00000 1.00000 0.00000 GC = 0.000
+vicugna_pacos                  0.00000 0.00000 1.00000 0.00000 GC = 0.000
+
+Homogeneity statistic: X2 = 0.00000 G = 0.00000 
+
+Average                        0.00000 0.00000 1.00000 0.00000
+
+# constant sites:      2 (100.00%)
+Time used: 41:18:43
+
+mean of parameters using all iterations
+   1.99191   1.41786   0.57474   0.46943   0.80609   0.79088   0.62228   0.65938   0.56844   0.75275   0.69852   0.58488   0.68180   0.58714   0.67509   0.52339   0.15777   0.08073   0.45005   0.38194   0.66356   0.57553   0.55103   0.50208   0.18878   0.08310   0.69836   0.68999   0.66244   0.48134   0.60809   0.59340   0.41277   0.32137   0.35737   0.09040   0.32020   0.54900   0.46140   0.37302   0.20450   0.16271   0.10682   0.15292   0.10999   0.05458   0.02827   0.01330   0.64929   0.53169   0.35677   0.61614   0.40283   0.18400   0.17683   0.16180   0.30342   0.18186   0.13622   0.10378   0.08825   0.07403   0.05715   0.04210   0.13168   0.04042   0.22669   0.20150   0.11345   0.09265   0.03790   0.16056   0.11812   0.09930   0.07118   1.01499   0.85464   1.01331   1.48780
+
+Species tree for FigTree.  Branch lengths = posterior mean times; 95% CIs = labels
+(1_ornithorhynchus_anatinus, ((2_monodelphis_domestica, (3_notamacropus_eugenii, 4_sarcophilus_harrisii) 76 ) 75 , (((5_choloepus_hoffmanni, 6_dasypus_novemcinctus) 79 , (7_echinops_telfairi, (8_procavia_capensis, 9_loxodonta_africana) 81 ) 80 ) 78 , (((10_sorex_araneus, 11_erinaceus_europaeus) 84 , ((12_pteropus_vampyrus, 13_myotis_lucifugus) 86 , (((14_felis_catus, (15_panthera_tigris_altaica, 16_panthera_pardus) 90 ) 89 , (17_canis_familiaris, (18_mustela_putorius_furo, 19_ailuropoda_melanoleuca) 92 ) 91 ) 88 , (20_equus_caballus, (21_vicugna_pacos, (22_sus_scrofa, (23_tursiops_truncatus, (24_bos_taurus, (25_ovis_aries, 26_capra_hircus) 98 ) 97 ) 96 ) 95 ) 94 ) 93 ) 87 ) 85 ) 83 , ((27_tupaia_belangeri, ((28_oryctolagus_cuniculus, 29_ochotona_princeps) 102 , (30_ictidomys_tridecemlineatus, (((31_fukomys_damarensis, 32_heterocephalus_glaber_female) 106 , ((33_cavia_porcellus, 34_cavia_aperea) 108 , (35_chinchilla_lanigera, 36_octodon_degus) 109 ) 107 ) 105 , (37_dipodomys_ordii, (38_jaculus_jaculus, (39_nannospalax_galili, (((40_mesocricetus_auratus, 41_cricetulus_griseus_chok1gshd) 115 , (42_peromyscus_maniculatus_bairdii, 43_microtus_ochrogaster) 116 ) 114 , ((44_mus_pahari, (45_mus_caroli, (46_mus_musculus, 47_mus_spretus) 120 ) 119 ) 118 , 48_rattus_norvegicus) 117 ) 113 ) 112 ) 111 ) 110 ) 104 ) 103 ) 101 ) 100 , ((49_otolemur_garnettii, (50_propithecus_coquereli, 51_microcebus_murinus) 123 ) 122 , (52_carlito_syrichta, (((53_aotus_nancymaae, 54_callithrix_jacchus) 127 , (55_saimiri_boliviensis_boliviensis, 56_cebus_capucinus) 128 ) 126 , (((57_chlorocebus_sabaeus, ((58_papio_anubis, (59_cercocebus_atys, 60_mandrillus_leucophaeus) 134 ) 133 , (61_macaca_nemestrina, (62_macaca_mulatta, 63_macaca_fascicularis) 136 ) 135 ) 132 ) 131 , (64_colobus_angolensis_palliatus, (65_rhinopithecus_roxellana, 66_rhinopithecus_bieti) 138 ) 137 ) 130 , (67_nomascus_leucogenys, (68_pongo_abelii, (69_gorilla_gorilla, ((70_pan_troglodytes, 71_pan_paniscus) 143 , 72_homo_sapiens) 142 ) 141 ) 140 ) 139 ) 129 ) 125 ) 124 ) 121 ) 99 ) 82 ) 77 ) 74 ) 73 ;
+
+(ornithorhynchus_anatinus: 1.991906, ((monodelphis_domestica: 0.574742, (notamacropus_eugenii: 0.469434, sarcophilus_harrisii: 0.469434): 0.105308): 0.843123, (((choloepus_hoffmanni: 0.622277, dasypus_novemcinctus: 0.622277): 0.168606, (echinops_telfairi: 0.659385, (procavia_capensis: 0.568438, loxodonta_africana: 0.568438): 0.090947): 0.131498): 0.015211, (((sorex_araneus: 0.584875, erinaceus_europaeus: 0.584875): 0.113641, ((pteropus_vampyrus: 0.587142, myotis_lucifugus: 0.587142): 0.094654, (((felis_catus: 0.157772, (panthera_tigris_altaica: 0.080731, panthera_pardus: 0.080731): 0.077041): 0.365620, (canis_familiaris: 0.450052, (mustela_putorius_furo: 0.381940, ailuropoda_melanoleuca: 0.381940): 0.068111): 0.073341): 0.151700, (equus_caballus: 0.663563, (vicugna_pacos: 0.575526, (sus_scrofa: 0.551031, (tursiops_truncatus: 0.502078, (bos_taurus: 0.188781, (ovis_aries: 0.083100, capra_hircus: 0.083100): 0.105681): 0.313297): 0.048953): 0.024495): 0.088038): 0.011529): 0.006703): 0.016721): 0.054232, ((tupaia_belangeri: 0.689987, ((oryctolagus_cuniculus: 0.481343, ochotona_princeps: 0.481343): 0.181095, (ictidomys_tridecemlineatus: 0.608086, (((fukomys_damarensis: 0.321372, heterocephalus_glaber_female: 0.321372): 0.091400, ((cavia_porcellus: 0.090402, cavia_aperea: 0.090402): 0.266973, (chinchilla_lanigera: 0.320196, octodon_degus: 0.320196): 0.037179): 0.055397): 0.180632, (dipodomys_ordii: 0.548999, (jaculus_jaculus: 0.461404, (nannospalax_galili: 0.373016, (((mesocricetus_auratus: 0.106818, cricetulus_griseus_chok1gshd: 0.106818): 0.055896, (peromyscus_maniculatus_bairdii: 0.152924, microtus_ochrogaster: 0.152924): 0.009790): 0.041787, ((mus_pahari: 0.054578, (mus_caroli: 0.028273, (mus_musculus: 0.013300, mus_spretus: 0.013300): 0.014973): 0.026305): 0.055407, rattus_norvegicus: 0.109985): 0.094516): 0.168514): 0.088388): 0.087596): 0.044405): 0.014682): 0.054352): 0.027548): 0.008377, ((otolemur_garnettii: 0.531694, (propithecus_coquereli: 0.356765, microcebus_murinus: 0.356765): 0.174928): 0.117600, (carlito_syrichta: 0.616136, (((aotus_nancymaae: 0.176826, callithrix_jacchus: 0.176826): 0.007176, (saimiri_boliviensis_boliviensis: 0.161802, cebus_capucinus: 0.161802): 0.022200): 0.218825, (((chlorocebus_sabaeus: 0.136219, ((papio_anubis: 0.088254, (cercocebus_atys: 0.074030, mandrillus_leucophaeus: 0.074030): 0.014223): 0.015528, (macaca_nemestrina: 0.057148, (macaca_mulatta: 0.042099, macaca_fascicularis: 0.042099): 0.015049): 0.046634): 0.032437): 0.045640, (colobus_angolensis_palliatus: 0.131677, (rhinopithecus_roxellana: 0.040421, rhinopithecus_bieti: 0.040421): 0.091256): 0.050181): 0.121559, (nomascus_leucogenys: 0.226686, (pongo_abelii: 0.201495, (gorilla_gorilla: 0.113445, ((pan_troglodytes: 0.037904, pan_paniscus: 0.037904): 0.054741, homo_sapiens: 0.092645): 0.020800): 0.088050): 0.025191): 0.076732): 0.099409): 0.213309): 0.033158): 0.049070): 0.054386): 0.053345): 0.611771): 0.574041);
+
+(ornithorhynchus_anatinus: 1.991906, ((monodelphis_domestica: 0.574742, (notamacropus_eugenii: 0.469434, sarcophilus_harrisii: 0.469434) [&95%={0.347845, 0.567009}]: 0.105308) [&95%={0.430035, 0.704592}]: 0.843123, (((choloepus_hoffmanni: 0.622277, dasypus_novemcinctus: 0.622277) [&95%={0.554503, 0.676697}]: 0.168606, (echinops_telfairi: 0.659385, (procavia_capensis: 0.568438, loxodonta_africana: 0.568438) [&95%={0.524346, 0.620415}]: 0.090947) [&95%={0.621299, 0.69806}]: 0.131498) [&95%={0.762688, 0.830509}]: 0.015211, (((sorex_araneus: 0.584875, erinaceus_europaeus: 0.584875) [&95%={0.551084, 0.614351}]: 0.113641, ((pteropus_vampyrus: 0.587142, myotis_lucifugus: 0.587142) [&95%={0.556216, 0.615068}]: 0.094654, (((felis_catus: 0.157772, (panthera_tigris_altaica: 0.080731, panthera_pardus: 0.080731) [&95%={0.0577467, 0.104619}]: 0.077041) [&95%={0.11812, 0.196007}]: 0.365620, (canis_familiaris: 0.450052, (mustela_putorius_furo: 0.381940, ailuropoda_melanoleuca: 0.381940) [&95%={0.331165, 0.427359}]: 0.068111) [&95%={0.401282, 0.490389}]: 0.073341) [&95%={0.47965, 0.557693}]: 0.151700, (equus_caballus: 0.663563, (vicugna_pacos: 0.575526, (sus_scrofa: 0.551031, (tursiops_truncatus: 0.502078, (bos_taurus: 0.188781, (ovis_aries: 0.083100, capra_hircus: 0.083100) [&95%={0.0644235, 0.110352}]: 0.105681) [&95%={0.159476, 0.234116}]: 0.313297) [&95%={0.482351, 0.518939}]: 0.048953) [&95%={0.53384, 0.568395}]: 0.024495) [&95%={0.559253, 0.594246}]: 0.088038) [&95%={0.649098, 0.685905}]: 0.011529) [&95%={0.660259, 0.697847}]: 0.006703) [&95%={0.666838, 0.704691}]: 0.016721) [&95%={0.68283, 0.722248}]: 0.054232, ((tupaia_belangeri: 0.689987, ((oryctolagus_cuniculus: 0.481343, ochotona_princeps: 0.481343) [&95%={0.461423, 0.50136}]: 0.181095, (ictidomys_tridecemlineatus: 0.608086, (((fukomys_damarensis: 0.321372, heterocephalus_glaber_female: 0.321372) [&95%={0.287859, 0.358722}]: 0.091400, ((cavia_porcellus: 0.090402, cavia_aperea: 0.090402) [&95%={0.0727838, 0.109696}]: 0.266973, (chinchilla_lanigera: 0.320196, octodon_degus: 0.320196) [&95%={0.290874, 0.353036}]: 0.037179) [&95%={0.329104, 0.389853}]: 0.055397) [&95%={0.38511, 0.442801}]: 0.180632, (dipodomys_ordii: 0.548999, (jaculus_jaculus: 0.461404, (nannospalax_galili: 0.373016, (((mesocricetus_auratus: 0.106818, cricetulus_griseus_chok1gshd: 0.106818) [&95%={0.0818677, 0.137268}]: 0.055896, (peromyscus_maniculatus_bairdii: 0.152924, microtus_ochrogaster: 0.152924) [&95%={0.118198, 0.191223}]: 0.009790) [&95%={0.126142, 0.202918}]: 0.041787, ((mus_pahari: 0.054578, (mus_caroli: 0.028273, (mus_musculus: 0.013300, mus_spretus: 0.013300) [&95%={0.0093794, 0.0184464}]: 0.014973) [&95%={0.0201274, 0.0386578}]: 0.026305) [&95%={0.0393814, 0.0730554}]: 0.055407, rattus_norvegicus: 0.109985) [&95%={0.0815638, 0.142515}]: 0.094516) [&95%={0.161591, 0.251527}]: 0.168514) [&95%={0.332366, 0.409961}]: 0.088388) [&95%={0.430547, 0.488245}]: 0.087596) [&95%={0.53399, 0.564199}]: 0.044405) [&95%={0.582685, 0.605661}]: 0.014682) [&95%={0.597625, 0.620004}]: 0.054352) [&95%={0.649964, 0.675784}]: 0.027548) [&95%={0.675649, 0.705953}]: 0.008377, ((otolemur_garnettii: 0.531694, (propithecus_coquereli: 0.356765, microcebus_murinus: 0.356765) [&95%={0.294231, 0.407324}]: 0.174928) [&95%={0.484973, 0.559283}]: 0.117600, (carlito_syrichta: 0.616136, (((aotus_nancymaae: 0.176826, callithrix_jacchus: 0.176826) [&95%={0.137079, 0.207854}]: 0.007176, (saimiri_boliviensis_boliviensis: 0.161802, cebus_capucinus: 0.161802) [&95%={0.124893, 0.191517}]: 0.022200) [&95%={0.143042, 0.215955}]: 0.218825, (((chlorocebus_sabaeus: 0.136219, ((papio_anubis: 0.088254, (cercocebus_atys: 0.074030, mandrillus_leucophaeus: 0.074030) [&95%={0.0620662, 0.0855694}]: 0.014223) [&95%={0.0743555, 0.101231}]: 0.015528, (macaca_nemestrina: 0.057148, (macaca_mulatta: 0.042099, macaca_fascicularis: 0.042099) [&95%={0.0345605, 0.0499888}]: 0.015049) [&95%={0.0472595, 0.0671084}]: 0.046634) [&95%={0.0878886, 0.118485}]: 0.032437) [&95%={0.116632, 0.154007}]: 0.045640, (colobus_angolensis_palliatus: 0.131677, (rhinopithecus_roxellana: 0.040421, rhinopithecus_bieti: 0.040421) [&95%={0.0321971, 0.0499312}]: 0.091256) [&95%={0.112608, 0.150762}]: 0.050181) [&95%={0.157766, 0.203457}]: 0.121559, (nomascus_leucogenys: 0.226686, (pongo_abelii: 0.201495, (gorilla_gorilla: 0.113445, ((pan_troglodytes: 0.037904, pan_paniscus: 0.037904) [&95%={0.0313513, 0.0440532}]: 0.054741, homo_sapiens: 0.092645) [&95%={0.0798589, 0.100834}]: 0.020800) [&95%={0.0982014, 0.123734}]: 0.088050) [&95%={0.178464, 0.221601}]: 0.025191) [&95%={0.201581, 0.248185}]: 0.076732) [&95%={0.271059, 0.328458}]: 0.099409) [&95%={0.366064, 0.431294}]: 0.213309) [&95%={0.59938, 0.631287}]: 0.033158) [&95%={0.635313, 0.661456}]: 0.049070) [&95%={0.683411, 0.715451}]: 0.054386) [&95%={0.731369, 0.783697}]: 0.053345) [&95%={0.776316, 0.847983}]: 0.611771) [&95%={1.22842, 1.67502}]: 0.574041) [&95%={1.64797, 2.49169}];
+
+
+Posterior mean (95% Equal-tail CI) (95% HPD CI) HPD-CI-width
+
+t_n73          1.9919 (1.6480, 2.4917) (1.6243, 2.4586) 0.8343 (Jnode 142)
+t_n74          1.4179 (1.2284, 1.6750) (1.2121, 1.6453) 0.4332 (Jnode 141)
+t_n75          0.5747 (0.4300, 0.7046) (0.4352, 0.7084) 0.2732 (Jnode 140)
+t_n76          0.4694 (0.3478, 0.5670) (0.3551, 0.5720) 0.2169 (Jnode 139)
+t_n77          0.8061 (0.7763, 0.8480) (0.7711, 0.8269) 0.0558 (Jnode 138)
+t_n78          0.7909 (0.7627, 0.8305) (0.7587, 0.8108) 0.0521 (Jnode 137)
+t_n79          0.6223 (0.5545, 0.6767) (0.5538, 0.6750) 0.1212 (Jnode 136)
+t_n80          0.6594 (0.6213, 0.6981) (0.6197, 0.6949) 0.0752 (Jnode 135)
+t_n81          0.5685 (0.5243, 0.6204) (0.5245, 0.6204) 0.0959 (Jnode 134)
+t_n82          0.7528 (0.7314, 0.7837) (0.7288, 0.7707) 0.0419 (Jnode 133)
+t_n83          0.6985 (0.6828, 0.7222) (0.6812, 0.7183) 0.0371 (Jnode 132)
+t_n84          0.5848 (0.5511, 0.6144) (0.5515, 0.6148) 0.0633 (Jnode 131)
+t_n85          0.6818 (0.6668, 0.7047) (0.6651, 0.7015) 0.0365 (Jnode 130)
+t_n86          0.5871 (0.5562, 0.6151) (0.5559, 0.6147) 0.0587 (Jnode 129)
+t_n87          0.6751 (0.6603, 0.6978) (0.6587, 0.6950) 0.0363 (Jnode 128)
+t_n88          0.5234 (0.4796, 0.5577) (0.4825, 0.5604) 0.0779 (Jnode 127)
+t_n89          0.1578 (0.1181, 0.1960) (0.1176, 0.1952) 0.0776 (Jnode 126)
+t_n90          0.0807 (0.0577, 0.1046) (0.0569, 0.1035) 0.0466 (Jnode 125)
+t_n91          0.4501 (0.4013, 0.4904) (0.4039, 0.4928) 0.0888 (Jnode 124)
+t_n92          0.3819 (0.3312, 0.4274) (0.3308, 0.4267) 0.0959 (Jnode 123)
+t_n93          0.6636 (0.6491, 0.6859) (0.6469, 0.6830) 0.0361 (Jnode 122)
+t_n94          0.5755 (0.5593, 0.5942) (0.5584, 0.5933) 0.0348 (Jnode 121)
+t_n95          0.5510 (0.5338, 0.5684) (0.5333, 0.5678) 0.0345 (Jnode 120)
+t_n96          0.5021 (0.4824, 0.5189) (0.4832, 0.5197) 0.0365 (Jnode 119)
+t_n97          0.1888 (0.1595, 0.2341) (0.1577, 0.2305) 0.0728 (Jnode 118)
+t_n98          0.0831 (0.0644, 0.1104) (0.0628, 0.1071) 0.0443 (Jnode 117)
+t_n99          0.6984 (0.6834, 0.7155) (0.6819, 0.7129) 0.0310 (Jnode 116)
+t_n100         0.6900 (0.6756, 0.7060) (0.6744, 0.7039) 0.0294 (Jnode 115)
+t_n101         0.6624 (0.6500, 0.6758) (0.6497, 0.6754) 0.0257 (Jnode 114)
+t_n102         0.4814 (0.4614, 0.5014) (0.4615, 0.5014) 0.0399 (Jnode 113)
+t_n103         0.6081 (0.5976, 0.6200) (0.5971, 0.6193) 0.0222 (Jnode 112)
+t_n104         0.5934 (0.5827, 0.6057) (0.5824, 0.6052) 0.0228 (Jnode 111)
+t_n105         0.4128 (0.3851, 0.4428) (0.3822, 0.4394) 0.0571 (Jnode 110)
+t_n106         0.3214 (0.2879, 0.3587) (0.2846, 0.3535) 0.0689 (Jnode 109)
+t_n107         0.3574 (0.3291, 0.3899) (0.3265, 0.3856) 0.0591 (Jnode 108)
+t_n108         0.0904 (0.0728, 0.1097) (0.0720, 0.1085) 0.0366 (Jnode 107)
+t_n109         0.3202 (0.2909, 0.3530) (0.2878, 0.3479) 0.0601 (Jnode 106)
+t_n110         0.5490 (0.5340, 0.5642) (0.5339, 0.5640) 0.0302 (Jnode 105)
+t_n111         0.4614 (0.4305, 0.4882) (0.4320, 0.4893) 0.0572 (Jnode 104)
+t_n112         0.3730 (0.3324, 0.4100) (0.3329, 0.4104) 0.0775 (Jnode 103)
+t_n113         0.2045 (0.1616, 0.2515) (0.1645, 0.2542) 0.0897 (Jnode 102)
+t_n114         0.1627 (0.1261, 0.2029) (0.1296, 0.2057) 0.0761 (Jnode 101)
+t_n115         0.1068 (0.0819, 0.1373) (0.0824, 0.1377) 0.0553 (Jnode 100)
+t_n116         0.1529 (0.1182, 0.1912) (0.1216, 0.1942) 0.0727 (Jnode 99)
+t_n117         0.1100 (0.0816, 0.1425) (0.0822, 0.1431) 0.0608 (Jnode 98)
+t_n118         0.0546 (0.0394, 0.0731) (0.0385, 0.0717) 0.0332 (Jnode 97)
+t_n119         0.0283 (0.0201, 0.0387) (0.0195, 0.0379) 0.0183 (Jnode 96)
+t_n120         0.0133 (0.0094, 0.0184) (0.0090, 0.0180) 0.0089 (Jnode 95)
+t_n121         0.6493 (0.6353, 0.6615) (0.6361, 0.6621) 0.0260 (Jnode 94)
+t_n122         0.5317 (0.4850, 0.5593) (0.4962, 0.5627) 0.0665 (Jnode 93)
+t_n123         0.3567 (0.2942, 0.4073) (0.3039, 0.4130) 0.1091 (Jnode 92)
+t_n124         0.6161 (0.5994, 0.6313) (0.6002, 0.6320) 0.0317 (Jnode 91)
+t_n125         0.4028 (0.3661, 0.4313) (0.3696, 0.4333) 0.0637 (Jnode 90)
+t_n126         0.1840 (0.1430, 0.2160) (0.1441, 0.2167) 0.0726 (Jnode 89)
+t_n127         0.1768 (0.1371, 0.2079) (0.1384, 0.2090) 0.0705 (Jnode 88)
+t_n128         0.1618 (0.1249, 0.1915) (0.1244, 0.1907) 0.0663 (Jnode 87)
+t_n129         0.3034 (0.2711, 0.3285) (0.2753, 0.3311) 0.0558 (Jnode 86)
+t_n130         0.1819 (0.1578, 0.2035) (0.1586, 0.2040) 0.0454 (Jnode 85)
+t_n131         0.1362 (0.1166, 0.1540) (0.1170, 0.1543) 0.0372 (Jnode 84)
+t_n132         0.1038 (0.0879, 0.1185) (0.0885, 0.1189) 0.0305 (Jnode 83)
+t_n133         0.0883 (0.0744, 0.1012) (0.0746, 0.1015) 0.0269 (Jnode 82)
+t_n134         0.0740 (0.0621, 0.0856) (0.0621, 0.0856) 0.0235 (Jnode 81)
+t_n135         0.0572 (0.0473, 0.0671) (0.0479, 0.0676) 0.0198 (Jnode 80)
+t_n136         0.0421 (0.0346, 0.0500) (0.0346, 0.0500) 0.0154 (Jnode 79)
+t_n137         0.1317 (0.1126, 0.1508) (0.1130, 0.1511) 0.0381 (Jnode 78)
+t_n138         0.0404 (0.0322, 0.0499) (0.0317, 0.0492) 0.0175 (Jnode 77)
+t_n139         0.2267 (0.2016, 0.2482) (0.2030, 0.2492) 0.0462 (Jnode 76)
+t_n140         0.2015 (0.1785, 0.2216) (0.1797, 0.2225) 0.0428 (Jnode 75)
+t_n141         0.1134 (0.0982, 0.1237) (0.0994, 0.1244) 0.0251 (Jnode 74)
+t_n142         0.0927 (0.0799, 0.1008) (0.0811, 0.1015) 0.0204 (Jnode 73)
+t_n143         0.0379 (0.0314, 0.0441) (0.0314, 0.0441) 0.0127 (Jnode 72)
+mu1            0.1601 (0.0551, 0.3391) (0.0383, 0.3053) 0.2670
+mu2            0.1180 (0.0423, 0.2464) (0.0307, 0.2219) 0.1911
+mu3            0.0996 (0.0319, 0.2210) (0.0206, 0.1941) 0.1735
+mu4            0.0712 (0.0184, 0.1744) (0.0105, 0.1525) 0.1420
+sigma2_1       1.0164 (0.7856, 1.3056) (0.7679, 1.2799) 0.5120
+sigma2_2       0.8555 (0.6714, 1.0836) (0.6574, 1.0634) 0.4060
+sigma2_3       1.0128 (0.7992, 1.2759) (0.7842, 1.2557) 0.4715
+sigma2_4       1.4878 (1.1702, 1.8876) (1.1471, 1.8574) 0.7104
+lnL         -282.7702 (-316.6670, -250.7260) (-316.3780, -250.6070) 65.7710
