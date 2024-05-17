@@ -125,3 +125,5 @@
 calibrations/old_versions
 calibrations/last_version
 calibrations/*xlsx
+
+quick_access_files/00_SeqBayes_S1/00_BASEML/*/p*
