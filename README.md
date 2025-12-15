@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5736629.svg)](https://doi.org/10.5281/zenodo.5736629)
+
 # A Species-Level Timeline of Mammal Evolution Integrating Phylogenomic Data
 
 ## What will you find here?
